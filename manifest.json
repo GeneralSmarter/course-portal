@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "courses": [
+    "ENME302-26S2",
+    "ENEL301-26S2",
+    "ENEL372-26S2",
+    "ENMT301-26W"
+  ],
+  "generated_at": "2026-07-15T11:29:40.167392+12:00"
+}

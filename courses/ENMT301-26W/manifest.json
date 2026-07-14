@@ -1,0 +1,14 @@
+{
+  "course_code": "ENMT301-26W",
+  "course_name": "Mechatronics System Design",
+  "profile": "System design",
+  "counts": {
+    "lectures": 66,
+    "resources": 75,
+    "assignments": 5,
+    "transcripts": 66,
+    "summaries": 0,
+    "pipeline_failures": 0
+  },
+  "generated_at": "2026-07-15T11:29:40.165918+12:00"
+}
