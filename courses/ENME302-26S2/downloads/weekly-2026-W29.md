@@ -1,126 +1,198 @@
 <!-- week-id: 2026-W29 -->
-<!-- generated-at: 2026-07-15T10:40:43.389167+12:00 -->
+<!-- generated-at: 2026-07-19T12:30:31.245689+12:00 -->
 # ENME302-26S2 weekly summary
 
 ## Coverage
 
-- Week: 2026-W29, from 13 July 2026 00:00 to 19 July 2026 08:30 NZ time.
-- Covered source: Lecture 1 only.
-- Lecture 1 introduced finite element analysis (FEA), discretisation, structural element types, degrees of freedom, boundary conditions, shape functions, and the course structure.
-- Lectures 2–4 are not represented because their verified summaries are missing.
+- Study period: 2026-07-13 to 2026-07-19 12:28 NZ time.
+- Verified summaries covered: Lectures 1–3.
+- Lecture 1 introduced finite element analysis, discretisation, nodes, degrees of freedom, boundary conditions, element assembly, and the progression from axial truss to flexural beam elements.
+- Lecture 2 established the finite element workflow and formulated the two-node axial bar boundary-value problem.
+- Lecture 3 derived the axial bar’s linear shape functions, constant strain and stress fields, element stiffness matrix, rigid-body mode, and singularity of an unconstrained element.
+- Lecture 4 was not available.
 
 ## Main concepts
 
-- FEA divides a continuous engineering system into simpler elements connected at nodes, formulates each element’s behaviour, assembles a global system, applies loads and boundary conditions, solves for nodal quantities, and recovers element forces, stresses, strains, moments, or shears.
-- FEA builds on classical mechanics rather than replacing it. Stress, strain, equilibrium, compatibility, stiffness, axial loading, bending, and beam deflection remain foundational.
-- A statically determinate structure can be solved using equilibrium alone. A statically indeterminate structure also requires displacement compatibility and relative stiffness.
-- Ideal axial truss elements are pin-connected, loaded at nodes, and carry only axial tension or compression.
-- Flexural beam elements additionally represent bending, shear, nodal rotations, and moments.
-- Shape functions interpolate behaviour inside an element from discrete nodal values.
-- One-dimensional elements can be oriented and assembled into complex two- or three-dimensional structures.
-- A practical modelling hierarchy is to use efficient line elements for global behaviour, identify critical regions, and then apply detailed local models.
-- Mesh refinement replaces a geometry with smaller and more numerous elements. Coarse and fine meshes can be compared to assess solution sensitivity.
-- FEA is applicable beyond structural analysis wherever suitable governing differential equations exist, including heat flow and magnetism.
+- FEA replaces a continuous system with discrete elements connected at nodes. Nodal quantities are solved first, then internal fields are reconstructed using shape functions.
+- Standard workflow:
+  1. Discretise the structure.
+  2. Form each element stiffness equation.
+  3. Transform local quantities to global coordinates where necessary.
+  4. Assemble the global system.
+  5. Apply loads and displacement boundary conditions.
+  6. Solve for nodal displacements.
+  7. Recover reactions, internal forces, strains, and stresses.
+  8. Check whether the results are physically meaningful.
+- The matrix stiffness relationship is the finite element form of Hooke’s law:
+  \[
+  \mathbf F=\mathbf K\mathbf D
+  \]
+- The initial two-node bar element is homogeneous and prismatic, has constant \(E\) and \(A\), carries axial force only, and has one axial displacement degree of freedom at each node.
+- Loads are initially restricted to nodes. A transverse load applied within a bar element would introduce shear and bending, violating the axial-only formulation.
+- Each element has a local axis running from local node 1 to local node 2. A global coordinate system describes the complete structure, with element orientation used to transform between the two systems.
+- For \(p(x)=0\) with constant \(E\) and \(A\), the axial displacement is linear, while strain, stress, and normal force are constant within an element.
+- Shape functions act as position-dependent weights. They both construct the element formulation and recover internal behaviour from solved nodal displacements.
+- If \(d_1=d_2\), the element undergoes rigid-body translation without deformation. Consequently, strain, stress, and internal force are zero.
+- The unconstrained bar stiffness matrix is singular because rigid-body translation remains possible. A suitable displacement boundary condition is required for a unique solution.
+- A varying cross-section can be approximated using multiple short, piecewise-prismatic elements. Refinement improves the representation of continuously varying geometry.
 
 ## Equations and worked patterns
 
-- Axial normal stress:
+- Uniform axial bar:
   \[
-  \sigma=\frac{N}{A}
-  \]
-  where \(N\) is internal axial force and \(A\) is cross-sectional area.
-
-- Hollow circular cross-sectional area:
-  \[
-  A=\frac{\pi}{4}\left(D_o^2-D_i^2\right),\qquad D_i=D_o-2t
+  \delta=\frac{PL}{AE},
+  \qquad
+  P=\frac{AE}{L}\delta,
+  \qquad
+  k=\frac{AE}{L}
   \]
 
-- Planar static equilibrium:
+- Axial-bar governing equation:
   \[
-  \sum F_x=0,\qquad \sum F_y=0,\qquad \sum M=0
+  -\frac{d}{dx}\left(EA\frac{du}{dx}\right)=p(x)
+  \]
+  The precise distributed-load sign depends on the adopted convention. For the zero-load case used in Lecture 3:
+  \[
+  \frac{d}{dx}\left(EA\frac{du}{dx}\right)=0
   \]
 
-- For a cantilever of length \(L\), fixed at \(x=0\), with tip load \(P\), the lecture’s sign convention gives:
+- With constant \(E\), constant \(A\), and \(p(x)=0\):
   \[
-  M(x)=-P(L-x)=-PL+Px
-  \]
-  Therefore:
-  \[
-  M(0)=-PL,\qquad M(L)=0,\qquad \frac{dM}{dx}=P
+  EA\frac{d^2u}{dx^2}=0
   \]
 
-- Euler–Bernoulli moment-curvature relation:
+- Apply the nodal conditions:
   \[
-  EI\frac{d^2v}{dx^2}=M(x)
-  \]
-  The sign can vary with the selected moment, curvature, and displacement conventions.
-
-- Fixed-end cantilever boundary conditions:
-  \[
-  v(0)=0,\qquad \frac{dv}{dx}(0)=0
+  u(0)=d_1,
+  \qquad
+  u(L)=d_2
   \]
 
-- Tip-loaded cantilever result magnitudes:
+- Starting from \(u(x)=a_0+a_1x\):
   \[
-  \delta_{\text{tip}}=\frac{PL^3}{3EI},\qquad
-  \theta_{\text{tip}}=\frac{PL^2}{2EI}
+  a_0=d_1,
+  \qquad
+  a_1=\frac{d_2-d_1}{L}
   \]
 
-- General FEA workflow:
-  1. Discretise the domain into elements and nodes.
-  2. Define element behaviour and degrees of freedom.
-  3. Assemble the element equations into a global system.
-  4. Apply loads and boundary conditions.
-  5. Solve for unknown nodal quantities.
-  6. Recover element-level forces, stresses, strains, moments, or shears.
+- Linear displacement interpolation:
+  \[
+  u(x)=\left(1-\frac{x}{L}\right)d_1+\frac{x}{L}d_2
+  \]
+
+- Shape functions:
+  \[
+  \psi_1(x)=1-\frac{x}{L},
+  \qquad
+  \psi_2(x)=\frac{x}{L}
+  \]
+  with:
+  \[
+  \psi_1+\psi_2=1
+  \]
+
+- Recover element behaviour:
+  \[
+  \Delta L=d_2-d_1
+  \]
+  \[
+  \varepsilon=\frac{du}{dx}=\frac{d_2-d_1}{L}
+  \]
+  \[
+  \sigma=E\varepsilon
+  =E\frac{d_2-d_1}{L}
+  \]
+  \[
+  N=A\sigma
+  =\frac{EA}{L}(d_2-d_1)
+  \]
+
+- Element end forces:
+  \[
+  F_1=\frac{EA}{L}(d_1-d_2),
+  \qquad
+  F_2=\frac{EA}{L}(d_2-d_1)
+  \]
+  Therefore \(F_1=-F_2\) when no distributed axial load acts.
+
+- Element stiffness matrix:
+  \[
+  \begin{bmatrix}
+  F_1\\
+  F_2
+  \end{bmatrix}
+  =
+  \frac{EA}{L}
+  \begin{bmatrix}
+  1 & -1\\
+  -1 & 1
+  \end{bmatrix}
+  \begin{bmatrix}
+  d_1\\
+  d_2
+  \end{bmatrix}
+  \]
+
+- Worked interpolation pattern from Lecture 3:
+  \[
+  L=1\ \text{m},\qquad d_1=0.1\ \text{m},\qquad d_2=0.2\ \text{m}
+  \]
+  gives:
+  \[
+  u(0.25L)=0.125\ \text{m},\quad
+  u(0.5L)=0.150\ \text{m},\quad
+  u(0.75L)=0.175\ \text{m}
+  \]
+  This consists of \(0.1\ \text{m}\) rigid-body translation plus \(0.1\ \text{m}\) extension.
 
 ## Warnings and deadlines
 
-- A computer-based test was stated to be scheduled for the evening of Tuesday 18 August 2026, early in week 6.
-- Assignment 1 was described as due shortly after the term break.
-- Five quizzes worth 1% each were expected to begin after the week-5 lecturer change.
-- Assignment 2 was described as due in early October.
-- A minimum final-examination mark of 40% was stated as necessary to pass the course overall.
-- The assessment schedule remained provisional until the end of week 2.
-- Exact test-resource rules were unclear. The summary indicates that laboratory code, and possibly a self-prepared reference page, may be permitted, but this must be confirmed using official course instructions.
-- Eigenvalue buckling gives an idealised elastic critical load. Lecture 1 did not cover imperfections, residual stress, material nonlinearity, or nonlinear post-buckling effects.
-- Boundary conditions and degrees of freedom must match the physical structure; incorrect restraints can invalidate the model.
+- The first computer-based test was stated as Tuesday 18 August, in Week 6, and worth 25%.
+- Laboratory code is intended to support the test. The laboratories carry no direct grade but are important preparation.
+- Assignment 1 was stated as worth 10% and due shortly after the term break or early in Week 7.
+- Online quizzes were stated to total 5%, but their exact timing was inconsistent in the source summary and must be confirmed officially.
+- Assignment 2 was described as due on 13 October or in the final week of semester; confirm the official schedule.
+- Passing requirements stated in Lecture 2 were at least 40% in the final examination and at least 50% overall.
+- The assessment schedule was described in Lecture 1 as provisional until the end of Week 2.
+- Permitted test materials were not captured reliably enough to confirm. Check the official assessment instructions.
+- Do not explicitly invert \(\mathbf K\) in implementation merely because \(\mathbf D=\mathbf K^{-1}\mathbf F\) can be written formally. Use a linear-system solver.
+- NumPy’s `A @ B` or `np.matmul(A, B)` performs matrix multiplication; `A * B` performs element-wise multiplication.
+- A solver warning about rigid-body modes, insufficient constraints, or automatically added weak springs indicates a boundary-condition problem that should be investigated rather than ignored.
 
 ## Recall questions
 
-1. What are the main steps for converting a continuous structure into a finite element model?
-2. Why is equilibrium sufficient for a statically determinate structure but insufficient for a statically indeterminate one?
-3. Under what assumptions does an axial truss element carry no shear force or bending moment?
-4. What additional actions and degrees of freedom are introduced by a flexural beam element?
-5. What role do shape functions play between finite element nodes?
-6. How can one-dimensional elements represent a two- or three-dimensional structure?
-7. For the tip-loaded cantilever, how is \(M(x)=-P(L-x)\) obtained, and what are its values at \(x=0\) and \(x=L\)?
-8. What boundary conditions must be applied when integrating the cantilever moment-curvature equation?
-9. Why might a global line-element model be preferable to a complete 3D solid model?
-10. Why should coarse- and fine-mesh results be compared?
+1. What are the principal stages from structural discretisation to physical interpretation of an FEA result?
+2. Which assumptions define the initial two-node axial bar element?
+3. Why would a transverse load applied between the nodes violate the axial-bar assumptions?
+4. How are the shape functions \(\psi_1=1-x/L\) and \(\psi_2=x/L\) derived from the nodal displacement conditions?
+5. Why does a linear displacement field produce constant strain within the element?
+6. How are strain, stress, and normal force recovered from \(d_1\) and \(d_2\)?
+7. What physical behaviour occurs when \(d_1=d_2\), and why does it produce no internal force?
+8. Why is the unconstrained axial-bar stiffness matrix singular, and what modelling action removes that singularity?
+9. Why might several piecewise-prismatic elements represent a tapered bar better than one linear element?
+10. Why must finite element results still be checked physically even when the numerical solver converges?
 
 ## Practice priorities
 
-1. Refresh Python matrix entry, matrix multiplication, linear-algebra manipulation, and plotting before later finite element laboratories.
-2. Practise identifying whether a structure is statically determinate or indeterminate and explaining what additional equations are required.
-3. Classify supports as fixed, free, pinned, roller, knife-edge, or slotted, then identify the restrained and unrestrained degrees of freedom.
-4. Derive the bending-moment function for a tip-loaded cantilever and apply the fixed-end boundary conditions.
-5. Review axial stress and hollow circular-section area calculations.
-6. Rehearse the full discretise–assemble–constrain–solve–recover FEA workflow.
-7. Compare axial truss and flexural beam elements by their connections, loads, degrees of freedom, and internal actions.
-8. Participate actively in computer laboratories because the resulting code and skills are intended to support the week-6 test.
+1. Derive the two linear shape functions from \(u(0)=d_1\) and \(u(L)=d_2\) without referring to notes.
+2. Differentiate the interpolated displacement to recover strain, then derive stress, normal force, end forces, and the \(2\times2\) stiffness matrix.
+3. Demonstrate algebraically that the rigid-body vector \(c[1\ \ 1]^T\) produces zero element force.
+4. Practise identifying local node order, the positive local axis, nodal degrees of freedom, and signs of tension or compression.
+5. Work small interpolation problems at \(x=0.25L\), \(0.5L\), and \(0.75L\).
+6. Practise distinguishing rigid-body translation from deformation using the relative displacement \(d_2-d_1\).
+7. Review NumPy array copying, matrix assembly, matrix multiplication, linear-system solution, scientific notation, and readable output formatting.
+8. For any solved model, check equilibrium, support conditions, displacement direction, force signs, units, and whether the chosen element assumptions match the loading.
 
 ## Missing or incomplete
 
-- Lecture 2: missing summary.
-- Lecture 3: missing summary.
-- Lecture 4: missing summary.
-- No concepts, equations, examples, or deadlines from Lectures 2–4 can be included or inferred.
-- Some Lecture 1 timetable details and test-resource rules were unclear in the underlying transcript and require confirmation from official course information.
+- Lecture 4: `missing_summary`.
+- Consequently, no Lecture 4 concepts, equations, examples, warnings, or deadlines are included.
+- The distributed-load sign convention differs between the Lecture 2 and Lecture 3 presentations; the zero-distributed-load formulation is unaffected.
+- Exact quiz dates, Assignment 2 timing, laboratory timetable details, and test-material rules require confirmation from official course information.
 
 ## Source manifest
 
 - Lecture 1 (echo-lecture-1-1): complete; summary `2c8ccdce8568cc671739a4c19a27d1ddba6cc99644f848e3d5e60ac2d811ec61`; transcript `5b5cc30b8aee1409c1a3e520c3d03c1ac22a04e1a6c4bbd4565867a041c05e4b`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENME302-26S2/summaries/lecture_01_summary.md`
-- Lecture 2 (echo-lecture-2-2): missing_summary; summary `missing`; transcript `missing`; summary path `missing`
-- Lecture 3 (echo-lecture-3-3): missing_summary; summary `missing`; transcript `missing`; summary path `missing`
+- Lecture 2 (echo-lecture-2-2): complete; summary `6c2d654a4ba5b49990a4c28a57876f57edde8ecf57dae071a262155ea8c50cf2`; transcript `5217ec0795bda3c3cccff1ec79a5b5450196ed96b82e1bea1bf1b277ec274ff5`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENME302-26S2/summaries/lecture_02_summary.md`
+- Lecture 3 (echo-lecture-3-3): complete; summary `b2cf529a2ee003c3fdef687770a09173305c8d9ecbe64db35453876692eff8d6`; transcript `f0f7245ffdffa2b8cdac1cc73a98b4a01078bdf7d1fcd84760fdb0b09e0b4d45`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENME302-26S2/summaries/lecture_03_summary.md`
 - Lecture 4 (echo-lecture-4-4): missing_summary; summary `missing`; transcript `missing`; summary path `missing`
