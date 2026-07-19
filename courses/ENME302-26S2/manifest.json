@@ -4,11 +4,11 @@
   "profile": "Computational mechanics",
   "counts": {
     "lectures": 48,
-    "resources": 1,
+    "resources": 5,
     "assignments": 0,
-    "transcripts": 3,
-    "summaries": 3,
+    "transcripts": 4,
+    "summaries": 4,
     "pipeline_failures": 0
   },
-  "generated_at": "2026-07-19T12:32:25.732916+12:00"
+  "generated_at": "2026-07-19T20:35:22.391986+12:00"
 }
