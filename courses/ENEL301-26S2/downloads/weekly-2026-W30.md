@@ -1,77 +1,86 @@
 <!-- week-id: 2026-W30 -->
-<!-- generated-at: 2026-07-24T23:43:01.936245+12:00 -->
+<!-- generated-at: 2026-07-25T00:19:09.027417+12:00 -->
 # ENEL301-26S2 weekly summary
 
 ## Coverage
 
-- Week: 2026-W30, from 2026-07-20T00:00:00+12:00 to 2026-07-24T23:41:42.354928+12:00.
-- Verified source covered: Lecture 4, focused on bias, diversity, culture, group dynamics, ethical decision-making, codes of conduct, and ethical data or artificial-intelligence use.
-- Lecture 3: missing summary.
+Week 2026-W30 covered:
+
+- Lecture 3: engineering, organisational capability, leadership, relationships, sustainability, bicultural practice, and Meridian Energy case studies.
+- Lecture 4: bias, diversity, culture, conformity, groupthink, codes of conduct, and ethical data or artificial-intelligence use.
+- Source files reviewed:
+  - `lecture_03_summary.md`
+  - `lecture_04_summary.md`
 
 ## Main concepts
 
-- Heuristics are useful mental shortcuts, but can produce cognitive bias when they distort judgement.
-- Stereotypes are generalised beliefs about groups. Explicit bias is openly expressed; implicit bias is hidden or unconscious.
-- Sunk-cost fallacy involves continuing a failing course of action because resources have already been invested.
-- Confirmation bias causes people to notice or seek information supporting an existing belief.
-- Guru bias gives excessive authority to senior, wealthy, experienced, or apparently successful people.
-- Diversity includes differences in identity, personality, culture, values, beliefs, communication, knowledge, and ethical perspectives.
-- Group averages should not be treated as deterministic descriptions of individuals.
-- Hofstede’s cultural dimensions discussed were power distance, individualism versus collectivism, uncertainty avoidance, masculinity versus femininity, long-term orientation, and indulgence versus restraint.
-- Hofstede’s model has limitations because it was based on IBM employees, used national averages, and may overlook subcultures and cultural change.
-- Conformity can cause people to align with a group even when the group is clearly wrong.
-- Groupthink occurs when pressure for agreement suppresses critical evaluation.
-- Groupthink symptoms include illusions of invulnerability, collective rationalisation, belief in inherent morality, stereotyped views of outsiders, pressure on dissenters, self-censorship, an illusion of unanimity, and mindguards.
-- Effective collaboration requires communication, active listening, diverse perspectives, risk identification, and processes that protect dissent.
-- Codes of conduct establish collective ethical standards but may become incomplete or centrist through consensus.
-- Ethical data governance requires scrutiny of consent, privacy, security, data use, retention, sharing, bias, accuracy, accountability, and possible harm.
-- Generative artificial intelligence can produce false, offensive, or biased outputs, creating risks when used in employment or health-related decisions.
+- Engineering change is not solely technical. It also depends on leadership, relationships, organisational behaviour, cultural capability, and intergenerational responsibility.
+- Technical capability enables change, but relationships sustain it through trust, communication, follow-through, and shared decision-making.
+- Engineering organisations should preserve technical knowledge, institutional memory, cultural understanding, stakeholder relationships, and succession pathways.
+- Freshwater and infrastructure should be considered within wider ecological, cultural, social, and intergenerational systems.
+- Treaty-honouring practice requires practical changes to planning, asset access, environmental management, project development, and partnership processes.
+- Consultation is distinct from ongoing partnership. Partnership requires continued communication, shared aspirations, and commitment after an agreement is reached.
+- Cultural engagement can be a design input that changes a project’s users, scope, interface, accessibility requirements, and success criteria.
+- Heuristics speed up decisions but can create cognitive bias when they distort judgement or cause decisions unsupported by evidence.
+- Stereotypes, explicit bias, and implicit bias can affect ethical decisions even when unfair treatment is not intentional.
+- Diversity includes differences in identity, personality, values, culture, communication, experience, and ethical perspective.
+- Hofstede’s cultural dimensions provide a comparison framework but have limitations: the original sample was based on IBM employees, national averages do not describe every individual, countries contain multiple subcultures, and cultures change over time.
+- Conformity can cause people to support an obviously incorrect group judgement.
+- Groupthink occurs when pressure for agreement suppresses critical evaluation, dissent, and warnings.
+- Cohesion can improve performance but can also increase groupthink if agreement becomes more important than scrutiny.
+- Effective teams require active listening, diverse perspectives, structured challenge, and leaders who deliberately protect dissent.
+- Codes of conduct provide ethical baselines but may become incomplete or centrist through consensus-based drafting.
+- Ethical data governance requires scrutiny of consent, privacy, security, data sharing, retention, accuracy, bias, identifiability, and potential harm.
 
 ## Equations and worked patterns
 
-- No mathematical equations were clearly presented in the source.
-- Worked reasoning patterns:
-  - For a suspected sunk-cost decision, disregard unrecoverable past expenditure and reassess the remaining costs, benefits, risks, and evidence.
-  - For a group decision, actively identify dissenting views, challenge assumptions, and check whether apparent agreement reflects self-censorship.
-  - For a data or wearable-device decision, inspect consent, data collected, recipients, retention, reuse, accuracy, bias, liability, withdrawal, and deletion provisions before accepting the agreement.
+- No reliable mathematical equations were presented in either source.
+- Worked reasoning patterns supported by the lectures:
+  - For organisational change, assess technical, operational, cultural, relational, safety, environmental, and stakeholder requirements together.
+  - For engineering decisions involving cultural or environmental obligations, identify affected parties, communicate early, adapt the process to local conditions, and reassess competing requirements.
+  - For bias-sensitive decisions, separate evidence from assumptions, test whether group averages are being applied to individuals, and actively seek disconfirming information.
+  - For group decisions, create explicit opportunities for dissent, identify risks, challenge assumptions, and check whether apparent consensus reflects self-censorship.
+  - For wearable or AI-enabled data systems, inspect consent, data collection, recipients, retention, reuse, accuracy, bias, liability, withdrawal, and deletion provisions before accepting the system.
 
 ## Warnings and deadlines
 
-- No verified deadlines were provided in the source summary.
-- Several names, examples, Māori terms, research findings, and historical details were identified as uncertain or requiring verification against lecture slides or course materials.
-- Do not use the uncertain generative-AI example, company names, or Māori terminology in assessment work without checking the original course material.
-- The source indicates that a critique of Hofstede’s model and a data-ethics question involving a smartwatch may have been assigned, but the exact task wording, due date, readings, and requirements were not verified.
+- No confirmed deadlines were provided in the two source files.
+- Lecture 3 noted that tutorial rooms had reportedly changed at short notice; the timetable should be checked before the next tutorial.
+- Attendance was expected for the bicultural workshops.
+- Lecture 4 reportedly assigned a critique of Hofstede’s model and a smartwatch data-ethics question. The exact task wording, readings, and due dates were not specified in the source and should be checked in LEARN.
+- Several names, Māori terms, numerical claims, company details, research findings, and case-study details in the source summaries are marked as requiring verification before assessment use.
 
 ## Recall questions
 
-1. How can a useful heuristic become a cognitive bias?
-2. What is the difference between a stereotype, explicit bias, and implicit bias?
-3. How does the sunk-cost fallacy distort engineering project decisions?
-4. How does confirmation bias affect the information a decision-maker notices?
-5. What are the six Hofstede cultural dimensions discussed in the lecture?
-6. Why should national or demographic averages not be applied automatically to individuals?
-7. What was the purpose of the Asch conformity experiments?
-8. What are the eight symptoms of groupthink?
-9. How can a team normalise dissent and reduce conformity?
-10. What ethical questions should be asked before accepting a smartwatch data agreement?
+1. Why is organisational transition not solely a technical problem?
+2. What does the statement “technical capability enables change, but relationships sustain it” mean?
+3. How can cultural engagement change the scope and success criteria of an engineering design?
+4. Why should freshwater be considered as more than an engineering input?
+5. What is the difference between consultation and an ongoing partnership?
+6. How can a useful heuristic become a cognitive bias?
+7. What is the difference between explicit bias and implicit bias?
+8. What are the main symptoms and risks of groupthink?
+9. How can an engineering team deliberately normalise dissent?
+10. What ethical questions should be asked before accepting a smartwatch or AI system that processes health and location data?
 
 ## Practice priorities
 
-1. Define and distinguish the major biases: sunk-cost, confirmation, guru, explicit, and implicit bias.
-2. Practise analysing an engineering decision for evidence of groupthink and identify safeguards against it.
-3. Memorise the six Hofstede dimensions, then explain the limitations of using the model.
-4. Apply the lecture’s collaboration principles to a design-review scenario involving disagreement with a senior engineer.
-5. Build an ethical data checklist covering consent, privacy, sharing, retention, accuracy, bias, liability, withdrawal, and deletion.
-6. Review how codes of conduct can establish useful standards while still omitting minority, environmental, cultural, or other less-centrist perspectives.
-7. Recheck all uncertain terminology and examples against the official lecture materials before using them in assessed work.
+- Compare technical capability with cultural and relational capability using the Meridian examples.
+- Practise explaining how whole-system or mountain-to-sea thinking changes an engineering decision.
+- Analyse the tuna or eel transfer programme as an example of technical adaptation responding to ecological and cultural responsibilities.
+- Apply sunk-cost, confirmation, and guru bias to engineering project or design-review scenarios.
+- Memorise and explain the six Hofstede dimensions, together with the model’s limitations.
+- Learn the eight groupthink symptoms and connect each to a practical engineering safeguard.
+- Practise constructing a decision process that protects dissent and challenges apparent consensus.
+- Evaluate a data-driven engineering or AI system using consent, privacy, bias, accuracy, liability, retention, and misuse criteria.
+- Review the uncertain case-study names, Māori terminology, research claims, and numerical details against the original lecture materials before using them in assessed work.
 
 ## Missing or incomplete
 
-- Lecture 3: missing_summary.
-- No equations were clearly recoverable from the Lecture 4 summary.
-- Some Lecture 4 terminology and factual examples remain incomplete or uncertain and require verification against the original slides, audio, or course materials.
+- No lectures were identified as missing or incomplete for 2026-W30.
+- Equations were not reliably recoverable from either source summary.
 
 ## Source manifest
 
-- Lecture 3 (echo-lecture-3-3): missing_summary; summary `missing`; transcript `missing`; summary path `missing`
+- Lecture 3 (echo-lecture-3-3): complete; summary `36ca2376e6871091c3f0f6894824240d495d6f604553c3fb8bfe931194b6e929`; transcript `dbbab59fa5db6789e1a8f5fcc86bf816d204bbca44f8a98e45fdf2be1e61747b`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENEL301-26S2/summaries/lecture_03_summary.md`
 - Lecture 4 (echo-lecture-4-4): complete; summary `421015eaa087ec5cb254befdbcc6213a528403e2de2a067dbcbac69b4debbdb0`; transcript `0580c4e1c2a52dd6303732a70b7897a4a1625f514de80651b86b3d9c74ec6be7`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENEL301-26S2/summaries/lecture_04_summary.md`

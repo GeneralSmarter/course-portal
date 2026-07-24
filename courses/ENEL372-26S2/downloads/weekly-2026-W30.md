@@ -1,171 +1,192 @@
 <!-- week-id: 2026-W30 -->
-<!-- generated-at: 2026-07-24T23:43:55.149354+12:00 -->
+<!-- generated-at: 2026-07-25T00:20:13.197745+12:00 -->
 # ENEL372-26S2 weekly summary
 
 ## Coverage
 
-- Week: 2026-W30, from 2026-07-20T00:00:00+12:00 to 2026-07-24T23:41:42.354928+12:00.
-- Source available: Lecture 5 summary, focused on practical buck-converter design for the ENEL372 solar car project.
-- Lecture 4: missing summary.
-- Lecture 6: missing summary.
-- No other lecture content is represented in the available source.
+Week 2026-W30 covered Lectures 4–6:
+
+- Lecture 4: solar-car project requirements, solar-panel and motor characteristics, buck-converter operation, maximum-power-point control, project workflow, and assessment requirements.
+- Lecture 5: continuous and discontinuous conduction, inductor and capacitor sizing, switching-frequency selection, input filtering, component ratings, and practical buck-converter design.
+- Lecture 6: MOSFET gate driving, low-side switching, TL494 and CMOS inverter arrangements, PWM polarity, and the introduction of the boost converter.
+
+Coverage interval: 2026-07-20T00:00:00+12:00 to 2026-07-25T00:17:32.686121+12:00.
 
 ## Main concepts
 
-- Continuous conduction mode (CCM) occurs when inductor current remains above zero throughout the switching cycle.
-- Discontinuous conduction mode (DCM) occurs when inductor current reaches zero and remains there for part of the cycle.
-- The CCM/DCM boundary occurs when the minimum inductor current is zero. For triangular ripple, the boundary condition is approximately:
-  - \(I_{\text{out}}=\Delta I_L/2\)
-- CCM is preferred because it generally provides:
-  - More predictable feedback-control behaviour.
-  - Lower peak and RMS currents.
-  - Better efficiency.
-  - Smaller filtering components.
-  - Reduced \(di/dt\), \(dv/dt\), and electrical noise.
-- In ideal CCM operation, buck-converter output voltage is approximately proportional to duty ratio.
-- In DCM, voltage gain becomes dependent on load current and other circuit parameters, making control more difficult.
-- Increasing switching frequency reduces the required inductance and capacitance, but increases switching, magnetic, and thermal losses and makes parasitics and layout more significant.
-- The project guidance gives an approximate switching-frequency range of 20–100 kHz:
-  - Below approximately 20 kHz, audible switching noise may occur.
-  - Around or above approximately 100 kHz, breadboard and Vero-board parasitics become increasingly important.
-- Output-capacitor sizing is determined by the permitted output-voltage ripple and the inductor-current ripple.
-- An input capacitor reduces the ripple seen by a non-ideal source. This is particularly important for the solar-panel source, which is treated as behaving more like a current source than an ideal voltage source.
-- Physical design must account for voltage ratings, peak and RMS currents, inductor saturation, capacitor ripple-current ratings, conduction losses, switching losses, and thermal management.
-- The worst-case duty ratio for expressions containing \(D(1-D)\) is approximately \(D=0.5\).
+- The solar-car propulsion path is:
+  solar panel → buck converter → permanent-magnet DC motor.
+- The buck converter must keep the solar panel near its maximum-power-point voltage while transferring useful power to the motor.
+- Directly connecting the panel to the motor is unsuitable because the panel provides relatively low current at a higher voltage, while the motor requires substantially higher starting current at a lower voltage.
+- A buck converter changes the voltage/current combination and acts conceptually as an impedance-matching device.
+- The solar-panel maximum power point is near the knee of its nonlinear I–V curve and varies with illumination and temperature.
+- Closed-loop control measures panel voltage, compares it with an MPP reference, processes the error through a PI controller, and adjusts PWM duty ratio.
+- Continuous conduction mode is preferred because it provides more predictable control behaviour, generally lower current stress, lower noise, and better efficiency than discontinuous conduction mode.
+- The worst-case buck-converter design condition often occurs near \(D=0.5\), because \(D(1-D)\) is maximised there.
+- Higher switching frequency reduces required inductance and capacitance but increases switching, magnetic, EMI, layout, and thermal challenges. The project guidance was approximately 20–100 kHz.
+- An input capacitor is important because the solar panel behaves more like a current source than an ideal voltage source. The capacitor reduces input current and voltage ripple.
+- An enhancement-mode N-channel MOSFET requires sufficiently positive \(V_{GS}\) to turn on fully and achieve low \(R_{DS(\text{on})}\).
+- Low-side switching simplifies N-channel MOSFET gate drive because the source remains near the panel negative/reference.
+- The MOSFET gate behaves approximately as a capacitance, requiring short-duration source and sink current pulses for fast switching.
+- A CMOS inverter provides low output impedance in both logic states, but it inverts PWM polarity. An additional inversion may be required.
+- The ideal boost converter stores energy in the inductor while the switch is closed and transfers it to the output when the switch opens.
 
 ## Equations and worked patterns
 
-- Ideal CCM buck relationship:
+- Solar-panel power:
+  \[
+  P=VI
+  \]
+  The maximum-power point is where \(VI\) is greatest. [Lecture 4]
+
+- Ideal buck power balance:
+  \[
+  V_{\text{in}}I_{\text{in}}=V_{\text{out}}I_{\text{out}}
+  \]
+  A real converter has:
+  \[
+  P_{\text{out}}=\eta P_{\text{in}}
+  \]
+  where \(\eta<1\). [Lecture 4]
+
+- Ideal CCM buck voltage relationship:
   \[
   V_{\text{out}}=DV_s
   \]
+  [Lecture 5]
+
+- CCM boundary:
+  \[
+  I_{\text{out}}=\frac{\Delta I_L}{2}
+  \]
+  Safe CCM operation requires:
+  \[
+  I_{\text{out}}>\frac{\Delta I_L}{2}
+  \]
+  [Lecture 5]
 
 - Inductor-current ripple:
   \[
-  \Delta I_L\approx\frac{V_{\text{out}}(1-D)}{Lf_s}
+  \Delta I_L=\frac{V_{\text{out}}(1-D)}{Lf_s}
   \]
-
-- Equivalent source-voltage form:
-  \[
-  \Delta I_L\approx\frac{V_sD(1-D)}{Lf_s}
-  \]
+  [Lecture 5]
 
 - Minimum inductance for CCM:
   \[
   L_{\min}\geq\frac{V_{\text{out}}(1-D)}{2I_{\text{out}}f_s}
   \]
-
-- Equivalent source-voltage form:
+  Using \(V_{\text{out}}=DV_s\):
   \[
   L_{\min}\geq\frac{V_sD(1-D)}{2I_{\text{out}}f_s}
   \]
 
-- Worst-case inductance estimate at \(D=0.5\):
+- Worst case at \(D=0.5\):
   \[
   L_{\min,\text{worst}}\geq\frac{V_s}{8I_{\text{out}}f_s}
   \]
+  [Lecture 5]
 
-- Capacitor current and voltage relationship:
-  \[
-  i_C=C\frac{dv_C}{dt}
-  \]
-  \[
-  \Delta V_C=\frac{1}{C}\int i_C\,dt
-  \]
-
-- Approximate output-voltage ripple for triangular capacitor current:
+- Output-voltage ripple approximation:
   \[
   \Delta V_{\text{out}}\approx\frac{\Delta I_L}{8C_{\text{out}}f_s}
   \]
+  [Lecture 5]
 
-- Combined output-ripple expression:
+- Input-voltage ripple approximation:
   \[
-  \Delta V_{\text{out}}\approx
-  \frac{V_{\text{out}}(1-D)}
-  {8LC_{\text{out}}f_s^2}
+  \Delta V_{\text{in}}\approx\frac{I_{\text{out}}D(1-D)}{C_{\text{in}}f_s}
+  \]
+  At \(D=0.5\):
+  \[
+  C_{\text{in}}\geq\frac{I_{\text{out}}}{4f_s\Delta V_{\text{in}}}
+  \]
+  [Lecture 5]
+
+- Lecture 5 design pattern:
+  For a 12 V to 8 V, 2 A buck converter at 80 kHz, use \(V_{\text{out}}=DV_s\) to determine duty ratio, then size \(L\), \(C_{\text{out}}\), and \(C_{\text{in}}\) against ripple and CCM requirements. The lecture summary reports guidance of \(L>16.7\,\mu\text{H}\), \(C_{\text{out}}>39\,\mu\text{F}\), and \(C_{\text{in}}>46\,\mu\text{F}\); these values should be checked against the fully worked course solution.
+
+- MOSFET gate-source voltage:
+  \[
+  V_{GS}=V_G-V_S
+  \]
+  [Lecture 6]
+
+- Inductor relationship:
+  \[
+  v_L=L\frac{di_L}{dt}
+  \]
+  [Lecture 6]
+
+- Boost converter, switch closed:
+  \[
+  v_{L,\text{on}}=V_S
+  \]
+  \[
+  \Delta i_{L,\text{on}}=\frac{V_SDT}{L}
   \]
 
-- Ideal power balance:
+- Boost converter volt-second balance:
   \[
-  V_{\text{out}}I_{\text{out}}=V_sI_S
+  V_SDT+(V_S-V_{\text{out}})(1-D)T=0
   \]
 
-- Using the ideal buck relationship:
+- Ideal boost-converter voltage ratio:
   \[
-  I_S=DI_{\text{out}}
+  V_{\text{out}}=\frac{V_S}{1-D}
   \]
-
-- Input-node current balance:
-  \[
-  i_C=I_S-i_1
-  \]
-
-- Approximate input-voltage ripple:
-  \[
-  \Delta V_{\text{in}}\approx
-  \frac{I_{\text{out}}D(1-D)}
-  {C_{\text{in}}f_s}
-  \]
-
-- Worst-case input-capacitance estimate at \(D=0.5\):
-  \[
-  C_{\text{in}}\geq
-  \frac{I_{\text{out}}}
-  {4f_s\Delta V_{\text{in}}}
-  \]
-
-- Worked-design pattern from the lecture:
-  - Given \(V_s=12\text{ V}\), \(V_{\text{out}}=8\text{ V}\), \(I_{\text{out}}=2\text{ A}\), and \(f_s=80\text{ kHz}\), first determine duty ratio using the ideal CCM buck relationship.
-  - Then select \(L\) to keep the converter safely inside CCM.
-  - Select \(C_{\text{out}}\) for the permitted output ripple.
-  - Select \(C_{\text{in}}\) for the permitted input ripple.
-  - The summary records the stated guidance \(L>16.7\,\mu\text{H}\), \(C_{\text{out}}>39\,\mu\text{F}\), and \(C_{\text{in}}>46\,\mu\text{F}\). These values were not presented as a fully verified worked solution in the source.
+  Increasing \(D\) increases the ideal output voltage. [Lecture 6]
 
 ## Warnings and deadlines
 
-- No deadlines or assessment dates are stated in the available Lecture 5 summary.
-- The summary identifies several equations as reconstructed from local ASR and recommends checking them against the lecture slides or audio before assessment use.
-- Capacitor-current sign conventions and voltage-ripple definitions may not be fully reliable in the source.
-- The exact recommended switching frequency within the approximate 20–100 kHz range is not stated.
-- The lecture’s numerical component values should be checked against the promised fully worked solution on Learn.
-- Designing exactly at the CCM/DCM boundary is discouraged. Practical margin is needed for component tolerances, operating variation, and load changes.
-- Component ratings must exceed expected operating voltage, peak current, RMS current, ripple-current, and saturation requirements.
-- Higher switching frequency can increase losses, noise, layout sensitivity, and thermal-management requirements.
+- Closed-loop feedback is required for full project marks. Open-loop operation is only a temporary development aid. [Lecture 4]
+- Begin hardware development while simulation work is progressing. Delaying construction reduces time available for troubleshooting.
+- Breadboards are unsuitable for the final inspection because connections may be intermittent. Use Veroboard or a PCB for the final implementation.
+- The final circuit must include an accessible current-probe loop for measuring inductor current.
+- The total project capacitance is limited to 350 µF.
+- Component voltage, peak-current, RMS-current, saturation-current, ripple-current, and thermal ratings must be checked before construction.
+- Avoid operating below approximately 20 kHz because audible switching noise may occur. Frequencies near or above 100 kHz require more careful layout and parasitic management.
+- Reported project dates from Lecture 4, to be confirmed against official course information:
+  - Simulation submission: Friday 21 August, worth 5%.
+  - Group hardware inspection: Wednesday–Friday around 23 September; attendance is compulsory for an inspection mark.
+  - Group design report: Monday 12 October, worth 15%.
+  - Peer/self-assessment: Tuesday 13 October, according to the lecture sequence.
+- The lecture stated restricted AI-use rules for the project: AI may assist with permitted suggestions, construction/testing suggestions, proofreading, editing, or summarising, but must not write the project work or answer inspection questions. Prompts and uses must be declared. Confirm the exact rules in the official assignment instructions.
 
 ## Recall questions
 
-1. What condition distinguishes CCM from DCM in terms of inductor current?
-2. Why does the CCM/DCM boundary correspond to \(I_{\text{out}}=\Delta I_L/2\) for triangular ripple?
-3. Give four reasons the lecture prefers CCM over DCM.
-4. How does entering DCM affect converter gain and feedback control?
-5. Derive the minimum inductance expression required to maintain CCM.
-6. Why is \(D=0.5\) the worst-case duty ratio for the \(D(1-D)\) term?
-7. What are the main trade-offs when increasing switching frequency?
-8. Why does the lecture caution against switching below approximately 20 kHz and above approximately 100 kHz for the project prototype?
-9. Why is an input capacitor important when the source is a solar panel or is physically distant from the converter?
-10. What voltage, current, ripple-current, saturation, and thermal ratings must be checked before selecting converter components?
+1. What is the propulsion power path in the ENEL372 solar car, and what is the separate purpose of the battery?
+2. Why does direct connection of the solar panel to the motor fail to provide a suitable operating point?
+3. What is the control objective of the closed-loop buck converter: direct motor-voltage regulation, or solar-panel maximum-power-point operation?
+4. Why is continuous conduction mode preferred over discontinuous conduction mode for this project?
+5. What does \(D(1-D)\) imply about the worst-case duty ratio for inductor-sizing calculations?
+6. Why does increasing switching frequency reduce required inductance but create additional practical problems?
+7. Why is an input capacitor particularly important when the source is a solar panel?
+8. Why is low-side placement simpler for an enhancement-mode N-channel MOSFET than high-side placement?
+9. What problem does the CMOS inverter solve in the MOSFET gate-drive circuit, and what new PWM-polarity issue does it introduce?
+10. Using the ideal boost relationship, how does increasing duty ratio affect \(V_{\text{out}}\), and what assumptions underlie that relationship?
 
 ## Practice priorities
 
-1. Practise identifying CCM, DCM, and the boundary condition from inductor-current waveforms.
-2. Derive and apply the inductor-ripple and minimum-inductance equations.
-3. Use \(V_{\text{out}}=DV_s\) to determine duty ratio for ideal CCM buck designs.
-4. Evaluate why \(D=0.5\) is used for worst-case component sizing.
-5. Size output capacitance from an allowed output-voltage-ripple requirement, while noting the triangular-waveform approximation.
-6. Size input capacitance using the simplified solar-panel source model and permitted input-voltage ripple.
-7. Compare switching-frequency choices by considering component size, losses, noise, parasitics, and layout.
-8. Review the 12 V to 8 V, 2 A, 80 kHz design example, but verify its numerical component values against the course material before relying on them.
-9. Check component selection against peak current, RMS current, voltage, saturation, ripple-current, and thermal requirements.
+1. Draw the complete solar-car power and control block diagram, including panel-voltage measurement, PI control, PWM generation, gate drive, buck converter, and motor.
+2. Explain the panel–converter–motor mismatch using approximate panel and motor voltage/current characteristics.
+3. Practise CCM buck calculations:
+   - Determine \(D\) from \(V_{\text{out}}=DV_s\).
+   - Calculate \(\Delta I_L\).
+   - Determine the minimum \(L\).
+   - Add design margin above the CCM boundary.
+4. Size \(C_{\text{out}}\) for a specified output-ripple target and \(C_{\text{in}}\) for a permitted panel-voltage ripple.
+5. Compare switching-frequency choices within the project’s approximate 20–100 kHz guidance, including losses, noise, component size, and layout difficulty.
+6. Check MOSFET gate-drive polarity through both the TL494 output stage and CMOS inverter. Verify that the final gate signal has the intended effective duty relationship.
+7. Review MOSFET gate charging/discharging, peak driver-current requirements, \(V_{GS}\), and \(R_{DS(\text{on})}\).
+8. Derive the ideal boost-converter ratio from inductor volt-second balance and identify the assumptions that make the result idealised.
+9. Confirm all reported project dates, component part numbers, AI-use restrictions, and Lecture 5 design-example values against the official course documentation before relying on them.
 
 ## Missing or incomplete
 
-- Lecture 4: missing_summary.
-- Lecture 6: missing_summary.
-- Lecture 5 design example: introduced but not fully worked in the source summary.
-- Several Lecture 5 equations and capacitor-ripple details are reconstructed from ASR and require verification against slides or audio.
+None.
 
 ## Source manifest
 
-- Lecture 4 (echo-lecture-4-4): missing_summary; summary `missing`; transcript `missing`; summary path `missing`
+- Lecture 4 (echo-lecture-4-4): complete; summary `a66d4de4837e17d9b104301c89f19c8a477e8a9bca1de1e54d2b1920279cbcca`; transcript `133a6d9e3791eb9f56a0a1b2c90a3caee571e2a5b55abc836b0c0e38ead8fae4`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENEL372-26S2/summaries/lecture_04_summary.md`
 - Lecture 5 (echo-lecture-5-5): complete; summary `b8e52cb33eee7c9e396a14b0f788fb5765231927649841e39c9767479b365f97`; transcript `d4663f84f8b94302ef64deb106254c3fc601ae602cfe963fcac4a9490bd9e4bc`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENEL372-26S2/summaries/lecture_05_summary.md`
-- Lecture 6 (echo-lecture-6-6): missing_summary; summary `missing`; transcript `missing`; summary path `missing`
+- Lecture 6 (echo-lecture-6-6): complete; summary `d0ac2016f1f64aad3205ed99eea31f322e92e6acb8dcfa76d1fb5d738cd437e3`; transcript `e1ebf4a1684e9685b0a6a2c265d85f3f8bc1cd7a0a26bde2d1fd40c5c1448e0f`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENEL372-26S2/summaries/lecture_06_summary.md`

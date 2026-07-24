@@ -1,155 +1,254 @@
 <!-- week-id: 2026-W30 -->
-<!-- generated-at: 2026-07-24T23:42:27.670568+12:00 -->
+<!-- generated-at: 2026-07-25T00:18:28.778152+12:00 -->
 # ENME302-26S2 weekly summary
 
 ## Coverage
 
-- Week: 2026-W30, from 2026-07-20T00:00:00+12:00 to 2026-07-24T23:41:42.354928+12:00.
-- Source coverage: Lecture 7 only.
-- Lecture 7 focused on finite-element analysis of two-dimensional pin-jointed bar and truss structures, including assembly, coordinate transformations, solving, post-processing, and Python implementation.
-- Lectures 5, 6, and 8 are known to be missing summaries.
+Week 2026-W30 covered Lectures 5–8, from 2026-07-20T00:00:00+12:00 to 2026-07-25T00:17:32.686121+12:00.
+
+The lectures developed the finite-element method for two-dimensional axial bar and pin-jointed truss structures:
+
+- Weak-form derivation of the two-node axial bar element.
+- Shape functions and displacement interpolation.
+- Local element stiffness matrices.
+- Local and global coordinate systems.
+- Coordinate transformation of element matrices.
+- Assembly matrices and structural connectivity.
+- Assembly and solution of the global stiffness system.
+- Recovery of element forces, strains, stresses, and support reactions.
+- Physical interpretation and verification using free-body diagrams.
+- Computational implementation and plotting of deformed structures.
+- Preview of extensions to bending and shear elements.
 
 ## Main concepts
 
-- A two-dimensional bar element has four global-coordinate displacement components: two translations at each node.
-- The finite-element workflow is:
-  1. Number the global degrees of freedom.
-  2. Define local element stiffness matrices.
-  3. Transform element matrices according to orientation.
-  4. Assemble the element contributions into the global stiffness matrix.
-  5. Apply loads and boundary conditions.
-  6. Solve for global displacements.
-  7. Extract element quantities and calculate forces, strains, reactions, and deformed geometry.
-- The assembly matrix maps element degrees of freedom to global degrees of freedom. It is used both to assemble stiffness contributions and to extract element displacements.
-- Local coordinates are aligned with an element; global coordinates are shared by the complete structure.
-- Element orientation affects the transformation matrix. Element connectivity affects the assembled global contribution.
-- Elements with identical material, area, and length can have identical local stiffness matrices but different assembled contributions because they connect to different global degrees of freedom.
-- Horizontal and vertical elements may produce uncoupled equations in the selected coordinates, while inclined elements generally introduce coupling.
-- Fixed or supported degrees of freedom have prescribed zero displacement.
-- Numerical results must be interpreted using geometry, supports, coordinate directions, force directions, and free-body diagrams.
-- For a two-node axial bar, equal-and-opposite end forces directed toward the element indicate compression; forces directed away from the element indicate tension.
-- A non-zero calculated displacement at a fixed support indicates a likely error in assembly, transformation, degree-of-freedom numbering, boundary conditions, or sign conventions.
-- In Python, trigonometric functions require angles in radians. Deformation plots may use a visual magnification factor, which does not alter the physical solution.
+- A two-node bar element represents axial deformation only. It has no bending or rotational degrees of freedom.
+- The weak form requires the governing equation to hold in an integrated sense over the element.
+- Integration by parts reduces derivative order and produces boundary terms associated with nodal forces.
+- Shape functions interpolate the continuous displacement field from nodal displacement values.
+- For a uniform bar, stiffness depends on \(E\), \(A\), and \(L\), principally through \(EA/L\).
+- Local coordinates follow the element axis. Global coordinates are fixed to the overall structure.
+- The transformation matrix accounts for element orientation using sine and cosine terms.
+- The assembly matrix is separate from the transformation matrix:
+  - Transformation changes coordinate representation.
+  - Assembly maps element quantities into structural degree-of-freedom locations.
+- Assembly matrices contain zeros and ones. Their non-zero positions encode connectivity.
+- An all-zero assembly-matrix column indicates an element degree of freedom associated with a constrained structural direction.
+- An all-zero row indicates that the element has no direct connection to that global degree of freedom.
+- The global stiffness matrix includes element properties, geometry, orientations, connectivity, and supports.
+- Solving the global system gives the unknown structural displacements. Element forces, strains, stresses, and reactions are obtained during post-processing.
+- Free-body diagrams are required to interpret force signs and check whether results are physically plausible.
+- Reversing an element’s node order changes intermediate matrices and local quantities, but not the final physical response if all mappings and signs are updated consistently.
+- Global force components are useful for combining reactions from differently oriented elements. Local axial forces are useful for calculating bar stress and sizing.
+- Pin supports constrain both planar translations. A roller constrains one direction while allowing movement in the other, according to the support orientation.
+- Linear shape functions give a linearly varying internal displacement for the bar element.
+- The finite-element workflow remains applicable when extending to elements with bending moments and shear, although the degrees of freedom and matrices become more complex.
 
 ## Equations and worked patterns
 
-- Global stiffness equation:
-  
-  `K_G q = Q`
+For a two-node bar element with local coordinate \(x\) measured from node 1 to node 2:
 
-  where `K_G` is the assembled global stiffness matrix, `q` is the global displacement vector, and `Q` is the global applied-force vector. The source warns that notation and capitalisation should be checked against the official course material.
+\[
+N_1(x)=1-\frac{x}{L},\qquad
+N_2(x)=\frac{x}{L}
+\]
 
-- Local two-node axial-bar stiffness matrix:
+The interpolated axial displacement is:
 
-  `K_e = (EA/L) [[1, -1], [-1, 1]]`
+\[
+u(x)=N_1(x)d_1+N_2(x)d_2
+\]
 
-  where `E` is Young’s modulus, `A` is cross-sectional area, and `L` is element length.
+At the midpoint:
 
-- Two-dimensional element displacement vector:
+\[
+u\left(\frac{L}{2}\right)=\frac{d_1+d_2}{2}
+\]
 
-  `d_e = [u_1, v_1, u_2, v_2]^T`
+The axial strain is:
 
-  or the equivalent course-specific ordering.
+\[
+\varepsilon=\frac{du}{dx}
+=\frac{d_2-d_1}{L}
+\]
 
-- Assembly and extraction relation:
+Equivalently:
 
-  `d_e = A_e^T q`
+\[
+\varepsilon=\frac{\Delta L}{L}
+\]
 
-  where `A_e` is the assembly matrix for element `e`.
+Positive strain represents extension or tension. Negative strain represents shortening or compression.
 
-- Local element force relation:
+For a linearly elastic bar:
 
-  `f_e = K_e d_e`
+\[
+\sigma=E\varepsilon
+\]
 
-  The exact transformed-coordinate relation depends on the course definition of the transformation matrix.
+The local element stiffness matrix is:
 
-- Diagonal length in the square-grid example:
+\[
+\mathbf{k}^{(e)}
+=
+\frac{EA}{L}
+\begin{bmatrix}
+1 & -1\\
+-1 & 1
+\end{bmatrix}
+\]
 
-  `L_diagonal = √(10² + 10²) = 10√2 ≈ 14.1 m`
+The local element equation is:
 
-- Axial strain:
+\[
+\mathbf{f}^{(e)}
+=
+\mathbf{k}^{(e)}\mathbf{d}^{(e)}
+\]
 
-  `ε = (D2 − D1) / L`
+For an inclined two-dimensional element, the global stiffness matrix is formed from the transformation matrix:
 
-  The source indicates that `L` should represent the original element length for the small-deformation formulation, but advises checking the official course notes.
+\[
+\mathbf{K}^{(e)}
+=
+\boldsymbol{\Lambda}^{T}
+\mathbf{k}^{(e)}
+\boldsymbol{\Lambda}
+\]
 
-- Deformed node coordinates:
+The assembly process is:
 
-  `x' = x + q_x`
+\[
+\mathbf{K}_{g,e}
+=
+\mathbf{A}_e
+\widehat{\mathbf{k}}_e
+\mathbf{A}_e^T
+\]
 
-  `y' = y + q_y`
+\[
+\mathbf{K}_g
+=
+\sum_e
+\mathbf{A}_e
+\widehat{\mathbf{k}}_e
+\mathbf{A}_e^T
+\]
 
-- Magnified plotting coordinates:
+The global force vector is assembled as:
 
-  `x'_plot = x + mag q_x`
+\[
+\mathbf{Q}
+=
+\sum_e
+\mathbf{A}_e\widehat{\mathbf{f}}_e
+\]
 
-  `y'_plot = y + mag q_y`
+The structural system has the form:
 
-  The magnification factor is for visualisation only.
+\[
+\mathbf{K}_g\mathbf{q}
+=
+\mathbf{Q}
+\]
 
-- Worked pattern for a multi-element truss:
-  - Construct each local stiffness matrix from `E`, `A`, and `L`.
-  - Apply the element orientation.
-  - Define the element-to-global degree-of-freedom mapping.
-  - Assemble the global stiffness matrix.
-  - Apply loads and boundary conditions.
-  - Solve the global system.
-  - Extract element displacements.
-  - Calculate element forces and strains.
-  - Check reactions, support displacements, signs, and physical equilibrium.
+Element displacement extraction follows the assembly mapping:
+
+\[
+\mathbf{d}_e
+=
+\mathbf{A}_e^T\mathbf{q}
+\]
+
+Element forces can then be recovered using:
+
+\[
+\widehat{\mathbf{f}}_e
+=
+\widehat{\mathbf{k}}_e
+\mathbf{A}_e^T\mathbf{q}
+\]
+
+For a hollow circular section:
+
+\[
+A=\frac{\pi}{4}\left(D_o^2-D_i^2\right),
+\qquad
+D_i=D_o-2t
+\]
+
+A reliable worked pattern is:
+
+1. Define geometry, material, and cross-sectional properties.
+2. Assign allowable structural degrees of freedom from the supports.
+3. Define each element’s local stiffness matrix.
+4. Define element orientations and transformation matrices.
+5. Transform element matrices into global coordinates.
+6. Construct assembly matrices from connectivity.
+7. Assemble the global stiffness and force vectors.
+8. Solve for global nodal displacements.
+9. Extract element displacements.
+10. Calculate element forces, strains, stresses, and support reactions.
+11. Check equilibrium, support constraints, signs, and the deformed shape.
+
+For a square-grid diagonal with equal horizontal and vertical dimensions \(a\):
+
+\[
+L_{\text{diagonal}}
+=
+\sqrt{a^2+a^2}
+=
+a\sqrt{2}
+\]
 
 ## Warnings and deadlines
 
-- No deadlines were identified in the available Lecture 7 summary.
-- The source is based on a local ASR transcript and reports uncertainty in matrix notation, force units, element numbering, node labels, load directions, displacement values, and transformation-matrix definitions.
-- Confirm the official notation and transformation matrices against the course slides or laboratory material before graded use.
-- Confirm the structural diagram, support locations, element numbering, and load directions before relying on the worked problem.
-- Interpret force signs relative to the local coordinate system and free-body diagram; signs alone are insufficient.
-- Ensure angles are converted from degrees to radians before using Python trigonometric functions.
-- Distinguish alternating coordinate labels from plotting arrays, where x-values and y-values must be grouped separately.
-- Do not treat a magnified deformation plot as the actual physical deformation.
+- No deadlines or assessment dates were stated in the four source summaries.
+- Degree-of-freedom numbering must be based on possible structural motion and support constraints, not only on the particular load case.
+- A free or insufficiently constrained structure can produce a singular global stiffness system.
+- Transformation and assembly matrices must use consistent element orientation, node ordering, global numbering, and sign conventions.
+- A non-zero displacement at a fixed support indicates an error in the boundary conditions, degree-of-freedom numbering, transformation, assembly, or vector extraction.
+- A reaction in a direction that a support cannot resist is a major warning sign.
+- Element-force signs must be interpreted using the local coordinate system and a free-body diagram; the sign alone is not sufficient.
+- Angles supplied in degrees must be converted to radians before use with Python trigonometric functions.
+- Use one consistent magnification factor for all nodes and directions when plotting deformation. Magnification changes only the visualisation.
+- Matrix dimensions alone may not detect errors when different matrices happen to be dimensionally compatible. Check the physical meaning of the entries and the resulting equilibrium.
+- The summaries contain inconsistent notation in places for local/global displacement and force vectors. Confirm the course’s exact symbols and ordering before assessed calculations or coding.
+- Numerical values from illustrative worked examples should be checked against the corresponding course diagrams and notes before reuse.
 
 ## Recall questions
 
-1. What are the main stages of the finite-element workflow for a two-dimensional pin-jointed structure?
-2. What does the assembly matrix map, and why can it be used both for assembly and extraction?
-3. How many displacement degrees of freedom does a two-dimensional bar element have?
-4. What information is included in the local stiffness matrix, and what additional information is added by transformation and assembly?
-5. Why can elements with identical local stiffness matrices have different assembled global contributions?
-6. How is the diagonal length calculated for a `10 m × 10 m` square grid?
-7. How should equal-and-opposite element-end forces be interpreted as tension or compression?
-8. What possible implementation errors could cause a non-zero displacement at a fixed support?
-9. Why must element orientation angles be supplied in radians to Python trigonometric functions?
-10. How is axial strain calculated from the relative local displacement of an element’s two nodes?
+1. What limitations of the work-energy method motivated the use of virtual displacement?
+2. How does the weak form differ from the strong form of the governing equation?
+3. Why is integration by parts used in the bar-element derivation?
+4. What physical deformation can a two-node axial bar element represent, and which degrees of freedom does it omit?
+5. Write the two linear shape functions and explain their values at the two nodes.
+6. How is the global element stiffness matrix obtained from the local stiffness matrix?
+7. What is the difference between a transformation matrix and an assembly matrix?
+8. What do the zero and non-zero entries of an assembly matrix represent?
+9. Why can the global stiffness matrix be singular?
+10. How are element forces, strains, stresses, and support reactions obtained after solving the global displacement system?
 
 ## Practice priorities
 
-1. Recreate the finite-element workflow for a simple two-element bar structure.
-2. Practise numbering global and element degrees of freedom and constructing the assembly matrix.
-3. Separate the roles of local stiffness, coordinate transformation, assembly, and global summation.
-4. Check how element orientation changes the transformed stiffness matrix, especially for inclined members.
-5. Practise extracting element displacement vectors from a solved global displacement vector.
-6. Calculate element forces and strains, then interpret their signs with a free-body diagram.
-7. Perform physical checks: zero displacement at fixed supports, force equilibrium at nodes, and equal-and-opposite axial end forces.
-8. Implement the workflow using reusable Python functions for local stiffness, transformations, assembly, solving, and post-processing.
-9. Verify degree-to-radian conversion and distinguish plotting coordinate order from displayed coordinate labels.
-10. Compare finite-element results with an independently solved simple example where the official course material provides reference values.
+1. Derive the local \(2\times2\) bar stiffness matrix from the linear shape functions.
+2. Practise assigning structural degrees of freedom from pin and roller support conditions.
+3. Construct transformation matrices for horizontal, vertical, reversed, and inclined elements.
+4. Assemble a multi-element global stiffness matrix using element connectivity.
+5. Solve the global system and extract each element’s displacement vector.
+6. Calculate local axial strain and stress from the relative displacement of the element ends.
+7. Interpret equal-and-opposite element-end forces as tension or compression using free-body diagrams.
+8. Check support reactions and nodal force equilibrium in global coordinates.
+9. Verify midpoint displacement using the shape-function interpolation.
+10. Implement the workflow with reusable element functions, consistent radian angles, matrix operations, and a single deformation magnification factor.
 
 ## Missing or incomplete
 
-- Lecture 5: missing summary.
-- Lecture 6: missing summary.
-- Lecture 8: missing summary.
-- Within Lecture 7, the following remain incomplete or uncertain in the source:
-  - Exact transformation-matrix form and notation.
-  - Exact global and element vector notation.
-  - Structural diagrams, support locations, element numbering, and load directions.
-  - Some numerical force and displacement values, including units and signs.
-  - Exact Python function names and implementation details.
+None. All lectures identified for 2026-W30, Lectures 5–8, were covered.
 
 ## Source manifest
 
-- Lecture 5 (echo-lecture-5-5): missing_summary; summary `missing`; transcript `missing`; summary path `missing`
-- Lecture 6 (echo-lecture-6-6): missing_summary; summary `missing`; transcript `missing`; summary path `missing`
+- Lecture 5 (echo-lecture-5-5): complete; summary `2f0a220270f6cf76c5f2ea3122454396a280ef423504965cd8c66cb0986fc13a`; transcript `f74ea90f63fd7e849c70c44aec0f7cbbe8576f5dea8e49127cdaa530b8df2c31`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENME302-26S2/summaries/lecture_05_summary.md`
+- Lecture 6 (echo-lecture-6-6): complete; summary `f6914586bd08ced9c04f3e32074af53d49b1c9cfd968afccf03eeae363a358ba`; transcript `5c1cc5d0fd40e9f4584f93f789913f7fe4560b57bae0b845e1fd18f1360d8ab4`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENME302-26S2/summaries/lecture_06_summary.md`
 - Lecture 7 (echo-lecture-7-7): complete; summary `fc511e7e302eb6e8bdc2a5512ad9ae81810f02bc6ea52fae7e47a289e08f78bb`; transcript `ef8be63a5e990258aa1b573f86b319c8435ffbfc59500f375684c2a7772ee5ea`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENME302-26S2/summaries/lecture_07_summary.md`
-- Lecture 8 (echo-lecture-8-8): missing_summary; summary `missing`; transcript `missing`; summary path `missing`
+- Lecture 8 (echo-lecture-8-8): complete; summary `b52bda88ff7e7e1ecd67ed990ad5ba97323bb31aa9bdc9fdb870ae788b2ca0f2`; transcript `0625f492958f4f7cdfbf41fe3ec5b3a6e511503c48bef10fdc1af8a9cb670f5f`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENME302-26S2/summaries/lecture_08_summary.md`
