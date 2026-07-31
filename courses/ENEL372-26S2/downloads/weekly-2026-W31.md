@@ -1,182 +1,196 @@
 <!-- week-id: 2026-W31 -->
-<!-- generated-at: 2026-07-30T10:47:53.303938+12:00 -->
+<!-- generated-at: 2026-07-31T12:10:08.920359+12:00 -->
 # ENEL372-26S2 weekly summary
 
 ## Coverage
 
-- Week: 2026-W31, from 2026-07-27T00:00:00+12:00 to 2026-07-30T10:45:03.767182+12:00.
-- Source covered: ENEL372-26S2 Lecture 7 summary.
-- Lecture 7 completes boost-converter analysis and basic design considerations, introduces the buck-boost converter, and begins non-ideal switch-mode converter behaviour.
-- Topics covered include inductor-current continuity, capacitor sizing and ripple, buck-boost conversion, conduction and switching losses, capacitor ESR/ESL, inductor winding resistance, start-up transients, and soft starting.
+- Week: 2026-W31, covering 2026-07-27T00:00:00+12:00 to 2026-07-31T12:07:17.712755+12:00.
+- Sources covered:
+  - Lecture 7: boost and buck-boost converters, non-ideal components, losses, and start-up behaviour.
+  - Lecture 8: magnetic materials, magnetic circuits, hysteresis, eddy currents, and reluctance.
+  - Lecture 9: practical power-inductor design using core, winding, saturation, and air-gap constraints.
+- All listed lectures are represented by verified summary files.
 
 ## Main concepts
 
-- An ideal boost converter increases voltage according to:
-  \[
-  \frac{V_{\text{out}}}{V_s}=\frac{1}{1-D}
-  \]
-- The boost-converter inductor remains connected to the input, so its average current corresponds to the source current rather than directly to the output current.
-- Boost-converter continuous conduction requires the minimum inductor current to remain above zero. At the boundary:
-  \[
-  I_{s,\text{avg}}=\frac{\Delta i_L}{2}
-  \]
-- The worst-case boost inductance requirement occurs at \(D=0.5\), where \(D(1-D)\) is largest.
-- Discontinuous conduction causes higher peak currents, greater electrical noise, lower efficiency, and potentially higher switch-current ratings. Its limited benefit is a slightly higher voltage-boosting ratio.
-- In a boost converter, the output capacitor supplies the load while the diode is not conducting, causing output-voltage ripple.
-- The conventional buck-boost converter is inverting and can either step voltage down or step voltage up:
-  - \(D<0.5\): output-voltage magnitude is lower than the input.
-  - \(D=0.5\): output and input magnitudes are equal.
-  - \(D>0.5\): output-voltage magnitude is higher than the input.
-- Ideal converter analysis assumes zero conducting-switch voltage, zero diode forward voltage, instantaneous switching, and ideal inductors and capacitors.
-- Conduction loss results from current through a finite device drop or resistance. Switching loss results from simultaneous non-zero switch voltage and current during transitions.
-- Conduction losses tend to dominate at lower switching frequencies. Switching losses become increasingly important as switching frequency rises.
-- Capacitor ESR causes voltage drop, heating, power loss, and increased ripple. ESL can contribute to ringing and abnormal waveforms through parasitic resonance.
-- Inductor winding resistance reduces boost-converter output voltage, particularly at high duty ratios.
-- Start-up can produce large voltage and current spikes. Soft starting limits stress by gradually increasing duty ratio from zero.
+- A boost converter raises output voltage according to the ideal continuous-conduction ratio \(V_{\text{out}}/V_s=1/(1-D)\).
+- Boost-converter continuous conduction requires the minimum inductor current to remain above zero. The worst-case inductance requirement occurs at \(D=0.5\).
+- The boost output capacitor supplies the load while the diode is not conducting, causing output-voltage ripple.
+- The inverting buck-boost converter can step voltage up or down in magnitude:
+  - \(D<0.5\): step-down magnitude.
+  - \(D>0.5\): step-up magnitude.
+  - Output polarity is opposite to the input.
+- Real switches, diodes, capacitors, and inductors introduce voltage drops, conduction losses, switching losses, ESR, ESL, winding resistance, heating, and waveform distortion.
+- Soft starting reduces start-up current and voltage stress by gradually increasing duty ratio.
+- Magnetic domains align under an applied magnetising force. Excessive alignment leads to magnetic saturation.
+- Hysteresis and eddy currents are the two core-loss mechanisms explicitly discussed.
+- Magnetic circuits use the analogy:
+  - MMF corresponds to voltage or EMF.
+  - Reluctance corresponds to resistance.
+  - Magnetic flux corresponds to current.
+- Air gaps dominate the reluctance when high-permeability ferrite is used. They also store most of the magnetic energy in a gapped inductor.
+- Power-inductor design must satisfy both electrical requirements and physical constraints:
+  - Required inductance and peak current.
+  - Maximum flux density.
+  - Core area and magnetic path.
+  - Wire current density and winding fit.
+  - Required air-gap length.
 
 ## Equations and worked patterns
 
-- Switching period:
+- Boost-converter voltage ratio:
   \[
-  T_s=\frac{1}{f_s}
+  \frac{V_{\text{out}}}{V_s}=\frac{1}{1-D}
   \]
 
-- Inductor relationship:
-  \[
-  v_L=L\frac{di_L}{dt}
-  \]
-
-  For approximately constant inductor voltage:
-  \[
-  \Delta i_L=\frac{v_L}{L}\Delta t
-  \]
-
-- Boost inductor-current ripple during switch-on:
+- Boost inductor-current ripple:
   \[
   \Delta i_L=\frac{V_sD}{f_sL}
   \]
 
-- Ideal boost power balance:
+- Boost continuous-conduction condition:
   \[
-  V_sI_s=V_{\text{out}}I_{\text{out}}
+  I_s>\frac{\Delta i_L}{2}
   \]
 
-  Combining this with the ideal boost voltage ratio:
-  \[
-  I_s=\frac{I_{\text{out}}}{1-D}
-  \]
-
-- Boost continuous-conduction inductance condition:
+- Inferred minimum boost inductance:
   \[
   L>\frac{V_sD(1-D)}{2f_sI_{\text{out}}}
   \]
+  The factor \(D(1-D)\) is largest at \(D=0.5\).
 
-  Worked pattern:
-  1. Determine \(V_s\), \(D\), \(f_s\), and \(I_{\text{out}}\).
-  2. Evaluate the boundary inductance from the expression.
-  3. Select an inductance greater than the boundary value so the minimum current remains above zero.
-  4. Check the duty ratio near \(D=0.5\), where the requirement is worst.
-
-- Capacitor voltage change:
-  \[
-  i_C=C\frac{dv_C}{dt}
-  \]
-
-  For approximately constant capacitor current:
-  \[
-  \Delta v_C=\frac{i_C\Delta t}{C}
-  \]
-
-- Boost output-voltage ripple:
+- Boost and buck-boost output-voltage ripple under the stated assumptions:
   \[
   \Delta V_{\text{out}}\approx\frac{I_{\text{out}}D}{f_sC}
   \]
 
-  Worked pattern:
-  1. Identify the interval during which the capacitor supplies the load.
-  2. Approximate the load current as constant over that interval.
-  3. Use the capacitor-current relationship to obtain the ripple magnitude.
-  4. Recognise that the approximation assumes sufficiently large capacitance and small voltage change per switching period.
-
-- Ideal buck-boost conversion ratio:
+- Ideal inverting buck-boost ratio:
   \[
   \frac{V_{\text{out}}}{V_s}=-\frac{D}{1-D}
   \]
 
-  The negative sign indicates reversed output polarity. The magnitude is:
+- Magnetic flux and flux density:
   \[
-  \left|V_{\text{out}}\right|=V_s\frac{D}{1-D}
+  \Phi=BA
+  \]
+  \[
+  B=\mu_0\mu_rH
   \]
 
-  Worked pattern:
-  1. Use the switch-closed interval to determine the inductor current increase.
-  2. Use the switch-open interval to determine the current decrease.
-  3. Apply steady-state inductor volt-second balance.
-  4. Interpret the sign separately from the voltage magnitude.
-
-- Conduction loss:
+- Magnetic-circuit relationships:
   \[
-  p=vi
+  \text{MMF}=NI
   \]
-  For a resistive model:
   \[
-  P_{\text{cond}}=I_{\text{rms}}^2R
+  \Phi=\frac{NI}{\mathcal{R}}
+  \]
+  \[
+  \mathcal{R}=\frac{l}{\mu_0\mu_rA}
   \]
 
-- Switching loss:
+- Inductance from magnetic reluctance:
   \[
-  E_{\text{sw}}=\int v_Q(t)i_Q(t)\,dt
-  \]
-  \[
-  P_{\text{sw,avg}}\approx f_sE_{\text{sw}}
+  L=\frac{N^2}{\mathcal{R}}
   \]
 
-- Capacitor ESR loss:
+- Turns-area design:
   \[
-  P_{\text{ESR}}=I_{\text{rms}}^2R_{\text{ESR}}
+  (NA)_{\min}=\frac{LI_{\max}}{B_{\max}}
+  \]
+  \[
+  N_{\min}=\frac{(NA)_{\min}}{A_E}
+  \]
+  Round the selected number of turns up to a practical integer.
+
+- Representative inductor design pattern:
+  - \(I_{\text{avg}}=1\text{ A}\)
+  - \(\Delta I_L=200\text{ mA}\)
+  - \(I_{\max}=1.1\text{ A}\)
+  - \(L=1\text{ mH}\)
+  - \(B_{\max}=0.3\text{ T}\)
+  - \(A_E=63\text{ mm}^2\)
+  - \((NA)_{\min}\approx3.7\times10^{-3}\text{ turn}\cdot\text{m}^2\)
+  - \(N_{\min}\approx58.2\), so the lecture selected \(N=60\) turns.
+
+- Wire sizing guideline:
+  \[
+  J=\frac{I_{\text{RMS}}}{A_{\text{wire}}}
+  \]
+  Using \(J\approx5\text{ A/mm}^2\):
+  \[
+  A_{\text{wire}}\geq\frac{I_{\text{RMS}}}{5}
+  \]
+  For a circular conductor:
+  \[
+  A_{\text{wire}}=\frac{\pi d^2}{4}
   \]
 
-- The exact boost-converter equation including inductor winding resistance was not recoverable from the source. Use only the supported qualitative result: increasing \(R_L\) reduces output voltage, and the output eventually decreases with increasing duty ratio at high \(D\).
+- Required reluctance:
+  \[
+  \mathcal{R}_{\text{required}}=\frac{N^2}{L}
+  \]
+
+- Two-gap approximation:
+  \[
+  \mathcal{R}\approx\frac{2l_g}{\mu_0A_E}
+  \]
+  \[
+  l_g=\frac{\mathcal{R}\mu_0A_E}{2}
+  \]
+  The representative design produced approximately \(l_g=142\,\mu\text{m}\) per gap.
 
 ## Warnings and deadlines
 
-- No deadlines or assessment dates were identified in the source summary.
-- The exact equation for boost-converter behaviour with inductor series resistance was not clearly captured. Do not rely on an inferred equation without checking the official lecture material.
-- The non-ideal buck-converter output-voltage equation was reconstructed in the source summary; its exact notation and sign convention should be checked against the lecture slides.
-- The capacitor-ripple expressions use the duty-ratio and interval conventions described in the lecture summary. Confirm the course convention if applying them in assessed work.
-- The approximately 100 kHz switching-frequency guidance was mentioned in connection with a solar-car project and should be confirmed against official project requirements before use.
-- The non-ideal and start-up sections are mainly qualitative. Detailed transient analysis was identified as outside the lecture’s scope.
+- No deadlines were stated in the three source summaries.
+- The Lecture 9 numerical values are explicitly representative and are not necessarily the student project values.
+- The exact boost-converter equation including inductor winding resistance was not recoverable from the Lecture 7 source.
+- The reconstructed non-ideal buck-converter equation and the capacitor-ripple expressions should be checked against official course material before being used for final design work.
+- The approximately \(100\text{ kHz}\) switching-frequency recommendation was described as project-specific guidance and should be confirmed against the official project requirements.
+- The Lecture 8 E-core reluctance expression depends on the exact core drawing, gap placement, and notation.
+- The \(5\text{ A/mm}^2\) wire-current-density value is a simplified guideline, not a complete thermal or winding-design analysis.
+- Final inductor construction requires confirmation of core datasheet conditions, saturation behaviour, temperature, insulation, winding window, and packing constraints.
+- Design below the absolute saturation limit. Lecture 9 used approximately \(300\text{ mT}\) rather than the stated approximate \(320\text{ mT}\) saturation-related value to provide headroom.
 
 ## Recall questions
 
-1. Why is the average boost-converter inductor current associated with the source current?
-2. Derive the boost inductor-current ripple expression from \(v_L=L\,di_L/dt\).
-3. What condition defines the boundary between continuous and discontinuous conduction?
-4. Why is \(D=0.5\) the worst-case duty ratio for the boost-converter inductance requirement?
-5. During which interval does the boost output capacitor supply the load?
-6. Why does the conventional buck-boost converter produce reversed output polarity?
-7. What are the voltage-magnitude operating regions for a buck-boost converter when \(D<0.5\), \(D=0.5\), and \(D>0.5\)?
-8. What is the difference between conduction loss and switching loss?
-9. How do capacitor ESR and ESL affect practical converter waveforms?
-10. Why does soft starting reduce converter start-up stress?
+1. Why is the average inductor current in a boost converter associated with the input current?
+2. What condition separates continuous from discontinuous inductor-current operation?
+3. Why is \(D=0.5\) the worst-case duty ratio for the boost-converter inductance requirement?
+4. How does the duty ratio determine whether an inverting buck-boost converter steps voltage up or down in magnitude?
+5. What is the difference between conduction loss and switching loss?
+6. Why can an air gap dominate the reluctance of a ferrite-core inductor?
+7. What do MMF, reluctance, and magnetic flux correspond to in the electrical-circuit analogy?
+8. Why must a power-inductor design remain below magnetic saturation?
+9. Starting from \(L=N^2/\mathcal{R}\), how is the minimum turns-area product obtained?
+10. Why must the selected number of turns and conductor diameter be checked against the available winding window?
 
 ## Practice priorities
 
-1. Derive and apply the boost inductor-ripple and continuous-conduction conditions.
-2. Explain why the \(D=0.5\) case is the worst case rather than simply memorising it.
-3. Derive the boost output-capacitor ripple expression from the capacitor-current relationship.
-4. Derive the buck-boost conversion ratio using inductor volt-second balance, including the polarity sign.
-5. Classify buck-boost operation as step-down or step-up from the duty ratio.
-6. Compare conduction loss and switching loss, including how switching frequency changes their relative importance.
-7. Analyse the practical effects of ESR, ESL, and inductor winding resistance.
-8. Distinguish steady-state switching waveforms from start-up transients and explain the purpose of soft starting.
+1. Derive the boost-converter ripple and continuous-conduction inductance condition from \(v_L=L\,di_L/dt\).
+2. Compare boost and buck-boost operation across different duty ratios, including polarity and output-voltage magnitude.
+3. Explain how switching frequency changes the relative importance of conduction and switching losses.
+4. Sketch or describe a \(B\)-\(H\) hysteresis loop, identifying saturation, residual flux density, coercive force, and hysteresis loss.
+5. Use \(\Phi=NI/\mathcal{R}\), \(B=\Phi/A\), and \(L=N^2/\mathcal{R}\) to connect winding current, flux density, inductance, and core geometry.
+6. Repeat the representative inductor-design sequence:
+   - Determine peak current.
+   - Calculate \((NA)_{\min}\).
+   - Determine and round up \(N_{\min}\).
+   - Size the conductor from current density.
+   - Check winding fit.
+   - Calculate required reluctance.
+   - Calculate the air-gap length.
+7. Practise identifying which quantities are project requirements and which Lecture 9 values are illustrative only.
+8. Review the practical consequences of ESR, ESL, winding resistance, start-up transients, and insufficient saturation margin.
 
 ## Missing or incomplete
 
-- No lectures were identified as missing or incomplete for this week.
-- Within the Lecture 7 source, the exact displayed equation for boost-converter inductor series resistance was not recoverable.
-- The exact notation and sign convention for the reconstructed non-ideal buck-converter equation should be verified against the official lecture slides.
+- No lectures are missing or incomplete for this week.
+- Lecture 7 contains an unrecoverable exact equation for boost-converter performance with inductor winding resistance.
+- Lecture 8 does not complete the specific inductor-design procedure; that procedure is developed in Lecture 9.
+- Several exact expressions and project-specific design details should be verified against official course material before hardware construction.
 
 ## Source manifest
 
 - Lecture 7 (echo-lecture-7-7): complete; summary `6d8c702723c456f880d5e3d006cbb96c0d4a66d4389165ca7e9e1113cc49aa05`; transcript `5b61fef6d2c2a40d0d6582b1feee2bff80354463b206282deb1746d8b702ff86`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENEL372-26S2/summaries/lecture_07_summary.md`
+- Lecture 8 (echo-lecture-8-8): complete; summary `b4778c696e7a31abcc442afbc7d9f06360c29a4d435f4adea529e577c0a2a868`; transcript `359249241d80e34e50bfffb9ad7e6424070c80ae877f59af8ad93225670ac626`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENEL372-26S2/summaries/lecture_08_summary.md`
+- Lecture 9 (echo-lecture-9-9): complete; summary `56a4047bb4e090406b11c41353221a87c7cc5b077c3a3d02a36886807d92bc16`; transcript `818b941a4284e46d88fcd929b52cfb9a94e28dd93ccad280b20a2ed6455447bc`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENEL372-26S2/summaries/lecture_09_summary.md`

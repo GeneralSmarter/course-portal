@@ -1,85 +1,96 @@
 <!-- week-id: 2026-W31 -->
-<!-- generated-at: 2026-07-30T10:46:48.686732+12:00 -->
+<!-- generated-at: 2026-07-31T12:09:05.789669+12:00 -->
 # ENEL301-26S2 weekly summary
 
 ## Coverage
 
-- Week: 2026-W31, from 2026-07-27T00:00:00+12:00 to 2026-07-30T10:45:03.767182+12:00.
-- Covered lecture: Lecture 5, focused on intellectual property, especially patents and their relevance to engineering, commercialisation, and technology strategy.
-- Main scope: types of IP, patent rights and limitations, patent strategy, secrecy, patentability requirements, software and AI-related issues, and Māori traditional knowledge and indigenous resources.
+- 2026-W31 covered Lecture 5 and Lecture 6.
+- Lecture 5: patents, patent strategy, patentability requirements, confidentiality, licensing, and New Zealand IP considerations.
+- Lecture 6: copyright, registered designs, trademarks, geographical indications, domain names, ownership, licensing, and enforcement.
+- No lectures were identified as missing or incomplete.
 
 ## Main concepts
 
-- Intellectual property includes inventions, technical improvements, designs, written and creative works, branding, and confidential information.
-- Patents are time-limited, territorial, exclusive legal rights granted in exchange for public disclosure.
-- A patent is primarily a negative legal right: it allows the owner to stop others from performing acts covered by the claims, but does not automatically permit the owner to practise the invention.
-- Patent protection generally concerns function or use. Other rights may protect appearance, branding, creative expression, plant varieties, or circuit layouts.
-- Patent strategy should consider cost, target markets, manufacturing locations, competitors, funding, development timelines, licensing, and commercial objectives.
-- Patent rights are jurisdiction-specific. There is no single worldwide patent.
-- Trade secrets may be preferable where technology is difficult to reverse engineer and confidentiality can be maintained.
-- Patent thicketing involves obtaining successive patents for genuine improvements, potentially creating a network of overlapping commercial rights.
-- Licensing permits another party to use IP under agreed conditions. Cross-licensing involves reciprocal licensing between parties.
-- The four central New Zealand patentability requirements presented were novelty, enablement, inventive step, and credible utility.
-- Public disclosure, non-confidential presentations, commercial sales, public use, and commercial process use may damage novelty. The practical rule was to preserve confidentiality until an appropriate filing strategy has been assessed.
-- Software-related patentability in New Zealand was described as complex. A computer programme “as such” is excluded, while inventions linked to hardware, physical processes, real-world effects, or technical operations may be treated differently.
-- The lecture stated that AI systems cannot currently be listed as inventors merely because they generated an output. The inventorship analysis may differ when AI is used as a tool by a human.
-- Applications involving Māori traditional knowledge, indigenous flora or fauna, or taonga species may raise consultation, kaitiaki, values, and bioprospecting concerns.
+- Intellectual property strategy should match what creates value: technical function, visual appearance, creative expression, brand identity, confidential information, or commercial relationships.
+- Patents generally protect function and technical invention. They are territorial, time-limited negative rights granted in exchange for public disclosure.
+- The four main patentability requirements discussed were novelty, enablement, inventive step, and credible utility.
+- Public disclosure, sale, public use, or non-confidential presentation can threaten patent novelty. The practical rule is to preserve confidentiality until an appropriate filing strategy has been assessed.
+- Trade secrets may be preferable where technology is difficult to reverse engineer and can realistically remain confidential.
+- Patent strategy should consider target markets, manufacturing locations, competitors, development timing, licensing, cost, and commercial objectives.
+- Copyright protects the form of expression, not the underlying idea. It may apply to software, CAD files, engineering drawings, schematics, diagrams, websites, and other technical works.
+- Copyright infringement requires copying or a sufficient causal connection. Independent creation generally avoids copyright infringement.
+- There is no general “10% change” rule. A qualitatively substantial part may be copied even if it is a small proportion of the complete work.
+- Original CAD files, drawings, version histories, design notebooks, source-control records, and contracts can provide evidence of authorship, ownership, development, and independent creation.
+- Registered designs protect visual appearance, including shape, configuration, pattern, and ornamentation. Confidentiality before filing is important because novelty is required.
+- Trademarks distinguish one company’s goods or services from another’s. They can include words, logos, pictures, shapes, sounds, smells, colours, slogans, and packaging forms.
+- Distinctive marks are stronger than descriptive terms. Genericisation can weaken or destroy trademark protection.
+- Company-name registration, trademark registration, domain-name registration, and social-media handle registration are separate matters.
+- IP rights are generally territorial. International strategy must consider where products are made, sold, advertised, used, or directed online.
+- Ownership and licensing arrangements should be recorded in writing, especially for employees, contractors, consultants, commissioned works, reusable software, and collaborative engineering projects.
+- Rights holders generally need to enforce their own IP. A written notice requesting that alleged infringement stop was described as a common initial step in New Zealand.
 
 ## Equations and worked patterns
 
-- No mathematical equations were presented.
-- Patent bargain: public disclosure of an invention in exchange for limited exclusive rights.
-- New Zealand patent term as described in the lecture: 20 years from the filing date of the complete patent specification. The summary notes that the exact statutory calculation should be checked against current legislation.
-- Patentability assessment pattern:
-  1. Is the invention novel against the relevant worldwide prior art?
-  2. Is the invention enabled by the specification?
-  3. Is it non-obvious to a suitably skilled person without hindsight?
-  4. Does it have specific, substantial, and credible utility?
-- Patent-versus-trade-secret pattern:
-  - Patent: disclose the invention and obtain time-limited exclusion rights.
-  - Trade secret: retain confidentiality indefinitely in principle, while accepting the risk of independent discovery, disclosure, or reverse engineering.
-- Commercialisation pattern for an improvement to another patented invention:
-  - Establish whether the improvement is independently patentable.
-  - Determine whether use of the improvement depends on the original patent.
-  - Consider licensing or cross-licensing before commercialisation.
+- No mathematical equations were presented in either lecture.
+- Patent bargain: public disclosure of the invention in exchange for limited exclusive rights.
+- Patent term described for New Zealand: 20 years from the filing date of the complete patent specification. The summary notes that the exact statutory calculation should be checked before reliance.
+- IP-selection pattern:
+  - Technical function → consider patents, confidentiality, and related licensing.
+  - Visual appearance → consider registered design protection.
+  - Creative or technical expression → consider copyright.
+  - Commercial source or brand identity → consider trademarks.
+  - Ownership, reuse, and permitted activity → address through written contracts and licences.
+- Copyright analysis pattern:
+  - Identify the protected work.
+  - Consider objective similarity.
+  - Ask whether a qualitatively substantial part was copied.
+  - Consider whether there was a causal opportunity to copy or an independent creation pathway.
+- Brand-launch pattern:
+  - Search existing marks, businesses, products, domains, and relevant handles.
+  - Confirm ownership of logos, slogans, and other creative assets.
+  - Register important marks in relevant jurisdictions.
+  - Use and police the mark consistently.
 
 ## Warnings and deadlines
 
-- No course deadlines were identified in the source.
-- Preserve confidentiality before filing if an invention may be patentable.
-- Do not assume that New Zealand grace-period provisions preserve international filing options. The lecture noted that jurisdictions differ, including in Asia and Europe.
-- Patent law, filing procedures, software rules, experimental-use exceptions, grace periods, compulsory licensing, Crown use, and Māori advisory processes should be checked against current official New Zealand sources before being relied on.
-- The lecture’s filing and publication timeline was informal and should not be treated as an exact procedural rule.
-- Overseas patent examples, particularly from the United States, should not automatically be applied to New Zealand law.
+- Lecture 5 warned that patent law, software patentability, grace periods, experimental-use exceptions, compulsory licensing, Māori advisory processes, and filing procedures vary by jurisdiction and should be checked against current official sources.
+- Do not rely on a New Zealand grace period when international protection is important, because other countries may not recognise the same period.
+- Lecture 6 warned that online information may describe foreign law, particularly United States law, which may differ from New Zealand law.
+- Preserve original engineering records. Do not overwrite or discard original CAD files, drawings, or design iterations.
+- Keep designs and potentially patentable inventions confidential before filing.
+- Check third-party IP rights before developing, branding, manufacturing, or launching a product.
+- The lecture included a reminder about the bicultural workshop PPR deadline, but no specific deadline date was recorded in the summary.
+- Preparation was noted for the following week’s IP workshop and New Zealand law lectures.
 
 ## Recall questions
 
-1. Why is intellectual property particularly important to engineering practice and commercial value?
-2. Why is a patent described as a negative legal right?
-3. What is exchanged for the exclusive rights provided by a patent?
-4. Why is patent protection territorial rather than worldwide?
-5. What factors should a company consider when deciding where to seek patent protection?
-6. When might a trade secret be preferable to patenting?
-7. What are the four central patentability requirements presented in the lecture?
-8. Why can independent development still result in patent infringement?
-9. What makes a software-related invention more likely to be patentable under the approach described?
-10. Why is public disclosure before filing potentially dangerous?
+1. Why is a patent described as a negative legal right?
+2. What are the four patentability requirements discussed in Lecture 5?
+3. Why can public disclosure before filing damage international patent protection?
+4. When might a trade secret be preferable to a patent?
+5. How does patent protection for function differ from registered design protection for appearance?
+6. What is the difference between an idea and its expression for copyright purposes?
+7. Why is there no general “10% change” rule for avoiding copyright infringement?
+8. Why should engineering teams preserve original CAD files and design iterations?
+9. How does registered design infringement differ from copyright infringement regarding independent creation?
+10. Why are distinctive trademarks generally stronger than descriptive terms?
 
 ## Practice priorities
 
-1. Explain the patent disclosure bargain and the meaning of a negative legal right.
-2. Compare patents, trade secrets, copyright, registered designs, and trademarks by the type of subject matter they protect.
-3. Apply the four patentability requirements to a hypothetical engineering improvement, without inventing legal conclusions beyond the lecture’s framework.
-4. Practise choosing commercially relevant jurisdictions using markets, manufacturing locations, competitors, and cost.
-5. Analyse when licensing or cross-licensing may be needed for an improvement to an existing patented technology.
-6. Compare patenting with secrecy using reverse-engineering risk, confidentiality, disclosure, duration, and commercial value.
-7. Review the distinction between protecting technical function through patents and protecting appearance through registered designs.
-8. Revisit the limits and uncertainties around software patents, AI inventorship, experimental use, grace periods, and Māori traditional knowledge.
+- Compare patents, trade secrets, copyright, registered designs, trademarks, and contracts using a single engineering product with technical, visual, software, and branding elements.
+- Practise identifying whether a scenario concerns function, appearance, expression, brand identity, confidentiality, ownership, or licensing.
+- Apply the four patentability requirements to hypothetical inventions without assuming that independent development restores novelty.
+- Explain why filing and disclosure timing matters for both patents and registered designs.
+- Analyse copyright scenarios using objective similarity, qualitatively substantial copying, causal opportunity, and independent creation.
+- Build an IP evidence checklist for an engineering project: dated records, CAD versions, design notebooks, source-control history, contributor records, and signed agreements.
+- Review international IP risks involving manufacturing countries, sales markets, online targeting, translations, transliterations, first-to-register systems, and non-use requirements.
+- Practise drafting an IP strategy that distinguishes ownership from licensing and selects protection only where it supports the project’s commercial objectives.
 
 ## Missing or incomplete
 
-- No lectures were identified as missing or incomplete for this weekly summary.
+- None.
 
 ## Source manifest
 
 - Lecture 5 (echo-lecture-5-5): complete; summary `627953b55de76dfcfa531d901b75cf28ceac3df30c2440f10d75053f07cb3bf7`; transcript `911614b6edce4726af109ebe92459854f289928a035735b6c1b67e9027cd0601`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENEL301-26S2/summaries/lecture_05_summary.md`
+- Lecture 6 (echo-lecture-6-6): complete; summary `9ac8af7401f3b2ccbf828dfefad316fe6b5676e9c3de19895b4fac601003220a`; transcript `0bb09c638f1a916b22fdf6e716eecf6e274213a4a193fb5ab3dfb155aa035e79`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENEL301-26S2/summaries/lecture_06_summary.md`
