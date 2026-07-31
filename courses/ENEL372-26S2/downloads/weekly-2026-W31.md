@@ -1,80 +1,94 @@
 <!-- week-id: 2026-W31 -->
-<!-- generated-at: 2026-07-31T12:10:08.920359+12:00 -->
+<!-- generated-at: 2026-07-31T19:00:42.370100+12:00 -->
 # ENEL372-26S2 weekly summary
 
 ## Coverage
 
-- Week: 2026-W31, covering 2026-07-27T00:00:00+12:00 to 2026-07-31T12:07:17.712755+12:00.
+- Week: 2026-W31
+- Period: 2026-07-27T00:00:00+12:00 to 2026-07-31T18:57:33.094939+12:00
 - Sources covered:
   - Lecture 7: boost and buck-boost converters, non-ideal components, losses, and start-up behaviour.
-  - Lecture 8: magnetic materials, magnetic circuits, hysteresis, eddy currents, and reluctance.
-  - Lecture 9: practical power-inductor design using core, winding, saturation, and air-gap constraints.
-- All listed lectures are represented by verified summary files.
+  - Lecture 8: magnetic materials, hysteresis, eddy currents, and magnetic circuits.
+  - Lecture 9: practical power-inductor design using magnetic-circuit relationships.
+- Coverage status: complete.
 
 ## Main concepts
 
-- A boost converter raises output voltage according to the ideal continuous-conduction ratio \(V_{\text{out}}/V_s=1/(1-D)\).
-- Boost-converter continuous conduction requires the minimum inductor current to remain above zero. The worst-case inductance requirement occurs at \(D=0.5\).
-- The boost output capacitor supplies the load while the diode is not conducting, causing output-voltage ripple.
-- The inverting buck-boost converter can step voltage up or down in magnitude:
-  - \(D<0.5\): step-down magnitude.
-  - \(D>0.5\): step-up magnitude.
-  - Output polarity is opposite to the input.
-- Real switches, diodes, capacitors, and inductors introduce voltage drops, conduction losses, switching losses, ESR, ESL, winding resistance, heating, and waveform distortion.
-- Soft starting reduces start-up current and voltage stress by gradually increasing duty ratio.
-- Magnetic domains align under an applied magnetising force. Excessive alignment leads to magnetic saturation.
-- Hysteresis and eddy currents are the two core-loss mechanisms explicitly discussed.
-- Magnetic circuits use the analogy:
+- A boost converter increases output voltage according to the ideal continuous-conduction relationship \(V_{\text{out}}/V_s=1/(1-D)\). Its inductor current is associated with the source current.
+- Continuous conduction requires the minimum inductor current to remain above zero. The worst-case boost inductance requirement occurs at \(D=0.5\).
+- A buck-boost converter can step the voltage magnitude up or down, but the conventional topology inverts output polarity.
+- Real converters experience conduction loss, switching loss, capacitor ESR/ESL effects, and inductor winding-resistance losses.
+- Soft starting limits start-up current and voltage stress by gradually increasing the duty ratio.
+- Magnetic domains align under an applied magnetising force. Saturation occurs when further increases in \(H\) produce little additional \(B\).
+- Hysteresis and eddy currents are important magnetic-core loss mechanisms. Ferrite reduces eddy-current loss through its relatively poor electrical conductivity; steel commonly uses laminations.
+- A magnetic circuit is analogous to an electrical circuit:
   - MMF corresponds to voltage or EMF.
   - Reluctance corresponds to resistance.
   - Magnetic flux corresponds to current.
-- Air gaps dominate the reluctance when high-permeability ferrite is used. They also store most of the magnetic energy in a gapped inductor.
-- Power-inductor design must satisfy both electrical requirements and physical constraints:
-  - Required inductance and peak current.
-  - Maximum flux density.
-  - Core area and magnetic path.
-  - Wire current density and winding fit.
-  - Required air-gap length.
+- Air gaps dominate reluctance when used with high-permeability ferrite cores. They also store most of the magnetic energy in a gapped power inductor.
+- Power-inductor design links converter requirements to core flux density, turns, conductor size, winding fit, reluctance, and air-gap length.
+- Design should remain below the absolute saturation limit to provide construction and parameter-variation margin.
 
 ## Equations and worked patterns
 
-- Boost-converter voltage ratio:
+- Boost voltage ratio:
   \[
   \frac{V_{\text{out}}}{V_s}=\frac{1}{1-D}
   \]
 
-- Boost inductor-current ripple:
+- Boost source-current relationship under ideal power balance:
+  \[
+  I_s=\frac{I_{\text{out}}}{1-D}
+  \]
+
+- Inductor-current ripple during the switch-on interval:
   \[
   \Delta i_L=\frac{V_sD}{f_sL}
   \]
 
-- Boost continuous-conduction condition:
+- Boost continuous-conduction boundary:
+  \[
+  I_s=\frac{\Delta i_L}{2}
+  \]
+  Continuous conduction requires:
   \[
   I_s>\frac{\Delta i_L}{2}
   \]
 
-- Inferred minimum boost inductance:
+- Minimum boost inductance condition:
   \[
   L>\frac{V_sD(1-D)}{2f_sI_{\text{out}}}
   \]
   The factor \(D(1-D)\) is largest at \(D=0.5\).
 
-- Boost and buck-boost output-voltage ripple under the stated assumptions:
+- Boost and buck-boost output-voltage ripple under the lecture’s assumptions:
   \[
   \Delta V_{\text{out}}\approx\frac{I_{\text{out}}D}{f_sC}
   \]
 
-- Ideal inverting buck-boost ratio:
+- Ideal inverting buck-boost voltage ratio:
   \[
   \frac{V_{\text{out}}}{V_s}=-\frac{D}{1-D}
   \]
+  Thus \(D<0.5\) gives step-down magnitude, \(D=0.5\) gives equal magnitudes, and \(D>0.5\) gives step-up magnitude.
 
-- Magnetic flux and flux density:
+- Non-ideal buck-converter output relationship as reconstructed in Lecture 7:
   \[
-  \Phi=BA
+  V_{\text{out}}=V_sD-DV_Q-(1-D)V_D
+  \]
+  The exact notation and sign convention should be checked against the official lecture material.
+
+- Conduction loss:
+  \[
+  P_{\text{cond}}=I_{\text{rms}}^2R
+  \]
+
+- Switching loss:
+  \[
+  E_{\text{sw}}=\int v_Q(t)i_Q(t)\,dt
   \]
   \[
-  B=\mu_0\mu_rH
+  P_{\text{sw,avg}}\approx f_sE_{\text{sw}}
   \]
 
 - Magnetic-circuit relationships:
@@ -85,15 +99,13 @@
   \Phi=\frac{NI}{\mathcal{R}}
   \]
   \[
-  \mathcal{R}=\frac{l}{\mu_0\mu_rA}
+  B=\frac{\Phi}{A}
   \]
-
-- Inductance from magnetic reluctance:
   \[
   L=\frac{N^2}{\mathcal{R}}
   \]
 
-- Turns-area design:
+- Turns-area design pattern:
   \[
   (NA)_{\min}=\frac{LI_{\max}}{B_{\max}}
   \]
@@ -102,92 +114,98 @@
   \]
   Round the selected number of turns up to a practical integer.
 
-- Representative inductor design pattern:
+- Representative Lecture 9 calculation:
   - \(I_{\text{avg}}=1\text{ A}\)
   - \(\Delta I_L=200\text{ mA}\)
-  - \(I_{\max}=1.1\text{ A}\)
+  - \(I_{\max}=1+0.2/2=1.1\text{ A}\)
   - \(L=1\text{ mH}\)
   - \(B_{\max}=0.3\text{ T}\)
-  - \(A_E=63\text{ mm}^2\)
   - \((NA)_{\min}\approx3.7\times10^{-3}\text{ turn}\cdot\text{m}^2\)
-  - \(N_{\min}\approx58.2\), so the lecture selected \(N=60\) turns.
+  - \(A_E=63\text{ mm}^2\)
+  - \(N_{\min}\approx58.2\) turns, so the lecture selected \(N=60\) turns.
+  These values are illustrative and were not stated to be the student-project values.
 
-- Wire sizing guideline:
+- Conductor-sizing pattern:
   \[
   J=\frac{I_{\text{RMS}}}{A_{\text{wire}}}
   \]
-  Using \(J\approx5\text{ A/mm}^2\):
+  Using the lecture’s approximate \(5\text{ A/mm}^2\) guideline:
   \[
   A_{\text{wire}}\geq\frac{I_{\text{RMS}}}{5}
   \]
-  For a circular conductor:
-  \[
-  A_{\text{wire}}=\frac{\pi d^2}{4}
-  \]
+  For \(1\text{ A RMS}\), the minimum area is approximately \(0.2\text{ mm}^2\), corresponding to a round-wire diameter of approximately \(0.5\text{ mm}\).
 
-- Required reluctance:
+- Reluctance and air-gap pattern:
   \[
   \mathcal{R}_{\text{required}}=\frac{N^2}{L}
   \]
-
-- Two-gap approximation:
+  For \(N=60\) and \(L=1\text{ mH}\):
+  \[
+  \mathcal{R}_{\text{required}}=3.6\times10^6\text{ A-turns/Wb}
+  \]
+  For two equivalent air gaps:
   \[
   \mathcal{R}\approx\frac{2l_g}{\mu_0A_E}
   \]
   \[
   l_g=\frac{\mathcal{R}\mu_0A_E}{2}
   \]
-  The representative design produced approximately \(l_g=142\,\mu\text{m}\) per gap.
+  The representative result was approximately \(142\,\mu\text{m}\) per gap.
 
 ## Warnings and deadlines
 
-- No deadlines were stated in the three source summaries.
-- The Lecture 9 numerical values are explicitly representative and are not necessarily the student project values.
-- The exact boost-converter equation including inductor winding resistance was not recoverable from the Lecture 7 source.
-- The reconstructed non-ideal buck-converter equation and the capacitor-ripple expressions should be checked against official course material before being used for final design work.
-- The approximately \(100\text{ kHz}\) switching-frequency recommendation was described as project-specific guidance and should be confirmed against the official project requirements.
-- The Lecture 8 E-core reluctance expression depends on the exact core drawing, gap placement, and notation.
-- The \(5\text{ A/mm}^2\) wire-current-density value is a simplified guideline, not a complete thermal or winding-design analysis.
-- Final inductor construction requires confirmation of core datasheet conditions, saturation behaviour, temperature, insulation, winding window, and packing constraints.
-- Design below the absolute saturation limit. Lecture 9 used approximately \(300\text{ mT}\) rather than the stated approximate \(320\text{ mT}\) saturation-related value to provide headroom.
+- No deadlines were identified in the supplied lecture summaries.
+- The exact boost-converter equation including inductor winding resistance \(R_L\) was not recoverable. Only its qualitative effect is source-backed: increasing \(R_L\) reduces output voltage, especially at high duty ratio.
+- The non-ideal buck-converter output equation was reconstructed from the lecture summary and should be checked against official course material.
+- Lecture 7 mentions an approximately \(100\text{ kHz}\) switching-frequency recommendation for a solar-car project, but the summary explicitly says this should be confirmed against the project requirements.
+- The Lecture 8 E-core reluctance expression depends on the exact gap geometry and notation. Check the components handout or official diagram before hardware design.
+- Lecture 9’s \(5\text{ A/mm}^2\) conductor rule is a simplified guideline, not a complete thermal or winding-design calculation.
+- Final inductor construction also requires checking insulation, packing, winding-window fit, thermal conditions, core data, and the applicable saturation limit.
+- The representative Lecture 9 numerical values are illustrative and should not be assumed to be the project specifications.
 
 ## Recall questions
 
-1. Why is the average inductor current in a boost converter associated with the input current?
-2. What condition separates continuous from discontinuous inductor-current operation?
-3. Why is \(D=0.5\) the worst-case duty ratio for the boost-converter inductance requirement?
-4. How does the duty ratio determine whether an inverting buck-boost converter steps voltage up or down in magnitude?
-5. What is the difference between conduction loss and switching loss?
-6. Why can an air gap dominate the reluctance of a ferrite-core inductor?
-7. What do MMF, reluctance, and magnetic flux correspond to in the electrical-circuit analogy?
-8. Why must a power-inductor design remain below magnetic saturation?
-9. Starting from \(L=N^2/\mathcal{R}\), how is the minimum turns-area product obtained?
-10. Why must the selected number of turns and conductor diameter be checked against the available winding window?
+1. Why is the average boost-converter inductor current associated with the source current?
+2. Derive the boost-converter current-ripple expression from \(v_L=L\,di_L/dt\).
+3. What condition defines the boundary between continuous and discontinuous conduction?
+4. Why is \(D=0.5\) the worst-case duty ratio for the boost-converter inductance requirement?
+5. Why does the conventional buck-boost converter produce reversed output polarity?
+6. How do conduction loss and switching loss differ, and why does switching loss become more significant at higher \(f_s\)?
+7. What are residual flux density, coercive force, and hysteresis loss?
+8. Why does an air gap dominate the reluctance of a ferrite-core inductor?
+9. Starting from \(\Phi=NI/\mathcal{R}\) and Faraday’s law, derive \(L=N^2/\mathcal{R}\).
+10. Why must the calculated minimum number of turns be rounded up, and what physical checks follow the turns calculation?
 
 ## Practice priorities
 
-1. Derive the boost-converter ripple and continuous-conduction inductance condition from \(v_L=L\,di_L/dt\).
-2. Compare boost and buck-boost operation across different duty ratios, including polarity and output-voltage magnitude.
-3. Explain how switching frequency changes the relative importance of conduction and switching losses.
-4. Sketch or describe a \(B\)-\(H\) hysteresis loop, identifying saturation, residual flux density, coercive force, and hysteresis loss.
-5. Use \(\Phi=NI/\mathcal{R}\), \(B=\Phi/A\), and \(L=N^2/\mathcal{R}\) to connect winding current, flux density, inductance, and core geometry.
-6. Repeat the representative inductor-design sequence:
-   - Determine peak current.
-   - Calculate \((NA)_{\min}\).
-   - Determine and round up \(N_{\min}\).
-   - Size the conductor from current density.
-   - Check winding fit.
-   - Calculate required reluctance.
-   - Calculate the air-gap length.
-7. Practise identifying which quantities are project requirements and which Lecture 9 values are illustrative only.
-8. Review the practical consequences of ESR, ESL, winding resistance, start-up transients, and insufficient saturation margin.
+- Derive the boost-converter continuous-conduction inductance condition and identify the worst-case duty ratio.
+- Compare boost and buck-boost operation across duty ratios below, equal to, and above \(0.5\).
+- Explain the practical effects of switch drops, diode drops, ESR, ESL, winding resistance, and switching frequency.
+- Sketch or describe the \(B\)-\(H\) curve and hysteresis loop, including saturation, residual flux density, and coercive force.
+- Convert between magnetic-circuit quantities using:
+  \[
+  \text{MMF}=NI,\quad \Phi=\frac{NI}{\mathcal{R}},\quad B=\frac{\Phi}{A}
+  \]
+- Work through the full inductor-design sequence:
+  1. Determine \(L\), ripple current, and \(I_{\max}\).
+  2. Select \(B_{\max}\).
+  3. Calculate \((NA)_{\min}\).
+  4. Determine and round up \(N\).
+  5. Size the conductor using current density.
+  6. Check winding fit.
+  7. Calculate required reluctance.
+  8. Determine the air-gap length.
+- Rework the representative Lecture 9 design with altered \(L\), \(I_{\max}\), \(B_{\max}\), and \(A_E\), while keeping units consistent.
+- Verify any project-specific core, switching-frequency, gap, thermal, and winding requirements from official course documentation before construction.
 
 ## Missing or incomplete
 
-- No lectures are missing or incomplete for this week.
-- Lecture 7 contains an unrecoverable exact equation for boost-converter performance with inductor winding resistance.
-- Lecture 8 does not complete the specific inductor-design procedure; that procedure is developed in Lecture 9.
-- Several exact expressions and project-specific design details should be verified against official course material before hardware construction.
+- No lectures were identified as missing or incomplete for this week.
+- Some source details remain incomplete within the supplied summaries, notably:
+  - The exact boost-converter winding-resistance equation.
+  - The exact official notation for the reconstructed non-ideal buck equation.
+  - The precise E-core gap geometry and notation.
+  - Full project-specific component, thermal, and winding specifications.
 
 ## Source manifest
 

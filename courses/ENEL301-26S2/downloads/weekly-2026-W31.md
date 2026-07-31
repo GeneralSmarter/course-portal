@@ -1,90 +1,99 @@
 <!-- week-id: 2026-W31 -->
-<!-- generated-at: 2026-07-31T12:09:05.789669+12:00 -->
+<!-- generated-at: 2026-07-31T18:59:30.910375+12:00 -->
 # ENEL301-26S2 weekly summary
 
 ## Coverage
 
-- 2026-W31 covered Lecture 5 and Lecture 6.
-- Lecture 5: patents, patent strategy, patentability requirements, confidentiality, licensing, and New Zealand IP considerations.
-- Lecture 6: copyright, registered designs, trademarks, geographical indications, domain names, ownership, licensing, and enforcement.
-- No lectures were identified as missing or incomplete.
+- Study window: 2026-W31, from 2026-07-27T00:00:00+12:00 to 2026-07-31T18:57:33.094939+12:00.
+- Covered verified summaries:
+  - Lecture 5: patents, patent strategy, confidentiality, patentability, licensing, software, AI inventorship, and Māori considerations.
+  - Lecture 6: copyright, registered designs, trademarks, geographical indications, ownership, licensing, enforcement, and international IP strategy.
+- Source coverage is complete. No lectures are known to be missing or incomplete.
 
 ## Main concepts
 
-- Intellectual property strategy should match what creates value: technical function, visual appearance, creative expression, brand identity, confidential information, or commercial relationships.
-- Patents generally protect function and technical invention. They are territorial, time-limited negative rights granted in exchange for public disclosure.
-- The four main patentability requirements discussed were novelty, enablement, inventive step, and credible utility.
-- Public disclosure, sale, public use, or non-confidential presentation can threaten patent novelty. The practical rule is to preserve confidentiality until an appropriate filing strategy has been assessed.
-- Trade secrets may be preferable where technology is difficult to reverse engineer and can realistically remain confidential.
-- Patent strategy should consider target markets, manufacturing locations, competitors, development timing, licensing, cost, and commercial objectives.
-- Copyright protects the form of expression, not the underlying idea. It may apply to software, CAD files, engineering drawings, schematics, diagrams, websites, and other technical works.
-- Copyright infringement requires copying or a sufficient causal connection. Independent creation generally avoids copyright infringement.
-- There is no general “10% change” rule. A qualitatively substantial part may be copied even if it is a small proportion of the complete work.
-- Original CAD files, drawings, version histories, design notebooks, source-control records, and contracts can provide evidence of authorship, ownership, development, and independent creation.
-- Registered designs protect visual appearance, including shape, configuration, pattern, and ornamentation. Confidentiality before filing is important because novelty is required.
-- Trademarks distinguish one company’s goods or services from another’s. They can include words, logos, pictures, shapes, sounds, smells, colours, slogans, and packaging forms.
-- Distinctive marks are stronger than descriptive terms. Genericisation can weaken or destroy trademark protection.
+- Intellectual property strategy should match what creates value in a project:
+  - Patents generally protect technical function.
+  - Copyright protects the form of expression.
+  - Registered designs protect visual appearance.
+  - Trademarks identify and distinguish commercial sources.
+  - Confidentiality protects valuable information by keeping it secret.
+  - Contracts clarify ownership, licensing, and permitted reuse.
+- A patent is a time-limited, territorial, negative legal right granted in exchange for public disclosure.
+- The four patentability requirements emphasised in Lecture 5 were novelty, enablement, inventive step, and credible utility.
+- Public disclosure, sale, public use, or non-confidential presentation before filing can threaten patent novelty and design protection.
+- Patent strategy involves deciding when and where to file based on markets, manufacturing locations, competitors, cost, licensing, and commercial objectives.
+- Copyright protects expression rather than ideas. Infringement requires copying, and there is no general “10% change” rule.
+- Independent creation may avoid copyright infringement but does not necessarily avoid registered-design infringement if the protected appearance is reproduced.
+- Engineering records such as original CAD files, version histories, design notebooks, and source-control records can help establish ownership, creation dates, and independent development.
+- Trademarks should be distinctive, used consistently as brands, and checked against existing rights before substantial investment.
 - Company-name registration, trademark registration, domain-name registration, and social-media handle registration are separate matters.
-- IP rights are generally territorial. International strategy must consider where products are made, sold, advertised, used, or directed online.
-- Ownership and licensing arrangements should be recorded in writing, especially for employees, contractors, consultants, commissioned works, reusable software, and collaborative engineering projects.
-- Rights holders generally need to enforce their own IP. A written notice requesting that alleged infringement stop was described as a common initial step in New Zealand.
+- IP rights are generally territorial. International planning must consider sales, manufacturing, advertising, online targeting, translations, transliterations, and local registration practices.
+- Ownership can depend on employment, commissioning, consultancy, and licensing arrangements. These should be recorded in written agreements.
+- Rights holders generally enforce private IP rights themselves. The lecture described a written notice requesting that alleged infringement stop as a possible initial step.
 
 ## Equations and worked patterns
 
-- No mathematical equations were presented in either lecture.
+- No mathematical equations were presented.
 - Patent bargain: public disclosure of the invention in exchange for limited exclusive rights.
-- Patent term described for New Zealand: 20 years from the filing date of the complete patent specification. The summary notes that the exact statutory calculation should be checked before reliance.
-- IP-selection pattern:
-  - Technical function → consider patents, confidentiality, and related licensing.
-  - Visual appearance → consider registered design protection.
-  - Creative or technical expression → consider copyright.
-  - Commercial source or brand identity → consider trademarks.
-  - Ownership, reuse, and permitted activity → address through written contracts and licences.
-- Copyright analysis pattern:
-  - Identify the protected work.
-  - Consider objective similarity.
-  - Ask whether a qualitatively substantial part was copied.
-  - Consider whether there was a causal opportunity to copy or an independent creation pathway.
+- Patent term described for New Zealand: 20 years from the filing date of the complete patent specification. The summary notes that exact statutory calculations should be checked against current legislation.
+- Patentability test:
+  - Is the invention novel?
+  - Is it sufficiently enabled?
+  - Is it non-obvious to a skilled person?
+  - Does it have specific, substantial, and credible utility?
+- IP-selection pattern for an engineering product:
+  - Technical function → consider patents and confidentiality.
+  - Visual appearance → consider registered designs and relevant copyright.
+  - Brand identity → consider trademarks, domains, and social-media handles.
+  - Code, drawings, schematics, and other expression → consider copyright.
+  - Multiple valuable features → combine protections rather than relying on one right.
+- Copyright infringement analysis should consider objective similarity, whether a qualitatively substantial part was copied, and whether there was a causal opportunity to copy.
 - Brand-launch pattern:
-  - Search existing marks, businesses, products, domains, and relevant handles.
+  - Search existing marks, businesses, products, and domains.
   - Confirm ownership of logos, slogans, and other creative assets.
   - Register important marks in relevant jurisdictions.
   - Use and police the mark consistently.
 
 ## Warnings and deadlines
 
-- Lecture 5 warned that patent law, software patentability, grace periods, experimental-use exceptions, compulsory licensing, Māori advisory processes, and filing procedures vary by jurisdiction and should be checked against current official sources.
-- Do not rely on a New Zealand grace period when international protection is important, because other countries may not recognise the same period.
-- Lecture 6 warned that online information may describe foreign law, particularly United States law, which may differ from New Zealand law.
-- Preserve original engineering records. Do not overwrite or discard original CAD files, drawings, or design iterations.
-- Keep designs and potentially patentable inventions confidential before filing.
-- Check third-party IP rights before developing, branding, manufacturing, or launching a product.
-- The lecture included a reminder about the bicultural workshop PPR deadline, but no specific deadline date was recorded in the summary.
-- Preparation was noted for the following week’s IP workshop and New Zealand law lectures.
+- Lecture 6 included a reminder about the bicultural workshop PPR deadline, but the summary does not provide the deadline date.
+- Additional reading was mentioned concerning patents and embedded software.
+- Preparation was mentioned for the following week’s IP workshop and New Zealand law lectures.
+- Keep potentially patentable inventions confidential until an appropriate filing strategy has been assessed.
+- Keep designs confidential before filing because sale or public disclosure may compromise novelty.
+- Do not assume that a grace period in New Zealand preserves international filing options.
+- Do not assume that overseas patent, copyright, trademark, or software rules apply in New Zealand.
+- Do not overwrite original CAD files, drawings, or other development records.
+- Do not rely on a general “10% change” rule to avoid copyright infringement.
+- Do not use the registered-trademark symbol ® unless the trademark is registered.
+- Check Māori language, cultural, and rights considerations before adopting a potentially Māori-associated trademark.
+- Do not assume that online availability means material is free to copy or use.
 
 ## Recall questions
 
-1. Why is a patent described as a negative legal right?
-2. What are the four patentability requirements discussed in Lecture 5?
-3. Why can public disclosure before filing damage international patent protection?
-4. When might a trade secret be preferable to a patent?
-5. How does patent protection for function differ from registered design protection for appearance?
-6. What is the difference between an idea and its expression for copyright purposes?
-7. Why is there no general “10% change” rule for avoiding copyright infringement?
-8. Why should engineering teams preserve original CAD files and design iterations?
-9. How does registered design infringement differ from copyright infringement regarding independent creation?
-10. Why are distinctive trademarks generally stronger than descriptive terms?
+1. What are the four patentability requirements identified in Lecture 5?
+2. Why is a patent described as a negative legal right?
+3. Why can public disclosure before filing threaten patent protection?
+4. How does patent protection for function differ from registered-design protection for appearance?
+5. What is the difference between an idea and its expression for copyright purposes?
+6. Why is there no general “10% change” rule for avoiding copyright infringement?
+7. Why should engineering teams preserve original CAD files and design iterations?
+8. How can independent creation affect copyright infringement and registered-design infringement differently?
+9. How do trademarks reduce consumer search costs?
+10. Why are company-name, trademark, domain-name, and social-media registrations not interchangeable?
 
 ## Practice priorities
 
-- Compare patents, trade secrets, copyright, registered designs, trademarks, and contracts using a single engineering product with technical, visual, software, and branding elements.
-- Practise identifying whether a scenario concerns function, appearance, expression, brand identity, confidentiality, ownership, or licensing.
-- Apply the four patentability requirements to hypothetical inventions without assuming that independent development restores novelty.
-- Explain why filing and disclosure timing matters for both patents and registered designs.
-- Analyse copyright scenarios using objective similarity, qualitatively substantial copying, causal opportunity, and independent creation.
-- Build an IP evidence checklist for an engineering project: dated records, CAD versions, design notebooks, source-control history, contributor records, and signed agreements.
-- Review international IP risks involving manufacturing countries, sales markets, online targeting, translations, transliterations, first-to-register systems, and non-use requirements.
-- Practise drafting an IP strategy that distinguishes ownership from licensing and selects protection only where it supports the project’s commercial objectives.
+- Compare patents, copyright, registered designs, trademarks, and confidentiality using the function/form/brand distinctions.
+- Practise applying the four patentability requirements to a hypothetical engineering invention without inventing legal conclusions beyond the lecture material.
+- Build an IP strategy for a new engineering product by identifying its technical, visual, expressive, and branding elements.
+- Review the difference between independent creation in copyright and appearance-based infringement under registered design rights.
+- Practise identifying the records needed to support ownership, creation dates, development history, and independent creation.
+- Analyse when a company should consider licensing, assignment, retained ownership, or contractual permission for reusable engineering or software work.
+- Practise an international IP checklist covering sales locations, manufacturing locations, advertising targets, domains, translations, transliterations, and local registration.
+- Review trademark risks involving descriptive marks, genericisation, prior registration by another party, and non-use.
+- Memorise the practical pre-launch sequence: check existing rights, preserve development evidence, clarify ownership, select appropriate protections, and consider relevant jurisdictions.
 
 ## Missing or incomplete
 
