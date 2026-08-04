@@ -208,7 +208,7 @@
 
 ## Source manifest
 
-- Lecture 9 (echo-lecture-9-9): complete; summary `1e662d43de9e25ff51ec7f8e102f8b1a68ca85692c4feed1690d32778b2421e4`; transcript `81778e30d402b2b4cdde588f61d06ab037b24a16a59c6bff2a1206d68a4cc171`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENME302-26S2/summaries/lecture_09_summary.md`
-- Lecture 10 (echo-lecture-10-10): complete; summary `066dd373548f8543925b0c0f0b63898943ee78bc0b42d82169ef70199baa28c6`; transcript `6d30a9e5c8c05b34b58b042b84d2bbad87bb609aee7735536695a67784b7a967`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENME302-26S2/summaries/lecture_10_summary.md`
-- Lecture 11 (echo-lecture-11-11): complete; summary `6dbbf8c7d90a49048c92b917bf832c4a6e8c97e8394336c3b16135bd09982abe`; transcript `431c162d0ac2fe965d54ff2b4ea671ae168d1c6dceea78a3304be709f0ca8fb8`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENME302-26S2/summaries/lecture_11_summary.md`
-- Lecture 12 (echo-lecture-12-12): complete; summary `941e2377bd4b9fc7884d7701752fa43a736b110a3b3fe8bb4cd28aa0d6bb86ed`; transcript `5eb2e9f2977101bb512f33d4d99074869e98372f9d557b3fddd5e3a74440ba18`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENME302-26S2/summaries/lecture_12_summary.md`
+- Lecture 9 (echo-lecture-9-9): complete; summary `1e662d43de9e25ff51ec7f8e102f8b1a68ca85692c4feed1690d32778b2421e4`; transcript `81778e30d402b2b4cdde588f61d06ab037b24a16a59c6bff2a1206d68a4cc171`; summary path `[local source path redacted]`
+- Lecture 10 (echo-lecture-10-10): complete; summary `066dd373548f8543925b0c0f0b63898943ee78bc0b42d82169ef70199baa28c6`; transcript `6d30a9e5c8c05b34b58b042b84d2bbad87bb609aee7735536695a67784b7a967`; summary path `[local source path redacted]`
+- Lecture 11 (echo-lecture-11-11): complete; summary `6dbbf8c7d90a49048c92b917bf832c4a6e8c97e8394336c3b16135bd09982abe`; transcript `431c162d0ac2fe965d54ff2b4ea671ae168d1c6dceea78a3304be709f0ca8fb8`; summary path `[local source path redacted]`
+- Lecture 12 (echo-lecture-12-12): complete; summary `941e2377bd4b9fc7884d7701752fa43a736b110a3b3fe8bb4cd28aa0d6bb86ed`; transcript `5eb2e9f2977101bb512f33d4d99074869e98372f9d557b3fddd5e3a74440ba18`; summary path `[local source path redacted]`

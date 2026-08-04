@@ -3,7 +3,7 @@
 Source: Echo360 audio downloaded under Marco's authorised UC Learn access.
 Transcript type: Hermes local ASR from local audio, not native Echo transcript.
 ASR backend/model: faster-whisper tiny.en, CPU int8, beam_size=1.
-Source audio: `C:/Users/marco/Documents/Hermes/UC/courses/ENMT301-26W/echo360/downloaded-audio/lecture_08_audio_16k_mono_32k.mp3`
+Source audio: `[local source path redacted]`
 Source audio SHA-256: `1b0a9d38b71a1f630f323dd4a3f7506512e2bc977f77c8a2fcba713e4fb9368f`
 Generated: 2026-06-06T05:10:56.081557+12:00
 Caveats: Hermes local ASR, not native Echo transcript.; Fast first-pass settings: tiny.en, int8, beam_size=1. Use for exam context; technical terms may need checking against PDFs.

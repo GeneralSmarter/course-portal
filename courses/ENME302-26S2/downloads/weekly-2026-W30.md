@@ -248,7 +248,7 @@ None. All lectures identified for 2026-W30, Lectures 5–8, were covered.
 
 ## Source manifest
 
-- Lecture 5 (echo-lecture-5-5): complete; summary `2f0a220270f6cf76c5f2ea3122454396a280ef423504965cd8c66cb0986fc13a`; transcript `f74ea90f63fd7e849c70c44aec0f7cbbe8576f5dea8e49127cdaa530b8df2c31`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENME302-26S2/summaries/lecture_05_summary.md`
-- Lecture 6 (echo-lecture-6-6): complete; summary `f6914586bd08ced9c04f3e32074af53d49b1c9cfd968afccf03eeae363a358ba`; transcript `5c1cc5d0fd40e9f4584f93f789913f7fe4560b57bae0b845e1fd18f1360d8ab4`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENME302-26S2/summaries/lecture_06_summary.md`
-- Lecture 7 (echo-lecture-7-7): complete; summary `fc511e7e302eb6e8bdc2a5512ad9ae81810f02bc6ea52fae7e47a289e08f78bb`; transcript `ef8be63a5e990258aa1b573f86b319c8435ffbfc59500f375684c2a7772ee5ea`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENME302-26S2/summaries/lecture_07_summary.md`
-- Lecture 8 (echo-lecture-8-8): complete; summary `b52bda88ff7e7e1ecd67ed990ad5ba97323bb31aa9bdc9fdb870ae788b2ca0f2`; transcript `0625f492958f4f7cdfbf41fe3ec5b3a6e511503c48bef10fdc1af8a9cb670f5f`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENME302-26S2/summaries/lecture_08_summary.md`
+- Lecture 5 (echo-lecture-5-5): complete; summary `2f0a220270f6cf76c5f2ea3122454396a280ef423504965cd8c66cb0986fc13a`; transcript `f74ea90f63fd7e849c70c44aec0f7cbbe8576f5dea8e49127cdaa530b8df2c31`; summary path `[local source path redacted]`
+- Lecture 6 (echo-lecture-6-6): complete; summary `f6914586bd08ced9c04f3e32074af53d49b1c9cfd968afccf03eeae363a358ba`; transcript `5c1cc5d0fd40e9f4584f93f789913f7fe4560b57bae0b845e1fd18f1360d8ab4`; summary path `[local source path redacted]`
+- Lecture 7 (echo-lecture-7-7): complete; summary `fc511e7e302eb6e8bdc2a5512ad9ae81810f02bc6ea52fae7e47a289e08f78bb`; transcript `ef8be63a5e990258aa1b573f86b319c8435ffbfc59500f375684c2a7772ee5ea`; summary path `[local source path redacted]`
+- Lecture 8 (echo-lecture-8-8): complete; summary `b52bda88ff7e7e1ecd67ed990ad5ba97323bb31aa9bdc9fdb870ae788b2ca0f2`; transcript `0625f492958f4f7cdfbf41fe3ec5b3a6e511503c48bef10fdc1af8a9cb670f5f`; summary path `[local source path redacted]`

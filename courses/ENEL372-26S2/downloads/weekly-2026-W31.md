@@ -209,6 +209,6 @@
 
 ## Source manifest
 
-- Lecture 7 (echo-lecture-7-7): complete; summary `6d8c702723c456f880d5e3d006cbb96c0d4a66d4389165ca7e9e1113cc49aa05`; transcript `5b61fef6d2c2a40d0d6582b1feee2bff80354463b206282deb1746d8b702ff86`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENEL372-26S2/summaries/lecture_07_summary.md`
-- Lecture 8 (echo-lecture-8-8): complete; summary `b4778c696e7a31abcc442afbc7d9f06360c29a4d435f4adea529e577c0a2a868`; transcript `359249241d80e34e50bfffb9ad7e6424070c80ae877f59af8ad93225670ac626`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENEL372-26S2/summaries/lecture_08_summary.md`
-- Lecture 9 (echo-lecture-9-9): complete; summary `56a4047bb4e090406b11c41353221a87c7cc5b077c3a3d02a36886807d92bc16`; transcript `818b941a4284e46d88fcd929b52cfb9a94e28dd93ccad280b20a2ed6455447bc`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENEL372-26S2/summaries/lecture_09_summary.md`
+- Lecture 7 (echo-lecture-7-7): complete; summary `6d8c702723c456f880d5e3d006cbb96c0d4a66d4389165ca7e9e1113cc49aa05`; transcript `5b61fef6d2c2a40d0d6582b1feee2bff80354463b206282deb1746d8b702ff86`; summary path `[local source path redacted]`
+- Lecture 8 (echo-lecture-8-8): complete; summary `b4778c696e7a31abcc442afbc7d9f06360c29a4d435f4adea529e577c0a2a868`; transcript `359249241d80e34e50bfffb9ad7e6424070c80ae877f59af8ad93225670ac626`; summary path `[local source path redacted]`
+- Lecture 9 (echo-lecture-9-9): complete; summary `56a4047bb4e090406b11c41353221a87c7cc5b077c3a3d02a36886807d92bc16`; transcript `818b941a4284e46d88fcd929b52cfb9a94e28dd93ccad280b20a2ed6455447bc`; summary path `[local source path redacted]`

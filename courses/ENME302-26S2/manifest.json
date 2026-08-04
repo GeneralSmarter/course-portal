@@ -4,12 +4,12 @@
   "profile": "Computational mechanics",
   "counts": {
     "lectures": 48,
-    "resources": 5,
+    "resources": 10,
     "assignments": 0,
     "transcripts": 12,
     "summaries": 12,
     "pipeline_failures": 1
   },
-  "as_of_date": "2026-08-01",
-  "generated_at": "2026-08-01T11:33:55.506752+12:00"
+  "as_of_date": "2026-08-04",
+  "generated_at": "2026-08-04T12:41:05.950121+12:00"
 }

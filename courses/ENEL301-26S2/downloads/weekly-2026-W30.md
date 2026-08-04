@@ -82,5 +82,5 @@ Week 2026-W30 covered:
 
 ## Source manifest
 
-- Lecture 3 (echo-lecture-3-3): complete; summary `36ca2376e6871091c3f0f6894824240d495d6f604553c3fb8bfe931194b6e929`; transcript `dbbab59fa5db6789e1a8f5fcc86bf816d204bbca44f8a98e45fdf2be1e61747b`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENEL301-26S2/summaries/lecture_03_summary.md`
-- Lecture 4 (echo-lecture-4-4): complete; summary `421015eaa087ec5cb254befdbcc6213a528403e2de2a067dbcbac69b4debbdb0`; transcript `0580c4e1c2a52dd6303732a70b7897a4a1625f514de80651b86b3d9c74ec6be7`; summary path `C:/Users/marco/Documents/Hermes/UC/courses/ENEL301-26S2/summaries/lecture_04_summary.md`
+- Lecture 3 (echo-lecture-3-3): complete; summary `36ca2376e6871091c3f0f6894824240d495d6f604553c3fb8bfe931194b6e929`; transcript `dbbab59fa5db6789e1a8f5fcc86bf816d204bbca44f8a98e45fdf2be1e61747b`; summary path `[local source path redacted]`
+- Lecture 4 (echo-lecture-4-4): complete; summary `421015eaa087ec5cb254befdbcc6213a528403e2de2a067dbcbac69b4debbdb0`; transcript `0580c4e1c2a52dd6303732a70b7897a4a1625f514de80651b86b3d9c74ec6be7`; summary path `[local source path redacted]`
