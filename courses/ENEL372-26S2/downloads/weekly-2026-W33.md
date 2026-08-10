@@ -1,5 +1,5 @@
 <!-- week-id: 2026-W33 -->
-<!-- generated-at: 2026-08-10T16:42:44.612730+12:00 -->
+<!-- generated-at: 2026-08-11T11:13:05.832854+12:00 -->
 # ENEL372-26S2 weekly summary
 
 No completed per-lecture summaries were available in this window.
