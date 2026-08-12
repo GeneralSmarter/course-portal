@@ -1,25 +1,26 @@
 <!-- week-id: 2026-W33 -->
-<!-- generated-at: 2026-08-12T09:55:13.237313+12:00 -->
+<!-- generated-at: 2026-08-12T12:01:32.869754+12:00 -->
 # ENEL372-26S2 weekly summary
 
 ## Coverage
 
-- Week: 2026-W33, covering 2026-08-10T00:00:00+12:00 to 2026-08-12T09:53:08.362431+12:00.
-- Source covered: Lecture 13, focused on electric-motor and mechanical-load matching.
-- Topics included motor and load torque-speed characteristics, gearbox matching, steady-state operating points, stability, efficiency, operating limits, four-quadrant operation, rotational inertia, gearbox-ratio optimisation, linear-to-rotational inertia conversion, and motor selection.
+- Source covered: Lecture 13 summary, generated 2026-08-11.
+- Weekly window: 2026-08-10T00:00:00+12:00 to 2026-08-12T11:58:40.039233+12:00.
+- Focus: matching an electric motor to a mechanical load, including torque–speed characteristics, gearbox selection, operating stability, efficiency, four-quadrant operation, and dynamic acceleration.
 
 ## Main concepts
 
-- Motors commonly operate at higher speed and lower torque than the mechanical load, so a gearbox is often required.
-- A continuous steady-state operating point occurs where compatible motor and load torque-speed curves intersect.
-- A single intersection with a relatively large intersection angle is preferred for stable operation.
-- The motor must provide sufficient starting torque from standstill and remain within its continuous torque, voltage, current, speed, and thermal limits.
-- The selected operating range should lie in a high-efficiency region of the motor efficiency map.
-- Increasing speed increases back EMF and reduces the current available within the rated-voltage limit.
-- Four-quadrant operation allows combinations of positive or negative speed and torque, including motoring and braking.
-- Dynamic performance depends on net torque and total inertia, as well as friction, flexibility, and other mechanical effects.
-- Maximum load acceleration through a gearbox occurs when motor inertia referred to the load side equals the actual load inertia.
-- A translating mass can be included in rotational analysis using an equivalent inertia.
+- Motor and mechanical-load torque–speed characteristics commonly require a gearbox for compatible speed and torque.
+- Continuous steady-state operation occurs at an intersection of the motor and load torque–speed curves.
+- A single stable intersection is preferred. A larger intersection angle, ideally approaching 90°, indicates smaller speed changes for a given torque variation.
+- Starting torque must be sufficient from standstill. A system that operates once moving may still fail to start from rest.
+- The operating point should remain within the motor’s continuous torque, voltage, current, speed, and thermal limits.
+- Motor and gearbox selection should place the expected load range in a high-efficiency region of the motor efficiency map.
+- Increasing speed increases back EMF, reducing the current and power available within the rated-voltage limit.
+- Four-quadrant operation allows positive or negative speed and torque, supporting forward/reverse motoring and braking or regenerative operation.
+- Dynamic acceleration depends on net torque and total effective inertia, with friction, flexibility, and other mechanical effects also contributing.
+- Maximum load acceleration occurs when motor inertia referred to the load side equals the actual load inertia.
+- A translating mass can be represented as an equivalent rotational inertia using the pulley radius.
 
 ## Equations and worked patterns
 
@@ -28,13 +29,13 @@
   - \(P=T\omega\)
 - Simplified voltage/current power limit:
   - \(P_{\max}=V_{\text{rated}}I_{\max}\)
-- Qualitative current-availability relationship:
+- Back-EMF limitation:
   - \(I_{\max}\propto V_{\text{rated}}-E\)
-  - The source states that this is incomplete and does not provide the full motor-specific model.
+  - This relationship is qualitative in the source; the complete motor-specific model was not provided.
 - Rotational and linear dynamics:
   - \(\frac{d\omega}{dt}=\frac{T}{J}\)
   - \(\frac{dv}{dt}=\frac{F}{m}\)
-- Under the lecture’s gearbox convention:
+- Gearbox relationships under the lecture’s stated convention:
   - \(\omega_L=\frac{\omega_M}{N}\)
   - \(T_L=NT_M\)
 - Motor inertia referred to the load side:
@@ -44,61 +45,55 @@
 - Load acceleration:
   - \(\frac{d\omega_L}{dt}=\frac{NT_M}{N^2J_M+J_L}\)
   - Equivalent form: \(\frac{d\omega_L}{dt}=\frac{T_M}{NJ_M+\frac{J_L}{N}}\)
-- Gearbox-ratio optimisation:
-  - Minimise \(NJ_M+\frac{J_L}{N}\).
+- Optimum gearbox ratio:
+  - Set \(NJ_M+\frac{J_L}{N}\) to a minimum.
   - The optimum condition is \(N^2J_M=J_L\).
   - Therefore, \(N_{\text{opt}}=\sqrt{\frac{J_L}{J_M}}\).
-- Linear mass driven by a pulley:
+- Linear-to-rotational conversion:
   - \(v=\omega r\)
+  - \(E_k=\frac{1}{2}mv^2=\frac{1}{2}J\omega^2\)
   - \(J_{\text{equivalent}}=mr^2\)
-- Worked-pattern sequence:
-  1. Determine the load-side inertia.
-  2. Refer motor inertia through the gearbox.
-  3. Form the total load-side inertia.
-  4. Substitute the gearbox torque relationship into the acceleration equation.
-  5. Optimise the ratio by setting referred motor inertia equal to load inertia.
-- Throwing-arm example:
-  - The source gives \(m=0.5\,\text{kg}\), \(J_M=0.2\,\text{kg}\,\text{m}^2\), and a reported arm length of \(r=0.63\,\text{m}\).
-  - The full derivation was not included, so the assumptions and result require verification from the separate worked solution.
+- Throwing-arm pattern:
+  - Convert the 0.5 kg thrown mass into equivalent inertia using \(J_L=mr^2\).
+  - Apply the inertia-matching condition \(N^2J_M=J_L\).
+  - The summary reports a 0.63 m arm length, but the full derivation and assumptions were not included and should be verified separately.
 
 ## Warnings and deadlines
 
-- No deadlines or assessment dates are stated in the source.
-- Confirm the gearbox-ratio convention against the course slides before using it in assessed work.
-- The source notes that some diagrams, torque-speed curve details, axes, labels, and efficiency-map information are unavailable from the summary.
-- Treat the back-EMF/current relationship as qualitative only; the complete motor model is not provided.
-- Handle torque signs consistently in dynamic equations because the source alternates between torque directions and torque magnitudes.
-- Do not rely on the reported \(0.63\,\text{m}\) throwing-arm result without checking the missing worked derivation.
-- Continuous operation above the motor’s continuous torque region can cause overheating or damage.
+- No deadlines or assessed-work requirements were stated in the source.
+- Confirm the gearbox ratio convention against the course slides before using the equations in assessed work.
+- The torque–speed and efficiency-map diagrams were not included in the summary. Check the original slides or recording for exact axes, curve shapes, labels, and sign conventions.
+- Handle torque signs consistently in dynamic calculations; the source sometimes discusses torque magnitudes rather than signed quantities.
+- The back-EMF/current relationship is incomplete and should not be treated as a full motor model.
+- The reported throwing-arm result of 0.63 m requires verification against the separate worked solution.
 
 ## Recall questions
 
-1. Why is a gearbox commonly required between an electric motor and a mechanical load?
+1. Why is a gearbox commonly used between an electric motor and a mechanical load?
 2. What condition defines a continuous steady-state operating point?
-3. Why is a single intersection with a relatively large intersection angle preferred?
-4. Why might a motor be unable to start a load from standstill even if it can operate that load once already moving?
-5. How does increasing speed affect back EMF and available current?
-6. What signs of speed and motor torque define each of the four operating quadrants?
-7. Using the stated gearbox convention, how are motor speed and torque related to load speed and torque?
-8. How is motor inertia referred to the load side through the gearbox?
-9. What condition maximises load acceleration?
-10. How is a translating mass converted into an equivalent rotational inertia?
+3. Why is a single intersection between the motor and load torque–speed curves preferred?
+4. What does a large intersection angle indicate about operating-point stability?
+5. Why might a motor operate with a load that is already moving but fail to start it from standstill?
+6. How does increasing speed affect back EMF and available current?
+7. What are the signs of speed and motor torque in each of the four operating quadrants?
+8. Using the stated gearbox convention, how are motor speed and torque related to load speed and torque?
+9. Why do both very small and very large gearbox ratios reduce load acceleration?
+10. What inertia-matching condition gives the maximum load acceleration?
 
 ## Practice priorities
 
-- Sketch and interpret motor and load torque-speed curves, identifying intersections, starting capability, stability, and continuous operating regions.
-- Explain how efficiency maps influence motor and gearbox selection across a load operating range.
-- Practise identifying the operating quadrant from the signs of speed and motor torque.
-- Derive the load-acceleration expression from the gearbox speed, torque, and inertia relationships.
-- Compare the effects of very small and very large gearbox ratios on load acceleration.
-- Solve inertia-matching problems using \(N_{\text{opt}}=\sqrt{J_L/J_M}\).
-- Convert linear masses driven by pulleys into equivalent rotational inertia using \(J=mr^2\).
-- Rework the throwing-arm example only after verifying the assumptions behind the reported \(0.63\,\text{m}\) result.
+- Sketch representative motor and load torque–speed curves and identify steady-state intersections and stability implications.
+- Practise checking starting torque, continuous torque, efficiency, voltage, current, speed, and thermal constraints.
+- Memorise the four-quadrant speed–torque sign combinations and distinguish motoring from braking.
+- Derive the load acceleration expression from the gearbox speed, torque, and referred-inertia relationships.
+- Derive \(N_{\text{opt}}=\sqrt{J_L/J_M}\) by minimising \(NJ_M+\frac{J_L}{N}\).
+- Convert a translating mass to equivalent rotational inertia and apply the result to a gearbox or pulley system.
+- Recheck the throwing-arm example against the separate worked solution before relying on the reported 0.63 m value.
 
 ## Missing or incomplete
 
-- No lectures are identified as missing or incomplete for this week.
-- Within Lecture 13, the full throwing-arm derivation is absent, and the referenced diagrams and complete motor current model are not included in the source summary.
+- No lectures were identified as missing or incomplete for this weekly window.
+- The source summary notes incomplete supporting material for the exact diagrams, the full motor current model, and the throwing-arm derivation.
 
 ## Source manifest
 
