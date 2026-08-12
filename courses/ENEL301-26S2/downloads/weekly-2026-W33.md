@@ -1,97 +1,96 @@
 <!-- week-id: 2026-W33 -->
-<!-- generated-at: 2026-08-12T12:00:38.388284+12:00 -->
+<!-- generated-at: 2026-08-13T10:10:52.012554+12:00 -->
 # ENEL301-26S2 weekly summary
 
 ## Coverage
 
-- Week: 2026-W33, from 2026-08-10T00:00:00+12:00 to 2026-08-12T11:58:40.039233+12:00.
-- Source covered: Lecture 9 summary, focused on data privacy and data ethics in engineering practice.
-- Main areas: engineering responsibility for data, privacy and security, data breaches, confidentiality and NDAs, New Zealand privacy law, GDPR, Māori data sovereignty, and ethical frameworks.
-- No mathematical equations were presented.
+- Week 2026-W33 covered Lecture 9, generated 2026-08-12.
+- Focus: data privacy, data ethics, engineering responsibility, confidentiality, privacy law, international data protection, Māori data sovereignty, and ethical decision-making.
+- The lecture emphasised that engineers are data custodians because they design and operate systems that collect, process, store, transfer, and protect data.
+- Source coverage was available for the lecture listed for this week.
 
 ## Main concepts
 
-- Engineers are data custodians because they design and operate systems that collect, process, store, transfer, and secure personal information.
 - Data privacy concerns how personal information is collected, stored, accessed, used, corrected, transferred, and disclosed.
-- Data ethics evaluates the fairness, transparency, consequences, and accountability of data practices.
+- Data ethics evaluates the consequences and ethical acceptability of collecting, interpreting, using, sharing, and protecting data.
 - Privacy and security support stakeholder trust and an organisation’s social licence to operate.
-- Personal-data benefits, such as efficiency, personalisation, prediction, and improved services, must be balanced against risks to privacy, security, fairness, justice, transparency, and autonomy.
-- The Qantas and Optus examples showed that data breaches can cause identity theft, fraud, scams, reputational damage, regulatory penalties, litigation, and substantial financial losses.
-- APIs must enforce authentication and authorisation. Sequential record identifiers must not allow unauthorised access to other users’ data.
-- An NDA defines confidential information, permitted uses and disclosures, protection requirements, duration, and consequences of breach. Access to information does not automatically grant permission to copy, reuse, or disclose it.
-- Confidentiality obligations may arise from professional codes even where no NDA exists.
-- The New Zealand Privacy Act 2020 was discussed in relation to collection purpose, notification, security, access, correction, retention, disclosure, offshore transfers, and breach reporting.
+- Personal-data benefits such as improved services, efficiency, personalisation, and predictive accuracy must be balanced against risks to privacy, security, fairness, justice, transparency, and autonomy.
+- Engineers should design privacy and security controls into systems rather than adding them after deployment.
+- Data breaches can cause identity theft, fraud, scams, reputational damage, regulatory penalties, litigation, financial loss, and loss of trust.
+- APIs require authentication, authorisation, and protection against record enumeration and object-level access-control failures.
+- An NDA defines confidential information, permitted uses and disclosures, protection requirements, duration, intellectual-property obligations, and consequences of breach.
+- Access to information does not automatically grant permission to copy, transfer, publish, or reuse it.
+- Confidentiality obligations may arise from professional codes even when no NDA exists.
+- Permitted disclosure may involve legal requirements, court orders, or significant harm to people or the environment. The exact action depends on the agreement, law, professional code, and circumstances.
+- The New Zealand Privacy Act 2020 was discussed in relation to collection purpose, notification, storage, security, access, correction, retention, disclosure, and offshore transfers.
+- Informed consent requires sufficient information for a person to make a meaningful decision about providing data.
+- Offshore transfers may expose information to another jurisdiction’s privacy laws and make control, access, correction, or recovery more difficult.
 - The GDPR may apply to a New Zealand company that has an EU establishment, offers goods or services to people in the EU, or monitors their behaviour.
-- Māori data sovereignty emphasises self-determination, authority, consultation, participation, protection, and meaningful control over data concerning Māori communities.
-- Engineers should avoid harmful deficit framing and consider whether data interpretation reinforces stereotypes.
-- Virtue ethics, consequentialism, deontology, and professional codes provide different but complementary ways to assess data-related decisions.
+- GDPR-related rights discussed included access, correction, erasure, data portability, certain processing controls, and contesting automated decisions.
+- Māori data sovereignty treats data concerning Māori communities as connected to collective authority, self-determination, participation, protection, and consultation.
+- Engineers should consider partnership, participation, protection, meaningful agency, stakeholder authority, and the risk of deficit framing.
+- Virtue ethics, consequentialism, deontology, and professional codes provide different but complementary ways to analyse data-collection decisions.
+- Legality alone does not establish ethical acceptability where autonomy, fairness, trust, or community interests are undermined.
 
 ## Equations and worked patterns
 
-- No equations were presented.
-- Worked engineering pattern from the Optus example:
-  - Identify the data and system boundary.
-  - Check authentication and authorisation.
-  - Test whether identifiers allow record enumeration.
-  - Restrict access to the requesting user’s authorised objects.
-  - Consider consequences beyond the immediate technical failure.
-- Worked privacy-assessment pattern for a data-collecting application:
-  - What data is collected?
-  - Why is it collected?
-  - What secondary uses are possible?
-  - What uses are disclosed to users?
-  - Who can access it?
-  - How long is it retained?
-  - Can it be disclosed to law enforcement?
-  - Can users access, correct, or contest decisions based on it?
-- Worked international-compliance pattern from the Circularn scenario:
-  - Identify the location and nature of users.
-  - Review privacy notices and consent.
-  - Check collection, retention, access, security, and transfer practices.
-  - Determine whether EU users are being offered services or monitored.
-  - Assess whether geo-blocking is appropriate, while recognising that it may not eliminate legal risk.
+- No mathematical equations were presented.
+- Worked engineering pattern: identify the data collected, its purpose, possible secondary uses, who can access it, retention duration, disclosure conditions, user rights, security controls, and whether the collection is proportionate to the intended benefit.
+- Privacy and security review pattern for an API:
+  - Require authentication and authorisation.
+  - Prevent unauthorised access through predictable or sequential identifiers.
+  - Test for enumeration and object-level authorisation failures.
+  - Limit exposure of sensitive records.
+  - Consider consequences beyond the immediate technical fault.
+- Ethical review pattern:
+  - Check privacy, transparency, bias, discrimination, and accountability.
+  - Assess benefits and harms.
+  - Identify affected individuals and communities.
+  - Check legal, contractual, professional, and cultural obligations.
+  - Confirm that affected stakeholders have meaningful understanding, participation, and agency.
 
 ## Warnings and deadlines
 
-- No deadlines were identified in the source.
-- The lecture summary is not an authoritative statement of the Privacy Act 2020, Australian privacy law, GDPR, contract law, Engineering New Zealand’s code, or Treaty-related legislation.
-- The exact wording and scope of the 13 New Zealand privacy principles were not provided and should be checked against the Act and Office of the Privacy Commissioner guidance.
-- The lecture’s breach-reporting discussion was high-level; thresholds and procedures require verification from current official guidance.
-- Optus breach figures, financial amounts, legal outcomes, and customer numbers were lecture claims and should be checked before formal citation.
-- The Google data-erasure case was not clearly identified.
+- No assessment deadlines or other deadlines were stated in the source summary.
+- The lecture’s legal explanations were high-level and should not be treated as complete statements of the New Zealand Privacy Act 2020, Australian privacy law, the GDPR, contract law, Engineering New Zealand’s code, or Treaty-related legislation.
+- The exact wording and scope of the 13 New Zealand privacy principles were not given. Verify statutory details using the current Privacy Act and Office of the Privacy Commissioner guidance before formal use.
+- The lecture’s breach-reporting discussion did not establish the current threshold or process for a notifiable privacy breach.
+- Optus breach figures, financial amounts, legal outcomes, and customer numbers were lecture claims requiring authoritative verification before citation.
+- The historical GDPR data-erasure case was not clearly identified. Do not infer a case name from the summary.
 - The reference to the Data and Statistics Act contained an unclear year and requires verification.
-- Whether a permitted disclosure can be made anonymously was unresolved.
-- The Circularn scenario was hypothetical, and the legal consequences of VPN use, geo-blocking, and GDPR jurisdiction are fact-specific.
+- Whether an employer can sign an NDA on behalf of an employee depends on the employment contract, authority, contracting parties, and applicable law.
+- The lecture did not resolve whether a permitted disclosure could be anonymous.
+- The AAMI application’s possible data uses and legal consequences were not all confirmed features.
+- The Circularn scenario was hypothetical, and GDPR, geo-blocking, and VPN implications require fact-specific assessment.
 
 ## Recall questions
 
 1. Why can engineers be responsible for privacy even when they do not directly collect personal information?
-2. What is the relationship between data privacy, data security, stakeholder trust, and social licence to operate?
-3. Why was the Optus API failure serious from an authentication, authorisation, and record-enumeration perspective?
-4. What issues should a student check before signing an NDA for an industry project?
-5. What is a permitted disclosure, and what types of circumstances may allow or require one?
-6. What access and correction rights were associated with the New Zealand Privacy Act 2020 in the lecture?
+2. What is the relationship between privacy, security, stakeholder trust, and social licence to operate?
+3. Why was the Optus API failure serious from an authentication and authorisation perspective?
+4. What should a student check before signing an NDA for an industry project?
+5. Can professional confidentiality obligations exist without an NDA? Explain.
+6. What privacy rights and handling responsibilities were associated with the New Zealand Privacy Act 2020 in the lecture?
 7. Under what circumstances might the GDPR apply to a New Zealand company?
 8. What does Māori data sovereignty require engineers to consider?
-9. What is deficit framing, and why should it be limited when processing Māori data?
-10. How might virtue ethics, consequentialism, and deontology assess the same data-collection proposal differently?
+9. What is deficit framing, and why should it be limited when interpreting Māori data?
+10. How might virtue ethics, consequentialism, and deontology analyse the same data-collection proposal differently?
 
 ## Practice priorities
 
-- Be able to explain why engineers are data custodians and identify privacy responsibilities across a system lifecycle.
-- Practise analysing APIs for authentication, authorisation, object-level access control, and record enumeration vulnerabilities.
-- Compare the benefits and harms of collecting personal data, including effects on privacy, fairness, autonomy, and trust.
-- Review NDA structure: confidential information, duration, permitted disclosure, pre-existing knowledge, independently developed work, and breach consequences.
-- Build a privacy review checklist covering purpose, consent, access, correction, retention, disclosure, security, and offshore transfer.
-- Distinguish legal compliance from broader ethical acceptability.
-- Apply partnership, participation, and protection to engineering decisions involving Māori data.
-- Use the Circularn scenario to practise identifying when international privacy obligations may arise.
-- Treat all legal figures, thresholds, statutes, and case details from the lecture as items requiring authoritative verification before formal use.
+- Practise explaining why engineers are data custodians across platforms, APIs, cloud services, sensors, and analytics systems.
+- Be able to identify privacy, security, fairness, transparency, autonomy, and accountability risks in a proposed system.
+- Analyse the Optus example as an access-control and system-design failure rather than only as a general breach.
+- Review the structure and practical implications of NDAs, especially confidentiality definitions, duration, permitted disclosure, pre-existing knowledge, independently developed work, and breach consequences.
+- Build a checklist for informed consent and data governance covering purpose, collection, access, correction, retention, disclosure, security, and offshore transfer.
+- Apply the checklist to the AAMI driver-monitoring and hypothetical Circularn examples.
+- Compare New Zealand privacy responsibilities with the circumstances that can trigger GDPR obligations.
+- Practise incorporating Māori data sovereignty, Treaty-related considerations, consultation, agency, protection, and avoidance of deficit framing into an engineering ethics analysis.
+- Use the four ethical approaches to justify a recommendation, while distinguishing legal compliance from broader ethical acceptability.
 
 ## Missing or incomplete
 
-- No missing or incomplete lectures were identified for this weekly period.
-- Within the Lecture 9 source, the exact statutory wording of the New Zealand privacy principles, the Google data-erasure case, the year of the Data and Statistics Act reference, and the anonymous-disclosure question were unresolved or incomplete.
+- No lectures were identified as missing or incomplete for this week.
 
 ## Source manifest
 
