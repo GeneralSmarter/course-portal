@@ -1,98 +1,190 @@
 <!-- week-id: 2026-W32 -->
-<!-- generated-at: 2026-08-05T11:15:52.945228+12:00 -->
+<!-- generated-at: 2026-08-13T12:51:46.836989+12:00 -->
 # ENEL372-26S2 weekly summary
 
 ## Coverage
 
-- Lecture 10, covering practical PCB layout and circuit-noise control.
-- Topics included component placement, trace geometry, ground and power routing, planes, loop-area minimisation, functional-group separation, crosstalk, and decoupling capacitors.
-- Source generated 2026-08-04. No lecture content was identified as missing for this week.
+- Weekly period: 2026-08-03T00:00:00+12:00 to 2026-08-09T23:59:59+12:00.
+- Sources reviewed: Lecture 10, Lecture 11, and Lecture 12 verified summary files.
+- Lecture 10 covers practical PCB layout, parasitics, noise control, grounding, planes, loop-area reduction, functional separation, crosstalk, and decoupling.
+- Lecture 11 covers decoupling, electrical isolation, transformer models, flyback converters, magnetic energy storage, and steady-state flyback analysis.
+- Lecture 12 covers forward converters, transformer-mediated power transfer, core reset, flux walking, output filtering, duty-ratio limits, switch stress, and two-switch forward converters.
+- The supplied summaries do not independently establish the original lecture delivery dates. No lecture content was identified as missing or incomplete.
 
 ## Main concepts
 
-- Physically different PCB layouts can have different electrical performance even when they implement the same schematic connections.
-- Layout affects noise generation, noise susceptibility, parasitic resistance, capacitance, and inductance.
-- Ground and power traces are especially important because they connect many components and can distribute noise throughout a circuit.
-- Keep traces short; make high-current power and ground traces wide.
-- Minimise current-loop area, especially in high-speed and high-\(di/dt\) circuits.
-- Route signal traces with their return paths close together. A continuous reference plane directly beneath a signal trace helps minimise loop area and return-path impedance.
-- Ground and power planes reduce current density, resistance, and stray inductance, but only when they provide continuous, low-impedance paths.
-- Avoid slots, voids, bottlenecks, and unnecessary discontinuities in reference planes.
-- Avoid long parallel runs of unrelated signal traces because parasitic capacitance can cause crosstalk.
-- Separate digital, analogue, and power-electronic functional groups where possible.
-- Star-ground arrangements can reduce unwanted shared return-current paths between functional groups.
-- Decoupling capacitors provide a low-impedance path for AC noise between power and ground while approximately isolating DC conditions.
-- Real capacitors include ESR and ESL. Above their self-resonant frequency, ESL can dominate and the capacitor can behave inductively.
-- Component placement is a major design activity; the lecture gives a non-universal rule of thumb of approximately 70% placement time and 30% trace-layout time.
+- PCB geometry affects parasitic resistance, capacitance, inductance, electromagnetic interference, and noise susceptibility. Correct schematic connectivity does not guarantee a good physical layout. [Lecture 10]
+- Keep traces short, make high-current traces wide, minimise current-loop area, and keep signal paths physically close to their return paths. [Lecture 10]
+- Ground and power traces should generally be routed close together, while unrelated signal traces should not run in parallel for long distances because of capacitive coupling and crosstalk. [Lecture 10]
+- Component placement is a major part of PCB design. Lecture 10 gives an approximate rule of thumb of 70% of design time for placement and 30% for routing.
+- A ground or power plane is useful only when it provides a continuous, low-impedance return path. Voids, slots, bottlenecks, and plane discontinuities can increase loop area and inductance. [Lecture 10]
+- Digital, analogue, and power-electronic functional groups should be physically separated where practical. Star-ground arrangements can reduce unwanted shared-return currents. [Lecture 10]
+- Decoupling capacitors provide local high-frequency current paths and reduce supply noise and switching-loop inductance. Small capacitors are placed close to IC power pins; larger capacitors provide bulk, lower-frequency energy storage. [Lectures 10–11]
+- Real capacitors contain ESR and ESL. Above their self-resonant frequency, ESL dominates and impedance increases, so a larger nominal capacitance is not automatically better for high-frequency decoupling. [Lecture 10]
+- Electrical isolation prevents a conductive DC path between converter input and output. It is useful for ground-loop prevention, medical equipment, transient isolation, and distributed communication systems. [Lecture 11]
+- A flyback converter stores energy in its coupled magnetic element while the switch is on and transfers that energy to the output while the switch is off. [Lecture 11]
+- A forward converter transfers energy through the transformer while the switch is on. Its transformer is not intended to store substantial energy, so the core must be reset each cycle. [Lecture 12]
+- In a single-switch forward converter, a reset winding returns magnetising energy to the source. Incomplete reset causes flux walking and may lead to core saturation. [Lecture 12]
+- The forward-converter output stage behaves like a buck converter supplied by the transformer-scaled input voltage. [Lecture 12]
 
 ## Equations and worked patterns
 
-- Parasitic capacitance between conductors increases with facing area and decreases with separation:
+- Parasitic capacitance varies qualitatively as:
+  
   \[
   C_{\text{parasitic}} \propto \frac{A}{d}
   \]
-  Therefore, reduce capacitive coupling by decreasing parallel overlap, increasing separation, or routing traces on different layers where appropriate.
+  
+  Reduce coupling by decreasing parallel overlap area, increasing separation, or changing layer routing. [Lecture 10]
 
 - Stray inductance increases qualitatively with current-loop area:
+  
   \[
   L_{\text{stray}} \propto A_{\text{loop}}
   \]
-  Therefore, keep outgoing and return-current paths physically close.
 
-- Voltage across stray inductance:
+- Voltage generated by stray inductance during changing current:
+  
   \[
-  v_L = L\frac{di}{dt}
+  v_L=L\frac{di}{dt}
   \]
-  A switching loop with large stray inductance or rapidly changing current can produce a large voltage spike.
+  
+  Worked pattern: identify the high-\(di/dt\) loop, reduce its physical area, and place a suitable high-frequency capacitor close to the switching components. [Lecture 10]
 
-- High-\(di/dt\) switching-loop pattern:
-  1. A switch changes state rapidly.
-  2. The current change interacts with the loop’s stray inductance.
-  3. The resulting \(L\,di/dt\) voltage produces a transient.
-  4. A local high-frequency capacitor can provide a shorter current path, reduce loop area and effective inductance, and reduce the spike.
+- Ideal flyback switch-on magnetising-current increase:
+  
+  \[
+  \Delta I_{LM,\text{on}}=\frac{V_SDT}{L_M}
+  \]
 
-- Decoupling-capacitor frequency pattern:
-  - At DC and low frequency, the capacitor is approximately an open circuit.
-  - Over its effective frequency range, it provides a low-impedance AC path between power and ground.
-  - Above self-resonance, parasitic inductance increases its impedance and limits its usefulness.
+- Ideal flyback switch-off magnetising-current change:
+  
+  \[
+  \Delta I_{LM,\text{off}}
+  =
+  -\frac{V_{\text{out}}}{L_M}\frac{N_1}{N_2}(1-D)T
+  \]
+
+- Flyback steady-state voltage-transfer relationship:
+  
+  \[
+  \frac{V_{\text{out}}}{V_S}
+  =
+  \frac{N_2}{N_1}\frac{D}{1-D}
+  \]
+  
+  Worked pattern: apply zero net magnetising-current change or volt-second balance, substitute the on- and off-state voltages, cancel the switching period, and rearrange.
+
+- Ideal flyback flux balance:
+  
+  \[
+  \frac{V_S}{N_1}DT
+  -
+  \frac{V_{\text{out}}}{N_2}(1-D)T
+  =0
+  \]
+
+- Forward-converter transformer-scaled input:
+  
+  \[
+  V_X=\frac{N_2}{N_1}V_S
+  \]
+
+- Ideal continuous-conduction forward-converter output:
+  
+  \[
+  V_O=D\frac{N_2}{N_1}V_S
+  \]
+  
+  Worked pattern: treat the transformer secondary and output filter as a buck stage, then apply output-inductor volt-second balance.
+
+- Forward-converter output-inductor current changes:
+  
+  \[
+  \Delta i_{L_X,\text{on}}
+  =
+  \frac{\left(\frac{N_2}{N_1}V_S-V_O\right)DT}{L_X}
+  \]
+  
+  \[
+  \Delta i_{L_X,\text{off}}
+  =
+  -\frac{V_O(1-D)T}{L_X}
+  \]
+
+- Single-switch forward-converter reset interval:
+  
+  \[
+  \Delta t_X=\frac{N_3}{N_1}DT
+  \]
+
+- Complete core reset requires:
+  
+  \[
+  \Delta t_X\leq(1-D)T
+  \]
+
+- Maximum duty ratio imposed by reset:
+  
+  \[
+  D_{\max}
+  =
+  \frac{1}{1+\frac{N_3}{N_1}}
+  =
+  \frac{N_1}{N_1+N_3}
+  \]
+
+- Approximate main-switch voltage stress immediately after opening:
+  
+  \[
+  V_{S,\text{switch}}
+  =
+  V_S\left(1+\frac{N_1}{N_3}\right)
+  \]
+  
+  Design trade-off: reducing \(N_3/N_1\) permits faster reset and higher duty ratio, but increases reset current and switch-voltage stress.
 
 ## Warnings and deadlines
 
-- No deadlines or assessment dates were stated in the source.
-- The approximate capacitor frequency ranges in the lecture are not universal component limits; verify real designs against manufacturer impedance data and the actual package and layout.
-- The stated \(L_{\text{stray}} \propto A_{\text{loop}}\) relationship is a qualitative design rule, not a complete inductance formula.
-- The approximate 70% placement and 30% routing split is a rule of thumb, not a fixed engineering requirement.
-- Exact PCB layer arrangements, component positions, plane geometries, and some converter details cannot be recovered from the unavailable lecture diagrams.
-- The uncertain example involving a 10 nF film capacitor, a 10 µF capacitor, and frequencies near 20 MHz should not be treated as a verified component-selection rule. The reliable principle is that technology and parasitics determine high-frequency impedance.
+- No assessment deadlines or administrative deadlines are stated in the supplied summaries.
+- Do not treat a ground or power plane as automatically effective; check for continuity, bottlenecks, voids, slots, and return-current paths. [Lecture 10]
+- Do not route unrelated signal traces in long parallel runs, across sensitive analogue regions, or across reference-plane discontinuities. [Lecture 10]
+- Decoupling performance depends on frequency, capacitor technology, ESR, ESL, self-resonant frequency, package, and physical placement. [Lectures 10–11]
+- A flyback transformer is intentionally an energy-storage element and requires an air gap to support energy storage without premature saturation. [Lecture 11]
+- Transformer flux must return to its initial condition every cycle. Non-zero net flux change can cause saturation and destructive current. [Lecture 11]
+- A forward converter requires complete core reset within the switch-off interval. Failure causes flux walking, saturation, and increased switch stress. [Lecture 12]
+- The numerical component values and capacitor frequency ranges given in the lectures are examples or approximate lecture-specific figures, not universal design limits. [Lectures 10–11]
 
 ## Recall questions
 
-1. Why can two PCB layouts with identical electrical connections perform differently?
-2. Why are ground and power traces particularly important for noise control?
-3. Why should high-current power and ground traces generally be short and wide?
-4. Why does keeping a signal trace close to its return-current path reduce unwanted inductive effects?
-5. What problems can a slot, void, or bottleneck in a ground plane create?
-6. Why can long parallel runs of unrelated signal traces cause crosstalk?
-7. Use \(v_L=L\,di/dt\) to explain how a switching converter can generate a damaging voltage spike.
-8. Why might a smaller ceramic or film capacitor provide lower high-frequency impedance than a larger electrolytic capacitor?
-9. What is the purpose of separating digital, analogue, and power-electronic functional groups?
-10. What changes in a real capacitor’s behaviour above its self-resonant frequency?
+1. Why can two PCB layouts with identical schematic connections have different electrical performance?
+2. Why should a high-speed signal trace and its return path be kept physically close?
+3. Why are long parallel runs between unrelated signal traces undesirable?
+4. What are the distinct purposes of pin-level decoupling and global decoupling?
+5. Why does a real capacitor become less effective above its self-resonant frequency?
+6. What distinguishes the energy-transfer mechanism of a flyback converter from that of a forward converter?
+7. Why must transformer flux return to its initial value during every switching cycle?
+8. What is the function of the reset winding in a single-switch forward converter?
+9. What causes flux walking, and what electrical consequences can it produce?
+10. How does changing the reset-winding turns ratio affect forward-converter duty-ratio capability and main-switch voltage stress?
 
 ## Practice priorities
 
-- Practise identifying the high-\(di/dt\) loop in a switching power circuit and redesigning its physical path to minimise loop area.
-- Practise tracing the intended return-current path for a high-speed signal over a ground plane.
-- Review how plane discontinuities, overlapping functional regions, and shared return paths can transfer noise.
-- Compare routing strategies for power/ground pairs versus unrelated signal traces.
-- Explain decoupling-capacitor behaviour across DC, the effective operating range, and above self-resonance.
-- Be able to apply \(C_{\text{parasitic}} \propto A/d\) and \(L_{\text{stray}} \propto A_{\text{loop}}\) qualitatively to layout decisions.
-- Treat all approximate component-frequency figures as starting points only; check manufacturer data for design decisions.
+1. Derive the ideal flyback voltage-transfer relationship from magnetising-current or flux balance.
+2. Sketch flyback switch-on and switch-off intervals, marking switch state, diode state, magnetising-current direction, and energy flow.
+3. Compare flyback and forward converters in terms of transformer energy storage, diode conduction, output filtering, and core-reset requirements.
+4. Derive the forward-converter output-voltage relationship by treating the secondary output stage as a buck converter.
+5. Derive the maximum duty ratio for a single-switch forward converter from the reset-time constraint.
+6. Analyse the trade-off between reset-winding turns ratio, reset time, reset current, duty ratio, and switch stress.
+7. Practise identifying high-\(di/dt\) loops in PCB and switching-converter layouts, then propose local-capacitor and return-path improvements.
+8. Review capacitor selection by frequency range and parasitic behaviour rather than nominal capacitance alone.
 
 ## Missing or incomplete
 
-- None identified for the specified week.
-- The lecture source itself notes that diagrams were unavailable and that some transcript terminology and component-frequency examples were uncertain.
+- None identified from the supplied verified summary files.
 
 ## Source manifest
 
 - Lecture 10 (echo-lecture-10-10): complete; summary `f159c2b507e9251dd427ea087558137c70569430cd19b591b57b01f40a10b481`; transcript `ae3f83f17c4d3bc8f8031b2f90785e24a6a2348f74a2378da3fe9168d141feaa`; summary path `[local source path redacted]`
+- Lecture 11 (echo-lecture-11-11): complete; summary `ec7237f87525626005fb0cecebe90623163548ae52384ff4031d52e907f28005`; transcript `75cd3c992dbc5b39103dd19eeeeedd562811ee9c4073f2ad6ba7e272722365ce`; summary path `[local source path redacted]`
+- Lecture 12 (echo-lecture-12-12): complete; summary `79d84266624cd98e0c9a32f86eca8f764252a9a27da142fd9fc922f5248298bc`; transcript `85fe43cfe57a6d8f59b5ec237cf1e2113ddf4bd015c840e7142821f1c1f2e2b9`; summary path `[local source path redacted]`

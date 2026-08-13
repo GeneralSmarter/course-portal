@@ -1,111 +1,112 @@
 <!-- week-id: 2026-W32 -->
-<!-- generated-at: 2026-08-05T11:15:13.455142+12:00 -->
+<!-- generated-at: 2026-08-13T12:50:29.542120+12:00 -->
 # ENEL301-26S2 weekly summary
 
 ## Coverage
 
-- Week 2026-W32 covers 2026-08-03T00:00:00+12:00 to 2026-08-05T11:13:38.617864+12:00.
-- Source covered: Lecture 7.
-- Topics included:
-  - Sources and classification of New Zealand law.
-  - Parliamentary lawmaking and delegated legislation.
-  - Common law, statutory interpretation, and judicial precedent.
-  - New Zealand court hierarchy.
-  - Contract formation, including intention, offer, acceptance, counteroffers, and invitations to treat.
-  - E-commerce contract terms.
-  - A brief introduction to consumer protection.
-- The lecture indicated that the law content was relevant to later assessment.
+- Week: 2026-W32, 3–9 August 2026.
+- Covered verified summaries for:
+  - Lecture 7: New Zealand law, contracts, statutory interpretation, precedent, and e-commerce terms.
+  - Lecture 8: consideration, capacity, consent defects, illegality, liability clauses, and negligence.
+- No lectures were identified as missing or incomplete for this week.
 
 ## Main concepts
 
-- New Zealand law has two principal sources: Parliament, through statutes, and the courts, through common law and judicial decisions.
-- Legislation includes:
-  - Primary legislation, such as Acts of Parliament.
-  - Secondary or delegated legislation made under authority delegated by Parliament.
-- Delegated legislation must stay within the limits established by the empowering Act.
-- Common law develops incrementally through judicial decisions and can respond to circumstances not anticipated by Parliament.
-- Statutes prevail over common law where the two conflict.
-- The doctrine of precedent generally requires lower courts to follow relevant decisions of higher courts.
-- A court may distinguish a precedent when the facts of the current case are materially different.
-- The court hierarchy discussed was:
-  - District Court.
-  - High Court.
-  - Court of Appeal.
-  - Supreme Court.
-- International law concerns relationships between states. Public law concerns relationships involving the state. Private law concerns relationships between private parties.
-- A contract requires both an agreement or mutual assent and an intention to create legally enforceable obligations.
-- Commercial arrangements are generally presumed to involve an intention to create legal relations. Social, domestic, and family arrangements require closer analysis.
-- An offer is intended to become binding upon acceptance.
-- Acceptance must be final and unqualified.
-- A counteroffer proposes different terms and generally rejects and replaces the original offer.
-- An invitation to treat invites another party to make an offer. Advertisements, shop displays, and online prices are generally invitations to treat.
-- Online terms may specify when a contract is formed, such as when an order is confirmed or goods are dispatched.
-- Browse-wrap terms depend on reasonable notice, prominence, and clarity. Click-wrap terms involve an active indication of agreement and are generally more certain.
-- Consumer protection under the Consumer Guarantees Act 1993 was mentioned, but only briefly.
+- New Zealand law comes primarily from:
+  - Parliament, through statutes and delegated legislation.
+  - Courts, through common law and judicial precedent.
+- Statutes prevail over common law where they conflict.
+- The main stages of a bill include introduction, readings, select committee consideration, committee stages, third reading, royal assent, and commencement.
+- New Zealand’s court hierarchy was presented as District Court, High Court, Court of Appeal, and Supreme Court.
+- A contract requires:
+  - Intention to create legal relations.
+  - Offer and acceptance.
+  - Consideration.
+- Commercial arrangements generally indicate an intention to create legal relations. Social and domestic arrangements require closer analysis.
+- An offer is a willingness to contract immediately upon acceptance. Acceptance must be final and unqualified.
+- A counteroffer generally rejects and replaces the original offer.
+- Advertisements, shop displays, and online prices are generally invitations to treat rather than offers.
+- Online contract formation may depend on terms stating when the business accepts an order.
+- Browse-wrap terms depend on reasonable notice, prominence, and clarity. Click-wrap terms involve active agreement and are generally more certain.
+- Consideration is a legally recognised exchange. It must be sufficient but does not need to be economically adequate.
+- A deed can make an arrangement enforceable without ordinary consideration.
+- Capacity issues include contracts made by minors or by persons too intoxicated to understand the transaction.
+- Genuine consent may be affected by duress, undue influence, unconscionability, misrepresentation, or mistake.
+- Contracts may be void for illegality, including agreements involving crimes, fraud, statutory breaches, or interference with the administration of justice.
+- Exclusion clauses attempt to remove liability. Limitation clauses restrict liability to a specified amount or extent.
+- Negligence is a tort involving failure to take reasonable care to avoid foreseeable harm.
+- Contractual duties arise from agreement. Tort duties are imposed by law and can apply without a prior contract.
+- The neighbour principle concerns reasonable care toward people closely and directly affected by one’s acts or omissions.
+- In New Zealand, ACC generally prevents personal-injury lawsuits for accidental injuries, but negligence claims may still concern property damage and other loss.
 
 ## Equations and worked patterns
 
 - No mathematical equations were presented.
 - Contract formation pattern:
-  - Determine whether the communication is an offer or an invitation to treat.
-  - Check whether the response is final and unqualified.
-  - If the response changes the proposed terms, analyse it as a possible counteroffer.
-  - Consider whether the parties intended legal relations.
-  - For online transactions, check the terms and conditions for the stated point of contract formation.
-- Example pattern:
-  - “I will sell my car for $10,000” followed by “I will pay $9,000” is a counteroffer, not acceptance.
-  - “Would you consider settlement on 1 October?” may be a request to vary or renegotiate rather than a counteroffer.
-- Statutory interpretation pattern:
-  - Identify the statutory wording.
-  - Apply it to the facts.
-  - Consider whether an unusual factual situation requires a court to determine the meaning of an ordinary word in its statutory context.
-- The Clayton example concerned whether a person controlling the steering while another person operated the pedals was “driving.” The Court of Appeal described driving as taking an active part in operating the vehicle.
+  - Intention to create legal relations + offer and acceptance + consideration.
+- Consideration pattern:
+  - Legally recognised exchange.
+  - Sufficient consideration is required; equal or fair economic value is not required.
+  - Example pattern: high-value property exchanged for nominal payment may still satisfy consideration.
+- Offer and acceptance pattern:
+  - Exact, final acceptance forms agreement.
+  - A changed term is generally a counteroffer.
+  - Silence generally does not amount to acceptance.
+- Retail transaction pattern:
+  - Display or advertisement generally invites offers.
+  - Customer makes the offer to purchase.
+  - Business accepts at the relevant transaction stage, subject to applicable terms.
+- Contract-versus-tort pattern:
+  - Contract: duty comes from the parties’ agreement.
+  - Tort: duty comes from law and may exist without a contract.
+- Negligence pattern:
+  - Identify a foreseeable risk of harm.
+  - Ask whether reasonable care was required.
+  - Consider the loss caused by the act or omission.
+- Commercial risk-allocation pattern:
+  - Identify who bears the risk.
+  - Check whether liability is excluded.
+  - Check whether liability is capped.
+  - Identify the maximum financial exposure.
 
 ## Warnings and deadlines
 
-- Random tutorial teams were to be formed for a sustainability assignment assessing a new data centre in Southland.
-- Students were reminded to complete a short task in the intellectual property section before the following day’s IP workshop. The task involved reading material and choosing one of three options.
-- The exact formal citation of the Clayton case should be verified before use in formal legal writing.
-- The statutory section concerning driving while disqualified, stated in the lecture as section 32 of the Land Transport Act, should be checked against current legislation.
-- The District Court civil jurisdiction figure of up to $350,000 was identified as time-sensitive and should be verified before reliance.
-- The approximate figure of 480 delegated instruments under the Land Transport Act was informal and unverified.
-- The lecture introduced seven contract elements but covered only intention to create legal relations and offer and acceptance in detail.
-- The consumer protection discussion was introductory and not a complete explanation of the Consumer Guarantees Act 1993, the Fair Trading Act, or business-to-business contracting.
-- Browse-wrap and click-wrap effectiveness depends on the specific facts, including notice, presentation, timing, and applicable law.
+- The lecturer indicated that the law content was relevant to later assessment.
+- Random tutorial teams were to be formed for a sustainability assignment concerning a new data centre in Southland.
+- Students were reminded to complete a short intellectual-property task before the following day’s IP workshop. No exact submission deadline was stated in the summary.
+- Several case names, statutory references, jurisdictional figures, and factual details were identified in the source as requiring verification before formal legal use.
+- The summaries provide lecture-level explanations only. Detailed statutory tests for areas such as consumer contracts, exclusion clauses, misrepresentation, mistake, undue influence, illegality, and negligence were not covered.
 
 ## Recall questions
 
-1. What are the two principal sources of New Zealand law?
-2. How does delegated legislation differ from primary legislation?
-3. What happens when a statute conflicts with common law?
-4. What is the role of precedent, and how can a court distinguish an earlier decision?
-5. What are the four levels of the New Zealand court hierarchy discussed in the lecture?
-6. What two features distinguish a contract from an ordinary agreement?
-7. What is the difference between an offer, acceptance, and counteroffer?
-8. Why are advertisements and shop displays generally invitations to treat?
-9. What factors affect whether browse-wrap terms are incorporated into a contract?
-10. How did the Court of Appeal describe “driving” in the Clayton example?
+1. What are the two principal sources of New Zealand law, and how do statutes interact with common law?
+2. What are the three basic requirements for contract formation identified in Lecture 8?
+3. How does a counteroffer differ from an acceptance or a request to renegotiate?
+4. Why are advertisements and shop displays generally invitations to treat?
+5. What is the difference between sufficient and adequate consideration?
+6. When can intoxication make a contract voidable?
+7. How do duress, undue influence, and unconscionability differ?
+8. Why was silence ineffective as acceptance in the wind-turbine problem?
+9. What is the primary difference between a contractual duty and a duty in tort?
+10. Explain the neighbour principle and apply it to negligent engineering design.
 
 ## Practice priorities
 
 - Practise classifying communications as offers, acceptances, counteroffers, requests to vary, or invitations to treat.
-- Apply intention-to-create-legal-relations analysis to commercial, social, domestic, and family arrangements.
-- Memorise the basic stages by which a bill becomes an Act, including select committee consideration, royal assent, and commencement.
-- Draw and explain the New Zealand court hierarchy, including the role of leave to appeal to the Supreme Court.
-- Practise applying precedent to unusual facts, using the Clayton example and the possible self-driving-vehicle analogy.
-- Compare browse-wrap and click-wrap using notice, prominence, clarity, and active agreement.
-- Review the distinction between public law, private law, and international law.
-- Verify the flagged legal details before using them in assessment or formal legal writing.
+- Work through short contract-formation problems using intention, offer and acceptance, and consideration.
+- Distinguish sufficient consideration from adequate consideration using nominal-payment examples.
+- Analyse whether a contract is enforceable where a party is a minor or was sufficiently intoxicated.
+- Compare duress, undue influence, unconscionability, misrepresentation, mistake, and illegality as possible defects affecting enforceability.
+- Review exclusion and limitation clauses from an engineering or construction-contract perspective, focusing on maximum exposure and risk allocation.
+- Practise identifying whether a loss should be analysed through contract, negligence, or both.
+- Apply the neighbour principle to third-party loss caused by negligent engineering work.
+- Review the legislative process, court hierarchy, precedent, and the distinction between public and private law.
 
 ## Missing or incomplete
 
-- None identified for the specified week.
-- The lecture itself left some content incomplete:
-  - The remaining contract-formation elements were not identified or covered in detail.
-  - Consumer protection was only briefly introduced.
-  - Treaty of Waitangi comments were introductory rather than comprehensive.
-  - Some current legal details and the formal Clayton citation require verification.
+- None identified for 2026-W32.
 
 ## Source manifest
 
 - Lecture 7 (echo-lecture-7-7): complete; summary `984d03e4b9f2bdff1c9d425204684f09da1907a8053950b90d0d1fe5ccd87499`; transcript `a88e117aa29cbcd8a7f0d22cf2f5e37aa8b165a1eaadf1c84fede875a9ebb061`; summary path `[local source path redacted]`
+- Lecture 8 (echo-lecture-8-8): complete; summary `0970c02859ac35769c67b1740d5964847b2b2343a3337ce1a9a42f8e75926743`; transcript `87639b9a6d60636b8d86a30127c8bbcc6b253a100bda65496bc3227884e91413`; summary path `[local source path redacted]`

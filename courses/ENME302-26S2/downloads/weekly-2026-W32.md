@@ -1,171 +1,227 @@
 <!-- week-id: 2026-W32 -->
-<!-- generated-at: 2026-08-05T11:14:32.005130+12:00 -->
+<!-- generated-at: 2026-08-13T12:49:23.399954+12:00 -->
 # ENME302-26S2 weekly summary
 
 ## Coverage
 
-- Study window: 2026-08-03T00:00:00+12:00 to 2026-08-05T11:13:38.617864+12:00.
-- Sources covered:
-  - Lecture 13: equivalent nodal loading for distributed and concentrated loads.
-  - Lecture 14: course framework, structural determinacy, finite-element modelling, element types, shape functions, and foundational beam/truss mechanics.
-- No lectures were identified as missing or incomplete.
+- Lecture 13: Equivalent nodal loading for distributed, concentrated transverse, and axial loads; local-to-global transformation; assembly; bridge-deck loading example.
+- Lecture 14: FEA foundations, determinate and indeterminate structures, element types, shape functions, supports, and the mechanics basis of beam and truss analysis.
+- Lecture 15: Assembly matrices, boundary conditions, displacement magnification, lost loads, ghost loads, and support-reaction calculations.
+- Lecture 16: Assembly for connected elements, modelling pin joints with independent rotations, element classifications, static and dynamic formulations, three-dimensional frames, linear-elastic limitations, Timoshenko beams, and nonlinear structural applications.
 
 ## Main concepts
 
-- Equivalent nodal loading converts distributed loads into element nodal forces and moments, allowing existing stiffness formulations to be reused.
-- Distributed loads are introduced on the load side of the finite-element equation. The stiffness matrix and structural connectivity remain unchanged.
-- Equivalent loads are calculated in local element coordinates, transformed to global coordinates, and assembled into the global structural load vector.
-- Uniformly distributed, linearly varying, concentrated transverse, distributed axial, and concentrated axial loads can all be represented using shape functions.
-- Linearly varying loads require careful attention to element orientation because the load intensity depends on which node corresponds to \(X=0\) and \(X=L\).
-- Transverse beam load vectors are embedded into frame vectors by inserting zeros in the axial-force positions.
-- Axial bar load vectors are embedded into frame vectors by inserting zeros in the transverse-force and moment positions.
-- The simplified formulation treats axial and flexural behaviour independently, with no axial-flexural coupling.
-- Statically determinate structures can be solved using equilibrium alone.
-- Statically indeterminate structures require equilibrium, compatibility, constitutive relationships, and member stiffness.
-- Ideal pin-jointed truss members carry axial tension or compression only. Rigidly connected members can also carry shear and bending moment.
-- Finite element analysis represents a complex continuous structure using simpler elements connected at nodes.
-- Shape functions interpolate displacement or other field variables between discrete nodal points.
-- Element choice should match the physical behaviour being modelled. Greater model dimensionality is not automatically better.
-- The general FEA workflow is to define nodes and degrees of freedom, formulate elements, orient and assemble them, apply supports and loads, solve for nodal quantities, and recover element responses.
+- Equivalent nodal loading allows distributed or internal point loads to be represented by nodal forces and moments without deriving a new stiffness matrix for every load profile.
+- Distributed loads are integrated using element shape functions, transformed from local to global coordinates, and assembled into the global load vector.
+- The stiffness matrix and structural connectivity are unchanged when distributed loading is introduced; the load side of the system is extended.
+- Assembly matrices encode element connectivity, active degrees of freedom, and support constraints.
+- A global stiffness contribution is formed by extracting element terms and placing them in the correct global rows and columns.
+- A statically determinate structure can be solved using equilibrium alone. A statically indeterminate structure also requires compatibility and stiffness information.
+- Shape functions interpolate displacement or other field variables between discrete nodal values.
+- Bar elements carry axial force only. Beam elements represent transverse shear and bending behaviour. Frame elements can represent axial force, shear force, and bending moment.
+- A pin joint shares translations but permits independent rotations. This requires an additional rotational degree of freedom when represented within a frame-element model.
+- Lost loads or ghost loads occur when equivalent nodal loads act at constrained support degrees of freedom and therefore disappear from the active global load vector.
+- Support reactions must account for both elastic element forces and equivalent loads applied directly to constrained supports.
+- Displacement magnification changes only the plotted deformation, not the solved displacement.
+- The course formulation is linear elastic and does not automatically detect yielding, material failure, or buckling.
+- Timoshenko beam elements include shear deformation, which is more significant in short or deep beams than in slender beams.
+- The same assembly principles extend from static analysis to dynamic analysis and from two-dimensional to three-dimensional models.
 
 ## Equations and worked patterns
 
-- Distributed transverse load:
+- Equivalent transverse nodal loading:
+
   \[
-  f_{\mathrm{eq}}^{(e)}=\int_0^L N^T(X)W(X)\,dX
+  f_{\mathrm{eq}}^{(e)}
+  =
+  \int_0^L N^T(X)W(X)\,dX
   \]
 
-- Distributed axial load:
+- Equivalent axial nodal loading:
+
   \[
-  f_{\mathrm{eq,axial}}^{(e)}=\int_0^L \psi^T(X)P(X)\,dX
+  f_{\mathrm{eq,axial}}^{(e)}
+  =
+  \int_0^L \psi^T(X)P(X)\,dX
   \]
 
-- Conceptual transformation and assembly:
+- Local-to-global transformation and assembly:
+
   \[
   F_{\mathrm{eq}}^{(e)}=T^T f_{\mathrm{eq}}^{(e)}
   \]
-  followed by
+
   \[
   Q_{\mathrm{eq}}^{(e)}=A^{(e)}F_{\mathrm{eq}}^{(e)}
   \]
 
-- Global equilibrium with equivalent loads:
+- Extended structural equilibrium:
+
   \[
   KD=Q+Q_{\mathrm{eq}}
   \]
 
-- Uniformly distributed transverse load:
+- Uniformly distributed load:
+
   \[
   W(X)=\overline{W}
   \]
-  with total resultant:
+
+  Total resultant:
+
   \[
   F_{\mathrm{total}}=\overline{W}L
   \]
 
-- Linearly varying load with zero intensity at node 1:
+- Linearly varying load, zero at node 1:
+
   \[
   W(X)=\overline{W}\frac{X}{L}
   \]
-  Its total resultant is:
+
+  The equivalent shear-force components are:
+
   \[
-  F_{\mathrm{total}}=\frac{\overline{W}L}{2}
-  \]
-  and the equivalent nodal shear-force components identified in Lecture 13 are:
-  \[
-  \frac{3\overline{W}L}{20},\qquad
+  \frac{3\overline{W}L}{20}
+  \quad\text{and}\quad
   \frac{7\overline{W}L}{20}
   \]
 
-- Reversed linearly varying load:
-  \[
-  W(X)=\overline{W}\left(1-\frac{X}{L}\right)
-  \]
-  The larger equivalent nodal shear force is associated with node 1.
+  Their sum is:
 
-- Concentrated transverse load at \(X=A\):
+  \[
+  \frac{\overline{W}L}{2}
+  \]
+
+- Concentrated transverse load at position \(A\):
+
   \[
   W(X)=\overline{W}\delta(X-A)
   \]
 
-- Concentrated axial load position factors:
+- Concentrated axial loading uses position factors:
+
   \[
-  1-\frac{A}{L},\qquad \frac{A}{L}
+  1-\frac{A}{L}
+  \quad\text{and}\quad
+  \frac{A}{L}
   \]
 
-- Normal stress:
+- Global stiffness assembly for one element and the complete structure:
+
   \[
-  \sigma=\frac{N}{A}
+  K_G^{(e)}=A_e\hat{K}_eA_e^T
   \]
 
-- Circular hollow-section area:
   \[
-  A=\frac{\pi}{4}(D^2-d^2),\qquad d=D-2t
+  K_G=\sum_e A_e\hat{K}_eA_e^T
   \]
 
-- Tip-loaded cantilever moment:
+- Static and dynamic equations:
+
   \[
-  M(x)=-P(L-x)
+  KQ=F
   \]
 
-- Tip-loaded cantilever magnitudes:
   \[
-  \delta_{\mathrm{tip}}=\frac{PL^3}{3EI}
-  \]
-  \[
-  \theta_{\mathrm{tip}}=\frac{PL^2}{2EI}
+  M\ddot{Q}+C\dot{Q}+KQ=F
   \]
 
-- Bridge-deck worked pattern from Lecture 13:
-  - Apply the UDL equivalent-load vector in local coordinates.
-  - Use \(\overline{W}=-10\ \mathrm{kN/m}\) for the downward self-weight.
-  - Use \(L=4.5\ \mathrm{m}\).
-  - Transform to global coordinates.
-  - Assemble into the structural load vector.
-  - Add the \(50\ \mathrm{kN}\) concentrated truck load.
-  - Solve using the unchanged global stiffness matrix.
-  - In the stated \(0^\circ\) orientation and selected assembly, the transformation and assembly matrices are identities.
+- Lost-load reaction correction:
+
+  \[
+  R_{\mathrm{total}}
+  =
+  R_{\mathrm{elastic}}-f_{\mathrm{support}}
+  \]
+
+  The exact signs depend on the adopted force and reaction convention.
+
+- Uniform-load equilibrium pattern:
+
+  \[
+  W=\bar{w}L
+  \]
+
+  For a full-length uniform load, the resultant acts at \(L/2\). A support reaction and moment can then be checked using:
+
+  \[
+  R=W
+  \]
+
+  \[
+  M_R=Wx
+  \]
+
+- Cable-force resolution from the worked pattern:
+
+  \[
+  T_x=500\left(\frac{3}{5}\right)=300\ \mathrm{N}
+  \]
+
+  \[
+  T_y=500\left(\frac{4}{5}\right)=400\ \mathrm{N}
+  \]
+
+  The horizontal component contributes to axial loading; the vertical component contributes to shear and bending.
+
+- Pin-jointed inclined-member example:
+
+  \[
+  F_{\mathrm{inclined\ member}}\approx333.3\ \mathrm{kN}
+  \]
+
+  in compression, with the stated vertical reaction:
+
+  \[
+  R_{Cy}=100\ \mathrm{kN}
+  \]
 
 ## Warnings and deadlines
 
-- No deadlines or assessment dates were stated in the two source files.
-- Do not use the equivalent-load coefficients for a linearly varying load without first checking which node has the higher load intensity.
-- Downward loading may require a negative \(\overline{W}\), depending on the local-coordinate sign convention.
-- The transformation and assembly steps are still required in general, even though they reduce to identity operations in the bridge-deck example.
-- The automated transcript does not reliably capture all signs and moment coefficients for the linearly varying transverse-load vectors. Verify those values against the course lecture material before using them in assessed work.
-- Lecture 13 states that the bridge-deck example was not completed within that lecture.
+- No deadlines or assessment dates are stated in the four source summaries.
+- Lecture 13 does not capture the complete UDL equivalent-load vector coefficients, and some linearly varying-load moment coefficients and signs are also unclear. Verify those values against the course material before using them.
+- The bridge-deck worked example in Lecture 13 is explicitly unfinished in that lecture.
+- Check local and global sign conventions carefully, especially when reversing element orientation or applying downward loads.
+- A difference between the number of non-zero element-load terms and global-load terms may indicate lost loads at constrained supports.
+- Do not interpret displacement-magnified plots as true-scale deformation.
+- The basic linear-elastic model does not warn about yielding, excessive stress, or buckling.
+- The detailed beam transformation matrix and exact degree-of-freedom ordering were not identified as major assessment targets, but the underlying connectivity principles remain important.
 
 ## Recall questions
 
-1. Why is equivalent nodal loading preferred to deriving a new finite element for every distributed-load profile?
-2. What changes in the global finite-element equation when distributed loading is introduced?
-3. What is the general equivalent-load integral for a distributed transverse load?
-4. Why does element orientation matter for a linearly varying distributed load?
-5. How can a concentrated transverse load inside an element be represented without adding a node?
-6. What is the difference between a statically determinate and a statically indeterminate structure?
-7. Why does relative stiffness affect load distribution in a statically indeterminate structure?
-8. What physical behaviours can an ideal pin-jointed truss member carry, and which does it exclude?
-9. What role do shape functions play between finite-element nodes?
-10. What sequence of local-load transformation and assembly operations is used before solving the global system?
+1. Why is equivalent nodal loading preferred to deriving a new element formulation for every distributed-load profile?
+2. How are local equivalent element loads transformed and assembled into the global structural load vector?
+3. What is the difference between a statically determinate and a statically indeterminate structure?
+4. What information does an assembly matrix encode?
+5. Why is the stiffness matrix of a completely unconstrained frame element singular?
+6. Under what conditions do lost loads or ghost loads arise?
+7. Why must support reactions include loads applied directly to constrained support degrees of freedom?
+8. How should a pin joint be represented when connected elements must share translations but rotate independently?
+9. What are the principal behavioural differences between bar, beam, and frame elements?
+10. What limitations follow from using a linear-elastic finite-element model?
 
 ## Practice priorities
 
-1. Derive and apply equivalent nodal loads for uniform transverse loading.
-2. Check that equivalent nodal forces reproduce the total resultant load.
-3. Practise both orientations of a linearly varying load and track the sign convention.
-4. Formulate a concentrated transverse load using the Dirac delta representation.
-5. Embed beam and bar load vectors correctly into six-degree-of-freedom frame vectors.
-6. Practise local-to-global transformation and global assembly for an element that is not aligned with the global axes.
-7. Distinguish determinate and indeterminate structures, identifying when stiffness and compatibility are required.
-8. Review the FEA workflow from element definition through global solution and element-force recovery.
-9. Rework the cantilever relationships for moment, tip deflection, and tip rotation.
-10. Review axial stress and hollow-section area calculations using consistent units.
+1. Derive and assemble equivalent nodal loads for UDLs, triangular loads, and internal point loads.
+2. Practise checking equivalent nodal forces against the total applied resultant and expected load distribution.
+3. Build assembly matrices from element-to-global degree-of-freedom mappings.
+4. Reduce a constrained system and compare it conceptually with enforcing supports by overwriting equations.
+5. Work through a distributed-load example where one element node is fixed, identify the lost loads, and correct the support reactions.
+6. Model a pin-connected member inside a frame structure by adding an independent rotational degree of freedom.
+7. Check frame, beam, and bar load vectors for correct zero entries and degree-of-freedom placement.
+8. Verify finite-element reactions against whole-structure equilibrium.
+9. Review the distinction between static \(KQ=F\) and dynamic \(M\ddot{Q}+C\dot{Q}+KQ=F\) formulations.
+10. Practise identifying when shear deformation, nonlinear material behaviour, or buckling would make the basic course model inadequate.
 
 ## Missing or incomplete
 
-None identified for the requested weekly coverage.
+- No lectures are missing or incomplete for this weekly coverage.
+- Some exact displayed coefficients, signs, matrix layouts, and degree-of-freedom orderings are not fully recoverable from the source summaries.
 
 ## Source manifest
 
 - Lecture 13 (echo-lecture-13-13): complete; summary `13a70e407d95c729b30f20204250d9391cab4f88b8ea0077d9fd2f6d000a088f`; transcript `889bc88e0f9a5b20bc56139e9db9aaf33d5803aca1a490f87dbdbe8d711c5426`; summary path `[local source path redacted]`
 - Lecture 14 (echo-lecture-14-14): complete; summary `10b1b39170ba508fe8dd6ec43cac293ecd9cddfb5fefa5a38e72c0271d49ad6a`; transcript `b82ab49cc20590cb76ca38685dc389816a824ac22387893c2b11f6e696e47e67`; summary path `[local source path redacted]`
+- Lecture 15 (echo-lecture-15-15): complete; summary `05d04f8aa8b6c1cdc9511a075229febd8af9dc14583863c898f001b3ad08d381`; transcript `b1a16c7824db87cdc4aa8fe09fc2756695e1aba3ba636ae77487b1ac08ab1d6e`; summary path `[local source path redacted]`
+- Lecture 16 (echo-lecture-16-16): complete; summary `fb14394fc6013e5c5a52f304023b6c15010c638223be11ec257c09a07a890f6b`; transcript `7a8d90ea543f2c50e56782ca8798c0634153a0f13c2b6767d00a1f43fdcd20f0`; summary path `[local source path redacted]`
