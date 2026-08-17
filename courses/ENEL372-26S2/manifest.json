@@ -4,12 +4,12 @@
   "profile": "Power & analogue",
   "counts": {
     "lectures": 36,
-    "resources": 39,
+    "resources": 44,
     "assignments": 1,
-    "transcripts": 15,
-    "summaries": 15,
+    "transcripts": 16,
+    "summaries": 16,
     "pipeline_failures": 0
   },
-  "as_of_date": "2026-08-17",
-  "generated_at": "2026-08-17T06:15:04.049688+12:00"
+  "as_of_date": "2026-08-18",
+  "generated_at": "2026-08-18T06:15:38.216882+12:00"
 }
