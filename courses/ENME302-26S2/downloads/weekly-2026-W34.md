@@ -1,56 +1,38 @@
 <!-- week-id: 2026-W34 -->
-<!-- generated-at: 2026-08-23T06:16:52.651029+12:00 -->
+<!-- generated-at: 2026-08-23T09:32:09.414738+12:00 -->
 # ENME302-26S2 weekly summary
 
 ## Coverage
 
-- Lecture 21: Laplace’s equation, separation of variables, finite and semi-infinite rectangular domains, Fourier sine series, analytical-solution checking, and numerical plotting.
-- Lecture 22: Fourier-series convergence, Quiz 1 guidance, COMSOL finite-element workflow, boundary conditions, meshes, Laplace-equation heat-transfer modelling, and heat flux.
-- Lecture 23: Seven-element welded-frame assignment, stress and wind-loading calculations, Euler–Bernoulli versus Timoshenko elements, geometry simplification, and mesh generation.
-- Lecture 24: Structured and unstructured meshes, mesh quality and convergence, grid-generation methods, finite-difference discretisation, and the axially loaded elastic rod.
-- Source coverage is complete for the specified week. No lectures were identified as missing or incomplete.
+- Covered Lectures 21–24, spanning separation of variables, Fourier sine series, COMSOL finite-element modelling, frame analysis, mesh generation, numerical error, and finite-difference discretisation.
+- Lecture 21 continued Laplace-equation solutions for finite rectangular and semi-infinite domains, including numerical visualisation. [Lecture 21]
+- Lecture 22 completed the Fourier-series material and introduced COMSOL workflows for a two-dimensional Laplace-equation heat-transfer model. [Lecture 22]
+- Lecture 23 covered the finite-element frame-analysis assignment, Timoshenko elements, geometry construction, and mesh generation. [Lecture 23]
+- Lecture 24 covered structured and unstructured meshes, mesh convergence and quality, grid-generation methods, and finite differences applied to an axially loaded rod. [Lecture 24]
 
 ## Main concepts
 
-- Laplace’s equation describes a harmonic scalar field:
-  \[
-  \nabla^2 u=0
-  \]
-  Separation of variables produces solutions whose form must be selected according to domain geometry and boundary conditions.
-- Homogeneous boundary conditions are useful because they eliminate coefficients and restrict separation constants to discrete eigenvalues such as \(n\pi\).
-- A constant boundary value generally requires a Fourier sine-series superposition rather than a single separated mode. For the constant function on the unit interval, only odd modes have non-zero coefficients.
-- Truncated Fourier series improve as more terms are included but may show oscillatory behaviour near the ends of the interval.
-- A finite-element workflow consists broadly of pre-processing, solving, and post-processing:
-  - Define geometry, materials, physics, boundary conditions, and mesh.
-  - Assemble and solve the algebraic system.
-  - Visualise and interpret fields and derived quantities.
-- Boundary conditions are required to close a PDE problem. Dirichlet conditions prescribe the dependent variable, Neumann conditions prescribe a derivative or flux, and Robin conditions combine the variable and its derivative or flux.
-- For heat transfer, Fourier’s law is:
-  \[
-  \mathbf q=-k\nabla T
-  \]
-  The negative sign makes heat flux point from hotter regions towards colder regions.
-- Structured meshes provide simple indexing and low connectivity-storage requirements, but they are difficult to fit to complex geometries. Unstructured meshes fit arbitrary geometries more easily but require more complex connectivity handling.
-- Mesh refinement should target regions with steep gradients, stress concentrations, or boundary layers. Mesh convergence is assessed by monitoring a quantity of interest as the mesh is refined.
-- Accuracy can be improved through h-refinement, which reduces element size, or p-refinement, which increases interpolation order.
-- Total numerical error involves both discretisation error and round-off error. A finer mesh does not automatically minimise total error.
-- In the frame assignment, the model uses seven 2D frame elements, rigid welded connections, fixed supports, and a circular hollow-section member.
-- The assignment’s simplified stress calculation combines the absolute axial and bending normal stresses while neglecting shear stress:
-  \[
-  \sigma_{\text{total}}
-  =
-  |\sigma_{\text{axial}}|
-  +
-  |\sigma_{\text{bending}}|
-  \]
-- Wind pressure varies with the square of wind speed. The Timoshenko formulation includes shear deformation and generally predicts larger deflections than Euler–Bernoulli elements.
-- In a finite-difference method, derivatives are replaced by algebraic approximations at grid nodes. The second-order central-difference approximation produces an algebraic equation for each interior node.
-- Geometry should be simplified only where removed details do not materially affect the physics. Removing important fillets or other stress-controlling features can create artificial stress concentrations.
+- Laplace’s equation describes a harmonic scalar field. Separation of variables produces admissible spatial modes determined by the domain geometry and boundary conditions.
+- Homogeneous boundary conditions are useful because they eliminate coefficients or restrict the separation constant to discrete eigenvalues.
+- In a semi-infinite domain, terms that grow as the coordinate tends to infinity must be discarded. A constant boundary condition generally requires a Fourier sine series and linear superposition rather than one separated mode.
+- Truncated Fourier series approximate the target boundary condition. Increasing the number of terms improves convergence, although oscillatory behaviour can remain near boundaries or discontinuities.
+- COMSOL uses a finite-element workflow: define parameters, geometry, materials, physics, boundary conditions, mesh, study and solver, then post-process the results.
+- Dirichlet conditions prescribe the dependent variable; Neumann conditions prescribe a derivative or flux; Robin conditions combine the dependent variable with its derivative or flux.
+- Heat flux follows the temperature gradient according to Fourier’s law and points from hotter regions towards colder regions.
+- The frame-analysis assignment uses seven welded two-dimensional frame elements, fixed supports, a circular hollow-section member, reaction checks, stress calculations, wind loading, and comparison of Euler–Bernoulli and Timoshenko formulations.
+- The Timoshenko formulation includes shear deformation and generally predicts larger deflections than Euler–Bernoulli, although individual local deflections may decrease because the force distribution changes.
+- Geometry should be simplified enough to reduce computational cost while retaining features that influence stresses, boundary conditions, flow, heat transfer, or other relevant physics.
+- Structured meshes have implicit, index-based connectivity and are efficient when the geometry permits them. Unstructured meshes fit complex geometries more easily but require more connectivity data.
+- Mesh refinement reduces discretisation error but increases computational cost. Refinement should target strong gradients, stress concentrations, boundary layers, and the selected quantity of interest.
+- Numerical accuracy depends on both discretisation error and round-off error. A finer mesh does not automatically minimise total error.
+- Finite differences replace derivatives with algebraic approximations at grid nodes. The central-difference approximation for a second derivative is second-order accurate.
 
 ## Equations and worked patterns
 
 - Two-dimensional Laplace equation:
   \[
+  \nabla^2u
+  =
   \frac{\partial^2u}{\partial x^2}
   +
   \frac{\partial^2u}{\partial y^2}
@@ -62,21 +44,21 @@
   u(x,y)=X(x)Y(y)
   \]
 
-- Discrete eigenvalues from zero sine boundaries:
+- Zero boundary conditions can produce:
   \[
   \sin(\mu)=0
   \quad\Rightarrow\quad
   \mu=n\pi,\qquad n=1,2,3,\ldots
   \]
 
-- For a semi-infinite domain with zero values at \(y=0\) and \(y=1\), prescribed value \(u(0,y)=1\), and \(u\to0\) as \(x\to\infty\):
+- For a semi-infinite domain with zero conditions at \(y=0\) and \(y=1\), prescribed value \(u(0,y)=1\), and \(u\to0\) as \(x\to\infty\):
   \[
   u(x,y)
   =
   \sum_{n=1}^{\infty}
   C_n e^{-n\pi x}\sin(n\pi y)
   \]
-  with
+  where
   \[
   C_n=
   \begin{cases}
@@ -84,115 +66,63 @@
   0, & n\text{ even}
   \end{cases}
   \]
-  The growing exponential is discarded because it violates the far-field decay condition.
 
 - Fourier sine-series coefficients on \(0\le x\le L\):
   \[
-  b_n=
+  b_n
+  =
   \frac{2}{L}
   \int_0^L
   f(x)\sin\left(\frac{n\pi x}{L}\right)\,dx
   \]
 
-- For \(f(x)=1\) on \(0\le x\le L\):
-  \[
-  b_n=
-  \frac{2}{n\pi}\left(1-(-1)^n\right)
-  \]
-  Hence:
-  \[
-  1=
-  \frac{4}{\pi}
-  \sum_{\substack{n=1\\n\ \mathrm{odd}}}^{\infty}
-  \frac{1}{n}
-  \sin\left(\frac{n\pi x}{L}\right)
-  \]
-
-- Finite rectangular-domain pattern for a right boundary proportional to \(\sin(2\pi y)\):
-  \[
-  u(x,y)
-  =
-  a\,
-  \frac{\sinh(2\pi x)}{\sinh(4\pi)}
-  \sin(2\pi y)
-  \]
-  This uses the domain and boundary interpretation recorded in Lecture 21; the source notes that the exact normalisation should be checked against official course material if required for assessment.
-
-- Heat flux:
+- Fourier’s law for heat flux:
   \[
   \mathbf q=-k\nabla T
   \]
-  A zero-gradient Neumann condition represents zero heat flux and an insulating boundary.
 
-- Circular hollow-section area:
+- Simplified frame-analysis stress calculation:
   \[
-  A=
-  \frac{\pi}{4}
-  \left(D_o^2-D_i^2\right)
-  \]
-  with \(D_o=100\ \mathrm{mm}\), \(D_i=90\ \mathrm{mm}\).
-
-- Outer-fibre distance:
-  \[
-  c=\frac{D_o}{2}=50\ \mathrm{mm}
+  \sigma_{\text{total}}
+  =
+  |\sigma_{\text{axial}}|
+  +
+  |\sigma_{\text{bending}}|
   \]
 
-- Axial and bending stresses:
+- Axial and bending normal stresses:
   \[
   \sigma_{\text{axial}}=\frac{N}{A},
   \qquad
   \sigma_{\text{bending}}=\frac{Mc}{I}
   \]
 
-- Point-load moment pattern:
+- Moment from a point load:
   \[
   M=Fd
   \]
-  For the example values \(F=2000\ \mathrm N\) and \(d=0.5\ \mathrm m\):
-  \[
-  M=1000\ \mathrm{N\,m}
-  \]
+  The lecture example used \(F=2000\,\mathrm N\) and \(d=0.5\,\mathrm m\), giving approximately \(1000\,\mathrm{N\,m}\). The associated load orientations and signs must be taken from the assignment diagram.
 
 - Wind pressure:
   \[
   p=0.6v^2
   \]
-  The assignment gives a yield stress of \(350\ \mathrm{MPa}\) and a factor of safety of \(2.5\), giving:
+  with \(p\) in pascals and \(v\) in metres per second.
+
+- Allowable stress for the assignment:
   \[
   \sigma_{\text{allow}}
   =
-  \frac{350}{2.5}
+  \frac{\sigma_y}{2.5}
   =
-  140\ \mathrm{MPa}
+  \frac{350\,\mathrm{MPa}}{2.5}
+  =
+  140\,\mathrm{MPa}
   \]
 
-- Timoshenko shear-deformation factor:
+- Timoshenko shear-deformation parameter:
   \[
   \frac{12EI}{GA_sL^2}
-  \]
-  The stated effective shear-area relation is:
-  \[
-  A_s=\frac{2A}{\pi}\approx0.64A
-  \]
-
-- Axially loaded rod:
-  \[
-  \frac{d}{dx}
-  \left(
-  AE\frac{du}{dx}
-  \right)=0
-  \]
-  For constant \(A\) and \(E\):
-  \[
-  \frac{d^2u}{dx^2}=0
-  \]
-  with the recorded boundary conditions:
-  \[
-  u(0)=0,
-  \qquad
-  \left.AE\frac{du}{dx}\right|_{x=L}
-  =
-  F_{\text{prescribed}}
   \]
 
 - Second-order central difference:
@@ -204,59 +134,56 @@
   O(\Delta x^2)
   \]
 
-- Discretised constant-\(A\), constant-\(E\) rod equation:
+- For the constant-\(A\), constant-\(E\) elastic rod, the interior finite-difference equation is:
   \[
   AE
   \frac{u_{i+1}-2u_i+u_{i-1}}{\Delta x^2}
   =0
   \]
-  Boundary-condition incorporation into the algebraic system was deferred to a later lecture.
+  Boundary-condition discretisation was deferred to a later lecture.
 
 ## Warnings and deadlines
 
-- Lecture 21 stated that the upcoming test would run from 6:30 pm to 8:30 pm, with 110 minutes for the assessment and approximately 10 minutes for code upload. The source does not explicitly identify the calendar date in the summary.
-- Test preparation guidance included verifying the virtual environment, OneDrive synchronisation, Anaconda/Spider access, two-factor-authentication requirements, and backup copies of code before the test.
-- The test would not require students to write out stiffness matrices unless intermediate working was specifically requested. Correct final answers were generally sufficient for full marks.
-- Quiz 1 covers PDE classification, separation of variables, boundary-condition selection, structured and unstructured grids, numerical methods, and an introductory software question.
-- Quiz 1 allows one attempt and is due at the end of Friday of the relevant week. Numerical answers require units and three significant figures where specified. Unit formatting and metric-prefix conversions were specifically highlighted as possible sources of marking errors.
-- The frame-analysis assignment deadline was stated as 6:00 pm on Monday, 7 September, submitted digitally. The report and code are required; the report is the primary assessed output.
-- The assignment report has a maximum length of eight pages excluding appendices. The source states that the report may be submitted individually or in pairs, subject to the stated authorship requirements.
-- The assignment’s open-ended structural-modification component is approximately 10% of the assignment. The lecturer cautioned against spending excessive time trying to optimise it.
-- Lecture summaries contain transcript-reconstruction caveats. In particular, exact frame geometry, load orientations, some software command names, the finite-grid-generation equations, and certain numerical conventions should be checked against official course material before assessment use.
+- Lecture 21 gave test-environment guidance: the test was scheduled for the following evening from 6:30 pm to 8:30 pm, with 110 minutes for the assessment and approximately 10 minutes for uploading code to Learn. Students were advised to test the virtual environment, use student OneDrive, prepare code skeletons, keep backups, and arrive early. [Lecture 21]
+- The test environment could require two-factor authentication, and USB storage and non-whitelisted cloud services would not be available. [Lecture 21]
+- Stiffness matrices were not required to be written out in the test unless specifically requested. Correct final answers were generally sufficient, but intermediate working could support partial credit. [Lecture 21]
+- Quiz 1 covers PDE classification, separation of variables, boundary-condition selection, structured and unstructured grids, numerical methods, and an introductory software question. It allows one attempt and is due at the end of Friday of the relevant week. Numerical answers require units and three significant figures where specified. [Lecture 22]
+- Check unit formatting carefully in quiz answers, particularly milli- and kilo-prefixes. Incorrect unit entry may cause an otherwise correct numerical result to be marked wrong. [Lecture 22]
+- The frame-analysis assignment report and code were stated to be due digitally at 6:00 p.m. on Monday, 7 September. The report maximum is eight pages excluding appendices. [Lecture 23]
+- The assignment requires interpretation of numerical results, not numerical tables alone. The open-ended structural-modification component is approximately 10% of the assignment, so excessive optimisation effort was discouraged. [Lecture 23]
+- The simplified assignment stress calculation intentionally neglects shear stress. Do not treat it as a complete combined-stress or von Mises analysis. [Lecture 23]
+- The exact finite-domain Laplace-example normalisation and some assignment degree-of-freedom numbering should be checked against the course materials before assessment use. [Lecture 21; Lecture 23]
+- Mesh convergence should be assessed using changes between successive meshes and then validated against analytical or experimental expectations where possible. [Lecture 24]
 
 ## Recall questions
 
-1. Why must the growing exponential be removed from a semi-infinite-domain solution when the field must decay as \(x\to\infty\)?
-2. Why does the constant boundary condition \(u(0,y)=1\) require a Fourier sine-series superposition?
-3. Why do the even Fourier coefficients vanish when representing the constant function on the interval used in the lectures?
+1. Why does the condition \(u\to0\) as \(x\to\infty\) eliminate the growing exponential term in a separated solution?
+2. Why is a Fourier sine series required to represent the constant boundary value \(u(0,y)=1\)?
+3. Why are the even Fourier sine coefficients zero for the constant function on the interval used in the lectures?
 4. What is the difference between Dirichlet, Neumann, and Robin boundary conditions?
-5. Why does the negative sign appear in Fourier’s law, \(\mathbf q=-k\nabla T\)?
-6. What are the main advantages and disadvantages of structured and unstructured meshes?
-7. How should a mesh-convergence study be performed, and why is the change between successive meshes important?
-8. What is the difference between Euler–Bernoulli and Timoshenko frame elements?
-9. Why is the assignment’s simplified total normal stress calculated using the sum of the absolute axial and bending stresses?
-10. How are the Taylor expansions about \(u_{i+1}\) and \(u_{i-1}\) combined to obtain the second-order central-difference approximation?
+5. What does the negative sign in \(\mathbf q=-k\nabla T\) indicate about heat-flux direction?
+6. Why can a Timoshenko frame element generally produce larger deflections than an Euler–Bernoulli element?
+7. What should be checked when simplifying geometry before creating a mesh?
+8. What are the principal advantages and disadvantages of structured and unstructured meshes?
+9. What is the difference between h-refinement and p-refinement?
+10. Why is the second-order central-difference approximation called second-order accurate?
 
 ## Practice priorities
 
-1. Derive the Fourier sine coefficients for a constant boundary value and explain why only odd modes remain.
-2. Reconstruct the semi-infinite Laplace solution, including the decay condition, eigenvalue restriction, superposition, and coefficient pattern.
-3. Practise checking an analytical solution against the PDE and every boundary condition.
-4. Review finite-element modelling workflow and classify example boundaries as Dirichlet, Neumann, or Robin.
-5. Explain structured versus unstructured meshes, O–H grids, mesh refinement, element quality, and convergence studies.
-6. Practise the frame-assignment stress workflow:
-   - Calculate cross-sectional properties.
-   - Determine axial and bending stresses.
-   - Combine them using the assignment’s simplified rule.
-   - Identify the critical element and location.
-7. Practise wind-loading calculations using \(p=0.6v^2\), the allowable stress of \(140\ \mathrm{MPa}\), and the assignment’s load and equilibrium checks.
-8. Compare Euler–Bernoulli and Timoshenko implementations, focusing on the local stiffness matrix, shear deformation, deflections, rotations, and unchanged transformation/assembly steps.
-9. Derive the central-difference formula from forward and backward Taylor expansions.
-10. Practise assembling the interior finite-difference equation for the axially loaded rod, while noting that boundary-condition discretisation was not completed in Lecture 24.
+1. Derive the semi-infinite Laplace solution from the boundary conditions, including the removal of the growing exponential and determination of the Fourier coefficients.
+2. Practise checking an analytical solution by substitution into Laplace’s equation and every boundary condition.
+3. Reproduce the finite-element modelling workflow in COMSOL: parameters, geometry, physics, boundary conditions, mesh, stationary study, solve, and post-processing.
+4. Review structured versus unstructured meshes, O–H grids, geometry partitioning, advancing-front generation, and Delaunay triangulation.
+5. Perform a mesh-convergence study using a clearly defined quantity of interest, recording changes between successive mesh resolutions.
+6. Review frame-assignment calculations: reaction equilibrium, axial stress, bending stress, maximum total normal stress, wind-pressure scaling, and allowable stress.
+7. Modify the local frame-element stiffness matrix for Timoshenko behaviour while keeping the transformation and global assembly procedures unchanged.
+8. Derive the central-difference approximation from Taylor expansions and apply it to the interior nodes of the elastic-rod equation.
+9. Practise dimensional checking and unit entry for numerical quiz answers.
+10. Prepare concise assignment reporting: method, results, interpretation, comparison of modelling methods, design implications, and conclusions.
 
 ## Missing or incomplete
 
-- None. All four specified lecture summary files were available and read.
+- No lectures were identified as missing or incomplete for the requested 2026-W34 coverage.
 
 ## Source manifest
 

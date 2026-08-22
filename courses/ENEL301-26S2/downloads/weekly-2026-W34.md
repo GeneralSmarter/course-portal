@@ -1,142 +1,130 @@
 <!-- week-id: 2026-W34 -->
-<!-- generated-at: 2026-08-23T06:18:02.949351+12:00 -->
+<!-- generated-at: 2026-08-23T09:33:15.653585+12:00 -->
 # ENEL301-26S2 weekly summary
 
 ## Coverage
 
 - Week: 2026-W34, from 2026-08-17T00:00:00+12:00 to 2026-08-23T06:15:15.739855+12:00.
-- Sources read: verified summaries for Lecture 11 and Lecture 12 only.
-- Lecture 11 covered sustainability, engineering decision-making, corporate responsibility, systems thinking, causal loop diagrams, system boundaries, and the Makarewa hyperscale AI data-centre assignment.
-- Lecture 12 covered life-cycle assessment (LCA), functional units, system boundaries, inventory data, environmental indicators, impact characterisation, normalisation, weighting, uncertainty, and trade-offs.
+- Covered verified summaries:
+  - Lecture 11: sustainability, engineering responsibility, systems thinking, causal loop diagrams, and the Makarewa Data Grid assignment.
+  - Lecture 12: life-cycle assessment, functional units, system boundaries, environmental indicators, inventory data, and impact interpretation.
+- Source basis: `lecture_11_summary.md` and `lecture_12_summary.md` only.
 
 ## Main concepts
 
-- Engineering decisions involve constraints, uncertainty, competing objectives, stakeholder expectations, bias, and explicit trade-offs.
-- Sound decision processes should involve affected stakeholders, communicate transparently, manage uncertainty, use decision gates where appropriate, and align engineering work with organisational objectives.
-- Sustainable development requires balancing economic, social, and environmental outcomes while considering the needs of future generations.
-- Sustainability is relevant to governance, risk management, environmental performance, stakeholder relationships, reputation, and long-term organisational viability.
-- The SDG hierarchy is: goal → target → indicator.
-- Systems thinking analyses connected components, interactions, feedback, delays, and unintended consequences.
-- Causal loop diagrams are qualitative models:
-  - Reinforcing loops amplify change.
-  - Balancing loops counteract change and tend towards a target or equilibrium.
-  - `+` links represent same-direction changes.
-  - `−` links represent opposite-direction changes.
-- System boundaries determine which components, processes, stakeholders, inputs, outputs, and impacts are included in an analysis. Boundary choices can materially change conclusions.
-- The sustainability assignment assesses the proposed Makarewa Data Grid across:
-  - Environmental impacts using LCA.
-  - Economic impacts.
-  - Social impacts.
-  - A causal loop diagram.
-- LCA estimates potential environmental impacts across a product or service’s life cycle. It is a model of reality, not a direct measurement of reality.
-- Life-cycle thinking includes extraction, processing, manufacturing, packaging, transport, use, and end-of-life.
-- Average electricity emission factors describe the existing grid average; marginal factors may better represent the emissions associated with additional demand.
-- A functional unit defines the comparable service delivered by alternatives. Comparisons should be based on equivalent function rather than simply per item or per kilogram.
-- LCA results depend on assumptions about the functional unit, system boundary, data quality, electricity source, time horizon, allocation, and end-of-life treatment.
-- Foreground data is specific to the system being studied; background data comes from existing databases for supporting processes.
-- Characterisation converts different flows into common units within an impact category.
-- Normalisation compares results with a reference baseline.
-- Weighting assigns relative importance to impact categories and is inherently subjective.
-- Environmental improvements can involve trade-offs: reducing one impact may increase another.
-- LCA can support product development, process improvement, policy, supply-chain analysis, market access, and environmental communication, but selective boundaries or indicators can create greenwashing risks.
+- Sustainability is context-dependent and involves balancing economic, social, and environmental outcomes. Cultural considerations may be treated within the social pillar for this course. (Lecture 11)
+- Sustainable development was defined using the Brundtland formulation: meeting present needs without compromising future generations’ ability to meet their needs. (Lecture 11)
+- Engineering decisions require explicit treatment of constraints, uncertainty, trade-offs, stakeholder expectations, organisational objectives, transparency, and bias. Decision gates can support decisions as project information changes. (Lecture 11)
+- Sustainability contributes to corporate governance, risk management, environmental performance, stakeholder engagement, reputation, and long-term organisational viability. (Lecture 11)
+- Systems thinking analyses connections, feedback, delays, interactions, and unintended consequences in complex systems. (Lecture 11)
+- Causal loop diagrams are qualitative representations of cause-and-effect relationships. Reinforcing loops amplify change; balancing loops counteract change and tend towards a target or equilibrium. (Lecture 11)
+- System boundaries determine which components, stakeholders, processes, inputs, outputs, and impacts are included in an analysis. Boundary selection can change the conclusions. (Lecture 11; Lecture 12)
+- The sustainability assignment concerns a proposed hyperscale AI data centre in Makarewa, Southland. Its four components are environmental assessment using LCA, economic impact assessment, social impact assessment, and a causal loop diagram. The components and assumptions are interdependent. (Lecture 11)
+- Life-cycle assessment evaluates potential environmental impacts across a product or service’s life cycle. It is a model of reality, not a direct measurement of reality. (Lecture 12)
+- Life-cycle thinking includes resource extraction, processing, manufacturing, packaging, transport, use, and end-of-life. (Lecture 12)
+- Average electricity emission factors describe average grid intensity; marginal factors better represent emissions from additional demand and may be higher during periods of high demand. (Lecture 12)
+- A functional unit defines the service being delivered so that alternatives can be compared on an equivalent basis. (Lecture 12)
+- LCA results depend on assumptions about data, system boundaries, functional units, time horizons, indicators, allocation, and end-of-life treatment. (Lecture 12)
+- Foreground data are specific to the studied system; background data come from existing databases for supporting processes. (Lecture 12)
+- Characterisation converts flows into impact-category results. Normalisation compares results with a reference; weighting combines categories using subjective value judgements. (Lecture 12)
+- LCA involves trade-offs between indicators. A reduction in one impact may increase another, so a single overall “best” option may not exist. (Lecture 12)
 
 ## Equations and worked patterns
 
-- Sustainability definition, expressed conceptually:
+- Sustainability concept:
   
-  `Sustainable development = meeting present needs without compromising future generations’ ability to meet their needs`
+  Sustainable development = meeting present needs without compromising future generations’ ability to meet their needs.
 
-- Sustainability pillars:
+- Simplified sustainability framework:
 
-  `Sustainability considerations = economic + social + environmental`
-
-  Cultural considerations were treated within the social or societal pillar for this course.
+  Sustainability considerations = economic + social + environmental
 
 - Temperature-gap balancing loop:
 
-  `Temperature gap = ideal temperature − actual temperature`
+  Temperature gap = ideal temperature − actual temperature
 
-  Lecture example:
+  For the lecture’s example:
 
-  `37°C − 36°C = 1°C`
+  Temperature gap = 37 °C − 36 °C = 1 °C
 
-  A compensating response such as shivering reduces the gap, illustrating a balancing loop.
+  The gap produces a compensating response such as shivering, which raises body temperature towards the desired state. (Lecture 11)
+
+- Causal-loop link notation:
+  - `+`: variables change in the same direction.
+  - `−`: variables change in opposite directions.
+  - `R`: reinforcing loop, which amplifies change.
+  - `B`: balancing loop, which counteracts change.
 
 - Passenger-kilometre functional unit:
 
-  `Passenger-kilometres = number of passengers × distance travelled`
+  Passenger-kilometres = number of passengers × distance travelled
 
-- Life-cycle inventory:
+- Life-cycle inventory pattern:
 
-  `LCI = resources and energy in, emissions and waste out`
+  LCI = resources and energy in, emissions and waste out
 
-- Impact characterisation for category `k`:
+- Impact characterisation:
 
-  `Iₖ = Σᵢ(Fᵢ × Cᵢ,ₖ)`
+  Iₖ = Σᵢ(FᵢCᵢ,ₖ)
 
-  where `Fᵢ` is the quantity of flow `i`, and `Cᵢ,ₖ` is its characterisation factor for impact category `k`.
+  where `Iₖ` is the result for impact category `k`, `Fᵢ` is the quantity of flow `i`, and `Cᵢ,ₖ` is the characterisation factor for flow `i` in category `k`.
 
-- Climate-change characterisation pattern:
+- Climate-change characterisation:
 
-  `I_climate = Σᵢ(Fᵢ × GWPᵢ)`
+  I_climate = Σᵢ(Fᵢ × GWPᵢ)
 
   The result may be expressed in kg CO₂-equivalent. The selected factors and time horizon must be stated.
 
 - Normalisation:
 
-  `I_normalised = I_system / I_reference`
+  I_normalised = I_system / I_reference
 
-- Worked reasoning pattern for an LCA comparison:
-  1. Define the goal and scope.
-  2. Select an equivalent functional unit.
-  3. Set and document the system boundary and exclusions.
-  4. Select relevant environmental indicators.
-  5. Collect foreground data and connect it to background databases.
-  6. Build the inventory.
-  7. Characterise flows into impact categories.
-  8. Normalise or weight only with explicit justification.
-  9. Interpret trade-offs, uncertainty, data quality, and sensitivity to assumptions.
+  The lecture used comparison of the Data Grid carbon footprint with New Zealand’s total carbon footprint as an example. The reference year and dataset would need to be specified.
+
+- Functional-unit examples:
+  - Soft-drink packaging: 1 litre delivered to the consumer.
+  - Car transport: passenger-kilometres.
+  - Solar photovoltaic system: 1 kWh delivered to a household.
+  - Data Grid assignment: one year of Data Grid services.
 
 ## Warnings and deadlines
 
-- The Lecture 11 summary states that the sustainability assignment report was due Friday 9 October at 5:00 pm in Week 11. The summary explicitly says to verify submission details against the current Learn assignment brief.
-- One peer-assessment date was verbally corrected from September to October. The current Learn assignment brief is authoritative.
-- The assignment is worth 20% of ENEL301 and requires a report and an Excel document, according to Lecture 11.
-- The data cable is outside the stated assignment scope; assess the data centre only and assume that it remains connected.
-- Project claims about generator numbers, water use, investment, electricity use, and staging were presented as uncertain or changing. Do not treat them as independently verified facts without checking the assignment materials.
-- For additional data-centre electricity demand, an average grid emission factor may underestimate impacts if marginal generation has higher emissions, particularly during high-demand or cold-weather periods.
-- LCA comparisons must use equivalent functional units, boundaries, time horizons, indicators, and comparable data. Otherwise, apparently favourable results may be misleading.
-- The approximately 95% system-boundary coverage figure is only a lecture rule of thumb, not a formal standard requirement.
-- Weighting is subjective. Conclusions that depend strongly on weighting should be reported cautiously.
-- The lecture summaries contain identified transcription uncertainties, including some terminology, figures, and historical claims. Verify exact details against course materials before using them in formal work.
+- The Lecture 11 summary states that the sustainability assignment report is due Friday 9 October at 5:00 pm, identified as Week 11. The current Learn assignment brief is authoritative and should be checked before relying on this date.
+- Lecture 11 records that one peer-assessment date was verbally corrected from September to October. The current Learn brief should be checked for the exact date.
+- The assignment requires a report and an Excel document and is worth 20% of ENEL301, according to the lecture summary. Current assignment instructions should be checked for definitive requirements.
+- The assignment’s environmental, social, economic, and causal-loop components should not be treated as isolated tasks because their assumptions and findings affect one another.
+- For the assignment, the data cable is outside the stated scope; students should assess the data centre only and assume it remains connected. The assignment brief should be checked for any later scope changes.
+- Project claims about generators, water consumption, investment, electricity use, facility scale, and other scenario figures were presented as uncertain or changing claims. They should be documented, checked, and treated as assumptions or claims to assess rather than automatically verified facts.
+- Do not use average grid emissions automatically for new electricity demand. Consider whether a marginal emission factor better represents the additional generation.
+- Avoid misleading LCA comparisons caused by unequal system boundaries, omitted upstream processes, non-equivalent functional units, inconsistent time horizons, or selective communication that creates greenwashing risk.
+- The summaries identify some transcript uncertainty, including the terminology “neutrification potential,” which may refer to eutrophication potential. Verify course terminology if using it formally.
 
 ## Recall questions
 
-1. Why should engineering decisions explicitly address uncertainty, stakeholder participation, transparency, and bias?
-2. What is the difference between a reinforcing and a balancing feedback loop?
-3. How can changing a system boundary alter the conclusions of a sustainability assessment?
-4. What are the four major components of the Makarewa Data Grid assignment, and why are they interdependent?
-5. Why might a marginal electricity emission factor be more appropriate than an average factor for a new data centre?
-6. What is a functional unit, and why is “one product” often an inadequate basis for comparison?
-7. What is the difference between foreground data and background data in an LCA?
-8. How does impact characterisation convert inventory flows into an impact-category result?
-9. Why can climate-change results not be directly added to eutrophication or phosphate-equivalent results?
-10. How can an LCA be used legitimately while still creating a risk of greenwashing?
+1. What are the three sustainability pillars used in the course, and how may cultural considerations fit within that framework?
+2. Why are engineering decision gates useful when a project begins with substantial uncertainty?
+3. What is the difference between a reinforcing loop and a balancing loop?
+4. How did the pharmacy dispensing example illustrate a reinforcing feedback loop?
+5. Why can changing a system boundary change the conclusions of a sustainability assessment?
+6. Why is an LCA result described as a potential environmental impact rather than a direct measurement?
+7. What is a functional unit, and why is “one bottle” potentially a poor unit for comparing soft-drink packaging?
+8. Why might a marginal electricity emission factor be more appropriate than an average factor for assessing a new data centre?
+9. What is the difference between foreground data and background data?
+10. How do characterisation, normalisation, and weighting differ in an LCA?
 
 ## Practice priorities
 
-1. Practise defining a functional unit for the Data Grid service and explain what comparison it enables.
-2. Draw a causal loop diagram for a data-centre issue, using noun-based variables, correctly directed links, `+`/`−` signs, and `R`/`B` loop labels.
-3. Build a boundary checklist for the Data Grid LCA, including servers, racks, buildings, maintenance, electricity and water infrastructure, batteries, transport, labour, and excluded cable impacts.
-4. For any LCA comparison, audit whether the alternatives have equivalent functions, boundaries, data quality, time horizons, and end-of-life assumptions.
-5. Practise explaining why additional electricity demand may require marginal rather than average grid emissions.
-6. Work through the LCA sequence from goal and scope to inventory, characterisation, interpretation, and uncertainty analysis.
-7. Review the three sustainability pillars alongside the SDG goal → target → indicator hierarchy.
-8. Prepare to defend assumptions transparently and identify how social, economic, and environmental findings affect one another.
+- Construct a causal loop diagram for the Data Grid project using noun-based variables, correctly directed causal links, `+`/`−` relationships, and labelled reinforcing or balancing loops.
+- Define a defensible system boundary for the Data Grid assessment. Explicitly record included and excluded processes, including capital equipment, maintenance, electricity and water infrastructure, transport, labour, and the data cable.
+- Choose and justify the functional unit of one year of Data Grid services, while recognising the allocation difficulty between storage, cloud computing, and generative AI services.
+- Build an LCA reasoning chain: goal and scope, functional unit, boundary and exclusions, indicators, foreground and background data, inventory, characterisation, interpretation, and comparison.
+- Test the sensitivity of conclusions to changing assumptions such as electricity source and timing, marginal versus average emissions, water use, backup systems, equipment inclusion, and end-of-life treatment.
+- Practise identifying trade-offs across climate change, smog, ozone depletion, acidification, eutrophication, toxicity, respiratory effects, and resource depletion rather than reducing the analysis to one indicator.
+- For written work, distinguish verified facts from scenario claims, state assumptions clearly, involve economic, social, environmental, and systems perspectives, and explain uncertainty.
 
 ## Missing or incomplete
 
-- No missing or incomplete lectures were identified for this week.
+- None.
 
 ## Source manifest
 
