@@ -3,13 +3,13 @@
   "course_name": "Power and Analogue Electronics",
   "profile": "Power & analogue",
   "counts": {
-    "lectures": 36,
-    "resources": 44,
-    "assignments": 1,
-    "transcripts": 28,
-    "summaries": 28,
-    "pipeline_failures": 2
+    "lectures": 37,
+    "resources": 73,
+    "assignments": 3,
+    "transcripts": 32,
+    "summaries": 32,
+    "pipeline_failures": 0
   },
   "as_of_date": "2026-10-07",
-  "generated_at": "2026-10-07T10:09:04.579100+13:00"
+  "generated_at": "2026-10-07T11:07:21.122667+13:00"
 }
