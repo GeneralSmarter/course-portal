@@ -3,1053 +3,931 @@
 Date: August 5, 2026 11:00am-11:55am
 Transcript type: native Echo automated transcript.
 
-[00:00:40:750 - 00:00:43:189] **Speaker 0:** Firstly, I just thought it might be helpful to help
-[00:00:43:189 - 00:00:44:139] **Speaker 0:** you pull the troll in the end.
-[00:00:45:520 - 00:00:46:360] **Speaker 0:** I thought actually it might.
-[00:00:47:740 - 00:00:50:250] **Speaker 0:** I feel like I always go for the 2.
-[00:00:51:680 - 00:00:54:069] **Speaker 0:** start doing things and half of them look at me
-[00:00:54:069 - 00:00:56:270] **Speaker 0:** like they haven't attended a single lecture, so I thought
-[00:00:56:270 - 00:00:59:090] **Speaker 0:** it might be helpful to be at the first few
-[00:00:59:090 - 00:00:59:909] **Speaker 0:** lectures or watch them.
-[00:01:00:569 - 00:01:03:950] **Speaker 0:** And just kind of like see what you've told them.
-[00:01:04:529 - 00:01:06:839] **Speaker 2:** Yeah, I know, cos I'm sure that you do tell
-[00:01:06:839 - 00:01:07:970] **Speaker 2:** them all they need to know.
-[00:01:08:949 - 00:01:11:209] **Speaker 2:** I mean, well, obviously some of them have it, but
-[00:01:11:209 - 00:01:13:160] **Speaker 2:** a lot of them that ask me questions just see.
-[00:01:14:220 - 00:01:16:930] **Speaker 2:** I I try and um put all the key stuff
-[00:01:16:930 - 00:01:19:220] **Speaker 2:** in an email as well, but I try and put
-[00:01:19:220 - 00:01:20:680] **Speaker 2:** the key stuff in an email as well.
-[00:01:21:970 - 00:01:21:980] **Speaker 0:** Hi.
-[00:01:24:500 - 00:02:33:750] **Speaker 0:** I think Kia ora koto kato.
-[00:02:35:839 - 00:02:36:660] **Speaker 2:** Welcome along, everyone.
-[00:02:40:199 - 00:02:42:479] **Speaker 2:** So welcome to the first lecture for NMA 302.
-[00:02:43:210 - 00:02:44:479] **Speaker 2:** It's just a little bit loud, but.
-[00:02:45:539 - 00:02:47:410] **Speaker 2:** If it's not loud enough at the back, um.
-[00:02:48:720 - 00:02:49:199] **Speaker 2:** Louder.
-[00:02:52:089 - 00:02:53:190] **Speaker 2:** Can you hear me OK now?
-[00:02:54:339 - 00:02:55:570] **Speaker 2:** Is that sort of maybe not.
-[00:02:56:740 - 00:02:59:809] **Speaker 2:** If it's not good enough, I think I've done, I
-[00:02:59:809 - 00:03:01:460] **Speaker 2:** can go a little bit louder on the.
-[00:03:02:330 - 00:03:03:809] **Speaker 2:** That's, that's as much as I can do up here.
-[00:03:03:960 - 00:03:06:669] **Speaker 2:** I don't know if you can hear me, OK, awesome.
-[00:03:08:580 - 00:03:09:500] **Speaker 2:** I just want to start with the mihi.
-[00:03:09:649 - 00:03:14:330] **Speaker 2:** So immihianaki te rohe or Ngai Tahu te rohe manaki
-[00:03:14:330 - 00:03:21:649] **Speaker 2:** hiahoko Aurakki temonga kegai tahu kotakuttimu Takitimu te waka keingai
-[00:03:21:649 - 00:03:29:479] **Speaker 2:** tahu koaimakkareritiawa ke nuke timoananui Akiwa temoana called Jeff Rogers
-[00:03:29:479 - 00:03:33:350] **Speaker 2:** tokuingwa konati pakiha toku iwi nor whakatu mokuteuna.
-[00:03:34:649 - 00:03:35:479] **Speaker 2:** Kyototahiaho in nohoana.
-[00:03:36:750 - 00:03:39:350] **Speaker 2:** So, um, you have many of you have probably had
-[00:03:39:350 - 00:03:42:830] **Speaker 2:** the, the misfortune of seeing me before, um, in 2
-[00:03:42:830 - 00:03:43:830] **Speaker 2:** or 3 last year.
-[00:03:44:649 - 00:03:46:250] **Speaker 2:** So we're just switching up some of the numbers in
-[00:03:46:250 - 00:03:47:029] **Speaker 2:** the course code.
-[00:03:48:160 - 00:03:50:210] **Speaker 2:** Um I appreciate not everyone has come through the same
-[00:03:50:210 - 00:03:50:410] **Speaker 2:** path.
-[00:03:50:529 - 00:03:53:289] **Speaker 2:** So some of you will be coming in as international
-[00:03:53:289 - 00:03:56:250] **Speaker 2:** exchange students or through a different path, but there will
-[00:03:56:250 - 00:03:58:750] **Speaker 2:** be times in this course where I Refer back to
-[00:03:58:750 - 00:04:00:509] **Speaker 2:** 202, which is sort of the course that many of
-[00:04:00:509 - 00:04:01:509] **Speaker 2:** you did with Paul Dockerty.
-[00:04:01:990 - 00:04:05:830] **Speaker 2:** So when I am referring to that, that's just essentially
-[00:04:05:830 - 00:04:09:330] **Speaker 2:** the 2nd 2nd year mechanics and materials course.
-[00:04:09:750 - 00:04:11:630] **Speaker 2:** So all the stress and strange stuff.
-[00:04:11:830 - 00:04:14:139] **Speaker 2:** So if you, for a vast majority of you, that
-[00:04:14:139 - 00:04:15:779] **Speaker 2:** will be the course that you did prior to this
-[00:04:15:779 - 00:04:17:190] **Speaker 2:** in the first semester of last year.
-[00:04:17:750 - 00:04:19:428] **Speaker 2:** But if you don't fit the conventional mould and you've
-[00:04:19:428 - 00:04:21:528] **Speaker 2:** come through a different path, I'm sure there'll be an
-[00:04:21:528 - 00:04:25:170] **Speaker 2:** equivalent mechanics and matures class that you will have done.
-[00:04:25:929 - 00:04:29:149] **Speaker 2:** Covering the key concepts that will then build upon within
-[00:04:29:160 - 00:04:29:910] **Speaker 2:** this class.
-[00:04:32:709 - 00:04:34:790] **Speaker 2:** So I just want to um have a little bit
-[00:04:34:790 - 00:04:37:269] **Speaker 2:** of a background in terms of sort of what's led
-[00:04:37:269 - 00:04:38:829] **Speaker 2:** me to to be here today.
-[00:04:38:950 - 00:04:41:559] **Speaker 2:** So I did originally study here at UC as an
-[00:04:41:559 - 00:04:42:109] **Speaker 2:** undergraduate.
-[00:04:42:549 - 00:04:45:179] **Speaker 2:** So uh I did the equivalent of this course back
-[00:04:45:179 - 00:04:48:309] **Speaker 2:** in sort of, you know, 2004, 2005.
-[00:04:48:609 - 00:04:51:309] **Speaker 2:** Things were a bit arranged a bit differently back then.
-[00:04:51:549 - 00:04:54:390] **Speaker 2:** Um, the two key people that taught me the material
-[00:04:54:390 - 00:04:57:269] **Speaker 2:** that we're covering in this next four weeks will be
-[00:04:57:269 - 00:04:58:510] **Speaker 2:** Professor Senor Alenko.
-[00:04:58:929 - 00:05:01:290] **Speaker 2:** So he's actually now at the University of Waikato and
-[00:05:01:290 - 00:05:03:369] **Speaker 2:** then uh Professor Eli Van Houten.
-[00:05:03:489 - 00:05:08:970] **Speaker 2:** So he's um actually American by um origin, but is
-[00:05:08:970 - 00:05:12:089] **Speaker 2:** now um actually teaching at the University of Sherbrooke.
-[00:05:12:250 - 00:05:13:929] **Speaker 2:** So it's a French-speaking part of Canada.
-[00:05:14:049 - 00:05:17:170] **Speaker 2:** So, um, teaching in French and, uh, so I had
-[00:05:17:170 - 00:05:18:450] **Speaker 2:** to learn French to do that.
-[00:05:18:570 - 00:05:22:609] **Speaker 2:** So, um, you know, unquestionably, some of the way that
-[00:05:22:609 - 00:05:24:529] **Speaker 2:** they taught that material will influence how I I teach
-[00:05:24:529 - 00:05:24:609] **Speaker 2:** it.
-[00:05:24:670 - 00:05:27:589] **Speaker 2:** So that's sort of the The trajectory and where some
-[00:05:27:589 - 00:05:28:809] **Speaker 2:** of this came from.
-[00:05:29:980 - 00:05:32:579] **Speaker 2:** Um, my PhD was jointly undertaken here at UC and
-[00:05:32:579 - 00:05:34:140] **Speaker 2:** with Texas A&M in the US.
-[00:05:34:540 - 00:05:38:130] **Speaker 2:** So Texas A&M, that's what we often gets referred to
-[00:05:38:130 - 00:05:39:250] **Speaker 2:** as a land grant university.
-[00:05:39:399 - 00:05:42:970] **Speaker 2:** So they were sort of um acts of parliament, or
-[00:05:42:970 - 00:05:47:899] **Speaker 2:** acts of legislative that's developed as universities and sort of
-[00:05:47:899 - 00:05:48:760] **Speaker 2:** land grant areas.
-[00:05:48:779 - 00:05:51:040] **Speaker 2:** They're often sort of in the middle of nowhere and
-[00:05:51:040 - 00:05:53:959] **Speaker 2:** sort of rural parts of the US, um.
-[00:05:55:589 - 00:05:58:320] **Speaker 2:** Texas A&M sits right there in College Station.
-[00:05:58:470 - 00:06:00:750] **Speaker 2:** So it's sort of between the triangle of Fort Dallas-Fort
-[00:06:00:750 - 00:06:04:670] **Speaker 2:** Worth metroplex, Houston, San Antonio, and of course Austin falls
-[00:06:04:670 - 00:06:05:329] **Speaker 2:** in there as well.
-[00:06:05:350 - 00:06:07:549] **Speaker 2:** And it's in the area in the middle there.
-[00:06:07:750 - 00:06:08:029] **Speaker 2:** So.
-[00:06:08:899 - 00:06:10:500] **Speaker 2:** Um, the university when I was there, it was about
-[00:06:10:500 - 00:06:11:609] **Speaker 2:** 50,000 students.
-[00:06:11:980 - 00:06:13:660] **Speaker 2:** It's now up to about 80,000.
-[00:06:14:179 - 00:06:15:339] **Speaker 2:** That's quite a big place.
-[00:06:15:579 - 00:06:19:019] **Speaker 2:** Um, this was me at a football game.
-[00:06:19:380 - 00:06:21:059] **Speaker 2:** So this was back in 2008.
-[00:06:21:260 - 00:06:24:299] **Speaker 2:** So the stadium there on campus, uh, at the time
-[00:06:24:299 - 00:06:26:619] **Speaker 2:** I was there, housed about 80,000.
-[00:06:26:890 - 00:06:29:459] **Speaker 2:** So this was a uh The stadium on campus.
-[00:06:29:540 - 00:06:32:049] **Speaker 2:** It was about a 5-minute walk from my office and
-[00:06:32:049 - 00:06:34:899] **Speaker 2:** it held 80,000 and it was always sold out for
-[00:06:35:170 - 00:06:37:140] **Speaker 2:** for home football games, which were very, very big in
-[00:06:37:140 - 00:06:38:000] **Speaker 2:** that part of the world.
-[00:06:38:649 - 00:06:42:059] **Speaker 2:** Um this is obviously nearly 20 years ago, more here
-[00:06:42:059 - 00:06:44:119] **Speaker 2:** in those days, um.
-[00:06:45:269 - 00:06:47:709] **Speaker 2:** The Kyle Field is the stadium that photo was taken
-[00:06:47:709 - 00:06:48:070] **Speaker 2:** in.
-[00:06:48:670 - 00:06:52:190] **Speaker 2:** It's now been upgraded.
-[00:06:52:390 - 00:06:54:429] **Speaker 2:** One of my office mates when I was studying, it
-[00:06:54:429 - 00:06:56:410] **Speaker 2:** was actually one of the project managers on the upgrade.
-[00:06:57:049 - 00:07:01:829] **Speaker 2:** And it's now 102,733 capacity in that stadium, which makes
-[00:07:01:829 - 00:07:05:239] **Speaker 2:** it the sixth biggest stadium in the world on campus.
-[00:07:05:869 - 00:07:09:869] **Speaker 2:** Interestingly, Ohio Stadium, it was first Ohio Stadium has now
-[00:07:09:869 - 00:07:10:630] **Speaker 2:** surpassed it.
-[00:07:11:220 - 00:07:15:100] **Speaker 2:** Um, the, the refurbishment of, um, Kyle Field was done
-[00:07:15:100 - 00:07:18:450] **Speaker 2:** in 2015 and then 2019 was when the Ohio stadium
-[00:07:18:450 - 00:07:22:160] **Speaker 2:** was completed, um, with an extra 47 seats in it.
-[00:07:22:420 - 00:07:25:820] **Speaker 2:** So I suspect that's probably not a coincidence that it
-[00:07:25:820 - 00:07:30:959] **Speaker 2:** just very marginally exceeded the Kyle Field and bragging rights.
-[00:07:32:529 - 00:07:34:809] **Speaker 2:** So my PhD was around structural connections and looking at
-[00:07:34:809 - 00:07:37:649] **Speaker 2:** different damping devices to absorb energy and provide a a
-[00:07:37:649 - 00:07:39:670] **Speaker 2:** force limiting load path through things.
-[00:07:40:089 - 00:07:42:209] **Speaker 2:** Again, kind of an embarrassing 20 year old photo of
-[00:07:42:209 - 00:07:42:470] **Speaker 2:** me.
-[00:07:44:369 - 00:07:46:410] **Speaker 2:** Um, a lot of the premise that we do here
-[00:07:46:410 - 00:07:50:410] **Speaker 2:** is sort of research teaching nexus or referring to just
-[00:07:50:410 - 00:07:53:220] **Speaker 2:** kind of a slightly pretentious way of saying research informed
-[00:07:53:220 - 00:07:53:790] **Speaker 2:** teaching.
-[00:07:54:250 - 00:07:56:290] **Speaker 2:** Um, and basically the concept being that the work I
-[00:07:56:290 - 00:07:58:950] **Speaker 2:** do for research should, and I would certainly argue does
-[00:07:59:649 - 00:08:03:290] **Speaker 2:** influence and inform how I teach mechanics and materials and
-[00:08:03:290 - 00:08:04:489] **Speaker 2:** find element analysis.
-[00:08:04:890 - 00:08:07:519] **Speaker 2:** So just gonna touch very briefly on a couple of
-[00:08:07:519 - 00:08:09:010] **Speaker 2:** uh research areas and some of the stuff that I
-[00:08:09:010 - 00:08:11:549] **Speaker 2:** do that sort of relates to some of the material
-[00:08:11:970 - 00:08:13:230] **Speaker 2:** that we're looking at here.
-[00:08:14:290 - 00:08:17:739] **Speaker 2:** So many research areas sort of bioengineering, biomechanics, orthopaedics, and
-[00:08:17:739 - 00:08:21:160] **Speaker 2:** also earthquake engineering with damping and energy dissipation.
-[00:08:22:410 - 00:08:25:250] **Speaker 2:** So this was um a photo of me.
-[00:08:25:410 - 00:08:28:739] **Speaker 2:** This is actually in Turanga in the the Christchurch Central
-[00:08:28:739 - 00:08:32:789] **Speaker 2:** Public Library just off Cathedral Square, and it has um
-[00:08:33:010 - 00:08:33:809] **Speaker 2:** some rocking walls.
-[00:08:33:880 - 00:08:36:090] **Speaker 2:** So the, the primary lateral load resistance system in that
-[00:08:36:090 - 00:08:36:429] **Speaker 2:** structure.
-[00:08:36:929 - 00:08:38:250] **Speaker 2:** There's some rock and concrete walls.
-[00:08:38:369 - 00:08:41:570] **Speaker 2:** So there's some cores there which, um, have the, the
-[00:08:41:570 - 00:08:46:229] **Speaker 2:** elevators or the, um, emergency stairwell and the service stairwell,
-[00:08:46:609 - 00:08:47:130] **Speaker 2:** um.
-[00:08:47:750 - 00:08:49:789] **Speaker 2:** You can't actually see this part if you go into
-[00:08:49:789 - 00:08:52:349] **Speaker 2:** Turanga and walk around, or you can, there's a window
-[00:08:52:349 - 00:08:53:510] **Speaker 2:** on one of the doors you can look through and
-[00:08:53:510 - 00:08:55:710] **Speaker 2:** see this if you know where you're looking, um, but
-[00:08:55:710 - 00:08:58:190] **Speaker 2:** this was some damning devices that I developed, um, which
-[00:08:58:190 - 00:08:58:510] **Speaker 2:** were.
-[00:08:59:099 - 00:09:02:260] **Speaker 2:** Um, the primary lateral, so when the when this lateral
-[00:09:02:260 - 00:09:05:690] **Speaker 2:** load resistance system and a sufficient level of demand, there's
-[00:09:05:690 - 00:09:07:859] **Speaker 2:** this concrete wall and it's held down to the foundation
-[00:09:07:859 - 00:09:11:659] **Speaker 2:** with about 10,000 kilonewtons worth of hold down force through
-[00:09:11:659 - 00:09:14:280] **Speaker 2:** some pre pretension steel tendons.
-[00:09:14:739 - 00:09:16:619] **Speaker 2:** And then at a low level of demand and wind
-[00:09:16:619 - 00:09:19:099] **Speaker 2:** loads or a small earthquake that will remains claim to
-[00:09:19:099 - 00:09:22:219] **Speaker 2:** the foundation and higher levels of demand, there's some uplift
-[00:09:22:500 - 00:09:24:359] **Speaker 2:** and that will actually rocks on the foundation.
-[00:09:25:109 - 00:09:28:270] **Speaker 2:** Um, and then this damping device here sits between the
-[00:09:28:270 - 00:09:31:940] **Speaker 2:** wall and the foundation and absorbs energy as that happens.
-[00:09:32:190 - 00:09:35:869] **Speaker 2:** So, um, that one, the resistor force, there was about
-[00:09:35:869 - 00:09:40:450] **Speaker 2:** 750 kilonewtons to about 75 tonne of resistor force.
-[00:09:41:460 - 00:09:43:859] **Speaker 2:** Um, some biomechanics work.
-[00:09:43:940 - 00:09:47:440] **Speaker 2:** So this is looking at ultrasonic sensing of hip replacement
-[00:09:47:440 - 00:09:48:020] **Speaker 2:** implants.
-[00:09:48:299 - 00:09:53:219] **Speaker 2:** So putting some passive ultrasonic receivers on a patient's hip
-[00:09:53:219 - 00:09:56:690] **Speaker 2:** joint around the the area that they have an artificial
-[00:09:56:690 - 00:09:57:520] **Speaker 2:** hip replacement.
-[00:09:58:559 - 00:10:01:640] **Speaker 2:** And then listening to the, the passive vibrations which are
-[00:10:01:640 - 00:10:03:859] **Speaker 2:** emitted as this patient walks along.
-[00:10:04:340 - 00:10:06:559] **Speaker 2:** So in this case, we've got in the left-hand image
-[00:10:06:559 - 00:10:10:159] **Speaker 2:** there, there's actually 4 ultrasonic sensors which range sort of
-[00:10:10:159 - 00:10:11:919] **Speaker 2:** from the iliac crest down to sort of the mid
-[00:10:11:919 - 00:10:16:719] **Speaker 2:** femur, adjacent to the hip replacement implant, and then there's
-[00:10:16:719 - 00:10:19:080] **Speaker 2:** a bunch of motion tracking markers and IM.
-[00:10:19:369 - 00:10:22:859] **Speaker 2:** Us on the patient's leg and they're also walking across
-[00:10:22:859 - 00:10:23:820] **Speaker 2:** the force plate there.
-[00:10:24:099 - 00:10:26:859] **Speaker 2:** So there's a force plate on the ground, which just
-[00:10:26:859 - 00:10:30:820] **Speaker 2:** measures sort of three dimensional ground reaction forces as the
-[00:10:30:820 - 00:10:31:820] **Speaker 2:** patient stands on that.
-[00:10:32:380 - 00:10:34:570] **Speaker 2:** So the idea here is just that we record, um,
-[00:10:34:580 - 00:10:39:809] **Speaker 2:** the patient's motion, the hip, knee, um, and ankle joint
-[00:10:39:809 - 00:10:42:619] **Speaker 2:** articulation angles as the, the patient is walking.
-[00:10:43:140 - 00:10:44:770] **Speaker 2:** And recording any vibrations.
-[00:10:45:140 - 00:10:45:150] **Speaker 2:** OK.
-[00:10:45:340 - 00:10:46:580] **Speaker 2:** So the idea here is just try and get an
-[00:10:46:580 - 00:10:50:929] **Speaker 2:** additional way of sensing what's going on internally within a
-[00:10:50:929 - 00:10:54:179] **Speaker 2:** hip replacement implant through a non-invasive sensing method.
-[00:10:56:719 - 00:11:00:520] **Speaker 2:** From that, we can then do some inverse kinematics and
-[00:11:01:080 - 00:11:05:669] **Speaker 2:** actually look at the um the develop a lower leg,
-[00:11:06:000 - 00:11:10:039] **Speaker 2:** lower limb biomechanics model that relates to that and quantify
-[00:11:10:039 - 00:11:11:700] **Speaker 2:** when certain emissions and things happen.
-[00:11:12:549 - 00:11:15:080] **Speaker 2:** And then we also do some vibrations analysis on the
-[00:11:15:080 - 00:11:18:479] **Speaker 2:** implant that's of the design that the patient has and
-[00:11:18:479 - 00:11:21:400] **Speaker 2:** looking at different vibration modes and when we're observing certain
-[00:11:21:400 - 00:11:23:780] **Speaker 2:** vibrations through the ultrasonics, what they could actually mean.
-[00:11:24:549 - 00:11:26:250] **Speaker 2:** Um, within the implant itself.
-[00:11:29:280 - 00:11:31:729] **Speaker 2:** Um, with regard to some of the earthquake engineering stuff,
-[00:11:31:770 - 00:11:33:750] **Speaker 2:** this is actually a photo taken.
-[00:11:33:880 - 00:11:35:840] **Speaker 2:** This was actually in early 2019.
-[00:11:36:250 - 00:11:40:210] **Speaker 2:** And this is a large shake table facility at Tongji
-[00:11:40:210 - 00:11:41:609] **Speaker 2:** University in Shanghai, China.
-[00:11:41:770 - 00:11:47:010] **Speaker 2:** So this is a, um, a facility that the overall
-[00:11:47:010 - 00:11:49:250] **Speaker 2:** facility cost about $50 million US to produce.
-[00:11:49:479 - 00:11:52:809] **Speaker 2:** Um there was, um, I think the shake tables themselves
-[00:11:52:809 - 00:11:53:869] **Speaker 2:** are about 20 million.
-[00:11:54:539 - 00:11:57:130] **Speaker 2:** And that just it's actually bridge labs.
-[00:11:57:179 - 00:11:59:380] **Speaker 2:** It's a long trench with some individual shake tables set
-[00:11:59:380 - 00:12:01:419] **Speaker 2:** up on it that you can use to sort of
-[00:12:01:419 - 00:12:05:539] **Speaker 2:** simulate the so you you often have recordings of different
-[00:12:05:539 - 00:12:06:419] **Speaker 2:** earthquake records.
-[00:12:06:739 - 00:12:10:400] **Speaker 2:** So when earthquakes occurred, there'll be accelerometer records in certain
-[00:12:10:400 - 00:12:14:479] **Speaker 2:** locations, which have recorded certain acceleration profiles.
-[00:12:15:179 - 00:12:16:690] **Speaker 2:** And then what we do with the shake tables we
-[00:12:16:690 - 00:12:18:859] **Speaker 2:** take those and then we recreate that shaking motion from
-[00:12:18:859 - 00:12:23:400] **Speaker 2:** a range of different earthquakes um to Simulate an excitation
-[00:12:23:400 - 00:12:24:039] **Speaker 2:** on the structure.
-[00:12:24:320 - 00:12:26:500] **Speaker 2:** So we basically see how that would respond.
-[00:12:26:919 - 00:12:29:960] **Speaker 2:** We look at different damping methods, um, different structural force
-[00:12:29:960 - 00:12:33:760] **Speaker 2:** transfer mechanisms and see how they perform from that.
-[00:12:33:840 - 00:12:35:640] **Speaker 2:** So this is the sort of the core team that
-[00:12:35:640 - 00:12:36:460] **Speaker 2:** worked on that project.
-[00:12:36:840 - 00:12:39:559] **Speaker 2:** So this is going back over Christmas, New Year in
-[00:12:39:559 - 00:12:43:559] **Speaker 2:** 2018, 2019, um, middle of winter in the lab.
-[00:12:44:000 - 00:12:47:080] **Speaker 2:** So it's it's a pretty cold facility working in in
-[00:12:47:080 - 00:12:49:140] **Speaker 2:** winter because it's pretty hard to heat being so big.
-[00:12:50:119 - 00:12:52:429] **Speaker 2:** Uh, this is some of the we.
-[00:12:53:900 - 00:12:57:020] **Speaker 2:** We probably tend to take in some ways how in
-[00:12:57:020 - 00:13:00:260] **Speaker 2:** many respects, how insignificant we are relative to what nature's
-[00:13:00:260 - 00:13:01:179] **Speaker 2:** capable of producing.
-[00:13:02:219 - 00:13:05:869] **Speaker 2:** So to shake one building in a representative way that
-[00:13:05:869 - 00:13:10:070] **Speaker 2:** an earthquake would, we actually have a bank here of
-[00:13:10:070 - 00:13:13:989] **Speaker 2:** 1 dozen large hydraulic pumps, a substantial bank of accumulators.
-[00:13:14:270 - 00:13:18:150] **Speaker 2:** So we essentially the the hydraulic pumps will run over
-[00:13:18:150 - 00:13:20:390] **Speaker 2:** half an hour or so to charge up this bank
-[00:13:20:390 - 00:13:22:809] **Speaker 2:** of accumulators and they continue to run during a test.
-[00:13:23:510 - 00:13:25:549] **Speaker 2:** And that kind of half hour of of stored energy
-[00:13:25:549 - 00:13:27:909] **Speaker 2:** will be dumped in about 30 seconds during a large
-[00:13:27:909 - 00:13:28:190] **Speaker 2:** test.
-[00:13:29:479 - 00:13:31:809] **Speaker 2:** This is one of the 12 hydraulic pumps.
-[00:13:32:010 - 00:13:38:770] **Speaker 2:** Um, it's a, um, 3-phase, 380 volt, uh, full load
-[00:13:38:770 - 00:13:40:640] **Speaker 2:** current of 656 amps.
-[00:13:40:890 - 00:13:44:950] **Speaker 2:** Um, so collectively across this, it's a pretty significant facility
-[00:13:45:450 - 00:13:46:729] **Speaker 2:** to be able to reproduce this.
-[00:13:46:890 - 00:13:49:609] **Speaker 2:** Um, this is me with one of the, the students
-[00:13:49:609 - 00:13:50:330] **Speaker 2:** that was involved.
-[00:13:50:450 - 00:13:53:409] **Speaker 2:** Uh, he was, his chin, he was a PhD student
-[00:13:53:409 - 00:13:55:400] **Speaker 2:** at the University of Auckland at the time with us
-[00:13:55:400 - 00:13:56:599] **Speaker 2:** in China for the testing.
-[00:13:56:880 - 00:13:57:330] **Speaker 2:** Um.
-[00:13:57:890 - 00:14:00:369] **Speaker 2:** But just reinforcing that sort of, you know, whether it's
-[00:14:00:770 - 00:14:04:250] **Speaker 2:** computational sort of more um office space stuff or in
-[00:14:04:250 - 00:14:07:049] **Speaker 2:** steel caps, um, and overalls in the lab, you know,
-[00:14:07:770 - 00:14:09:950] **Speaker 2:** it is the the whole range of what we do,
-[00:14:10:289 - 00:14:10:729] **Speaker 2:** um.
-[00:14:12:559 - 00:14:15:119] **Speaker 2:** So this is actually the the structure itself here.
-[00:14:15:369 - 00:14:16:520] **Speaker 2:** Hopefully this isn't too loud.
-[00:14:16:640 - 00:14:17:880] **Speaker 2:** I always stop it if it is.
-[00:14:39:840 - 00:14:41:489] **Speaker 2:** This is actually some, some of the dampers that I
-[00:14:41:489 - 00:14:43:880] **Speaker 2:** did for the structure, so they were mounted, similar to
-[00:14:43:880 - 00:14:46:280] **Speaker 2:** the Tauranga example between the, the concrete wall and the
-[00:14:46:280 - 00:14:46:820] **Speaker 2:** foundation.
-[00:15:03:200 - 00:15:04:599] **Speaker 2:** So it's relatively low uplift.
-[00:15:04:719 - 00:15:08:119] **Speaker 2:** So the absolute value of displacements that are imparted into
-[00:15:08:119 - 00:15:10:599] **Speaker 2:** those tampers is is relatively small.
-[00:15:10:679 - 00:15:13:400] **Speaker 2:** So you have to be quite conscious of sources of
-[00:15:13:400 - 00:15:15:500] **Speaker 2:** flexibility and take up and all of that.
-[00:15:16:039 - 00:15:19:039] **Speaker 2:** And this foundation plate maybe wasn't secured to the foundation
-[00:15:19:039 - 00:15:20:400] **Speaker 2:** quite as much as we could have liked, but there
-[00:15:20:400 - 00:15:22:119] **Speaker 2:** were some constraints that we were working with them.
-[00:15:23:859 - 00:15:25:830] **Speaker 2:** Um, this is some testing that was done at the
-[00:15:25:830 - 00:15:26:349] **Speaker 2:** University of Auckland.
-[00:15:26:820 - 00:15:28:200] **Speaker 2:** This is middle of 2022.
-[00:15:29:090 - 00:15:30:489] **Speaker 2:** Um, and then this was the test.
-[00:15:30:640 - 00:15:33:530] **Speaker 2:** This was a subsequent test on different structure in the
-[00:15:33:530 - 00:15:34:349] **Speaker 2:** same test lab.
-[00:15:34:849 - 00:15:37:650] **Speaker 2:** Um, this was done, uh, just over two years ago,
-[00:15:37:809 - 00:15:41:830] **Speaker 2:** so early, um, January and February of 2024.
-[00:15:42:570 - 00:15:44:070] **Speaker 2:** This is a low damage steel building.
-[00:15:46:330 - 00:15:50:000] **Speaker 2:** But you can see You can see some people standing
-[00:15:50:000 - 00:15:51:799] **Speaker 2:** in the, the corner here, so it is quite a
-[00:15:51:799 - 00:15:52:539] **Speaker 2:** big facility.
-[00:16:19:859 - 00:16:21:419] **Speaker 2:** And then this was a subsequent test.
-[00:16:21:500 - 00:16:23:340] **Speaker 2:** This was actually a scaled down high-rise building.
-[00:16:23:739 - 00:16:25:539] **Speaker 2:** There was one that we, um, tested.
-[00:16:25:659 - 00:16:29:400] **Speaker 2:** It was a collaborative project between Canada, China, and New
-[00:16:29:400 - 00:16:33:500] **Speaker 2:** Zealand and it was sort of um uh rocking coupled
-[00:16:33:500 - 00:16:36:979] **Speaker 2:** core walls and outriggers and there's a there's some different
-[00:16:36:979 - 00:16:39:520] **Speaker 2:** dissipation devices and damping and things in this.
-[00:16:39:780 - 00:16:42:460] **Speaker 2:** Um, so the structure was about 16 metres tall.
-[00:16:42:820 - 00:16:44:599] **Speaker 2:** It was about 140 tonnes of weight.
-[00:16:45:239 - 00:16:46:219] **Speaker 2:** Now that's the pilot of the table.
-[00:16:46:299 - 00:16:47:840] **Speaker 2:** So that's tend to be what we work to.
-[00:16:49:090 - 00:16:51:619] **Speaker 2:** Tend to test is the largest thing that we can
-[00:16:51:619 - 00:16:54:229] **Speaker 2:** fit on the table, and then this was the test.
-[00:17:09:310 - 00:17:11:849] **Speaker 2:** Now, I just want to quickly jump across to.
-[00:17:13:150 - 00:17:15:150] **Speaker 2:** This is a paper which had come out of that
-[00:17:15:150 - 00:17:18:170] **Speaker 2:** one of those tests and it was looking at the
-[00:17:18:180 - 00:17:20:869] **Speaker 2:** the structure which you've seen shaking around, but also looking
-[00:17:20:869 - 00:17:24:750] **Speaker 2:** at the, the setup of the structure itself and then
-[00:17:24:750 - 00:17:27:869] **Speaker 2:** some detailed finite element analysis in terms of um the
-[00:17:27:869 - 00:17:28:810] **Speaker 2:** damage progression.
-[00:17:29:479 - 00:17:32:410] **Speaker 2:** And then also, um, yeah, how we modelled that through
-[00:17:32:410 - 00:17:33:810] **Speaker 2:** some different elements.
-[00:17:33:849 - 00:17:35:449] **Speaker 2:** I mean, the level of elements that are going in
-[00:17:35:449 - 00:17:37:010] **Speaker 2:** there a bit more advanced than anything we're going to
-[00:17:37:010 - 00:17:39:810] **Speaker 2:** cover in these 4 weeks, but it is a natural
-[00:17:39:810 - 00:17:41:810] **Speaker 2:** extension of what we're doing there.
-[00:17:41:930 - 00:17:45:930] **Speaker 2:** So these big tests that they're complicated, that time-consuming, they're
-[00:17:45:930 - 00:17:46:510] **Speaker 2:** expensive.
-[00:17:47:089 - 00:17:48:489] **Speaker 2:** So we always want to try and get as much
-[00:17:48:489 - 00:17:50:530] **Speaker 2:** mileage as we can out of them to not just
-[00:17:50:530 - 00:17:53:689] **Speaker 2:** have that one specific result, but try and generalise as
-[00:17:53:689 - 00:17:54:569] **Speaker 2:** best as we can.
-[00:17:54:959 - 00:17:58:089] **Speaker 2:** To learn the the general most general lessons.
-[00:17:58:380 - 00:18:00:530] **Speaker 2:** So what we'll often do is set a model and
-[00:18:00:530 - 00:18:03:609] **Speaker 2:** work out the modelling strategies, which actually accurately capture that
-[00:18:03:609 - 00:18:04:050] **Speaker 2:** building.
-[00:18:04:489 - 00:18:07:310] **Speaker 2:** But then also modify those models and say, well, how
-[00:18:07:310 - 00:18:10:569] **Speaker 2:** do we predict that buildings of a similar form would
-[00:18:10:569 - 00:18:11:010] **Speaker 2:** perform.
-[00:18:14:660 - 00:18:16:979] **Speaker 2:** So let's go back to the presentation briefly.
-[00:18:18:660 - 00:18:22:650] **Speaker 2:** Um, so just quickly, uh, um, ending for whakatoki, uh,
-[00:18:22:660 - 00:18:27:250] **Speaker 2:** kotorodo kotakirodo kora aa iwi.
-[00:18:28:329 - 00:18:30:819] **Speaker 2:** So sort of the, the strict translation being, you know,
-[00:18:30:969 - 00:18:33:020] **Speaker 2:** with your food basket and my food basket, the people
-[00:18:33:020 - 00:18:36:219] **Speaker 2:** will thrive, um, but really kind of capture that with
-[00:18:36:219 - 00:18:40:140] **Speaker 2:** your contribution and my contribution, hopefully you'll progress and you'll
-[00:18:40:140 - 00:18:41:209] **Speaker 2:** learn through this course.
-[00:18:41:660 - 00:18:45:410] **Speaker 2:** So, um, it is something where, you know, often.
-[00:18:45:699 - 00:18:48:060] **Speaker 2:** It might feel like we're adversaries in the process, but
-[00:18:48:060 - 00:18:49:689] **Speaker 2:** I'd like to think that we're actually working to the,
-[00:18:50:060 - 00:18:51:819] **Speaker 2:** the common goal, which is for you to have be
-[00:18:51:819 - 00:18:53:920] **Speaker 2:** set up to have a great career as engineers.
-[00:18:54:859 - 00:18:58:020] **Speaker 2:** So throughout the course, we will be having um computer
-[00:18:58:020 - 00:18:58:680] **Speaker 2:** labs.
-[00:18:58:979 - 00:19:02:660] **Speaker 2:** Um, you're engaging with those coming along, um, going through
-[00:19:02:660 - 00:19:05:619] **Speaker 2:** those exercising and asking questions is a key part of
-[00:19:05:619 - 00:19:06:579] **Speaker 2:** what you're learning in the course.
-[00:19:06:780 - 00:19:09:810] **Speaker 2:** So I strongly encourage you to take those seriously, take
-[00:19:09:810 - 00:19:12:839] **Speaker 2:** that opportunity to, to work with myself and the tutors
-[00:19:13:060 - 00:19:14:599] **Speaker 2:** and James in the later part of the course.
-[00:19:15:680 - 00:19:17:579] **Speaker 2:** And then, um.
-[00:19:18:270 - 00:19:20:810] **Speaker 2:** Yeah, that will be the, the best path to learn
-[00:19:20:810 - 00:19:22:449] **Speaker 2:** the material well and doing well on the course.
-[00:19:26:250 - 00:19:28:930] **Speaker 2:** Um, just quickly, I'll jump across to the learn page.
-[00:19:29:030 - 00:19:31:319] **Speaker 2:** So we've got the, um, this is the course learn
-[00:19:31:319 - 00:19:31:859] **Speaker 2:** page.
-[00:19:32:280 - 00:19:33:359] **Speaker 2:** Here's some information here.
-[00:19:33:439 - 00:19:36:619] **Speaker 2:** So, uh, I'll be teaching weeks 1 to 4.
-[00:19:37:520 - 00:19:40:599] **Speaker 2:** Uh, including the computer labs in their session, and week
-[00:19:40:599 - 00:19:43:349] **Speaker 2:** 5, we'll be shifting across to James will pick up
-[00:19:43:349 - 00:19:46:400] **Speaker 2:** lecturing, but the computer labs in week 5 will still
-[00:19:46:400 - 00:19:49:239] **Speaker 2:** be in relation to the content that we cover in
-[00:19:49:239 - 00:19:50:140] **Speaker 2:** my part of the course.
-[00:19:51:030 - 00:19:53:150] **Speaker 2:** Then there'll be a test that will be in early
-[00:19:53:150 - 00:19:54:010] **Speaker 2:** week 6.
-[00:19:55:410 - 00:19:59:489] **Speaker 2:** And that will um be a computer-based test.
-[00:19:59:560 - 00:20:02:890] **Speaker 2:** I'll talk more about that and uh the throughout this
-[00:20:02:890 - 00:20:04:170] **Speaker 2:** week and in the weeks ahead.
-[00:20:05:250 - 00:20:07:489] **Speaker 2:** Um, and there'll be an assignment due early next term.
-[00:20:07:969 - 00:20:10:089] **Speaker 2:** And then for James's place, James is part of the
-[00:20:10:089 - 00:20:12:969] **Speaker 2:** course, there'll be some quizzes, some an assignment and a
-[00:20:12:969 - 00:20:13:729] **Speaker 2:** final exam.
-[00:20:14:050 - 00:20:16:630] **Speaker 2:** So there's myself and James listed on there.
-[00:20:17:089 - 00:20:19:930] **Speaker 2:** We also have Christine Walker, who's the senior tutor.
-[00:20:20:130 - 00:20:22:239] **Speaker 2:** So many of you may have come across her, uh,
-[00:20:22:250 - 00:20:23:689] **Speaker 2:** last year or earlier this year.
-[00:20:24:209 - 00:20:26:209] **Speaker 2:** She's great in terms of just supporting you with general
-[00:20:26:209 - 00:20:27:839] **Speaker 2:** academic advice, um.
-[00:20:28:699 - 00:20:30:979] **Speaker 2:** Yeah, support if you're having any issues.
-[00:20:31:339 - 00:20:33:050] **Speaker 2:** So by all means reach out to James and I,
-[00:20:33:060 - 00:20:36:260] **Speaker 2:** but also feel, um, comfortable reaching out to Christine as
-[00:20:36:260 - 00:20:39:819] **Speaker 2:** well, um, more for general academic things than specific advice
-[00:20:39:819 - 00:20:40:560] **Speaker 2:** about this course.
-[00:20:44:670 - 00:20:47:199] **Speaker 2:** But um that's the key context of the course.
-[00:20:47:939 - 00:20:50:979] **Speaker 2:** That's actually probably a good opportunity to also introduce Theo.
-[00:20:52:930 - 00:20:55:939] **Speaker 2:** Um, so Theo's here, um, Theo Naka.
-[00:20:57:510 - 00:21:04:619] **Speaker 2:** Hello, um, oh goodness, sorry, I haven't done much lecturing,
-[00:21:04:670 - 00:21:06:030] **Speaker 1:** so talking in front of people is a little bit
-[00:21:06:030 - 00:21:06:489] **Speaker 1:** scary.
-[00:21:07:020 - 00:21:08:020] **Speaker 1:** Um, I'm Theo.
-[00:21:08:060 - 00:21:11:339] **Speaker 1:** I'm a PhD student in, uh, mechanical here.
-[00:21:11:349 - 00:21:12:910] **Speaker 1:** I'm the senior TA for this course.
-[00:21:13:189 - 00:21:15:959] **Speaker 1:** Most of you probably will have met me in 314,
-[00:21:16:300 - 00:21:20:459] **Speaker 1:** uh, last semester, which, um, was appropriate because my PhD
-[00:21:20:459 - 00:21:24:770] **Speaker 1:** is in fluid mechanics, but this is also appropriate because
-[00:21:24:770 - 00:21:26:489] **Speaker 1:** of course, we have to use a lot of numerical
-[00:21:26:489 - 00:21:27:040] **Speaker 1:** methods.
-[00:21:27:540 - 00:21:31:660] **Speaker 1:** Um, my job is to help you and to help
-[00:21:31:660 - 00:21:33:500] **Speaker 1:** you with the specific academic questions.
-[00:21:33:660 - 00:21:35:560] **Speaker 1:** So please do feel free to reach out.
-[00:21:36:020 - 00:21:36:739] **Speaker 1:** Um.
-[00:21:37:160 - 00:21:40:010] **Speaker 1:** And yeah, so the whole point of this course is
-[00:21:40:180 - 00:21:44:199] **Speaker 1:** to give you techniques and, um, tools for solving PDEs
-[00:21:44:199 - 00:21:45:119] **Speaker 1:** and it's not easy.
-[00:21:45:199 - 00:21:48:560] **Speaker 1:** So please do, um, yeah, please do ask if you
-[00:21:48:560 - 00:21:48:920] **Speaker 1:** need.
-[00:21:50:089 - 00:21:50:369] **Speaker 2:** You did.
-[00:21:53:099 - 00:21:54:949] **Speaker 2:** Um, I will go through the course synopsis in a
-[00:21:54:949 - 00:21:56:270] **Speaker 2:** little bit more detail on Wednesday.
-[00:21:56:689 - 00:21:58:829] **Speaker 2:** Uh, but just quickly, there's also the course information and
-[00:21:58:829 - 00:21:59:670] **Speaker 2:** resources here.
-[00:22:00:670 - 00:22:03:420] **Speaker 2:** So this is um the course information systems.
-[00:22:04:040 - 00:22:06:229] **Speaker 2:** This is a lot of information about the course, uh,
-[00:22:06:300 - 00:22:09:050] **Speaker 2:** most critically, it has this information here.
-[00:22:09:310 - 00:22:11:989] **Speaker 2:** Um, this is the information that comes from timetabling.
-[00:22:12:030 - 00:22:15:209] **Speaker 2:** So this is the same source, which populates your timetable.
-[00:22:16:030 - 00:22:17:640] **Speaker 2:** If I'm not sure where to go for a lecture,
-[00:22:17:910 - 00:22:18:609] **Speaker 2:** I look here.
-[00:22:18:949 - 00:22:20:229] **Speaker 2:** This is essentially a source of truth.
-[00:22:20:469 - 00:22:24:630] **Speaker 2:** So, um, this obviously is the range we're in.
-[00:22:25:439 - 00:22:28:920] **Speaker 2:** Here today, this, um, for Monday lectures, thankfully Wednesday, Thursday
-[00:22:28:920 - 00:22:30:079] **Speaker 2:** and Friday, we're actually in a one.
-[00:22:30:199 - 00:22:32:000] **Speaker 2:** I think it's it's a more favourable room with proper
-[00:22:32:000 - 00:22:32:439] **Speaker 2:** desks.
-[00:22:32:540 - 00:22:33:869] **Speaker 2:** I do appreciate this room is a little bit of
-[00:22:33:869 - 00:22:34:640] **Speaker 2:** a compromise.
-[00:22:35:199 - 00:22:36:739] **Speaker 2:** Um, I don't get to choose it.
-[00:22:37:130 - 00:22:40:250] **Speaker 2:** The timet allocations done centrally, so.
-[00:22:41:199 - 00:22:46:219] **Speaker 2:** Um Computer labs is 390-minute sessions run on Thursday afternoons.
-[00:22:46:660 - 00:22:48:459] **Speaker 2:** So you'll be allocated to one of those sessions.
-[00:22:48:660 - 00:22:51:140] **Speaker 2:** Um, that's an opportunity for you to go through the
-[00:22:51:140 - 00:22:55:239] **Speaker 2:** content, um, do specific tasks and get feedback on them.
-[00:22:55:300 - 00:22:57:079] **Speaker 2:** And the key thing, and I will talk about this
-[00:22:57:079 - 00:22:58:869] **Speaker 2:** more on the days and weeks ahead.
-[00:22:59:819 - 00:23:01:939] **Speaker 2:** But over the next 4 weeks, you'll develop some code
-[00:23:01:939 - 00:23:04:329] **Speaker 2:** in those lab sessions, and then you'll bring that code
-[00:23:04:329 - 00:23:04:920] **Speaker 2:** with you.
-[00:23:05:790 - 00:23:08:869] **Speaker 2:** To solve problems during the test at week 6.
-[00:23:09:150 - 00:23:14:510] **Speaker 2:** So while there isn't a um grade directly associated with
-[00:23:14:510 - 00:23:17:069] **Speaker 2:** those lab courses over the next 5 weeks, um, there
-[00:23:17:069 - 00:23:20:650] **Speaker 2:** is an indirect grade allocation that you're doing that work,
-[00:23:21:069 - 00:23:23:229] **Speaker 2:** being comfortable with it and being able to just then
-[00:23:23:229 - 00:23:26:069] **Speaker 2:** solve problems in the test will will count towards your
-[00:23:26:069 - 00:23:26:790] **Speaker 2:** success in the class.
-[00:23:27:030 - 00:23:30:500] **Speaker 2:** So, um, this week and the first week on Thursday,
-[00:23:30:989 - 00:23:32:969] **Speaker 2:** we won't have covered an awful lot of lecture content
-[00:23:33:510 - 00:23:39:060] **Speaker 2:** in the Um, 3 lectures we have prior to the,
-[00:23:39:069 - 00:23:41:089] **Speaker 2:** um, the, the first computer lab.
-[00:23:41:469 - 00:23:42:859] **Speaker 2:** We will still have a computer lab, but it's going
-[00:23:42:859 - 00:23:44:589] **Speaker 2:** to be mainly a Python refresher.
-[00:23:44:829 - 00:23:47:589] **Speaker 2:** So I appreciate for some of you, it may have
-[00:23:47:589 - 00:23:49:949] **Speaker 2:** been a little while, possibly the second semester of last
-[00:23:49:949 - 00:23:52:949] **Speaker 2:** year, since you did a significant amount of uh Python
-[00:23:52:949 - 00:23:57:050] **Speaker 2:** coding and um manipulation of linear algebra and things in
-[00:23:57:050 - 00:23:57:430] **Speaker 2:** Python.
-[00:23:57:709 - 00:24:00:609] **Speaker 2:** So we're just going to cover some some basic um
-[00:24:01:209 - 00:24:08:599] **Speaker 2:** Exercises around matrix entry and multiplication, manipulation, um, plotting, uh,
-[00:24:08:609 - 00:24:10:540] **Speaker 2:** just some of the basic things which we think will
-[00:24:10:540 - 00:24:12:930] **Speaker 2:** be of value to you, uh, over the next few
-[00:24:12:930 - 00:24:13:300] **Speaker 2:** weeks.
-[00:24:13:579 - 00:24:16:579] **Speaker 2:** So, um, that's an opportunity for you to come along
-[00:24:16:579 - 00:24:17:780] **Speaker 2:** and, and seek that assistance.
-[00:24:17:900 - 00:24:19:900] **Speaker 2:** Now, if you really feel that you're OK with Python,
-[00:24:19:969 - 00:24:21:739] **Speaker 2:** you're really comfortable with it and you don't feel you
-[00:24:21:739 - 00:24:22:260] **Speaker 2:** need that.
-[00:24:22:689 - 00:24:24:729] **Speaker 2:** But you can just look at the lab sheet for
-[00:24:24:729 - 00:24:25:750] **Speaker 2:** that week, first week.
-[00:24:26:150 - 00:24:27:569] **Speaker 2:** Uh, but if you do feel you'd benefit from that,
-[00:24:27:650 - 00:24:30:160] **Speaker 2:** please come along and then we'll pick up on the
-[00:24:30:160 - 00:24:33:459] **Speaker 2:** content more directly related to this, um, next week.
-[00:24:33:890 - 00:24:36:209] **Speaker 2:** Um, but just also be aware that the, the stuff
-[00:24:36:209 - 00:24:38:790] **Speaker 2:** that's in that lab this week is very much stuff
-[00:24:38:790 - 00:24:40:290] **Speaker 2:** that I think you will need over the next few
-[00:24:40:290 - 00:24:40:489] **Speaker 2:** weeks.
-[00:24:40:569 - 00:24:43:810] **Speaker 2:** So it's not just random Python exercises very much with
-[00:24:43:810 - 00:24:47:099] **Speaker 2:** the, um, And an outcome in mind.
-[00:24:49:280 - 00:24:50:760] **Speaker 2:** Most of the content, the further the part that I
-[00:24:50:760 - 00:24:52:000] **Speaker 2:** will teach will be in this tab here on the
-[00:24:52:000 - 00:24:54:180] **Speaker 2:** left, the final elements analysis weeks 1 to 4.
-[00:24:55:569 - 00:24:57:699] **Speaker 2:** And then um this is the only one item on
-[00:24:57:699 - 00:24:59:599] **Speaker 2:** there at the moment, which is the course reader.
-[00:24:59:900 - 00:25:02:219] **Speaker 2:** So that's the the item there.
-[00:25:02:619 - 00:25:04:380] **Speaker 2:** So this is many of you will have accessed that
-[00:25:04:380 - 00:25:04:699] **Speaker 2:** already.
-[00:25:05:040 - 00:25:07:380] **Speaker 2:** It's the file from which these hard copies were printed.
-[00:25:07:619 - 00:25:09:520] **Speaker 2:** So it's one and the same.
-[00:25:09:819 - 00:25:11:900] **Speaker 2:** Um, if you want to just mark up a a
-[00:25:11:900 - 00:25:14:979] **Speaker 2:** digital copy, that's the the best option for you there.
-[00:25:17:339 - 00:25:19:979] **Speaker 2:** So we'll go through the, um, the course outline in
-[00:25:19:979 - 00:25:22:380] **Speaker 2:** more detail on Wednesday.
-[00:25:22:660 - 00:25:25:540] **Speaker 2:** Um, but just in the interim, this is the assessment
-[00:25:25:540 - 00:25:25:939] **Speaker 2:** schedule.
-[00:25:26:099 - 00:25:29:339] **Speaker 2:** So a test in week 6 on the evening of
-[00:25:29:339 - 00:25:31:099] **Speaker 2:** Tuesday, the 18th of August.
-[00:25:31:380 - 00:25:33:540] **Speaker 2:** Um, so it'll be, uh, an out of hours test
-[00:25:34:060 - 00:25:34:819] **Speaker 2:** during the evening.
-[00:25:35:140 - 00:25:37:780] **Speaker 2:** Uh, assignment one we do do due just after the
-[00:25:37:780 - 00:25:38:400] **Speaker 2:** term break.
-[00:25:39:760 - 00:25:44:640] **Speaker 2:** Um, quizzes, 5 quizzes through semester, uh, 1% each, and
-[00:25:44:640 - 00:25:47:000] **Speaker 2:** they will start after James has taken over.
-[00:25:47:119 - 00:25:48:989] **Speaker 2:** So they won't be during my part of the course.
-[00:25:49:160 - 00:25:50:900] **Speaker 2:** They'll be sort of from week 6 onwards.
-[00:25:51:520 - 00:25:53:479] **Speaker 2:** And then there's assignment one, assignment 2 is due in
-[00:25:53:479 - 00:25:55:890] **Speaker 2:** October early October, and then the final exam.
-[00:25:56:079 - 00:25:58:839] **Speaker 2:** Now, there is a requirement here, um.
-[00:25:59:599 - 00:26:01:239] **Speaker 2:** It's not shown there just yet, but I'll make sure
-[00:26:01:239 - 00:26:04:229] **Speaker 2:** that it is that you, um, actually passed the get
-[00:26:04:229 - 00:26:05:920] **Speaker 2:** at least 40% in the final exam to pass the
-[00:26:05:920 - 00:26:06:479] **Speaker 2:** course as a whole.
-[00:26:06:599 - 00:26:08:619] **Speaker 2:** So the final exam is important.
-[00:26:09:400 - 00:26:13:020] **Speaker 2:** Um, just also be aware, this assessment schedule is technically
-[00:26:13:020 - 00:26:14:540] **Speaker 2:** provisional until the end of week two.
-[00:26:15:119 - 00:26:17:630] **Speaker 2:** So there is, um, a student enrollments finalised, there can
-[00:26:17:630 - 00:26:19:300] **Speaker 2:** be some need to change.
-[00:26:19:829 - 00:26:21:640] **Speaker 2:** Um, timetabling and things.
-[00:26:21:949 - 00:26:24:229] **Speaker 2:** Um, we don't intend to change this.
-[00:26:24:640 - 00:26:27:349] **Speaker 2:** If for some reason, due to external reasons, we're forced
-[00:26:27:349 - 00:26:28:630] **Speaker 2:** to change it, it may change.
-[00:26:29:109 - 00:26:30:829] **Speaker 2:** So just do treat that as provisional up until the
-[00:26:30:829 - 00:26:32:530] **Speaker 2:** end of week two and then it'll be locked in.
-[00:26:34:930 - 00:26:37:130] **Speaker 2:** Um, before we go too much further, is any pressing
-[00:26:37:130 - 00:26:39:430] **Speaker 2:** questions or anything about the course?
-[00:26:45:430 - 00:26:47:069] **Speaker 2:** If not, I might just jump across to a few
-[00:26:47:069 - 00:26:49:050] **Speaker 2:** notes that I've got here, so.
-[00:26:59:109 - 00:26:59:390] **Speaker 2:** Sorry.
-[00:27:01:300 - 00:27:02:660] **Speaker 2:** I just want to start off here by sort of
-[00:27:02:660 - 00:27:06:520] **Speaker 2:** saying like, fundamentally, what are we doing in this next
-[00:27:06:520 - 00:27:07:239] **Speaker 2:** 4 weeks?
-[00:27:08:189 - 00:27:14:949] **Speaker 0:** So This, this actually is just a general um few
-[00:27:14:949 - 00:27:16:709] **Speaker 2:** general pages before I jump into the notes proper.
-[00:27:16:910 - 00:27:19:349] **Speaker 2:** So this is actually part of the radio you've got.
-[00:27:20:089 - 00:27:23:670] **Speaker 2:** Um but so suppose we had a thing where we
-[00:27:23:670 - 00:27:25:380] **Speaker 2:** had a simple pin connected truss.
-[00:27:25:709 - 00:27:27:550] **Speaker 2:** It's loaded and supported as shown.
-[00:27:28:229 - 00:27:30:969] **Speaker 2:** All members of the truss are aluminium pipes and an
-[00:27:30:969 - 00:27:33:849] **Speaker 2:** outside diameter of 42 millimetres, a wall thickness of 3.5
-[00:27:33:849 - 00:27:37:040] **Speaker 2:** millimetres determine the normal stress in each member.
-[00:27:38:510 - 00:27:41:050] **Speaker 2:** Now the key thing is The tools you learned in
-[00:27:41:050 - 00:27:43:989] **Speaker 2:** 202 are sufficient to solve this problem.
-[00:27:45:810 - 00:27:48:020] **Speaker 2:** You could go through, you could jump in.
-[00:27:48:790 - 00:27:50:339] **Speaker 2:** Yeah, because everything's pinjointed.
-[00:27:51:660 - 00:27:53:819] **Speaker 2:** And the loads are only applied at nodal points of
-[00:27:53:819 - 00:27:55:400] **Speaker 2:** pin connections between elements.
-[00:27:56:020 - 00:27:58:579] **Speaker 2:** The elements will only carry axial loads.
-[00:27:58:859 - 00:28:00:810] **Speaker 2:** So there's no sheer forces present.
-[00:28:00:859 - 00:28:01:900] **Speaker 2:** There's no moments present.
-[00:28:02:339 - 00:28:04:260] **Speaker 2:** That means we can do quite a simple resolution of
-[00:28:04:260 - 00:28:04:859] **Speaker 2:** forces.
-[00:28:05:180 - 00:28:07:020] **Speaker 2:** We can do some moments about certain regions, we can
-[00:28:07:020 - 00:28:09:540] **Speaker 2:** find reaction forces, and we can trace through and work
-[00:28:09:540 - 00:28:13:020] **Speaker 2:** out the the force carried in each member and by
-[00:28:13:020 - 00:28:14:020] **Speaker 2:** extension, the stress.
-[00:28:15:400 - 00:28:17:339] **Speaker 2:** So essentially the reason I've just got that up is
-[00:28:17:339 - 00:28:20:650] **Speaker 2:** that the the tools that you developed with Paul Doherty
-[00:28:20:650 - 00:28:23:500] **Speaker 2:** or in 202 or any other equivalent course that you
-[00:28:23:500 - 00:28:26:400] **Speaker 2:** did, are sufficient to solve this.
-[00:28:28:900 - 00:28:32:540] **Speaker 2:** However, if we take that structure, and we just add
-[00:28:32:540 - 00:28:36:180] **Speaker 2:** one additional element to it, We put an additional element
-[00:28:36:180 - 00:28:37:760] **Speaker 2:** which seems up to here.
-[00:28:39:430 - 00:28:40:650] **Speaker 2:** This original structure.
-[00:28:42:290 - 00:28:44:530] **Speaker 2:** Is what we would call statically determinant.
-[00:28:44:880 - 00:28:47:209] **Speaker 2:** So, another way of referring to statically determinant is sort
-[00:28:47:209 - 00:28:50:650] **Speaker 2:** of the, the minimal amount of constraint that would make
-[00:28:50:650 - 00:28:51:650] **Speaker 2:** the structure stable.
-[00:28:52:430 - 00:28:54:349] **Speaker 2:** So if we took away any of those support points,
-[00:28:54:989 - 00:28:56:810] **Speaker 2:** this is pinned here, it's a roller here.
-[00:28:57:640 - 00:29:00:400] **Speaker 2:** If we took away the roller, we put a roller
-[00:29:00:400 - 00:29:02:560] **Speaker 2:** here instead of the pin joint, the structure would no
-[00:29:02:560 - 00:29:05:959] **Speaker 2:** longer be stable, would no longer support the the applied
-[00:29:05:959 - 00:29:06:359] **Speaker 2:** loads.
-[00:29:06:479 - 00:29:10:800] **Speaker 2:** So the minimum amount of constraint required to support that
-[00:29:11:119 - 00:29:12:599] **Speaker 2:** means the structure is statically determinate.
-[00:29:12:680 - 00:29:16:079] **Speaker 2:** We can solve all the forces within the elements based
-[00:29:16:079 - 00:29:16:959] **Speaker 2:** upon statics alone.
-[00:29:17:089 - 00:29:19:800] **Speaker 2:** We don't have to start looking at the internal properties
-[00:29:19:800 - 00:29:21:520] **Speaker 2:** and stiffness of members to be able to work out
-[00:29:21:520 - 00:29:22:459] **Speaker 2:** the loads.
-[00:29:23:640 - 00:29:26:930] **Speaker 2:** However, If we go through here.
-[00:29:28:770 - 00:29:30:099] **Speaker 2:** And we add in this extra element.
-[00:29:31:349 - 00:29:32:650] **Speaker 2:** That's no longer statically determinant.
-[00:29:32:709 - 00:29:33:949] **Speaker 2:** It's, it's overconstrained.
-[00:29:33:989 - 00:29:38:069] **Speaker 2:** There's more than the minimum amount of constraint needed to
-[00:29:38:069 - 00:29:39:709] **Speaker 2:** be able to stabilise the structure.
-[00:29:40:930 - 00:29:41:989] **Speaker 2:** That's generally a good thing.
-[00:29:42:290 - 00:29:43:790] **Speaker 2:** It's safe that way.
-[00:29:43:890 - 00:29:46:290] **Speaker 2:** It's the the more restraint you have, the, the safer
-[00:29:46:290 - 00:29:48:910] **Speaker 2:** something is, the more redundancy there is in the structure.
-[00:29:49:849 - 00:29:51:369] **Speaker 2:** But to be able to solve that and work out
-[00:29:51:369 - 00:29:53:930] **Speaker 2:** the forces within each member, we now need to look
-[00:29:53:930 - 00:29:55:569] **Speaker 2:** at the relative stiffness of members.
-[00:29:55:650 - 00:29:58:290] **Speaker 2:** So you have touched on this with prior courses where
-[00:29:58:290 - 00:30:00:930] **Speaker 2:** you look at statically indeterminate problems, and you look at
-[00:30:00:930 - 00:30:04:260] **Speaker 2:** relative stiffness and the relative share of stiffness depends on
-[00:30:04:260 - 00:30:05:510] **Speaker 2:** the loads that are carried.
-[00:30:07:479 - 00:30:12:849] **Speaker 2:** Now, while you did cover some of that in your
-[00:30:12:849 - 00:30:17:599] **Speaker 2:** prior courses, the statically indeterminate problems you solved were relatively
-[00:30:17:599 - 00:30:17:900] **Speaker 2:** simple.
-[00:30:19:489 - 00:30:21:400] **Speaker 2:** This would actually because everything's inclined.
-[00:30:22:410 - 00:30:24:050] **Speaker 2:** This is actually quite a lot to trace through by
-[00:30:24:050 - 00:30:25:609] **Speaker 2:** hand, and if you asked you to solve that by
-[00:30:25:609 - 00:30:27:449] **Speaker 2:** hand, you'd you'd probably get there, but it would be
-[00:30:27:449 - 00:30:29:050] **Speaker 2:** quite a bit of work and you'd be working for
-[00:30:29:050 - 00:30:29:430] **Speaker 2:** a while.
-[00:30:31:780 - 00:30:35:640] **Speaker 2:** If instead, we rigidly welded everything together.
-[00:30:36:260 - 00:30:39:180] **Speaker 2:** So we're not going to have pin joints anymore.
-[00:30:39:540 - 00:30:42:719] **Speaker 2:** These are elements that can carry moment and sheer.
-[00:30:43:140 - 00:30:44:579] **Speaker 2:** There's a distributed load along the top.
-[00:30:44:619 - 00:30:46:079] **Speaker 2:** There's a distributed load here.
-[00:30:46:540 - 00:30:49:099] **Speaker 2:** These three elements are welded together rigidly here that fixed
-[00:30:49:099 - 00:30:50:239] **Speaker 2:** the points here and here.
-[00:30:50:739 - 00:30:52:619] **Speaker 2:** This is substantially overconstrained.
-[00:30:53:060 - 00:30:55:650] **Speaker 2:** There's a lot of different angles, a lot of different
-[00:30:55:650 - 00:30:57:819] **Speaker 2:** stiffness components, um.
-[00:30:58:380 - 00:31:01:219] **Speaker 2:** This would be really, really difficult just to solve by
-[00:31:01:219 - 00:31:01:640] **Speaker 2:** hand.
-[00:31:02:260 - 00:31:04:520] **Speaker 2:** So what we're doing in this part of the course
-[00:31:04:520 - 00:31:07:819] **Speaker 2:** is nothing you learned with Paul Docherty last year is
-[00:31:07:819 - 00:31:08:300] **Speaker 2:** redundant.
-[00:31:08:579 - 00:31:10:160] **Speaker 2:** You know, you didn't waste your time in that course.
-[00:31:10:699 - 00:31:11:640] **Speaker 2:** We're not throwing that away.
-[00:31:11:939 - 00:31:14:540] **Speaker 2:** What we're doing is we're building a computational framework on
-[00:31:14:540 - 00:31:18:160] **Speaker 2:** top of those learnings to solve more, more difficult problems.
-[00:31:19:079 - 00:31:22:209] **Speaker 2:** But everything you learned in 202 still forms the basis
-[00:31:22:209 - 00:31:23:530] **Speaker 2:** of everything we'll do in this class.
-[00:31:23:810 - 00:31:25:209] **Speaker 2:** So we're not contradicting that.
-[00:31:25:469 - 00:31:26:410] **Speaker 2:** We're not replacing that.
-[00:31:26:489 - 00:31:27:729] **Speaker 2:** We're just building upon it.
-[00:31:31:310 - 00:31:32:670] **Speaker 2:** What we're going to look at primarily.
-[00:31:32:910 - 00:31:37:069] **Speaker 2:** So if I say finite element analysis to you, probably
-[00:31:37:069 - 00:31:41:390] **Speaker 2:** what you'd straightaway think of is, you know, an example
-[00:31:41:390 - 00:31:44:589] **Speaker 2:** that might look something like this, you know, three dimensional
-[00:31:44:589 - 00:31:48:109] **Speaker 2:** solid element, stress profiles, buckling analysis type of thing.
-[00:31:49:790 - 00:31:50:540] **Speaker 2:** That is true.
-[00:31:50:660 - 00:31:52:040] **Speaker 2:** That is absolutely fine elements.
-[00:31:52:670 - 00:31:54:859] **Speaker 2:** But we do tend to walk before we can run.
-[00:31:55:060 - 00:31:58:260] **Speaker 2:** So to jump straight into a three-dimensional solid, like one
-[00:31:58:260 - 00:32:00:359] **Speaker 2:** of these elements would be really complex.
-[00:32:00:589 - 00:32:02:420] **Speaker 2:** So we're going to do initially is we're going to
-[00:32:02:420 - 00:32:04:849] **Speaker 2:** just focus on one dimensional elements.
-[00:32:05:020 - 00:32:07:140] **Speaker 2:** So the element itself was only along one dimension.
-[00:32:07:459 - 00:32:11:300] **Speaker 2:** We're only stretching or compressing along its length, then we'll
-[00:32:11:300 - 00:32:12:400] **Speaker 2:** introduced moment and sheer.
-[00:32:14:150 - 00:32:16:770] **Speaker 2:** But essentially, this is um the the element we're going
-[00:32:16:770 - 00:32:18:989] **Speaker 2:** to focus on primarily over this next 4 weeks.
-[00:32:20:500 - 00:32:23:959] **Speaker 2:** That said, that doesn't mean that it doesn't generalise.
-[00:32:24:060 - 00:32:26:459] **Speaker 2:** So we're only doing one dimension.
-[00:32:28:439 - 00:32:31:680] **Speaker 2:** But we can assemble two-dimensional and three-dimensional structures from that
-[00:32:31:680 - 00:32:32:540] **Speaker 2:** one dimensional element.
-[00:32:33:939 - 00:32:35:619] **Speaker 2:** We could have that on different orientations and we can
-[00:32:35:619 - 00:32:36:959] **Speaker 2:** build up a system of elements.
-[00:32:37:420 - 00:32:39:180] **Speaker 2:** But also, if you were to jump through later and
-[00:32:39:180 - 00:32:41:459] **Speaker 2:** try and do a 3D solid elements, all of the
-[00:32:41:459 - 00:32:44:859] **Speaker 2:** principles, all of the way we set up problems, all
-[00:32:44:859 - 00:32:47:780] **Speaker 2:** of the way that we derive our mathematics apply very
-[00:32:47:780 - 00:32:50:959] **Speaker 2:** simply from one dimension into two dimensions and into 3.
-[00:32:53:599 - 00:32:56:859] **Speaker 2:** So What I want to talk about here is, why
-[00:32:56:859 - 00:32:58:119] **Speaker 2:** do we do one dimensional?
-[00:32:58:540 - 00:33:00:630] **Speaker 2:** Well, the first thing is that it's a stepping stone
-[00:33:00:630 - 00:33:02:199] **Speaker 2:** to greater things.
-[00:33:02:739 - 00:33:04:579] **Speaker 2:** The second thing is they're actually quite powerful in their
-[00:33:04:579 - 00:33:04:979] **Speaker 2:** own right.
-[00:33:05:140 - 00:33:07:959] **Speaker 2:** They're not just a stepping stone, they're actually valuable.
-[00:33:09:819 - 00:33:11:839] **Speaker 2:** So suppose we're designing a structure.
-[00:33:13:709 - 00:33:15:670] **Speaker 2:** What we tend to do is to to model that
-[00:33:15:670 - 00:33:19:959] **Speaker 2:** whole thing with the 3D solid elements would be extremely
-[00:33:19:959 - 00:33:23:949] **Speaker 2:** computationally expensive and would take so long to run that
-[00:33:23:949 - 00:33:26:790] **Speaker 2:** um it would be, you know, problematic.
-[00:33:27:849 - 00:33:30:109] **Speaker 2:** Wouldn't like to have the computing power to do that.
-[00:33:30:689 - 00:33:34:329] **Speaker 2:** Also, in terms of an overall high-level structural view.
-[00:33:35:709 - 00:33:37:189] **Speaker 2:** We don't necessarily need that.
-[00:33:37:349 - 00:33:39:930] **Speaker 2:** We can look at a relatively simple element.
-[00:33:40:430 - 00:33:42:390] **Speaker 2:** We can shake that, we can apply wind loads, we
-[00:33:42:390 - 00:33:42:949] **Speaker 2:** can do all sorts of things.
-[00:33:43:050 - 00:33:46:270] **Speaker 2:** We actually understand how the forces are developed and transmitted
-[00:33:46:270 - 00:33:49:390] **Speaker 2:** through a structure because the infrastructure is highly overconstrained.
-[00:33:49:459 - 00:33:54:089] **Speaker 2:** It's a highly statically redundant, um, statically indeterminate system.
-[00:33:54:430 - 00:33:58:069] **Speaker 2:** So we need to understand how relative stiffnesses and the
-[00:33:58:069 - 00:34:00:989] **Speaker 2:** design of the structure influences the way forces are developed
-[00:34:00:989 - 00:34:02:449] **Speaker 2:** and loads are carried through the structure.
-[00:34:04:569 - 00:34:07:060] **Speaker 2:** And then once you've done that, you'll often, um, this
-[00:34:07:060 - 00:34:10:050] **Speaker 2:** might be a three-dimensional structure made up of individual elements,
-[00:34:10:060 - 00:34:12:540] **Speaker 2:** which are one dimensional, and then go into a more
-[00:34:12:540 - 00:34:16:760] **Speaker 2:** detailed, more thorough analysis for these elements individually.
-[00:34:20:439 - 00:34:23:229] **Speaker 2:** We also have this, um, say like a temperature plot
-[00:34:23:229 - 00:34:26:878] **Speaker 2:** where we're looking at the distribution of um temperature throughout
-[00:34:26:878 - 00:34:27:479] **Speaker 2:** a structure.
-[00:34:27:679 - 00:34:29:120] **Speaker 2:** We there could be a two-dimensional element.
-[00:34:29:199 - 00:34:32:010] **Speaker 2:** So we often refer to two-dimensional elements as like plate
-[00:34:32:010 - 00:34:36:158] **Speaker 2:** elements or um where we're looking at just, just two
-[00:34:36:158 - 00:34:37:719] **Speaker 2:** dimensions, just an X and a Y.
-[00:34:39:009 - 00:34:42:607] **Speaker 2:** And then we get through to 3D elements where what
-[00:34:42:607 - 00:34:44:888] **Speaker 2:** we're trying to do is look at the behaviour of
-[00:34:44:888 - 00:34:45:729] **Speaker 2:** a 3D solid.
-[00:34:45:769 - 00:34:48:708] **Speaker 2:** And the underlying premise of how we do this is
-[00:34:49:089 - 00:34:50:688] **Speaker 2:** we want to solve at a few discrete points.
-[00:34:50:769 - 00:34:52:529] **Speaker 2:** Yes, there might just be a few discrete nodal points.
-[00:34:52:648 - 00:34:57:368] **Speaker 2:** There'd be 12344 discrete points, but we want those discrete
-[00:34:57:368 - 00:35:00:549] **Speaker 2:** points to be representative of a continuous solid.
-[00:35:01:629 - 00:35:03:729] **Speaker 2:** So how do we do that is we need to
-[00:35:03:729 - 00:35:04:810] **Speaker 2:** develop a mathematical system.
-[00:35:04:820 - 00:35:07:159] **Speaker 2:** We're solving it just those 4 points will be representative
-[00:35:07:159 - 00:35:08:520] **Speaker 2:** of the system we want to model.
-[00:35:09:100 - 00:35:10:439] **Speaker 2:** And then we also need to be able to say,
-[00:35:10:979 - 00:35:16:159] **Speaker 2:** if I wanted to know The displacement or the strain
-[00:35:16:159 - 00:35:17:439] **Speaker 2:** at a certain point in here.
-[00:35:17:870 - 00:35:20:360] **Speaker 2:** How do I infer the behaviour at a given location
-[00:35:20:639 - 00:35:23:020] **Speaker 2:** based upon knowing only the values at the nodal points?
-[00:35:24:280 - 00:35:26:040] **Speaker 2:** This we refer to as shape functions.
-[00:35:26:409 - 00:35:28:419] **Speaker 2:** That's going to be a really core part of the
-[00:35:28:419 - 00:35:31:629] **Speaker 2:** next 4 weeks is deriving those and looking at how
-[00:35:31:629 - 00:35:35:870] **Speaker 2:** they, how they exist and how they build up the
-[00:35:35:870 - 00:35:39:110] **Speaker 2:** system to create a mathematical model we can solve and
-[00:35:39:110 - 00:35:43:189] **Speaker 2:** then interpret and understand and give insight into how the
-[00:35:43:189 - 00:35:45:000] **Speaker 2:** structure exists.
-[00:35:46:620 - 00:35:49:760] **Speaker 2:** Uh, that's another example of what that might look like,
-[00:35:50:149 - 00:35:52:260] **Speaker 2:** uh, sort of three-dimensional element.
-[00:35:53:620 - 00:35:56:540] **Speaker 2:** And then this is some um work that I've done.
-[00:35:56:580 - 00:35:59:500] **Speaker 2:** So the the last structure was actually the the scaled-down
-[00:35:59:500 - 00:36:00:719] **Speaker 2:** high rise that I showed you.
-[00:36:01:100 - 00:36:03:300] **Speaker 2:** This was one of the damping devices that was mounted
-[00:36:03:300 - 00:36:04:500] **Speaker 2:** between that and the foundation.
-[00:36:06:350 - 00:36:08:760] **Speaker 2:** And one of the key things concern there is that
-[00:36:08:760 - 00:36:11:129] **Speaker 2:** there's this exposed section of shaft in here.
-[00:36:12:020 - 00:36:14:310] **Speaker 2:** Which could act as a point of buck.
-[00:36:16:620 - 00:36:21:659] **Speaker 2:** So this doesn't fit the nice buck the buckling equation.
-[00:36:21:739 - 00:36:23:260] **Speaker 2:** So you would have dealt with that in the past,
-[00:36:23:340 - 00:36:25:709] **Speaker 2:** you know, nice constant cross section.
-[00:36:26:699 - 00:36:29:370] **Speaker 2:** We have really nice in conditions here because there's a
-[00:36:29:370 - 00:36:30:780] **Speaker 2:** spherical plane bearing at each end.
-[00:36:31:100 - 00:36:33:139] **Speaker 2:** So we know that actually modelling that as a pin
-[00:36:33:139 - 00:36:39:020] **Speaker 2:** connection in both directions is a pretty accurate, reliable um
-[00:36:39:659 - 00:36:40:239] **Speaker 2:** approach.
-[00:36:40:580 - 00:36:42:580] **Speaker 2:** But because this has such a varied cross-section.
-[00:36:43:080 - 00:36:46:110] **Speaker 2:** It's there's no simple analytical equation we can use to
-[00:36:46:110 - 00:36:48:010] **Speaker 2:** predict the buckling of that shaft.
-[00:36:48:669 - 00:36:52:949] **Speaker 2:** But if you're creating a 16 metre tight structure, you're
-[00:36:53:310 - 00:36:55:989] **Speaker 2:** suspending many tens of tonnes up into the air.
-[00:36:57:020 - 00:36:59:699] **Speaker 2:** You want to know when this is gonna fail.
-[00:37:00:020 - 00:37:03:489] **Speaker 2:** So this is the solid model of that.
-[00:37:03:909 - 00:37:05:000] **Speaker 2:** Then we look at meshing it.
-[00:37:05:500 - 00:37:06:820] **Speaker 2:** We have a coarser mesh.
-[00:37:07:989 - 00:37:12:060] **Speaker 2:** Or a fine mesh And then we can do an
-[00:37:12:060 - 00:37:15:600] **Speaker 2:** oiler buckling analysis or an eigenvalue analysis on that metric
-[00:37:15:600 - 00:37:15:959] **Speaker 2:** solution.
-[00:37:16:540 - 00:37:19:040] **Speaker 2:** And we can pick up the level at which this
-[00:37:19:050 - 00:37:19:979] **Speaker 2:** this buckling will occur.
-[00:37:20:100 - 00:37:23:780] **Speaker 2:** So that's something where the the methods that you developed
-[00:37:23:780 - 00:37:25:739] **Speaker 2:** in your prior courses while a very powerful and very
-[00:37:25:739 - 00:37:27:080] **Speaker 2:** valuable in their own right.
-[00:37:27:419 - 00:37:29:760] **Speaker 2:** Some situations, they don't necessarily do everything we need.
-[00:37:30:260 - 00:37:32:219] **Speaker 2:** And this is an example of where some fun elements
-[00:37:33:379 - 00:37:34:360] **Speaker 2:** can fill that void.
-[00:37:37:280 - 00:37:39:020] **Speaker 2:** Is there any questions on any of that before we
-[00:37:39:280 - 00:37:40:239] **Speaker 2:** move into the corners?
-[00:37:43:250 - 00:37:47:280] **Speaker 2:** Yeah, I think that what we would go to just.
-[00:37:50:070 - 00:37:50:830] **Speaker 0:** show the example.
-[00:37:53:120 - 00:37:58:010] **Speaker 2:** Yeah, so I guess the the course of the duration
-[00:37:58:010 - 00:38:01:729] **Speaker 2:** of this course, we're doing pretty more a structural focus
-[00:38:01:729 - 00:38:04:649] **Speaker 2:** in the 1st 4 weeks in terms of different structures.
-[00:38:05:250 - 00:38:08:290] **Speaker 2:** But then once we shift across to James, there's a
-[00:38:08:290 - 00:38:09:429] **Speaker 2:** lot of PDAs.
-[00:38:10:010 - 00:38:13:679] **Speaker 2:** And while it matters, you know, we're ultimately applying some
-[00:38:13:679 - 00:38:14:649] **Speaker 2:** differential equations.
-[00:38:14:929 - 00:38:18:209] **Speaker 2:** So hopefully, you've seen this previously in your math courses
-[00:38:18:209 - 00:38:21:139] **Speaker 2:** that once you've got a mathematical solution, It doesn't necessarily
-[00:38:21:139 - 00:38:26:620] **Speaker 2:** matter whether you're inferring displacements and structural deflections or whether
-[00:38:26:620 - 00:38:29:159] **Speaker 2:** you're looking at heat flow or magnetism.
-[00:38:29:939 - 00:38:32:139] **Speaker 2:** Ultimately, if you've got the ability to solve partial differential
-[00:38:32:139 - 00:38:34:939] **Speaker 2:** equations, you can model all sorts of really interesting things
-[00:38:35:060 - 00:38:36:040] **Speaker 2:** that are really powerful.
-[00:38:36:540 - 00:38:38:679] **Speaker 2:** So um there will be a little bit of variance
-[00:38:38:679 - 00:38:41:479] **Speaker 2:** over the course in terms of the specific focus, but
-[00:38:41:919 - 00:38:44:320] **Speaker 2:** we will the underlying thing that that's everything together.
-[00:38:44:679 - 00:38:49:219] **Speaker 2:** And essentially the ability to solve differential equations to achieve
-[00:38:49:439 - 00:38:50:399] **Speaker 2:** engineering analysis.
-[00:38:53:620 - 00:38:54:739] **Speaker 2:** Are there any questions?
-[00:38:58:199 - 00:39:02:139] **Speaker 2:** So we'll just touch on some of the Key things
-[00:39:02:360 - 00:39:03:760] **Speaker 2:** in the course to this point.
-[00:39:07:729 - 00:39:09:840] **Speaker 2:** So the first page there just has my, my contact
-[00:39:09:840 - 00:39:10:580] **Speaker 2:** details.
-[00:39:11:010 - 00:39:13:530] **Speaker 2:** Um, I've obviously got course readers here, so if anyone
-[00:39:13:530 - 00:39:15:570] **Speaker 2:** didn't grab one on the way in, you're welcome to
-[00:39:15:570 - 00:39:18:330] **Speaker 2:** grab one on the way out, and there will also
-[00:39:18:330 - 00:39:22:090] **Speaker 2:** be some outside my, my door, which is the 511
-[00:39:22:330 - 00:39:24:110] **Speaker 2:** on the fifth floor of the Civil Mc building.
-[00:39:37:110 - 00:39:38:510] **Speaker 2:** So the first thing I want to just touch on
-[00:39:38:510 - 00:39:41:270] **Speaker 2:** here is the the concept of find element analysis and
-[00:39:41:270 - 00:39:44:229] **Speaker 2:** how it relates to what you've done in 202.
-[00:39:45:659 - 00:39:47:860] **Speaker 2:** Or of course, any other equivalent course that you might
-[00:39:47:860 - 00:39:48:199] **Speaker 2:** have done.
-[00:39:51:290 - 00:39:53:639] **Speaker 2:** So suppose we had a cantilever beam like this.
-[00:39:53:699 - 00:39:55:820] **Speaker 2:** So we generally refer to this as a tip loaded
-[00:39:55:820 - 00:39:56:620] **Speaker 2:** cantilever beam.
-[00:39:56:860 - 00:39:58:939] **Speaker 2:** We have a large right at the tip of the
-[00:39:58:939 - 00:39:59:449] **Speaker 2:** cantilever.
-[00:39:59:780 - 00:40:02:219] **Speaker 2:** We have a fixed support at the left and we
-[00:40:02:219 - 00:40:03:649] **Speaker 2:** want to know what the tip to fiction is.
-[00:40:06:459 - 00:40:08:860] **Speaker 2:** So what we would do if we were solving this
-[00:40:08:860 - 00:40:10:979] **Speaker 2:** by hand, as we come through.
-[00:40:12:250 - 00:40:12:649] **Speaker 2:** Weird.
-[00:40:13:750 - 00:40:16:429] **Speaker 2:** Take the the structure like this, we have a load
-[00:40:16:830 - 00:40:18:110] **Speaker 2:** P on the tip.
-[00:40:19:090 - 00:40:22:290] **Speaker 2:** We might then define some distance X from the base.
-[00:40:23:260 - 00:40:24:959] **Speaker 2:** Take a cut within that member.
-[00:40:28:310 - 00:40:31:550] **Speaker 2:** We put our upload P on there and then we
-[00:40:31:550 - 00:40:35:149] **Speaker 2:** define a sheer force V in a moment.
-[00:40:35:790 - 00:40:36:370] **Speaker 2:** M.
-[00:40:38:050 - 00:40:40:169] **Speaker 2:** We had some moments about the cut.
-[00:40:42:399 - 00:40:46:090] **Speaker 2:** Being equal to 0, to define anticlockwise as positive.
-[00:40:47:270 - 00:40:48:879] **Speaker 2:** And we would go through, we would say, well, you've
-[00:40:48:879 - 00:40:50:199] **Speaker 2:** got that's clockwise.
-[00:40:50:239 - 00:40:51:239] **Speaker 2:** So we say minus M.
-[00:40:53:719 - 00:40:55:820] **Speaker 2:** And then, uh, distance here.
-[00:40:57:209 - 00:40:59:310] **Speaker 2:** So this initial distance would have been L.
-[00:41:01:149 - 00:41:02:899] **Speaker 2:** So then this distance here.
-[00:41:04:669 - 00:41:06:439] **Speaker 2:** Is L minus X.
-[00:41:09:080 - 00:41:11:159] **Speaker 2:** And that's going to create a clockwise moment, so we'll
-[00:41:11:159 - 00:41:11:780] **Speaker 2:** call that negative.
-[00:41:13:939 - 00:41:16:620] **Speaker 2:** Distance L minus X and that equals 0.
-[00:41:18:300 - 00:41:20:689] **Speaker 2:** And then that tells us that M is equal to
-[00:41:20:689 - 00:41:21:560] **Speaker 2:** minus P.
-[00:41:22:860 - 00:41:24:120] **Speaker 2:** Times L minus X.
-[00:41:25:560 - 00:41:26:899] **Speaker 2:** Or minus PL.
-[00:41:28:340 - 00:41:29:209] **Speaker 2:** Plus PX.
-[00:41:30:800 - 00:41:33:419] **Speaker 2:** So that's the equation for the moment, all the way
-[00:41:33:419 - 00:41:34:179] **Speaker 2:** along that member.
-[00:41:36:379 - 00:41:40:939] **Speaker 2:** We can then, um, We could sketch a Benum diagram,
-[00:41:41:399 - 00:41:42:610] **Speaker 2:** essentially it starts negative.
-[00:41:43:969 - 00:41:45:030] **Speaker 2:** Just to 0 at the tip.
-[00:41:45:719 - 00:41:49:199] **Speaker 2:** And so this is moment as a function of X.
-[00:41:49:280 - 00:41:50:560] **Speaker 2:** This is distance X.
-[00:41:51:620 - 00:41:53:899] **Speaker 2:** And the starting point here is negative PL.
-[00:41:55:340 - 00:41:57:820] **Speaker 2:** And we got a slope here of P.
-[00:41:58:699 - 00:42:01:530] **Speaker 2:** Along the distance to a 0 at the top.
-[00:42:04:360 - 00:42:05:389] **Speaker 2:** We can integrate that.
-[00:42:05:479 - 00:42:07:370] **Speaker 2:** Once we have a moment equation, we can integrate that
-[00:42:07:370 - 00:42:08:320] **Speaker 2:** to get deflection.
-[00:42:08:919 - 00:42:12:159] **Speaker 2:** We can evaluate that against our boundary conditions, just repeating
-[00:42:12:159 - 00:42:14:889] **Speaker 2:** the process that hopefully, you're all familiar with.
-[00:42:15:729 - 00:42:18:610] **Speaker 2:** Just see if this comes out a little bit clearer
-[00:42:18:610 - 00:42:19:110] **Speaker 2:** here.
-[00:42:25:179 - 00:42:28:100] **Speaker 2:** So once a simple element like that, we can define
-[00:42:28:100 - 00:42:30:379] **Speaker 2:** a moment equation, we can integrate it, we can evaluate
-[00:42:30:379 - 00:42:33:050] **Speaker 2:** the boundary conditions, we can get a tip deflection and
-[00:42:33:050 - 00:42:35:899] **Speaker 2:** a tip rotation, a sheer force and a moment.
-[00:42:36:139 - 00:42:38:580] **Speaker 2:** So the key thing is you already have the tools
-[00:42:38:580 - 00:42:40:860] **Speaker 2:** to be able to describe an individual element like that.
-[00:42:42:600 - 00:42:44:830] **Speaker 2:** Hopefully none of these, you know, PLQ 3 I, the
-[00:42:44:830 - 00:42:48:760] **Speaker 2:** classic equation for the the deflection of a tiploto cantilever
-[00:42:49:129 - 00:42:52:110] **Speaker 2:** and then the tip rotation of a tiplo cantilever has
-[00:42:52:110 - 00:42:55:469] **Speaker 2:** a magnitude of PL 2/2 EI.
-[00:42:57:780 - 00:43:00:000] **Speaker 2:** If instead we were to take this and we were
-[00:43:00:000 - 00:43:02:379] **Speaker 2:** to weld three elements together here.
-[00:43:02:610 - 00:43:05:260] **Speaker 2:** So in this here, we're gonna say this is a
-[00:43:05:260 - 00:43:06:300] **Speaker 2:** rigid connection.
-[00:43:16:489 - 00:43:18:280] **Speaker 2:** That's a rigid connection at the central node.
-[00:43:21:850 - 00:43:22:590] **Speaker 2:** Where elements meet.
-[00:43:32:250 - 00:43:35:419] **Speaker 2:** If I was to ask you, What is the intersection
-[00:43:35:419 - 00:43:36:399] **Speaker 2:** at the low point?
-[00:43:37:139 - 00:43:38:129] **Speaker 2:** And what are the reaction forces?
-[00:43:38:179 - 00:43:40:459] **Speaker 2:** The reaction forces probably aren't too bad.
-[00:43:40:540 - 00:43:42:679] **Speaker 2:** You can, there's a certain amount of symmetry in there.
-[00:43:43:169 - 00:43:45:570] **Speaker 2:** The tip deflection, that's gonna be quite a hard thing
-[00:43:45:570 - 00:43:45:810] **Speaker 2:** to do.
-[00:43:45:879 - 00:43:48:070] **Speaker 2:** You're going to have some axial load reaction through here
-[00:43:48:489 - 00:43:49:520] **Speaker 2:** because it's all welded together.
-[00:43:49:570 - 00:43:51:370] **Speaker 2:** There's going to be some some bending in these as
-[00:43:51:370 - 00:43:51:929] **Speaker 2:** well.
-[00:43:52:659 - 00:43:55:070] **Speaker 2:** Um, the nodal point's going to rotate a little bit
-[00:43:55:370 - 00:43:56:929] **Speaker 2:** because of the deflection of these two elements.
-[00:43:57:010 - 00:43:59:330] **Speaker 2:** And then there's also going to be some, some bending
-[00:43:59:330 - 00:44:01:969] **Speaker 2:** of this element like is shown above.
-[00:44:02:570 - 00:44:05:350] **Speaker 2:** There's a lot of different components to that overall deflection.
-[00:44:06:689 - 00:44:09:110] **Speaker 2:** Solving that by hand, is gonna be really tough.
-[00:44:10:080 - 00:44:13:239] **Speaker 2:** Yeah, the, the tools available to you from 202.
-[00:44:15:229 - 00:44:18:629] **Speaker 2:** Without a lot of additional thought and some misery, aren't
-[00:44:18:629 - 00:44:19:840] **Speaker 2:** going to be enough to solve that.
-[00:44:22:459 - 00:44:24:820] **Speaker 2:** We could, of course, then go to more complex situations.
-[00:44:24:860 - 00:44:27:580] **Speaker 2:** We can make those supports rather than pins.
-[00:44:27:979 - 00:44:31:139] **Speaker 2:** We could add an extra elements and very quickly, the
-[00:44:31:139 - 00:44:33:899] **Speaker 2:** tools you've already got in your toolbox, just don't cut
-[00:44:33:899 - 00:44:36:560] **Speaker 2:** us to really solve these quickly and easily.
-[00:44:37:659 - 00:44:39:399] **Speaker 2:** That's where the final solution comes in.
-[00:44:40:600 - 00:44:43:280] **Speaker 2:** So they break the problem into simpler pieces and simplify
-[00:44:43:280 - 00:44:43:800] **Speaker 2:** the solution.
-[00:44:43:959 - 00:44:46:340] **Speaker 2:** We know here that while this overall problem is relatively
-[00:44:46:340 - 00:44:49:860] **Speaker 2:** complex, the individual elements are actually quite easy to model
-[00:44:50:520 - 00:44:52:320] **Speaker 2:** because it's really just what you've got above there's an
-[00:44:52:320 - 00:44:55:340] **Speaker 2:** axial loads and some different boundary conditions, but really the
-[00:44:55:350 - 00:44:58:280] **Speaker 2:** the individual components of this are quite easy, even if
-[00:44:58:280 - 00:45:00:179] **Speaker 2:** the overall structure is a bit more complicated.
-[00:45:01:550 - 00:45:03:989] **Speaker 2:** So the solution is to break a large complex structure
-[00:45:04:340 - 00:45:07:979] **Speaker 2:** into a number of smaller, simpler pieces, where each piece
-[00:45:07:979 - 00:45:12:020] **Speaker 2:** can be modelled easily and can together, together, they can
-[00:45:12:020 - 00:45:14:040] **Speaker 2:** model a range of much more complex structures.
-[00:45:15:350 - 00:45:17:790] **Speaker 2:** So we want to develop a framework under which simple
-[00:45:17:790 - 00:45:22:090] **Speaker 2:** basic elements can be combined together to represent large, more
-[00:45:22:090 - 00:45:22:790] **Speaker 2:** complex structures.
-[00:45:23:070 - 00:45:25:590] **Speaker 2:** So just reiterate, we're not throwing away what you did
-[00:45:25:590 - 00:45:25:870] **Speaker 2:** last year.
-[00:45:25:909 - 00:45:28:629] **Speaker 2:** We're building that computational framework on top to make it
-[00:45:28:629 - 00:45:30:370] **Speaker 2:** more generalizable and more powerful.
-[00:45:35:830 - 00:45:38:219] **Speaker 2:** So if we look at a structure like this.
-[00:45:43:560 - 00:45:46:600] **Speaker 2:** We have an element with a varying cross-section.
-[00:45:47:080 - 00:45:48:780] **Speaker 2:** modelling that would actually be quite tough.
-[00:45:49:239 - 00:45:52:399] **Speaker 2:** If we wanted to calculate the intersection of point B,
-[00:45:53:159 - 00:45:53:840] **Speaker 2:** that's gonna be quite tough.
-[00:45:53:889 - 00:45:55:739] **Speaker 2:** But if we were to break it into four individual
-[00:45:55:739 - 00:46:00:840] **Speaker 2:** elements, Each of those is much more easy to model,
-[00:46:01:129 - 00:46:03:389] **Speaker 2:** that's much more like something that we can actually understand.
-[00:46:05:899 - 00:46:08:419] **Speaker 2:** So almost any structure can be broken down into simple
-[00:46:08:419 - 00:46:09:000] **Speaker 2:** pieces.
-[00:46:10:500 - 00:46:16:010] **Speaker 2:** And that there Is the underlying principle.
-[00:46:22:699 - 00:46:24:600] **Speaker 2:** Of finite element analysis.
-[00:46:28:760 - 00:46:32:199] **Speaker 2:** Taking a large complex structure that would be hard to
-[00:46:32:199 - 00:46:34:919] **Speaker 2:** develop an analytical solution for, but we're breaking it up
-[00:46:34:919 - 00:46:37:659] **Speaker 2:** to these nice easy pieces that we know a solution
-[00:46:37:659 - 00:46:38:080] **Speaker 2:** to.
-[00:46:41:560 - 00:46:43:199] **Speaker 2:** So likewise in this situation.
-[00:46:45:090 - 00:46:47:989] **Speaker 2:** The mechanics of one individual little triangular element here.
-[00:46:48:919 - 00:46:50:500] **Speaker 2:** That we can model quite easily.
-[00:46:51:320 - 00:46:52:439] **Speaker 2:** We wouldn't want to sit down and try and have
-[00:46:52:439 - 00:46:54:179] **Speaker 2:** an analytical solution for this overall thing.
-[00:46:54:719 - 00:46:57:070] **Speaker 2:** But each individual elements quite easy to model.
-[00:46:57:320 - 00:46:59:939] **Speaker 2:** And we just need the framework to bring those together
-[00:47:00:320 - 00:47:04:239] **Speaker 2:** and use a simple element to model something greater than
-[00:47:04:239 - 00:47:05:280] **Speaker 2:** the sum of its parts.
-[00:47:06:989 - 00:47:09:659] **Speaker 2:** So some key things we're gonna look at um choosing
-[00:47:09:659 - 00:47:10:340] **Speaker 2:** element type.
-[00:47:11:189 - 00:47:13:790] **Speaker 2:** So the first thing we have here is the axial
-[00:47:13:790 - 00:47:14:530] **Speaker 2:** trusses.
-[00:47:15:189 - 00:47:18:899] **Speaker 2:** They carry on only axial forces, tension compressors, they do
-[00:47:18:899 - 00:47:20:750] **Speaker 2:** not carry any moments of sheer forces.
-[00:47:22:770 - 00:47:24:270] **Speaker 2:** So this here.
-[00:47:26:149 - 00:47:27:570] **Speaker 2:** That's gonna be the focus.
-[00:47:28:709 - 00:47:29:989] **Speaker 2:** Of week 1 to 2.
-[00:47:31:500 - 00:47:33:399] **Speaker 2:** And then we're going to look at flexual beams.
-[00:47:34:830 - 00:47:37:370] **Speaker 2:** So this here is going to be.
-[00:47:39:229 - 00:47:40:389] **Speaker 2:** Weeks 3 to 4.
-[00:47:45:530 - 00:47:48:669] **Speaker 2:** So initially, just look at elements that are only pinned
-[00:47:48:669 - 00:47:49:459] **Speaker 2:** to each other.
-[00:47:50:000 - 00:47:51:939] **Speaker 2:** Loads are only applied at the nodal points and each
-[00:47:51:939 - 00:47:53:840] **Speaker 2:** individual element only carries an axial load.
-[00:47:54:199 - 00:47:55:459] **Speaker 2:** No shears, no moments.
-[00:47:56:219 - 00:47:57:719] **Speaker 2:** We're gonna work out a framework for that and then
-[00:47:57:719 - 00:48:01:060] **Speaker 2:** we're gonna build upon that framework and introduce flexture, um,
-[00:48:01:129 - 00:48:02:600] **Speaker 2:** shear, bending moments, etc.
-[00:48:03:969 - 00:48:08:610] **Speaker 2:** Different boundary conditions, we look at fixed, free, um, and
-[00:48:08:610 - 00:48:09:610] **Speaker 2:** then constraint.
-[00:48:09:729 - 00:48:11:629] **Speaker 2:** So it may not be fully fixed or fully free.
-[00:48:11:689 - 00:48:15:250] **Speaker 2:** We may have a pin connection, which constrains translations, but
-[00:48:15:250 - 00:48:18:969] **Speaker 2:** not rotations, simply supported knife edge supports, which essentially do
-[00:48:18:969 - 00:48:19:699] **Speaker 2:** the same thing.
-[00:48:19:929 - 00:48:24:889] **Speaker 2:** Um, rollers, um, which may provide restraint to the space
-[00:48:24:889 - 00:48:26:469] **Speaker 2:** in in one direction but not the other.
-[00:48:26:810 - 00:48:29:729] **Speaker 2:** And then slotted connections, which is similar to rollers.
-[00:48:30:820 - 00:48:34:330] **Speaker 2:** We're gonna apply point forces, moments or continuous speed loads,
-[00:48:34:580 - 00:48:37:419] **Speaker 2:** and, um, we have to choose our degrees of freedom
-[00:48:37:419 - 00:48:39:820] **Speaker 2:** and location at which things exist.
-[00:48:41:899 - 00:48:48:100] **Speaker 2:** So, um, That's probably actually um a good place to
-[00:48:48:100 - 00:48:48:979] **Speaker 2:** stop for today.
-[00:48:49:459 - 00:48:51:760] **Speaker 2:** Um, do you have any questions before we head out?
-[00:48:54:979 - 00:48:56:750] **Speaker 2:** If not, thank you all for coming along and I'll
-[00:48:56:750 - 00:48:58:830] **Speaker 2:** see you again on Wednesday.
-[00:49:25:429 - 00:49:28:600] **Speaker 0:** to, you know, rethinking the sports I screwed that exam
-[00:49:28:600 - 00:49:29:479] **Speaker 0:** up last year.
-[00:49:29:840 - 00:49:32:199] **Speaker 0:** Um, how much has the course content changed, would you
-[00:49:32:199 - 00:49:32:540] **Speaker 0:** say?
-[00:49:33:860 - 00:49:36:000] **Speaker 2:** For my section it hasn't changed massively.
-[00:49:36:580 - 00:49:38:139] **Speaker 2:** There were a few little tweaks, but they, well, I
-[00:49:38:139 - 00:49:39:989] **Speaker 2:** mean a few tweaks to the notes, but the content
-[00:49:39:989 - 00:49:41:500] **Speaker 2:** actually hasn't changed massively.
-[00:49:43:540 - 00:49:44:659] **Speaker 2:** Can't necessarily speak to James.
-[00:49:44:719 - 00:49:48:139] **Speaker 2:** I, I doubt that the learning outcomes haven't changed, so,
-[00:49:48:300 - 00:49:50:979] **Speaker 2:** um, yeah, there may, there'll be slight tweaks, but I
-[00:49:50:979 - 00:49:51:610] **Speaker 2:** don't think it's gonna be hard to have that Facebook.
-[00:49:51:620 - 00:49:55:090] **Speaker 2:** Yeah, um, what's your name?
-[00:49:55:340 - 00:49:56:389] **Speaker 2:** I'm Matthew, right?
-[00:49:56:489 - 00:49:58:699] **Speaker 2:** Yeah, of course, I enjoyed it last year.
-[00:49:58:820 - 00:49:59:709] **Speaker 0:** I did pretty good in all that.
-[00:49:59:780 - 00:50:01:939] **Speaker 0:** I just threw up the final exam, right, but I
-[00:50:01:939 - 00:50:02:969] **Speaker 0:** like the content a lot though.
-[00:50:03:129 - 00:50:03:729] **Speaker 0:** Oh, it's good to hear.
-[00:50:06:030 - 00:50:06:050] **Speaker 0:** They do.
-[00:50:08:969 - 00:50:08:989] **Speaker 0:** Thank you.
-[00:50:10:239 - 00:50:10:860] **Speaker 0:** Thanks.
-[00:50:12:969 - 00:50:20:820] **Speaker 0:** I better look out of blue and Do you ever
-[00:50:20:820 - 00:50:25:560] **Speaker 0:** forget to put it on student loans, um, I haven't
-[00:50:25:560 - 00:50:25:719] **Speaker 0:** yet.
-[00:50:25:800 - 00:50:26:090] **Speaker 0:** I've always wanted that.
-[00:50:27:580 - 00:50:32:229] **Speaker 0:** I mean, not that, I mean, I, it's not, it's
-[00:50:32:389 - 00:50:32:530] **Speaker 0:** not, I guess.
-[00:50:44:639 - 00:50:44:800] **Speaker 0:** now.
-[00:50:45:739 - 00:50:52:139] **Speaker 0:** Yeah, there's no, um, you, you have like a, a
-[00:50:52:139 - 00:50:53:459] **Speaker 2:** page of made for to bring with you in the
-[00:50:53:459 - 00:50:56:260] **Speaker 2:** test, but that's of your discretion.
-[00:50:56:379 - 00:50:59:530] **Speaker 1:** You get to bring whatever code in the test, so,
-[00:50:59:550 - 00:51:01:969] **Speaker 0:** um, I suppose you can put whatever text into the
-[00:51:01:969 - 00:51:02:899] **Speaker 0:** script.
-[00:51:03:520 - 00:51:03:530] **Speaker 0:** Hello.
-[00:51:08:659 - 00:51:08:679] **Speaker 0:** Thank you.
-[00:51:09:280 - 00:51:09:290] **Speaker 0:** God.
-[00:51:15:250 - 00:51:22:979] **Speaker 0:** to Oh, I'm in a contract that's like, but like
-[00:51:22:979 - 00:51:23:090] **Speaker 0:** I'm always.
-[00:51:24:070 - 00:51:29:770] **Speaker 0:** Yeah Get you log back in.
-[00:51:29:850 - 00:51:31:129] **Speaker 2:** Let me just open the page.
-[00:51:31:889 - 00:51:37:429] **Speaker 0:** Just got the standard browser something to just like remember
-[00:51:37:429 - 00:51:39:280] **Speaker 0:** everything all the time, never let anyone leave.
-[00:51:40:709 - 00:51:40:729] **Speaker 0:** Thank you.
-[00:51:42:389 - 00:51:42:699] **Speaker 2:** Thanks.
-[00:51:42:790 - 00:51:43:639] **Speaker 0:** Oh, they did pretty well.
-[00:51:46:070 - 00:51:48:110] **Speaker 0:** I did not lose it.
-[00:51:49:459 - 00:51:52:459] **Speaker 0:** Hard copies, yeah, and there's, there's one for every section,
-[00:51:52:899 - 00:51:55:409] **Speaker 2:** uh, yeah, there's a second version, um, so this is
-[00:51:55:409 - 00:51:56:679] **Speaker 2:** labelled as like volume one.
-[00:51:57:139 - 00:51:58:780] **Speaker 2:** There'll be a volume two, but that'll be when James
-[00:51:58:780 - 00:52:00:340] **Speaker 2:** starts over, so it's not available yet, but it will
-[00:52:00:340 - 00:52:01:350] **Speaker 2:** be before you need it.
-[00:52:02:639 - 00:52:02:659] **Speaker 2:** Thank you.
-[00:52:04:689 - 00:52:05:840] **Speaker 2:** Pretty should have told them that too.
-[00:52:10:659 - 00:52:13:219] **Speaker 0:** It must be hard to remember when you do it
-[00:52:13:219 - 00:52:13:629] **Speaker 1:** every year.
-[00:52:15:709 - 00:52:17:800] **Speaker 2:** So it's kind of like a st joke like I
-[00:52:17:800 - 00:52:18:409] **Speaker 2:** teach this through again.
-[00:52:18:489 - 00:52:19:570] **Speaker 2:** The students never see.
-[00:52:20:100 - 00:52:21:909] **Speaker 2:** It's almost like they're in for the first time.
-[00:52:31:060 - 00:52:31:070] **Speaker 2:** No.
-[00:52:33:139 - 00:52:34:399] **Speaker 2:** The trolley will be a bit minor.
-[00:52:35:389 - 00:52:36:110] **Speaker 2:** Not that it was that heavy.
-[00:52:38:989 - 00:52:39:000] **Speaker 0:** Oh.
-[00:53:20:800 - 00:53:36:330] **Speaker 0:** And It's.
-[00:53:40:659 - 00:53:41:000] **Speaker 0:** Oh yeah.
-[00:53:46:719 - 00:53:47:070] **Speaker 0:** Um.
-[00:53:47:679 - 00:53:51:409] **Speaker 0:** Uh It's smaller than I remember.
-[00:53:53:250 - 00:53:53:290] **Speaker 0:** I'm big.
-[00:53:54:939 - 00:53:54:969] **Speaker 0:** That's.
-[00:54:00:010 - 00:54:00:169] **Speaker 0:** Yeah.
-[00:54:01:659 - 00:54:02:739] **Speaker 0:** But yeah, that was, that was.
-[00:54:17:120 - 00:54:17:129] **Speaker 0:** No.
-[00:54:18:429 - 00:54:18:459] **Speaker 0:** At all.
-[00:54:20:620 - 00:54:21:280] **Speaker 0:** I think my parents.
-[00:54:23:520 - 00:54:27:919] **Speaker 0:** I The boys, they just.
-[00:54:28:820 - 00:54:28:830] **Speaker 0:** Oh.
-[00:54:35:540 - 00:54:35:580] **Speaker 0:** How's it.
-[00:54:39:649 - 00:54:39:850] **Speaker 0:** sometimes.
-[00:54:43:280 - 00:54:43:580] **Speaker 0:** And I think.
-[00:54:49:750 - 00:54:49:760] **Speaker 0:** Yeah.
+[00:00:09:569 - 00:00:09:579] **Speaker 0:** I.
+[00:00:16:120 - 00:00:21:520] **Speaker 0:** Because Yeah you.
+[00:00:42:360 - 00:00:51:490] **Speaker 0:** Yeah like.
+[00:00:58:790 - 00:00:58:799] **Speaker 0:** No.
+[00:01:04:480 - 00:01:07:680] **Speaker 0:** I Yeah.
+[00:01:30:970 - 00:01:41:639] **Speaker 0:** I I Well, Karakoto, welcome along, everyone.
+[00:01:44:459 - 00:01:45:279] **Speaker 0:** Just get underway.
+[00:01:48:180 - 00:01:49:529] **Speaker 1:** So there's a few things we want to cover today.
+[00:01:51:370 - 00:01:54:389] **Speaker 1:** Um, what we did on Monday was we looked at
+[00:01:54:389 - 00:01:55:349] **Speaker 1:** distributed loading.
+[00:01:56:160 - 00:02:00:580] **Speaker 1:** And ways of taking the distributed loads and introducing them
+[00:02:00:639 - 00:02:01:839] **Speaker 1:** as equivalent nodal loads.
+[00:02:02:620 - 00:02:04:949] **Speaker 1:** And that's based upon uh no loads being a way
+[00:02:04:949 - 00:02:07:040] **Speaker 1:** in which we have always been able to introduce loads,
+[00:02:07:500 - 00:02:10:860] **Speaker 1:** um, that already meets our assumptions, so we're just doing
+[00:02:10:860 - 00:02:13:380] **Speaker 1:** that sort of transformation in a way of representing distributed
+[00:02:13:380 - 00:02:17:080] **Speaker 1:** loads in terms of those um specific locations.
+[00:02:18:270 - 00:02:19:949] **Speaker 1:** So we're gonna continue to work through the example we
+[00:02:19:949 - 00:02:22:139] **Speaker 1:** started on Monday, um, we're also gonna work through some
+[00:02:22:139 - 00:02:25:039] **Speaker 1:** examples to try and give you confidence that actually the,
+[00:02:25:110 - 00:02:27:910] **Speaker 1:** the equations we've derived actually give the answers that you
+[00:02:27:910 - 00:02:30:580] **Speaker 1:** would expect, so we're gonna work through, uh, a few
+[00:02:30:580 - 00:02:33:990] **Speaker 1:** baseline cases where we have kind of known values that
+[00:02:33:990 - 00:02:36:589] **Speaker 1:** we would expect to have and that we can actually
+[00:02:36:589 - 00:02:37:770] **Speaker 1:** calculate those values.
+[00:02:39:000 - 00:02:41:449] **Speaker 1:** Uh, and then we're gonna look at, um, probably not
+[00:02:41:449 - 00:02:43:210] **Speaker 1:** today, but, um, we're just gonna look at the concept
+[00:02:43:210 - 00:02:44:869] **Speaker 1:** of lost loads and a few other things.
+[00:02:45:050 - 00:02:46:669] **Speaker 1:** So before we get into that, I just want to
+[00:02:46:669 - 00:02:47:669] **Speaker 1:** talk a little bit about the test.
+[00:02:48:000 - 00:02:52:289] **Speaker 1:** So the test is on, um, it's the Tuesday, the
+[00:02:52:289 - 00:02:55:160] **Speaker 1:** week after next, I believe that's the 18th of, uh,
+[00:02:55:169 - 00:02:55:610] **Speaker 1:** August.
+[00:02:55:770 - 00:02:57:990] **Speaker 1:** It's in an evening from 6:30 to 8:30.
+[00:02:59:610 - 00:03:02:110] **Speaker 1:** So, um, I had hoped to have all the details
+[00:03:02:110 - 00:03:04:889] **Speaker 1:** for you, um, but there's been a, um, the digital
+[00:03:04:889 - 00:03:06:610] **Speaker 1:** team's still sort of building the virtual environment for the
+[00:03:06:610 - 00:03:10:669] **Speaker 1:** test to be, um, to be conducted in, so, um,
+[00:03:10:679 - 00:03:12:289] **Speaker 1:** there will be still a few details that I need
+[00:03:12:289 - 00:03:15:169] **Speaker 1:** to get to you next week, um, but the key
+[00:03:15:169 - 00:03:16:490] **Speaker 1:** idea is that you'll actually be sitting this under a
+[00:03:16:490 - 00:03:19:289] **Speaker 1:** virtual environment, so there'll be no, uh, you have access
+[00:03:19:289 - 00:03:21:899] **Speaker 1:** to the Python IDE, so, uh, there is the intention
+[00:03:21:899 - 00:03:24:789] **Speaker 1:** you'd have access to Wing, Um, and the Anaconda suite
+[00:03:24:789 - 00:03:27:869] **Speaker 1:** which include Py and Spider and Jupiter notebooks, um, at
+[00:03:27:869 - 00:03:30:059] **Speaker 1:** this stage it's not clear whether VS code would, would,
+[00:03:30:070 - 00:03:32:070] **Speaker 1:** can be incorporated into that or not.
+[00:03:32:270 - 00:03:34:830] **Speaker 1:** Um, I'll have a definitive answer on that for next
+[00:03:34:830 - 00:03:37:509] **Speaker 1:** week, um, and I am trying to give you, see
+[00:03:37:509 - 00:03:40:029] **Speaker 1:** if we can set up just a, a practise environment
+[00:03:40:029 - 00:03:41:630] **Speaker 1:** which you can check in on that.
+[00:03:41:820 - 00:03:43:869] **Speaker 1:** Um, the key thing is you'll be able to access
+[00:03:43:869 - 00:03:45:669] **Speaker 1:** your OneDrive, so you'll be able to access code.
+[00:03:45:830 - 00:03:47:750] **Speaker 1:** Um, I would strongly encourage you to bring in the
+[00:03:47:750 - 00:03:50:490] **Speaker 1:** code as a USB as a backup just in case
+[00:03:50:490 - 00:03:51:250] **Speaker 1:** anything else goes wrong.
+[00:03:51:970 - 00:03:54:070] **Speaker 1:** And um if there's any network issues on the day,
+[00:03:54:369 - 00:03:57:210] **Speaker 1:** um, and the key idea is that you bring the
+[00:03:57:210 - 00:03:59:320] **Speaker 1:** code that you've developed over those, those, these 4 or
+[00:03:59:320 - 00:04:02:570] **Speaker 1:** 5 weeks, um, that you've developed that code, you've got
+[00:04:02:570 - 00:04:05:809] **Speaker 1:** familiar with that code, you're confident that across the range
+[00:04:05:809 - 00:04:08:529] **Speaker 1:** of examples we've provided for you, that it's producing the
+[00:04:08:529 - 00:04:10:770] **Speaker 1:** right answers, and then you just bring that code along
+[00:04:10:770 - 00:04:11:550] **Speaker 1:** with you on the night.
+[00:04:12:130 - 00:04:14:410] **Speaker 1:** Ah, it's not primarily a coding test, so you shouldn't
+[00:04:14:410 - 00:04:17:630] **Speaker 1:** be making any substantive changes to your coding code during
+[00:04:17:630 - 00:04:20:209] **Speaker 1:** the test, you should, essentially the idea is that you
+[00:04:20:209 - 00:04:21:350] **Speaker 1:** make those ahead of time.
+[00:04:21:980 - 00:04:24:570] **Speaker 1:** And you're just changing sort of, you know, input variables,
+[00:04:24:799 - 00:04:27:959] **Speaker 1:** um, assembly matrices, um, maybe a little bit of coding
+[00:04:27:959 - 00:04:31:209] **Speaker 1:** around specific reaction loads, that type of thing, but the
+[00:04:31:209 - 00:04:33:049] **Speaker 1:** actual level of coding you're doing on the night is
+[00:04:33:049 - 00:04:33:970] **Speaker 1:** relatively minor.
+[00:04:34:290 - 00:04:36:940] **Speaker 1:** Um, what I would say quite clearly is that the,
+[00:04:37:089 - 00:04:39:570] **Speaker 1:** I've put up the, the last 4 years of tests,
+[00:04:40:049 - 00:04:42:130] **Speaker 1:** um, so I've put up the blank script and the
+[00:04:42:130 - 00:04:44:089] **Speaker 1:** model solutions for each of those years and I would
+[00:04:44:089 - 00:04:47:329] **Speaker 1:** strongly encourage you to work through, um, the blank script
+[00:04:47:329 - 00:04:47:790] **Speaker 1:** first.
+[00:04:48:089 - 00:04:51:329] **Speaker 1:** So, Those scripts as they appear on the the the
+[00:04:51:329 - 00:04:55:850] **Speaker 1:** ACO learn page, um, as, as they were given to
+[00:04:55:850 - 00:04:56:890] **Speaker 1:** students in those years.
+[00:04:57:250 - 00:04:59:890] **Speaker 1:** So, um, that's essentially a good chance for you to
+[00:04:59:890 - 00:05:01:049] **Speaker 1:** do a dummy run of the test.
+[00:05:01:299 - 00:05:03:209] **Speaker 1:** Now, it is very easy to look at someone else's
+[00:05:03:209 - 00:05:04:730] **Speaker 1:** working and kind of follow it and think, yeah, that
+[00:05:04:730 - 00:05:05:190] **Speaker 1:** makes sense.
+[00:05:05:929 - 00:05:07:000] **Speaker 1:** But actually when you've got to come up with the
+[00:05:07:000 - 00:05:09:170] **Speaker 1:** answers yourselves, that's a better test, so I would strongly
+[00:05:09:170 - 00:05:11:119] **Speaker 1:** encourage you to actually do that kind of blind work
+[00:05:11:119 - 00:05:13:670] **Speaker 1:** through, um and only refer to the model answers after
+[00:05:14:049 - 00:05:15:309] **Speaker 1:** you've um worked through.
+[00:05:16:029 - 00:05:18:190] **Speaker 1:** Now, and working through those, it may be that you
+[00:05:18:190 - 00:05:22:890] **Speaker 1:** actually choose a different, um, numbering sequence for your global
+[00:05:22:890 - 00:05:23:390] **Speaker 1:** degrees of freedom.
+[00:05:23:470 - 00:05:26:769] **Speaker 1:** So your uh lowercase qs and uppercase Q's, you may
+[00:05:27:230 - 00:05:28:470] **Speaker 1:** choose a different numbering sequence there.
+[00:05:28:630 - 00:05:31:070] **Speaker 1:** Remember within an element we have no flexibility for the
+[00:05:31:070 - 00:05:32:970] **Speaker 1:** numbering sequence, but on the structural level we do.
+[00:05:33:809 - 00:05:36:850] **Speaker 1:** Um, if you do that, you should see that essentially
+[00:05:36:850 - 00:05:39:410] **Speaker 1:** the, the model solutions that are provided is one possible
+[00:05:39:410 - 00:05:41:410] **Speaker 1:** model solution, it's not the only possible one.
+[00:05:41:769 - 00:05:43:850] **Speaker 1:** There are other, um, ways you could do that which
+[00:05:43:850 - 00:05:45:890] **Speaker 1:** would still give the same numbers but in a different
+[00:05:45:890 - 00:05:46:299] **Speaker 1:** order.
+[00:05:46:649 - 00:05:49:450] **Speaker 1:** Uh, that would still, um, give, you know, it would
+[00:05:49:450 - 00:05:50:269] **Speaker 1:** still be a correct answer.
+[00:05:50:369 - 00:05:52:600] **Speaker 1:** So don't, if you chose a different numbering sequence but
+[00:05:52:600 - 00:05:55:290] **Speaker 1:** you've got all the same answers in a different order
+[00:05:55:290 - 00:05:56:489] **Speaker 1:** in your like SQ vector.
+[00:05:57:410 - 00:05:59:010] **Speaker 1:** Uh, and then you've got all the same reaction loads,
+[00:05:59:049 - 00:05:59:529] **Speaker 1:** etc.
+[00:06:00:170 - 00:06:01:290] **Speaker 1:** Um, don't worry about that.
+[00:06:01:570 - 00:06:03:769] **Speaker 1:** You wouldn't be, you wouldn't be marked down if you
+[00:06:03:769 - 00:06:05:950] **Speaker 1:** did that, um, on the test itself.
+[00:06:07:130 - 00:06:11:220] **Speaker 1:** So, um, if you have used any sort of, um,
+[00:06:11:690 - 00:06:15:850] **Speaker 1:** generative AI assistance to write the code, um, I'm, I'm
+[00:06:15:850 - 00:06:17:730] **Speaker 1:** fine with that in terms of as long as you
+[00:06:17:730 - 00:06:20:470] **Speaker 1:** understand the code cause you won't have those tools available
+[00:06:20:470 - 00:06:22:089] **Speaker 1:** to you on the night, so you need to know
+[00:06:22:089 - 00:06:23:950] **Speaker 1:** and understand the code and be able to manipulate that.
+[00:06:24:820 - 00:06:27:140] **Speaker 1:** Um, and the test, as you'll see when you look
+[00:06:27:140 - 00:06:30:299] **Speaker 1:** at the previous years, the, the actual test is primarily
+[00:06:30:299 - 00:06:36:519] **Speaker 1:** a written submission, um, The, so you'll be um like
+[00:06:36:519 - 00:06:38:399] **Speaker 1:** you can see on the learn page, um, so you'll
+[00:06:38:399 - 00:06:40:959] **Speaker 1:** be in a vigilated room, um we'll be collecting a
+[00:06:40:959 - 00:06:43:350] **Speaker 1:** physical test script at the end and that's because we're
+[00:06:43:350 - 00:06:46:390] **Speaker 1:** looking more about your interpretation and your ability to sketch
+[00:06:46:390 - 00:06:48:480] **Speaker 1:** affected shapes and work out reaction loads and things.
+[00:06:48:959 - 00:06:51:269] **Speaker 1:** But on top of that there'll be an additional, um,
+[00:06:51:279 - 00:06:53:989] **Speaker 1:** upload of your code, so you'll be uploading that through
+[00:06:53:989 - 00:06:54:799] **Speaker 1:** a portal on learn.
+[00:06:55:920 - 00:06:59:429] **Speaker 1:** And That code is really just as a a secondary
+[00:06:59:429 - 00:06:59:790] **Speaker 1:** backup.
+[00:06:59:869 - 00:07:02:970] **Speaker 1:** Like if you, if your answers are um are correct,
+[00:07:03:320 - 00:07:06:350] **Speaker 1:** we probably won't look at your code, um, but if
+[00:07:06:350 - 00:07:08:320] **Speaker 1:** there's a lot of issues with your code, um, the
+[00:07:08:320 - 00:07:10:630] **Speaker 1:** ability for us to give you partial credit and follow
+[00:07:10:630 - 00:07:13:470] **Speaker 1:** on errors through the problem is something that we can
+[00:07:13:470 - 00:07:15:029] **Speaker 1:** do, um, when we have your code.
+[00:07:15:109 - 00:07:18:089] **Speaker 1:** So it's much easier to to identify an issue and,
+[00:07:18:100 - 00:07:20:950] **Speaker 1:** and run that through and see um whether subsequent wrong
+[00:07:20:950 - 00:07:23:470] **Speaker 1:** answers are a new issue or a continuation of an
+[00:07:23:470 - 00:07:24:369] **Speaker 1:** earlier one, so.
+[00:07:25:350 - 00:07:28:950] **Speaker 1:** Um, the tests you might notice, um, if anyone's looked
+[00:07:28:950 - 00:07:32:190] **Speaker 1:** at the previous tests, uh, the, the way that they're
+[00:07:32:190 - 00:07:36:230] **Speaker 1:** written, um, in previous years is, uh, you'll see on
+[00:07:36:230 - 00:07:38:100] **Speaker 1:** the the cover page that there's 90 minutes allowed for
+[00:07:38:100 - 00:07:38:380] **Speaker 1:** that.
+[00:07:38:670 - 00:07:40:709] **Speaker 1:** Um, if anyone's got sort of eagle eye and we
+[00:07:40:709 - 00:07:43:029] **Speaker 1:** look at the course information system, you'll see that the
+[00:07:43:029 - 00:07:44:820] **Speaker 1:** test is actually scheduled for 2 hours this year.
+[00:07:44:989 - 00:07:46:750] **Speaker 1:** So what we've done in the past is we've had
+[00:07:46:750 - 00:07:49:109] **Speaker 1:** 90 minutes of actual test time and then had 5
+[00:07:49:109 - 00:07:52:149] **Speaker 1:** to 10 minutes after that for uploading your code to
+[00:07:52:149 - 00:07:53:100] **Speaker 1:** learn, um.
+[00:07:53:549 - 00:07:56:109] **Speaker 1:** This time we have that 2 hour timetable block, but
+[00:07:56:109 - 00:07:57:859] **Speaker 1:** the intention is you actually have 1 hour 50 to
+[00:07:57:859 - 00:07:59:950] **Speaker 1:** do the test and then that extra 5 or 10
+[00:07:59:950 - 00:08:01:869] **Speaker 1:** minutes after that to upload your code.
+[00:08:01:950 - 00:08:04:910] **Speaker 1:** So essentially there's an extra 20 minutes um in the
+[00:08:04:910 - 00:08:05:450] **Speaker 1:** test.
+[00:08:06:109 - 00:08:09:190] **Speaker 1:** Now the test itself won't be substantially different in format
+[00:08:09:190 - 00:08:11:089] **Speaker 1:** to last year's, there'll still be 2 questions.
+[00:08:11:670 - 00:08:14:829] **Speaker 1:** Um, so it's not like where the extra time means
+[00:08:14:829 - 00:08:16:750] **Speaker 1:** I'm gonna cram a bunch of extra content, it's gonna
+[00:08:16:750 - 00:08:18:410] **Speaker 1:** be broadly similar to the previous years.
+[00:08:19:160 - 00:08:20:459] **Speaker 1:** Uh, the reason for that is I think if everything
+[00:08:20:459 - 00:08:22:089] **Speaker 1:** goes well, you've got plenty of time to finish the
+[00:08:22:089 - 00:08:24:450] **Speaker 1:** test, but if your code, if you do start having
+[00:08:24:450 - 00:08:26:640] **Speaker 1:** issues with code and things, there had been some negative
+[00:08:26:640 - 00:08:28:570] **Speaker 1:** feedback about the time, the test being a little bit
+[00:08:28:570 - 00:08:32:250] **Speaker 1:** time pressured, so that's why there's a greater time allocation
+[00:08:32:250 - 00:08:32:690] **Speaker 1:** this year.
+[00:08:32:929 - 00:08:36:859] **Speaker 1:** So just, if you're worried about that inconsistency, that's the,
+[00:08:36:960 - 00:08:38:690] **Speaker 1:** the rationale behind it, so.
+[00:08:39:400 - 00:08:43:479] **Speaker 1:** I have said that There'll be 2 problems just like
+[00:08:43:479 - 00:08:46:309] **Speaker 1:** in previous years and each problem will have up to
+[00:08:46:309 - 00:08:50:440] **Speaker 1:** 4 elements, so a good idea would be to come
+[00:08:50:440 - 00:08:53:140] **Speaker 1:** in with code for 23 and 4 elements.
+[00:08:54:080 - 00:08:57:239] **Speaker 1:** The, the test will will focus primarily on frame elements,
+[00:08:57:280 - 00:08:59:020] **Speaker 1:** so we're not gonna go and give you like a
+[00:08:59:200 - 00:09:01:799] **Speaker 1:** a a pin jointed bar element like we did earlier
+[00:09:01:799 - 00:09:04:039] **Speaker 1:** in the course, it's gonna be sort of, you know,
+[00:09:04:159 - 00:09:07:679] **Speaker 1:** look at frame, using frame elements to solve things, um.
+[00:09:08:510 - 00:09:10:869] **Speaker 1:** And essentially what, you know, as I said, would be
+[00:09:10:869 - 00:09:12:940] **Speaker 1:** really good is to come in with say skeleton code
+[00:09:12:940 - 00:09:15:590] **Speaker 1:** for a 2-ement structure, skeleton code for a 3-element structure,
+[00:09:15:700 - 00:09:17:369] **Speaker 1:** skeleton node for a 4-element structure.
+[00:09:17:909 - 00:09:19:669] **Speaker 1:** You look at the test problem, right, this is 4
+[00:09:19:669 - 00:09:22:090] **Speaker 1:** elements, I'm gonna use that code and then you've you've
+[00:09:22:090 - 00:09:24:349] **Speaker 1:** that minimises the amount of change that you have to
+[00:09:24:349 - 00:09:25:030] **Speaker 1:** do on the day.
+[00:09:25:510 - 00:09:28:390] **Speaker 1:** So, um, one other thing that just we have seen
+[00:09:28:390 - 00:09:30:070] **Speaker 1:** a couple of people do, it's pretty rare.
+[00:09:30:590 - 00:09:32:590] **Speaker 1:** Um, it might also be good to have another folder
+[00:09:32:590 - 00:09:34:190] **Speaker 1:** which is sort of a duplicate of that because in
+[00:09:34:190 - 00:09:37:090] **Speaker 1:** very rare cases we do see people where they Accidentally
+[00:09:37:090 - 00:09:38:450] **Speaker 1:** delete a bunch of their code and then they run
+[00:09:38:450 - 00:09:40:369] **Speaker 1:** the programme and then it overwrites it and they can't
+[00:09:40:369 - 00:09:43:070] **Speaker 1:** necessarily back that out, so, um, then they end up
+[00:09:43:070 - 00:09:46:780] **Speaker 1:** hastily trying to um, Rewrite the code on the fly,
+[00:09:46:869 - 00:09:48:950] **Speaker 1:** so maybe having your sort of primary set of code
+[00:09:48:950 - 00:09:51:469] **Speaker 1:** and then just in a different folder, some backup code
+[00:09:51:469 - 00:09:53:669] **Speaker 1:** there, um, so if the worst happens like that that
+[00:09:53:669 - 00:09:55:710] **Speaker 1:** you do still have a, a rollback state that you
+[00:09:55:710 - 00:09:57:109] **Speaker 1:** can go to, so.
+[00:09:58:289 - 00:09:59:570] **Speaker 1:** Um, I will send out an email with a lot
+[00:09:59:570 - 00:10:02:289] **Speaker 1:** of information as well, um, and I'll probably come back
+[00:10:02:289 - 00:10:04:409] **Speaker 1:** when James is lecturing next week and just cover a
+[00:10:04:409 - 00:10:07:409] **Speaker 1:** couple of final things, but, um, is there any pressing
+[00:10:07:409 - 00:10:08:030] **Speaker 1:** questions on that?
+[00:10:08:950 - 00:10:11:309] **Speaker 1:** Question here, uh, is it like closed book like can
+[00:10:11:309 - 00:10:11:869] **Speaker 1:** we take this?
+[00:10:12:599 - 00:10:14:609] **Speaker 1:** Uh, so you won't be able to take in the,
+[00:10:14:669 - 00:10:15:450] **Speaker 1:** the course reader.
+[00:10:15:640 - 00:10:18:479] **Speaker 1:** Um, you can comment your code, so you can explain
+[00:10:18:479 - 00:10:21:719] **Speaker 1:** what variables are, and I think after 2.5 years now
+[00:10:21:719 - 00:10:23:400] **Speaker 1:** of telling you to comment your code, it would be
+[00:10:23:400 - 00:10:25:280] **Speaker 1:** quite hypocritical for me to turn around and say you
+[00:10:25:280 - 00:10:25:630] **Speaker 1:** can't.
+[00:10:26:119 - 00:10:28:679] **Speaker 1:** So putting, you know, if you wanted to, um, you
+[00:10:28:679 - 00:10:30:510] **Speaker 1:** know, put comments in to explain what the variables are
+[00:10:30:510 - 00:10:32:500] **Speaker 1:** and things, um, that's absolutely fine.
+[00:10:32:760 - 00:10:34:669] **Speaker 1:** Um, the exception to that is if you are using
+[00:10:34:669 - 00:10:37:159] **Speaker 1:** a Jupiter notebook, there is the potential to like say
+[00:10:37:159 - 00:10:40:400] **Speaker 1:** screenshot a PDF and put things into the as images
+[00:10:40:400 - 00:10:42:059] **Speaker 1:** into that, um, Jupiter notebook.
+[00:10:42:489 - 00:10:44:809] **Speaker 1:** That's not permitted because that is essentially translating into an
+[00:10:44:809 - 00:10:45:429] **Speaker 1:** open book.
+[00:10:45:890 - 00:10:47:169] **Speaker 1:** Um, so you won't be allowed this, but you would
+[00:10:47:169 - 00:10:50:130] **Speaker 1:** be allowed one side of a 4 with any specific
+[00:10:50:130 - 00:10:54:130] **Speaker 1:** notes, um, as well as any, you know, text comments
+[00:10:54:130 - 00:10:57:729] **Speaker 1:** but not any images that are incorporated into the code
+[00:10:57:729 - 00:10:58:349] **Speaker 1:** as well.
+[00:10:58:690 - 00:11:02:390] **Speaker 1:** Um, there's no limited to limit to the number of
+[00:11:02:729 - 00:11:05:169] **Speaker 1:** um files that you can bring in, but they do
+[00:11:05:169 - 00:11:07:890] **Speaker 1:** need to be just Python files, so there's no, um,
+[00:11:08:849 - 00:11:11:289] **Speaker 1:** No, you know, vetted scripts or anything like that, so.
+[00:11:13:979 - 00:11:15:679] **Speaker 1:** Um, any additional questions?
+[00:11:20:210 - 00:11:22:500] **Speaker 1:** Um, we'll have this, uh, I just send out an
+[00:11:22:500 - 00:11:24:219] **Speaker 1:** email last night just around the, the focus of the
+[00:11:24:219 - 00:11:26:320] **Speaker 1:** lab tomorrow, which is working through equivalent loading.
+[00:11:27:739 - 00:11:30:020] **Speaker 1:** In that context, just a reminder that we're not changing
+[00:11:30:020 - 00:11:30:599] **Speaker 1:** the structure.
+[00:11:31:510 - 00:11:33:299] **Speaker 1:** Equivalent loading all it is is the load side of
+[00:11:33:299 - 00:11:36:570] **Speaker 1:** the equation, so everything we've done on the the stiffness
+[00:11:36:789 - 00:11:38:840] **Speaker 1:** side of the equation is exactly as it was before
+[00:11:39:070 - 00:11:40:950] **Speaker 1:** and we're just adding in additional loading terms.
+[00:11:43:299 - 00:11:46:580] **Speaker 1:** So, um, I would just say, I'll follow up with
+[00:11:46:580 - 00:11:49:679] **Speaker 1:** an email with a little bit information and I'll also,
+[00:11:49:690 - 00:11:51:609] **Speaker 1:** um, Yeah.
+[00:11:52:760 - 00:11:55:400] **Speaker 1:** Go through and and probably come back next week after
+[00:11:55:400 - 00:11:57:679] **Speaker 1:** James has taken over just with any, any final details,
+[00:11:57:760 - 00:12:00:099] **Speaker 1:** but I just wanted to convey that to you today.
+[00:12:02:690 - 00:12:06:549] **Speaker 1:** Um, Yeah, I think I've covered everything I wanted to,
+[00:12:06:669 - 00:12:06:969] **Speaker 1:** so.
+[00:12:08:530 - 00:12:10:890] **Speaker 1:** What we did on Monday was we derived the equivalent
+[00:12:10:890 - 00:12:13:609] **Speaker 1:** loading term, so this is taking a, a distributed loading
+[00:12:13:609 - 00:12:15:250] **Speaker 1:** term that we have here.
+[00:12:16:140 - 00:12:18:979] **Speaker 1:** And we're trying to put what are the, the sheer
+[00:12:18:979 - 00:12:21:020] **Speaker 1:** forces and moments applied at the nodal points which would
+[00:12:21:020 - 00:12:24:429] **Speaker 1:** induce the same deflected curve within the structure here.
+[00:12:24:739 - 00:12:27:260] **Speaker 1:** So, If we very quickly just look at this and
+[00:12:27:260 - 00:12:28:570] **Speaker 1:** say the total.
+[00:12:34:150 - 00:12:36:090] **Speaker 1:** He accumulated share.
+[00:12:38:020 - 00:12:40:479] **Speaker 1:** Will be equal to W bar times L.
+[00:12:42:229 - 00:12:44:909] **Speaker 1:** So it doesn't probably come as a surprise given the
+[00:12:44:909 - 00:12:48:510] **Speaker 1:** symmetry of this problem that you would expect WR L
+[00:12:48:510 - 00:12:50:510] **Speaker 1:** over 2 on each end there.
+[00:12:51:669 - 00:12:53:429] **Speaker 1:** And when we solve for that, that's exactly what we
+[00:12:53:429 - 00:12:55:109] **Speaker 1:** get a W bar L over 2 and a W
+[00:12:55:109 - 00:12:55:909] **Speaker 1:** bar L over 2.
+[00:12:56:299 - 00:12:59:570] **Speaker 1:** So, just a reminder, the assumption is that the UDL
+[00:12:59:570 - 00:13:01:270] **Speaker 1:** acts upwards in the positive Y direction.
+[00:13:03:510 - 00:13:06:429] **Speaker 1:** And what we'd have to do to, if this was
+[00:13:06:710 - 00:13:09:330] **Speaker 1:** actually the loading case, we would expect some sort of,
+[00:13:09:789 - 00:13:12:070] **Speaker 1:** you know, draw exaggerated as always, um.
+[00:13:12:820 - 00:13:14:429] **Speaker 1:** Some sort of curve shaped like this.
+[00:13:17:960 - 00:13:22:359] **Speaker 1:** And while the sheer forces are quite obvious, um, There'd
+[00:13:22:359 - 00:13:25:580] **Speaker 1:** need to be a positive counterclockwise moment here and a
+[00:13:25:580 - 00:13:29:080] **Speaker 1:** negative clockwise moment here to induce this curved shape.
+[00:13:29:849 - 00:13:34:609] **Speaker 1:** So thankfully, that's what our mathematical derivation gives us that.
+[00:13:35:450 - 00:13:41:570] **Speaker 1:** You can imagine this is going to be a Of
+[00:13:41:570 - 00:13:44:590] **Speaker 1:** course, drawn exaggerated in some sort of shape like this.
+[00:13:45:549 - 00:13:46:849] **Speaker 1:** Once the loading is applied.
+[00:13:54:940 - 00:13:56:830] **Speaker 1:** We also looked at linearly veering loads.
+[00:13:58:020 - 00:13:59:510] **Speaker 1:** There were 2 types that we considered.
+[00:14:01:020 - 00:14:04:020] **Speaker 1:** One was a linearly varying load which started with a
+[00:14:04:020 - 00:14:06:359] **Speaker 1:** zero intensity at X equals L and a maximum of
+[00:14:06:849 - 00:14:08:960] **Speaker 1:** X equals 0, a maximum of X equals L.
+[00:14:15:869 - 00:14:17:049] **Speaker 1:** So this was the first case.
+[00:14:19:190 - 00:14:21:590] **Speaker 1:** And then, so 0 at node 1 and maximum node
+[00:14:21:590 - 00:14:22:010] **Speaker 1:** 2.
+[00:14:23:000 - 00:14:26:200] **Speaker 1:** This is just the mirror of that, so the maximum
+[00:14:26:200 - 00:14:28:159] **Speaker 1:** at node 1 and 0 at node 2.
+[00:14:30:090 - 00:14:32:450] **Speaker 1:** Um, the reason I've provided both of those cases is
+[00:14:32:450 - 00:14:34:010] **Speaker 1:** this is one of the very few times where the
+[00:14:34:010 - 00:14:35:049] **Speaker 1:** element orientation matters.
+[00:14:35:250 - 00:14:38:140] **Speaker 1:** So suppose you've got some sort of situation like this,
+[00:14:38:409 - 00:14:41:309] **Speaker 1:** um, But if the peak intensity is at the bottom,
+[00:14:41:890 - 00:14:46:640] **Speaker 1:** then, The, um, this is the orientation of the element,
+[00:14:46:729 - 00:14:49:130] **Speaker 1:** whereas so you could, you could either model it this
+[00:14:49:130 - 00:14:51:159] **Speaker 1:** way with the element going upwards or you can model
+[00:14:51:159 - 00:14:54:270] **Speaker 1:** it this way with the element going downwards, uh, both
+[00:14:54:270 - 00:14:58:840] **Speaker 1:** would be um appropriate, um, but you, whichever way the
+[00:14:58:840 - 00:15:01:489] **Speaker 1:** force is acting, there'd be different directions in the two
+[00:15:01:489 - 00:15:02:090] **Speaker 1:** cases.
+[00:15:03:270 - 00:15:06:390] **Speaker 1:** So That's just the options that are available to you.
+[00:15:08:090 - 00:15:10:809] **Speaker 1:** There we looked at a few other cases, um, and
+[00:15:10:809 - 00:15:15:299] **Speaker 1:** then we transformed those into the uh frame elements combinations,
+[00:15:15:330 - 00:15:19:210] **Speaker 1:** we looked at distributed axial loads, concentrated axial loads partway
+[00:15:19:210 - 00:15:19:750] **Speaker 1:** along the element.
+[00:15:21:289 - 00:15:25:169] **Speaker 1:** And then we ultimately started this problem here, which is
+[00:15:25:169 - 00:15:26:349] **Speaker 1:** page 125.
+[00:15:30:380 - 00:15:36:260] **Speaker 1:** So What we had here This was a concentrated load.
+[00:15:40:659 - 00:15:47:419] **Speaker 1:** Representing A truck And this here was the bridge deck.
+[00:15:48:909 - 00:15:49:590] **Speaker 1:** Self white.
+[00:15:56:679 - 00:15:59:159] **Speaker 1:** So we've already solved this problem before with the absence
+[00:15:59:159 - 00:16:02:400] **Speaker 1:** of those two loads, so with the 210 kilonewton loads
+[00:16:02:400 - 00:16:05:000] **Speaker 1:** there but not the 50 kilonewton load here or the
+[00:16:05:000 - 00:16:06:719] **Speaker 1:** distributed load acting along there.
+[00:16:10:750 - 00:16:13:280] **Speaker 1:** Um, as I went through yesterday.
+[00:16:13:979 - 00:16:14:969] **Speaker 1:** I'll start on, on Monday.
+[00:16:15:729 - 00:16:18:130] **Speaker 1:** The next few pages are just a replication of some
+[00:16:18:130 - 00:16:20:820] **Speaker 1:** of the information earlier because the structure itself hasn't changed,
+[00:16:21:169 - 00:16:24:070] **Speaker 1:** so therefore none of the generation of the stiffness matrices
+[00:16:24:070 - 00:16:25:609] **Speaker 1:** or the numbers within them change.
+[00:16:25:969 - 00:16:27:830] **Speaker 1:** That's all exactly the same as it was before.
+[00:16:29:539 - 00:16:32:450] **Speaker 1:** So we have This is all identical.
+[00:16:34:440 - 00:16:37:419] **Speaker 1:** This is all identical, and where we got to here
+[00:16:37:880 - 00:16:41:260] **Speaker 1:** was um the way of actually introducing those loads.
+[00:16:44:010 - 00:16:46:369] **Speaker 1:** So we have the forcing vector, when we derive those
+[00:16:46:369 - 00:16:48:770] **Speaker 1:** it was in local coordinates within an element.
+[00:16:49:450 - 00:16:52:340] **Speaker 1:** We then need to transform them into the uppercase F.
+[00:16:55:869 - 00:16:56:929] **Speaker 1:** So when we go here.
+[00:17:00:669 - 00:17:08:790] **Speaker 1:** In this specific case, Alpha 4 element 2.
+[00:17:10:010 - 00:17:11:400] **Speaker 1:** Is equal to 0 degrees.
+[00:17:12:790 - 00:17:14:688] **Speaker 1:** So the transformation matrix.
+[00:17:16:060 - 00:17:19:349] **Speaker 1:** For element 2 Happens to be a 6 by 6
+[00:17:19:349 - 00:17:20:420] **Speaker 1:** identity matrix.
+[00:17:21:218 - 00:17:23:859] **Speaker 1:** So when, when you have a zero degree element transformation,
+[00:17:23:938 - 00:17:27:537] **Speaker 1:** that means that the element coordinates for the the local
+[00:17:27:537 - 00:17:29:659] **Speaker 1:** coordinates of the element are the same as the global
+[00:17:29:659 - 00:17:30:328] **Speaker 1:** coordinates.
+[00:17:30:899 - 00:17:33:218] **Speaker 1:** So then it turns out that you're actually not scaling
+[00:17:33:218 - 00:17:36:979] **Speaker 1:** anything or reassigning anything, your transformation matrix just reverts back
+[00:17:36:979 - 00:17:38:338] **Speaker 1:** to being an identity matrix.
+[00:17:41:869 - 00:17:52:900] **Speaker 1:** So Therefore, In this case, F equivalent to is also
+[00:17:52:900 - 00:17:55:540] **Speaker 1:** equal to F uppercase equivalent to.
+[00:17:56:729 - 00:17:58:300] **Speaker 1:** I might just actually add a UDL there.
+[00:17:59:890 - 00:18:00:500] **Speaker 1:** UDL there.
+[00:18:05:959 - 00:18:12:069] **Speaker 1:** However, This will not always be the case.
+[00:18:18:060 - 00:18:20:219] **Speaker 1:** So the key reason I'm just highlighting that is this
+[00:18:20:219 - 00:18:22:339] **Speaker 1:** vector and this vector are actually the same one, the
+[00:18:22:339 - 00:18:25:900] **Speaker 1:** same numbers in the same locations, but in most cases
+[00:18:25:900 - 00:18:27:750] **Speaker 1:** this and this will actually be different vectors.
+[00:18:28:109 - 00:18:30:739] **Speaker 1:** So you do need to follow the standard process, even
+[00:18:30:739 - 00:18:33:520] **Speaker 1:** though in this particular instance it didn't change anything.
+[00:18:34:050 - 00:18:34:060] **Speaker 1:** Yeah.
+[00:18:34:709 - 00:18:36:949] **Speaker 1:** You definitely want to stick to that sequence and follow
+[00:18:36:949 - 00:18:39:469] **Speaker 1:** through those processes, um, because if you do, then it
+[00:18:39:469 - 00:18:41:229] **Speaker 1:** will be general to any element orientation.
+[00:18:44:810 - 00:18:58:699] **Speaker 1:** Um, here Likewise In this specific example, A 2.
+[00:18:59:630 - 00:19:02:219] **Speaker 1:** Also happens to be a 6 by 6 identity matrix,
+[00:19:02:510 - 00:19:04:790] **Speaker 1:** so Q equivalent.
+[00:19:06:469 - 00:19:11:530] **Speaker 1:** UDL is equal to F equivalent UDL.
+[00:19:14:219 - 00:19:20:020] **Speaker 1:** But again This is not general.
+[00:19:26:069 - 00:19:27:479] **Speaker 1:** You could look at this and say well actually all
+[00:19:27:479 - 00:19:29:760] **Speaker 1:** three of those uh vectors are the same, I could
+[00:19:29:760 - 00:19:30:930] **Speaker 1:** use them interchangeably.
+[00:19:31:280 - 00:19:34:239] **Speaker 1:** Well, in this case you could, but not not generally.
+[00:19:36:880 - 00:19:39:380] **Speaker 1:** Um, another question is, you know, why is the element
+[00:19:39:380 - 00:19:39:869] **Speaker 1:** 2 here?
+[00:19:40:040 - 00:19:41:719] **Speaker 1:** Why is it, you know, we're looking at the equivalent
+[00:19:41:719 - 00:19:44:560] **Speaker 1:** on 2, we're using this transformation matrix element 2 and
+[00:19:44:560 - 00:19:46:880] **Speaker 1:** the assembly matrix element 2, why is it that element?
+[00:19:47:400 - 00:19:49:369] **Speaker 1:** Well, very simply, that's the element to which the distributed
+[00:19:49:369 - 00:19:51:040] **Speaker 1:** load is applied, so.
+[00:19:52:040 - 00:19:54:380] **Speaker 1:** We go back to whatever number of seconds we've applied,
+[00:19:54:959 - 00:20:00:829] **Speaker 1:** we look at the um, We look at the numbering
+[00:20:00:829 - 00:20:04:130] **Speaker 1:** sequence, the particular element number to which that load is
+[00:20:04:130 - 00:20:06:469] **Speaker 1:** applied, and we use the matrices which correspond to that
+[00:20:06:469 - 00:20:06:859] **Speaker 1:** element.
+[00:20:15:650 - 00:20:17:359] **Speaker 1:** So now we want to look at is the concentrated
+[00:20:17:359 - 00:20:19:319] **Speaker 1:** point load, so we've already dealt with the UDL, we've
+[00:20:19:319 - 00:20:21:219] **Speaker 1:** got all the way up to our uppercase Q.
+[00:20:23:310 - 00:20:26:750] **Speaker 1:** So we have our lowercase f equivalent, so the subscript
+[00:20:26:750 - 00:20:28:630] **Speaker 1:** PL refers to point load.
+[00:20:30:150 - 00:20:32:520] **Speaker 1:** Uh, in this case, we have the intensity of W
+[00:20:32:520 - 00:20:33:400] **Speaker 1:** bar of -50.
+[00:20:33:479 - 00:20:35:800] **Speaker 1:** It's negative because it was in the negative Y direction
+[00:20:35:800 - 00:20:36:739] **Speaker 1:** for that that element.
+[00:20:37:599 - 00:20:41:160] **Speaker 1:** We get this vector again because of this transformation matrix
+[00:20:41:160 - 00:20:44:160] **Speaker 1:** for element 2 happens to be identity matrix, the vector
+[00:20:44:160 - 00:20:44:780] **Speaker 1:** doesn't change.
+[00:20:46:339 - 00:20:49:229] **Speaker 1:** Then we have, uh, again, this transformation to Q.
+[00:20:50:150 - 00:20:53:050] **Speaker 1:** And then the total cue that we're gonna use is
+[00:20:53:790 - 00:20:54:750] **Speaker 1:** this, this one here.
+[00:20:56:619 - 00:20:59:959] **Speaker 1:** So this first vector Is.
+[00:21:01:050 - 00:21:01:550] **Speaker 1:** Q Odle?
+[00:21:02:810 - 00:21:04:869] **Speaker 1:** So that is the directly applied.
+[00:21:09:170 - 00:21:10:030] **Speaker 1:** Nodal lobes.
+[00:21:14:199 - 00:21:27:430] **Speaker 0:** Then we have Que equivalent UDL Which is The lumped
+[00:21:29:520 - 00:21:30:430] **Speaker 1:** Neal loads.
+[00:21:36:079 - 00:21:42:750] **Speaker 1:** That represent The UDL, so that's the bridge deck, so
+[00:21:42:750 - 00:21:43:109] **Speaker 1:** white.
+[00:21:44:969 - 00:21:46:160] **Speaker 1:** Generally what we have here.
+[00:21:47:589 - 00:21:49:130] **Speaker 1:** Is Q equivalent to PL.
+[00:21:51:400 - 00:21:52:380] **Speaker 1:** The truck weight.
+[00:21:56:310 - 00:21:58:530] **Speaker 1:** And this here is queue total.
+[00:22:00:839 - 00:22:02:900] **Speaker 1:** Which is Oh.
+[00:22:04:959 - 00:22:06:000] **Speaker 1:** Applied loads.
+[00:22:10:069 - 00:22:14:209] **Speaker 1:** So everything we're doing here is on the loading side
+[00:22:14:209 - 00:22:15:250] **Speaker 1:** of the equation.
+[00:22:16:430 - 00:22:19:180] **Speaker 1:** The stiffness matrices and things haven't changed, they're the same
+[00:22:19:180 - 00:22:21:630] **Speaker 1:** as they were when we before we introduced the nodal
+[00:22:21:630 - 00:22:22:189] **Speaker 1:** modes.
+[00:22:23:209 - 00:22:25:810] **Speaker 1:** And now instead of putting, when we first solved this
+[00:22:25:810 - 00:22:27:810] **Speaker 1:** problem, we use this vector, now we're gonna use this
+[00:22:27:810 - 00:22:28:150] **Speaker 1:** one.
+[00:22:29:109 - 00:22:32:040] **Speaker 1:** And we'll get the corresponding um deflections.
+[00:22:48:000 - 00:22:49:660] **Speaker 1:** We solve it the same way, we always have.
+[00:22:53:989 - 00:22:57:869] **Speaker 1:** So We have a response which is neither symmetric nor
+[00:22:57:869 - 00:22:59:689] **Speaker 1:** anti-symmetric, we'll look at that in more detail.
+[00:23:00:869 - 00:23:02:449] **Speaker 1:** Then we have our forcing terms here.
+[00:23:04:329 - 00:23:06:400] **Speaker 1:** If we were to go through and solve for deflections,
+[00:23:06:819 - 00:23:08:369] **Speaker 1:** so we might say a D1.
+[00:23:09:170 - 00:23:15:109] **Speaker 1:** For element one, which would be 0 millimetres, 0 millimetres.
+[00:23:16:079 - 00:23:22:520] **Speaker 1:** 0 milliradians, and then we would end up with -1.2655.
+[00:23:23:239 - 00:23:44:619] **Speaker 1:** millimetres -18.4615. millimetres And -17.35. 41 Milliadians Now, that looks
+[00:23:44:619 - 00:23:46:300] **Speaker 1:** a little bit different, so we've got.
+[00:23:47:550 - 00:23:50:189] **Speaker 1:** Uh, the, the order of these has changed and then
+[00:23:50:189 - 00:23:53:989] **Speaker 1:** this one, has gone to the 3rd loca was the
+[00:23:53:989 - 00:23:55:260] **Speaker 1:** 3rd location has gone to the 6th.
+[00:23:56:640 - 00:23:59:199] **Speaker 1:** Well, let's quickly sketch the free body diagram.
+[00:24:00:170 - 00:24:02:869] **Speaker 1:** For this element, so we have X for element.
+[00:24:03:920 - 00:24:06:180] **Speaker 1:** And Y for the elements, so this is element 1.
+[00:24:08:089 - 00:24:09:619] **Speaker 1:** We have D11.
+[00:24:11:430 - 00:24:11:439] **Speaker 1:** D.
+[00:24:12:449 - 00:24:13:619] **Speaker 1:** 21.
+[00:24:14:510 - 00:24:16:150] **Speaker 1:** And D3 1.
+[00:24:18:239 - 00:24:26:000] **Speaker 1:** The 41 The 51 And D61, so.
+[00:24:26:819 - 00:24:30:060] **Speaker 1:** Yeah, following global X, so local X, Y, Z at
+[00:24:30:060 - 00:24:32:979] **Speaker 1:** node 1, local X, local Y, local Z at node
+[00:24:32:979 - 00:24:33:300] **Speaker 1:** 2.
+[00:24:38:329 - 00:24:41:189] **Speaker 1:** The first thing we have here is that this stuff
+[00:24:41:729 - 00:24:42:410] **Speaker 1:** comes down.
+[00:24:43:630 - 00:24:44:819] **Speaker 1:** To the fixed support.
+[00:24:47:869 - 00:24:49:839] **Speaker 1:** So, we expect those values to be 0.
+[00:24:50:729 - 00:24:53:810] **Speaker 1:** It's fully clamped and fixed, so we expect 0 translation
+[00:24:53:810 - 00:24:54:689] **Speaker 1:** and 0 rotation.
+[00:24:56:020 - 00:24:58:689] **Speaker 1:** And then, uh, these are the amount by which the
+[00:24:58:979 - 00:25:01:140] **Speaker 1:** upper end of that element has deflected.
+[00:25:04:780 - 00:25:07:699] **Speaker 1:** Um, D2 is actually gonna be equal to the vector
+[00:25:07:699 - 00:25:08:239] **Speaker 1:** above.
+[00:25:09:189 - 00:25:11:069] **Speaker 1:** Uh, because of the fact that the assembly matrix is
+[00:25:11:069 - 00:25:13:290] **Speaker 1:** an identity matrix, so we end up with.
+[00:25:14:189 - 00:25:14:579] **Speaker 1:** Yeah.
+[00:25:15:579 - 00:25:21:010] **Speaker 1:** Um, 18.4615.
+[00:25:22:130 - 00:25:36:239] **Speaker 1:** millimetres, we end up with -1.2655. millimetres -17.3541. Milly radians
+[00:25:37:989 - 00:25:39:910] **Speaker 1:** Then 17.
+[00:25:40:709 - 00:25:42:550] **Speaker 1:** What is the 7087.
+[00:25:43:939 - 00:25:52:560] **Speaker 1:** millimetres, -1.5845 millimetres and, 8.2407.
+[00:25:53:699 - 00:25:55:329] **Speaker 1:** Nearly radians, so.
+[00:25:56:589 - 00:25:59:239] **Speaker 1:** If we take that, that's being applied relative to the
+[00:25:59:239 - 00:26:02:800] **Speaker 1:** free body diagram for that element, so X and Y.
+[00:26:03:979 - 00:26:05:689] **Speaker 1:** 1, so this is element 2.
+[00:26:06:640 - 00:26:07:880] **Speaker 1:** D1, element 2.
+[00:26:09:199 - 00:26:10:560] **Speaker 1:** D2 for element 2.
+[00:26:11:780 - 00:26:13:239] **Speaker 1:** And D3 for element 2.
+[00:26:15:319 - 00:26:15:329] **Speaker 1:** Before.
+[00:26:17:959 - 00:26:18:739] **Speaker 1:** D5.
+[00:26:20:530 - 00:26:21:719] **Speaker 1:** And D6.
+[00:26:24:290 - 00:26:26:089] **Speaker 1:** So if you look at axial deflections, we have an
+[00:26:26:089 - 00:26:29:930] **Speaker 1:** 18.4615 and a 17.7087.
+[00:26:30:050 - 00:26:33:089] **Speaker 1:** So what that means is because the the vertical columns
+[00:26:33:089 - 00:26:34:589] **Speaker 1:** have actually deflected transverse.
+[00:26:35:430 - 00:26:37:339] **Speaker 1:** This element has displaced in space.
+[00:26:37:630 - 00:26:39:510] **Speaker 1:** The whole thing's shifted across due to the loads that
+[00:26:39:510 - 00:26:40:109] **Speaker 1:** are applied to it.
+[00:26:40:880 - 00:26:44:640] **Speaker 1:** But then in addition to that, there's also some strain.
+[00:26:44:729 - 00:26:45:939] **Speaker 1:** So if these fellows were equal.
+[00:26:47:489 - 00:26:49:930] **Speaker 1:** There would be, um, essentially it would have translated in
+[00:26:49:930 - 00:26:51:810] **Speaker 1:** space, but neither stretched nor compressed axialally.
+[00:26:52:859 - 00:26:54:719] **Speaker 1:** But in this case, both things have happened here.
+[00:26:56:400 - 00:26:57:969] **Speaker 1:** So if we wanted to work out the axial normal
+[00:26:57:969 - 00:26:58:510] **Speaker 1:** strain.
+[00:27:07:319 - 00:27:08:819] **Speaker 1:** From axial loads only.
+[00:27:12:729 - 00:27:15:410] **Speaker 1:** Bearing in mind there would also be additional normal strains
+[00:27:15:410 - 00:27:15:989] **Speaker 1:** from bending.
+[00:27:17:160 - 00:27:19:319] **Speaker 1:** So this would be um.
+[00:27:20:439 - 00:27:24:050] **Speaker 1:** The strain for element two would be D4 for element
+[00:27:24:050 - 00:27:28:170] **Speaker 1:** two minus D1 for element two divided by the length
+[00:27:28:170 - 00:27:29:329] **Speaker 1:** of element two.
+[00:27:31:599 - 00:27:36:109] **Speaker 1:** Um And of course noting that.
+[00:27:37:670 - 00:27:39:270] **Speaker 1:** The super scripts.
+[00:27:42:010 - 00:27:46:020] **Speaker 1:** Refer to The elements number.
+[00:27:49:709 - 00:27:52:380] **Speaker 1:** So that's not L squared, it's the length of element
+[00:27:52:380 - 00:27:52:810] **Speaker 1:** 2.
+[00:27:59:130 - 00:28:01:069] **Speaker 1:** Now if we go through and solve for deflections.
+[00:28:02:930 - 00:28:05:229] **Speaker 1:** What we end up with is.
+[00:28:06:439 - 00:28:09:619] **Speaker 1:** Um, so with sulphur reaction loads, we can basically take
+[00:28:09:619 - 00:28:11:920] **Speaker 1:** the forcing terms, so we've got these three forcing vectors
+[00:28:11:920 - 00:28:13:099] **Speaker 1:** that are represented above.
+[00:28:13:640 - 00:28:16:069] **Speaker 1:** We can put those into element freebo diagrams and then
+[00:28:16:069 - 00:28:20:239] **Speaker 1:** just sum them up and we get the profile that
+[00:28:20:239 - 00:28:22:780] **Speaker 1:** is given on the next page, page 131.
+[00:28:23:859 - 00:28:27:219] **Speaker 1:** Which just shows the um the loads that were applied.
+[00:28:32:660 - 00:28:36:619] **Speaker 1:** So There was the two directly applied nodal loads, 10
+[00:28:36:619 - 00:28:37:489] **Speaker 1:** kilonewtons.
+[00:28:38:069 - 00:28:42:790] **Speaker 1:** The 47.5, that represents the the downward shear loads that
+[00:28:42:790 - 00:28:46:709] **Speaker 1:** represent both the bridge deck self-weight and the truck, and
+[00:28:46:709 - 00:28:49:089] **Speaker 1:** then these are the two moments that are induced, uh,
+[00:28:49:109 - 00:28:52:670] **Speaker 1:** that represent the bending loads that are induced from both
+[00:28:52:670 - 00:28:54:430] **Speaker 1:** the, the bridge deck self-weight.
+[00:28:55:180 - 00:28:59:939] **Speaker 1:** And the um truck, so these 210 kilometres are the
+[00:28:59:939 - 00:29:02:339] **Speaker 1:** directly applied nodal loads, these 2 here and these 2
+[00:29:02:339 - 00:29:05:140] **Speaker 1:** here, are the equivalent nodal loads, and then these are
+[00:29:05:140 - 00:29:06:819] **Speaker 1:** the reactions that result from that.
+[00:29:10:189 - 00:29:12:250] **Speaker 1:** Then what we can do is.
+[00:29:13:489 - 00:29:15:810] **Speaker 1:** We can plot the response.
+[00:29:17:760 - 00:29:19:359] **Speaker 1:** So what we're actually doing here is we're breaking out
+[00:29:19:359 - 00:29:21:359] **Speaker 1:** the response, we're looking at how what the response was
+[00:29:21:359 - 00:29:22:540] **Speaker 1:** to just the nodal loads.
+[00:29:23:390 - 00:29:25:390] **Speaker 1:** Then we're looking at the response to just the equivalent
+[00:29:25:390 - 00:29:28:930] **Speaker 1:** nodal loads, and then we're looking at the overall response.
+[00:29:32:239 - 00:29:33:719] **Speaker 1:** So if you were sketching this by hand, if you
+[00:29:33:719 - 00:29:35:239] **Speaker 1:** haven't got your plotting code, you want to just work
+[00:29:35:239 - 00:29:35:859] **Speaker 1:** out this by hand.
+[00:29:37:219 - 00:29:39:800] **Speaker 1:** What we can do is focus on the nodal points
+[00:29:39:800 - 00:29:40:380] **Speaker 1:** to start with.
+[00:29:40:619 - 00:29:43:010] **Speaker 1:** So, first of all, we know that these two nodal
+[00:29:43:010 - 00:29:44:099] **Speaker 1:** points are fully fixed.
+[00:29:44:339 - 00:29:47:300] **Speaker 1:** So we want zero translation and zero rotation there.
+[00:29:47:400 - 00:29:50:880] **Speaker 1:** So it's important they start with zero slope and they're
+[00:29:50:880 - 00:29:53:420] **Speaker 1:** aligned with the initial element and then gradually deviate from
+[00:29:53:420 - 00:29:53:540] **Speaker 1:** that.
+[00:29:53:660 - 00:29:55:869] **Speaker 1:** So if you are sketching this, don't have a lot
+[00:29:55:869 - 00:30:00:060] **Speaker 1:** an element coming in like this, uh, because that would
+[00:30:00:060 - 00:30:01:540] **Speaker 1:** require a rotation to exist there.
+[00:30:01:660 - 00:30:04:339] **Speaker 1:** It's a fixed support that's not representative of the defective
+[00:30:04:339 - 00:30:04:599] **Speaker 1:** behaviour.
+[00:30:05:819 - 00:30:07:500] **Speaker 1:** Then what you have is the, you know that from
+[00:30:07:500 - 00:30:11:420] **Speaker 1:** this information, the 1st 3 correspond to this note here.
+[00:30:13:079 - 00:30:16:449] **Speaker 1:** So the first thing here is the difference between their
+[00:30:17:160 - 00:30:17:800] **Speaker 1:** And yeah.
+[00:30:19:650 - 00:30:20:420] **Speaker 1:** Is Q1.
+[00:30:21:130 - 00:30:27:400] **Speaker 1:** Which is equal to 18 01 millimetres.
+[00:30:29:380 - 00:30:32:109] **Speaker 1:** Now there's a very small, even drawn exaggerated, there's a
+[00:30:32:109 - 00:30:35:069] **Speaker 1:** very small vertical deflection here, even in the exaggerated form,
+[00:30:35:109 - 00:30:36:469] **Speaker 1:** it still can't be seen very clearly.
+[00:30:37:550 - 00:30:42:849] **Speaker 1:** Then we have a Q2, which is a, Um, 0
+[00:30:42:849 - 00:30:43:209] **Speaker 1:** point.
+[00:30:45:400 - 00:30:46:680] **Speaker 1:** 160.
+[00:30:47:979 - 00:30:51:500] **Speaker 1:** millimetres, um, so that's to the right, and if it's
+[00:30:51:500 - 00:30:53:099] **Speaker 1:** not clear in the diagram, it does help to say
+[00:30:53:099 - 00:30:53:459] **Speaker 1:** here.
+[00:30:55:530 - 00:30:59:229] **Speaker 1:** Upwards, which is indicating that you know, because that's positive
+[00:30:59:569 - 00:31:00:770] **Speaker 1:** that it was an upwards deflection.
+[00:31:02:890 - 00:31:05:410] **Speaker 1:** Then what we can do is to define this rotation.
+[00:31:07:150 - 00:31:09:229] **Speaker 1:** What that is, remember the, the two elements, the default
+[00:31:09:229 - 00:31:11:750] **Speaker 1:** assumption we have frames that is that they're rigidly connected
+[00:31:11:750 - 00:31:13:729] **Speaker 1:** to each other, so they they welded to one another,
+[00:31:14:229 - 00:31:16:810] **Speaker 1:** therefore if they deflect, they translate.
+[00:31:17:709 - 00:31:18:910] **Speaker 1:** And rotate together.
+[00:31:19:300 - 00:31:22:910] **Speaker 1:** So what was an internal 90 degrees in here should
+[00:31:22:910 - 00:31:24:310] **Speaker 1:** remain 90 degrees after bending.
+[00:31:25:420 - 00:31:30:670] **Speaker 1:** And what we can have here is The third entry
+[00:31:30:670 - 00:31:34:989] **Speaker 1:** there is the angle between the initial deflection and the
+[00:31:34:989 - 00:31:35:670] **Speaker 1:** final defection.
+[00:31:35:790 - 00:31:37:589] **Speaker 1:** So what we could do is we could draw a
+[00:31:37:589 - 00:31:41:410] **Speaker 1:** line that's aligned with the initial orientation of element 2,
+[00:31:41:589 - 00:31:44:349] **Speaker 1:** and then we can draw a line that's aligned with
+[00:31:44:349 - 00:31:47:380] **Speaker 1:** the final orientation of element 2, which is sort of
+[00:31:47:380 - 00:31:48:349] **Speaker 1:** extending out this way.
+[00:31:50:680 - 00:31:52:760] **Speaker 1:** And we could say That there.
+[00:31:54:530 - 00:31:55:300] **Speaker 1:** There's our Q2.
+[00:31:57:290 - 00:32:01:300] **Speaker 1:** Which is 4.56.
+[00:32:02:839 - 00:32:03:680] **Speaker 1:** Milly radians.
+[00:32:07:229 - 00:32:07:459] **Speaker 1:** Sure.
+[00:32:08:170 - 00:32:09:489] **Speaker 1:** Ah, yes, absolutely it is.
+[00:32:09:680 - 00:32:09:829] **Speaker 1:** Sorry.
+[00:32:10:680 - 00:32:11:280] **Speaker 1:** It's you 3.
+[00:32:14:130 - 00:32:17:250] **Speaker 1:** Now, because the two elements rotate together, you could equally
+[00:32:17:250 - 00:32:18:510] **Speaker 1:** label it off element one.
+[00:32:19:250 - 00:32:21:209] **Speaker 1:** So element one was initially vertically, so we could draw
+[00:32:21:209 - 00:32:25:449] **Speaker 1:** a line up here, parallel, get the initial orientation of
+[00:32:25:449 - 00:32:27:969] **Speaker 1:** element one, and then we draw a line that essentially
+[00:32:27:969 - 00:32:29:869] **Speaker 1:** extends off the deflected shape.
+[00:32:31:069 - 00:32:35:449] **Speaker 1:** Of element one, and then, That there will also be
+[00:32:35:449 - 00:32:39:010] **Speaker 1:** Q3, which will be 4.56.
+[00:32:40:170 - 00:32:41:189] **Speaker 1:** Milli radians.
+[00:32:41:810 - 00:32:44:689] **Speaker 1:** Now we're drawing magnitude because we've clearly shown that this
+[00:32:44:689 - 00:32:47:729] **Speaker 1:** is actually a clockwise rotation, which is we're already taking
+[00:32:47:729 - 00:32:51:410] **Speaker 1:** the negative into account here, so either of those two
+[00:32:51:410 - 00:32:54:400] **Speaker 1:** orientations, so if you've got two elements coming into a
+[00:32:54:400 - 00:32:58:239] **Speaker 1:** nodal point, you could either draw the, the rotation being
+[00:32:58:239 - 00:33:01:619] **Speaker 1:** relative to the initial and final location of one element
+[00:33:01:619 - 00:33:03:550] **Speaker 1:** or the initial and final location of the other.
+[00:33:04:319 - 00:33:06:640] **Speaker 1:** And they will be, by definition, the same thing.
+[00:33:07:510 - 00:33:10:430] **Speaker 1:** Provided we're using the frame element assumption.
+[00:33:12:489 - 00:33:13:589] **Speaker 1:** We can do the same thing on the right hand
+[00:33:13:589 - 00:33:13:949] **Speaker 1:** side.
+[00:33:16:000 - 00:33:22:170] **Speaker 1:** Here Q4 Which is 18.
+[00:33:23:439 - 00:33:26:739] **Speaker 1:** 0.1 millimetres, it's gone to the right.
+[00:33:27:890 - 00:33:30:180] **Speaker 1:** Then we can sort of have this line relative to
+[00:33:30:410 - 00:33:30:859] **Speaker 1:** this one.
+[00:33:31:000 - 00:33:31:839] **Speaker 1:** Again, it's very small.
+[00:33:33:040 - 00:33:35:260] **Speaker 1:** And this here is Q5.
+[00:33:36:880 - 00:33:39:479] **Speaker 1:** Which is 0.1.
+[00:33:40:819 - 00:33:42:800] **Speaker 1:** 60 millimetres.
+[00:33:47:449 - 00:33:48:189] **Speaker 1:** Downwards.
+[00:33:48:810 - 00:33:50:849] **Speaker 1:** So that's, if you are concerned in the test, you
+[00:33:50:849 - 00:33:53:290] **Speaker 1:** know, it's not clear from your sketch, whether it's gone
+[00:33:53:290 - 00:33:56:209] **Speaker 1:** upwards or downwards, just putting a, a statement there to
+[00:33:56:209 - 00:33:57:449] **Speaker 1:** say it's gone to the right, it's gone to the
+[00:33:57:449 - 00:34:00:589] **Speaker 1:** left, it's gone upwards, it's gone downwards, um, is a
+[00:34:00:650 - 00:34:02:810] **Speaker 1:** nice way of very clearly conveying to us that you
+[00:34:02:810 - 00:34:04:189] **Speaker 1:** know what's going on.
+[00:34:06:060 - 00:34:08:219] **Speaker 1:** And then finally, you could either do.
+[00:34:09:259 - 00:34:11:388] **Speaker 1:** Uh, this vertical line here is parallel to the initial
+[00:34:11:388 - 00:34:12:729] **Speaker 1:** orientation of element 3.
+[00:34:15:699 - 00:34:16:370] **Speaker 1:** Then you can draw a line which is essentially an
+[00:34:16:370 - 00:34:18:790] **Speaker 1:** extension of the defective shape of element 3.
+[00:34:20:269 - 00:34:21:489] **Speaker 1:** So therefore, sorry.
+[00:34:22:269 - 00:34:24:089] **Speaker 1:** Yeah, the ambulance raises that there's Q6.
+[00:34:25:060 - 00:34:27:560] **Speaker 1:** Which is 4.56.
+[00:34:29:350 - 00:34:30:628] **Speaker 1:** Milly radians.
+[00:34:34:779 - 00:34:37:107] **Speaker 1:** And if you didn't have the plotting code and you
+[00:34:37:107 - 00:34:39:178] **Speaker 1:** want to draw this by hand, the key thing is
+[00:34:39:178 - 00:34:40:688] **Speaker 1:** focusing around a nodal point.
+[00:34:42:019 - 00:34:44:377] **Speaker 1:** And draw what you do know, so you know how
+[00:34:44:377 - 00:34:46:418] **Speaker 1:** much the node's affected, you know if it's rotated clockwise
+[00:34:46:418 - 00:34:47:739] **Speaker 1:** or counterclockwise.
+[00:34:48:377 - 00:34:51:549] **Speaker 1:** So then if you have this information here, You would
+[00:34:51:549 - 00:34:55:059] **Speaker 1:** then be able to infer the behaviour that occurs between
+[00:34:55:059 - 00:34:55:269] **Speaker 1:** us.
+[00:34:55:468 - 00:34:58:148] **Speaker 1:** So try and have a nice consistent curve, don't have
+[00:34:58:148 - 00:35:01:089] **Speaker 1:** sudden, you know, kinks in the elements, unless something's failed
+[00:35:01:089 - 00:35:02:698] **Speaker 1:** partway along the element, you're not gonna see a sudden
+[00:35:02:698 - 00:35:03:519] **Speaker 1:** change in curvature.
+[00:35:04:320 - 00:35:08:320] **Speaker 1:** And for this element here, because it's translated, um, this
+[00:35:08:320 - 00:35:11:800] **Speaker 1:** node has rotated clockwise and this rotate has node has
+[00:35:11:800 - 00:35:16:729] **Speaker 1:** rotated anticlockwise, you've essentially got sort of element ends looking
+[00:35:16:729 - 00:35:17:379] **Speaker 1:** like this.
+[00:35:18:439 - 00:35:21:879] **Speaker 1:** But there's no significant vertical offset between them, so to
+[00:35:21:879 - 00:35:25:360] **Speaker 1:** connect those, that's how you would actually know that there's
+[00:35:25:360 - 00:35:27:050] **Speaker 1:** a double curvature shape in here.
+[00:35:27:280 - 00:35:29:669] **Speaker 1:** It's because of the fact that despite there only being
+[00:35:29:669 - 00:35:33:199] **Speaker 1:** a very minor, um, vertical deflection of the two ends,
+[00:35:33:439 - 00:35:36:479] **Speaker 1:** there's no, there's no way that a single curve could
+[00:35:36:479 - 00:35:39:979] **Speaker 1:** provide, The linkage between those two elements.
+[00:35:43:439 - 00:35:45:040] **Speaker 1:** So we actually have here in this first case is
+[00:35:45:040 - 00:35:46:669] **Speaker 1:** this is what we call an anti-symmetric result.
+[00:35:53:709 - 00:35:56:510] **Speaker 1:** So it's not symmetric, it's the opposite of symmetric.
+[00:35:56:590 - 00:35:59:070] **Speaker 1:** So essentially instead of this being a mirror line, you're
+[00:35:59:070 - 00:36:02:030] **Speaker 1:** essentially taking this result and kind of moving that across
+[00:36:02:030 - 00:36:02:649] **Speaker 1:** to the right.
+[00:36:04:540 - 00:36:06:270] **Speaker 1:** And then what we have here from the equivalent nodal
+[00:36:06:270 - 00:36:12:360] **Speaker 1:** loads, As a Symmetric response.
+[00:36:16:520 - 00:36:18:090] **Speaker 1:** And of course what we would do is we would
+[00:36:18:090 - 00:36:18:840] **Speaker 1:** take these.
+[00:36:19:929 - 00:36:20:449] **Speaker 1:** And.
+[00:36:22:939 - 00:36:26:500] **Speaker 1:** Sketch or label On the diagram.
+[00:36:29:310 - 00:36:30:879] **Speaker 1:** I'm not gonna work through that a second time just
+[00:36:30:879 - 00:36:32:860] **Speaker 1:** because it's exactly the same process we did above.
+[00:36:34:639 - 00:36:36:810] **Speaker 1:** And of course what we do here as well is.
+[00:36:38:459 - 00:36:39:000] **Speaker 1:** Label.
+[00:36:41:060 - 00:36:41:909] **Speaker 1:** On the diagram.
+[00:36:46:060 - 00:36:47:850] **Speaker 1:** So we have an anti-Semmetric response.
+[00:36:48:780 - 00:36:50:040] **Speaker 1:** We have a symmetric response.
+[00:36:51:030 - 00:36:53:580] **Speaker 1:** And because we're adding, we're using the principle of linear
+[00:36:53:580 - 00:36:56:379] **Speaker 1:** superposition, we're just adding those two things together.
+[00:36:57:719 - 00:37:01:520] **Speaker 1:** And what we get here is a response.
+[00:37:03:139 - 00:37:04:560] **Speaker 1:** And overall response.
+[00:37:08:840 - 00:37:15:239] **Speaker 1:** That is Neither Symmetric.
+[00:37:16:909 - 00:37:24:409] **Speaker 1:** Nor Anti-Semitric And the reason I'm just highlighting that is
+[00:37:24:409 - 00:37:25:760] **Speaker 1:** it's really easy to look at this problem and go,
+[00:37:25:810 - 00:37:28:370] **Speaker 1:** well, I know there's some symmetry in there, and there's
+[00:37:28:370 - 00:37:30:570] **Speaker 1:** it kind of looks, maybe at a glance, like symme
+[00:37:30:570 - 00:37:31:550] **Speaker 1:** like it's symmetric.
+[00:37:32:010 - 00:37:34:629] **Speaker 1:** So why do I end up with this vector that's
+[00:37:35:250 - 00:37:37:010] **Speaker 1:** completely non-symmetric?
+[00:37:38:169 - 00:37:40:629] **Speaker 1:** That's when you break it out and you can consider
+[00:37:40:629 - 00:37:42:530] **Speaker 1:** the contributions to the overall deflection.
+[00:37:43:379 - 00:37:45:939] **Speaker 1:** That becomes a little bit clearer there.
+[00:37:49:620 - 00:37:52:179] **Speaker 1:** So that's sort of one of the key examples that
+[00:37:52:179 - 00:37:54:260] **Speaker 1:** we're gonna work through the, the lab this week is
+[00:37:54:260 - 00:37:57:060] **Speaker 1:** not um as extensive and that question here.
+[00:37:58:399 - 00:38:02:500] **Speaker 1:** What is anti-swim So, um, symmetric here is that if
+[00:38:02:500 - 00:38:03:479] **Speaker 1:** we were to draw a line.
+[00:38:04:679 - 00:38:05:530] **Speaker 1:** Basically through here.
+[00:38:07:580 - 00:38:10:199] **Speaker 1:** At 2.25, then it's a mirror line.
+[00:38:10:580 - 00:38:12:459] **Speaker 1:** Um, but in this case if we were to draw
+[00:38:12:459 - 00:38:14:379] **Speaker 1:** a line because it's 4.5 metres across, so we'd draw
+[00:38:14:379 - 00:38:16:800] **Speaker 1:** a line at 2.25 up through the structure.
+[00:38:18:620 - 00:38:22:030] **Speaker 1:** Then Uh, it's kind of the opposite of symmetric, so
+[00:38:22:350 - 00:38:24:689] **Speaker 1:** if this was a symmetric response, this would be inwards.
+[00:38:25:909 - 00:38:27:719] **Speaker 1:** But it's actually bending outwards, so it's essentially saying that
+[00:38:27:719 - 00:38:31:149] **Speaker 1:** we're taking this um response and we've kind of got
+[00:38:31:149 - 00:38:33:520] **Speaker 1:** the opposite of symmetric, so.
+[00:38:34:739 - 00:38:37:739] **Speaker 1:** That's, yeah Um, and then when you add the two
+[00:38:37:739 - 00:38:40:739] **Speaker 1:** together, you get something that's neither symmetric nor anti-symmetric, and
+[00:38:40:739 - 00:38:43:500] **Speaker 1:** you get this kind of, you know, weird curve shape
+[00:38:43:500 - 00:38:43:739] **Speaker 1:** there.
+[00:38:47:560 - 00:38:48:889] **Speaker 1:** Plotting functions.
+[00:38:50:989 - 00:38:52:919] **Speaker 1:** Uh, in the test, I wouldn't expect you to break
+[00:38:52:919 - 00:38:55:239] **Speaker 1:** out, um, individual components.
+[00:38:55:280 - 00:38:57:080] **Speaker 1:** It would just be, you know, pulling the overall defective
+[00:38:57:080 - 00:38:59:040] **Speaker 1:** shape for all those that exist in the structure.
+[00:38:59:280 - 00:39:01:320] **Speaker 1:** So, uh, in this case, I'm just breaking it out
+[00:39:01:320 - 00:39:04:520] **Speaker 1:** because I think it, it shows some interesting aspects, but
+[00:39:04:800 - 00:39:06:379] **Speaker 1:** I wouldn't ask you that in a test.
+[00:39:08:860 - 00:39:11:300] **Speaker 1:** Yeah, it would just be that one that you'd, um,
+[00:39:11:379 - 00:39:12:979] **Speaker 1:** I mean it wouldn't be different plotting code, you'd just
+[00:39:12:979 - 00:39:16:080] **Speaker 1:** be maybe given, given different input, uh, loads and then
+[00:39:16:080 - 00:39:18:010] **Speaker 1:** it would your your plotting code would produce each of
+[00:39:18:010 - 00:39:18:629] **Speaker 1:** those three.
+[00:39:19:219 - 00:39:21:459] **Speaker 1:** So you'd maybe just be, you know, providing this as
+[00:39:21:459 - 00:39:23:280] **Speaker 1:** Q, your plotting code should produce this.
+[00:39:23:669 - 00:39:25:540] **Speaker 1:** If you provide this as Q, your plotting code should
+[00:39:25:540 - 00:39:28:300] **Speaker 1:** produce this, and if you provide the overall total, your
+[00:39:28:300 - 00:39:29:860] **Speaker 1:** plotting code should produce this.
+[00:39:30:060 - 00:39:32:659] **Speaker 1:** But um, yeah, in the test, it would just be
+[00:39:32:659 - 00:39:37:060] **Speaker 1:** the final um total deflected curve for all loads.
+[00:39:40:550 - 00:39:42:860] **Speaker 1:** Now, it's important to me here, um, we've gone through
+[00:39:42:860 - 00:39:45:989] **Speaker 1:** some mathematical derivations, and it's really important for me to
+[00:39:45:989 - 00:39:48:110] **Speaker 1:** not just expect you to believe what I'm saying, it's
+[00:39:48:110 - 00:39:52:070] **Speaker 1:** to say, is this, am I just talking garbage here?
+[00:39:52:189 - 00:39:53:909] **Speaker 1:** Like, am I just making stuff up, or is, does
+[00:39:53:909 - 00:39:56:530] **Speaker 1:** this actually match the values that you would expect?
+[00:39:57:110 - 00:40:00:330] **Speaker 1:** So, it's important for me to prove to you that
+[00:40:00:909 - 00:40:04:290] **Speaker 1:** the derivations we've done actually do make physical sense.
+[00:40:06:389 - 00:40:08:540] **Speaker 1:** So what we're gonna do is work through a few
+[00:40:08:540 - 00:40:09:159] **Speaker 1:** cases here.
+[00:40:10:449 - 00:40:11:989] **Speaker 1:** It's a quick sanity check.
+[00:40:13:530 - 00:40:15:879] **Speaker 1:** So we're going to look at a cantilever with a
+[00:40:15:879 - 00:40:17:389] **Speaker 1:** uniformly distributed load on it.
+[00:40:17:889 - 00:40:20:159] **Speaker 1:** So this is our equivalent load, this is what we
+[00:40:20:159 - 00:40:21:729] **Speaker 1:** derived on Monday.
+[00:40:23:209 - 00:40:25:489] **Speaker 1:** We have a shear load at each end and we
+[00:40:25:489 - 00:40:26:679] **Speaker 1:** have a counterclockwise moment.
+[00:40:26:760 - 00:40:31:090] **Speaker 1:** Of course this is drawn with X upwards and um
+[00:40:31:090 - 00:40:34:010] **Speaker 1:** that's based upon a positive value of W bar.
+[00:40:35:120 - 00:40:36:550] **Speaker 1:** If we had this loading case, I mean this is
+[00:40:36:550 - 00:40:37:860] **Speaker 1:** the loading case that we can derive.
+[00:40:38:280 - 00:40:40:219] **Speaker 1:** We, we can know what the results should be.
+[00:40:41:709 - 00:40:43:429] **Speaker 1:** So we're gonna say we just have a cantilever beam,
+[00:40:43:510 - 00:40:46:110] **Speaker 1:** it's fully fixed at the left-hand end, we've got 3
+[00:40:46:110 - 00:40:49:070] **Speaker 1:** nodal deflections at the right-hand end and we have a
+[00:40:49:070 - 00:40:50:020] **Speaker 1:** uniformly distributed load.
+[00:40:50:070 - 00:40:52:270] **Speaker 1:** So we have no concentrated nodal loads, we just have
+[00:40:52:270 - 00:40:54:149] **Speaker 1:** this distributed load, that's the only load that acts on
+[00:40:54:149 - 00:40:54:350] **Speaker 1:** it.
+[00:40:57:219 - 00:40:59:800] **Speaker 1:** So, uh, the tip deflection for that.
+[00:41:00:540 - 00:41:04:500] **Speaker 1:** Is defined as W bar L on 4/80i and the
+[00:41:04:500 - 00:41:07:949] **Speaker 1:** tip rotation is W bar L cubed over 60i.
+[00:41:08:820 - 00:41:10:639] **Speaker 1:** Now, where did that come from?
+[00:41:10:929 - 00:41:15:179] **Speaker 1:** Well, what you probably remember from Paul Docherty in 202
+[00:41:15:179 - 00:41:17:040] **Speaker 1:** or any equivalent class that you did.
+[00:41:18:290 - 00:41:20:750] **Speaker 1:** As you can start with the bending moment equation and
+[00:41:20:750 - 00:41:22:610] **Speaker 1:** you can integrate and you can evaluate constants.
+[00:41:24:010 - 00:41:28:260] **Speaker 1:** So if you, you could say, um, You know, do
+[00:41:28:260 - 00:41:30:419] **Speaker 1:** a freebo diagram, you could do a cut here and
+[00:41:30:419 - 00:41:33:020] **Speaker 1:** you could work some distance X to the cuts, and
+[00:41:33:020 - 00:41:36:800] **Speaker 1:** you could, um, determine a moment equation and integrate that
+[00:41:36:800 - 00:41:37:199] **Speaker 1:** twice.
+[00:41:38:290 - 00:41:44:540] **Speaker 1:** But when it comes to a, Distributed load The much
+[00:41:44:540 - 00:41:47:340] **Speaker 1:** easier way to do that is to actually start with
+[00:41:47:340 - 00:41:48:340] **Speaker 1:** the 4th derivative.
+[00:41:48:419 - 00:41:51:550] **Speaker 1:** So W bar is by definition equal to EI.
+[00:41:52:719 - 00:41:55:889] **Speaker 1:** Times the 4th derivative of the with respect to X.
+[00:41:57:219 - 00:41:59:939] **Speaker 1:** And that would be equal to W bar.
+[00:42:02:129 - 00:42:04:679] **Speaker 1:** Share is equal to the 3rd derivative, so we integrate
+[00:42:04:679 - 00:42:05:060] **Speaker 1:** that.
+[00:42:07:189 - 00:42:09:300] **Speaker 1:** The item on the 3rd derivative of his share.
+[00:42:10:060 - 00:42:14:340] **Speaker 1:** So that would be equal to W X plus A.
+[00:42:15:699 - 00:42:17:560] **Speaker 1:** Moment is the 2nd derivative.
+[00:42:18:350 - 00:42:19:709] **Speaker 1:** EI times the 2nd derivative.
+[00:42:21:389 - 00:42:27:699] **Speaker 1:** Of transverse deflection So that's W bar X2 over 2.
+[00:42:29:340 - 00:42:31:429] **Speaker 1:** Plus A X + B.
+[00:42:33:110 - 00:42:35:600] **Speaker 1:** The slope, the view by the X.
+[00:42:36:959 - 00:42:39:550] **Speaker 1:** Is equal to 1 over EI.
+[00:42:40:840 - 00:42:43:439] **Speaker 1:** Time you then have to switch the EI out, and
+[00:42:43:439 - 00:42:47:879] **Speaker 1:** you end up with W bar, X cubed over 6
+[00:42:48:139 - 00:42:51:719] **Speaker 1:** plus A X 2/2.
+[00:42:53:100 - 00:42:54:939] **Speaker 1:** Plus B X plus C.
+[00:42:56:050 - 00:42:58:090] **Speaker 1:** And then we have VF X.
+[00:42:59:169 - 00:43:00:389] **Speaker 1:** There's one upon the eye.
+[00:43:01:989 - 00:43:04:649] **Speaker 1:** W bar x 4/24.
+[00:43:06:090 - 00:43:08:189] **Speaker 1:** axe cubed over 6.
+[00:43:09:860 - 00:43:11:199] **Speaker 1:** B X 202.
+[00:43:13:239 - 00:43:14:699] **Speaker 1:** C X plus D.
+[00:43:16:169 - 00:43:17:850] **Speaker 1:** Now, we would then have to go through and evaluate
+[00:43:17:850 - 00:43:18:909] **Speaker 1:** all of those constants.
+[00:43:20:939 - 00:43:24:070] **Speaker 1:** It is actually relatively easy in this case because we
+[00:43:24:070 - 00:43:27:879] **Speaker 1:** know that um, V of X and DV by X,
+[00:43:27:989 - 00:43:31:709] **Speaker 1:** the deflection and slope at X equals 0, are 0,
+[00:43:31:790 - 00:43:33:189] **Speaker 1:** so that would straight away tell us that C and
+[00:43:33:189 - 00:43:36:600] **Speaker 1:** D are equal to 0, But then what we actually
+[00:43:36:600 - 00:43:39:250] **Speaker 1:** want to do here is working out that.
+[00:43:39:969 - 00:43:42:969] **Speaker 1:** Um, V and M, uh, sheer force at the moment
+[00:43:42:969 - 00:43:45:689] **Speaker 1:** are actually zero at the X equals L, but we
+[00:43:45:689 - 00:43:47:610] **Speaker 1:** could work through that, evaluate the constants, and we would
+[00:43:47:610 - 00:43:48:590] **Speaker 1:** get these equations.
+[00:43:50:939 - 00:43:53:020] **Speaker 1:** Now, in case you don't trust me, here's a photograph,
+[00:43:53:100 - 00:43:55:340] **Speaker 1:** a photocopy of a textbook.
+[00:43:55:439 - 00:43:58:100] **Speaker 1:** So this is actually the Philpot text which was sort
+[00:43:58:100 - 00:44:01:399] **Speaker 1:** of uh recommended or required reading for 202 last year.
+[00:44:02:489 - 00:44:04:659] **Speaker 1:** And this is what we get here.
+[00:44:04:739 - 00:44:09:500] **Speaker 1:** So this is the Tip rotation and tip deflection.
+[00:44:10:520 - 00:44:13:530] **Speaker 1:** That you would expect for a tip-loaded cantilever, so.
+[00:44:14:250 - 00:44:16:169] **Speaker 1:** Yeah, well we can derive these, giving you a little
+[00:44:16:169 - 00:44:17:729] **Speaker 1:** bit of confidence that if you look at the textbook,
+[00:44:17:770 - 00:44:20:159] **Speaker 1:** this is what it says those values should be.
+[00:44:23:830 - 00:44:27:010] **Speaker 1:** So then if we go through And we, we solve
+[00:44:27:010 - 00:44:27:429] **Speaker 1:** this.
+[00:44:29:110 - 00:44:34:729] **Speaker 1:** We would set it up We would Um, we've got
+[00:44:34:729 - 00:44:36:510] **Speaker 1:** our forcing vector here.
+[00:44:37:979 - 00:44:40:899] **Speaker 1:** And we have our queue, so this is how we
+[00:44:40:899 - 00:44:42:699] **Speaker 1:** would introduce the the loads.
+[00:44:44:000 - 00:44:44:010] **Speaker 1:** Yes.
+[00:44:47:870 - 00:44:49:820] **Speaker 1:** Yeah, there's one thing we'll cover in more detail tomorrow,
+[00:44:49:939 - 00:44:52:419] **Speaker 1:** but maybe there's the first sign that maybe there's something
+[00:44:52:419 - 00:44:54:379] **Speaker 1:** extra to look at here, so it won't affect our
+[00:44:54:379 - 00:44:56:050] **Speaker 1:** solution, but something just to be aware of that we'll
+[00:44:56:050 - 00:44:57:239] **Speaker 1:** come back and look in more detail.
+[00:44:58:310 - 00:44:59:889] **Speaker 1:** Is this in this forcing vector.
+[00:45:01:699 - 00:45:05:139] **Speaker 1:** There are 4 Non-zero values.
+[00:45:06:449 - 00:45:08:209] **Speaker 1:** And when we use our assembly matrix and we get
+[00:45:08:209 - 00:45:11:830] **Speaker 1:** our our overall equivalent forcing vector uppercase Q.
+[00:45:13:080 - 00:45:14:620] **Speaker 1:** We only have 2.
+[00:45:16:260 - 00:45:18:060] **Speaker 1:** Non-zero values, so.
+[00:45:19:500 - 00:45:22:459] **Speaker 1:** That's maybe just a a teaser or a cliffhanger for
+[00:45:22:459 - 00:45:23:010] **Speaker 1:** tomorrow's lecture.
+[00:45:23:139 - 00:45:24:820] **Speaker 1:** We'll look at that in more detail and there is
+[00:45:24:820 - 00:45:26:379] **Speaker 1:** actually an extra step that we need to look at
+[00:45:26:379 - 00:45:28:659] **Speaker 1:** in there when we're looking at reaction loads, but we'll
+[00:45:28:659 - 00:45:29:760] **Speaker 1:** just ignore that for now.
+[00:45:31:199 - 00:45:34:870] **Speaker 1:** We put this in, um, we've got our um stiffness
+[00:45:34:870 - 00:45:35:520] **Speaker 1:** matrix.
+[00:45:36:510 - 00:45:38:129] **Speaker 1:** And those are the defections that we get.
+[00:45:39:699 - 00:45:40:969] **Speaker 1:** And the next page there.
+[00:45:42:620 - 00:45:53:679] **Speaker 1:** is if we were to Go through Set up a
+[00:45:53:679 - 00:45:55:379] **Speaker 1:** finite element solution for this.
+[00:45:56:229 - 00:45:57:909] **Speaker 1:** We work to get to all the vectors and then
+[00:45:57:909 - 00:45:59:110] **Speaker 1:** these are the values that we would get.
+[00:45:59:229 - 00:46:02:129] **Speaker 1:** So this is the, the values we would solve for
+[00:46:02:679 - 00:46:04:459] **Speaker 1:** the horizontal axial deflection of the tip.
+[00:46:05:260 - 00:46:09:100] **Speaker 1:** Which is unsurprisingly 0 because while there is the potential
+[00:46:09:100 - 00:46:10:479] **Speaker 1:** for there to be non-zero loads there.
+[00:46:11:199 - 00:46:14:149] **Speaker 1:** There was no horizontal force applied, so we sold for
+[00:46:14:149 - 00:46:14:959] **Speaker 1:** a zero deflection.
+[00:46:15:949 - 00:46:18:830] **Speaker 1:** And then we get these values here, applying the equations
+[00:46:18:830 - 00:46:22:300] **Speaker 1:** that we derived or put into a textbook, and everything's
+[00:46:22:300 - 00:46:23:350] **Speaker 1:** actually matching, so.
+[00:46:24:050 - 00:46:29:090] **Speaker 1:** Hopefully that actually gives you some confidence that The mathematical
+[00:46:29:090 - 00:46:30:169] **Speaker 1:** derivations we've done.
+[00:46:30:870 - 00:46:34:729] **Speaker 1:** Actually do give an answer that is physically reasonable.
+[00:46:38:159 - 00:46:41:199] **Speaker 1:** We'll also quickly just work through a distributed load along
+[00:46:41:199 - 00:46:42:260] **Speaker 1:** the length of an element.
+[00:46:47:800 - 00:46:51:360] **Speaker 1:** So We have an element here We've got a sort
+[00:46:51:360 - 00:46:56:439] **Speaker 1:** of concentrated load here of, -10 kilonewtons.
+[00:46:57:770 - 00:46:59:889] **Speaker 1:** This is what our assembly matrix would look like, because
+[00:46:59:889 - 00:47:01:689] **Speaker 1:** this is the free body diagram for the elements, this
+[00:47:01:689 - 00:47:04:530] **Speaker 1:** is the structural, so 45 and 6.
+[00:47:05:360 - 00:47:07:879] **Speaker 1:** In the elements correspond to 12, and 3 globally, so
+[00:47:07:879 - 00:47:09:689] **Speaker 1:** that's the assembly matrix we would derive.
+[00:47:11:320 - 00:47:12:679] **Speaker 1:** Um, the tip deflection.
+[00:47:14:689 - 00:47:16:889] **Speaker 1:** This one here is actually from Shigley and Mishki, which
+[00:47:16:889 - 00:47:18:229] **Speaker 1:** is the design text.
+[00:47:19:909 - 00:47:22:939] **Speaker 1:** So You look at this, this is essentially the loading
+[00:47:22:939 - 00:47:25:659] **Speaker 1:** case that we have, and we end up with a
+[00:47:25:659 - 00:47:27:280] **Speaker 1:** maximum tip deflection here.
+[00:47:27:899 - 00:47:28:860] **Speaker 1:** So this is, you know.
+[00:47:29:830 - 00:47:32:550] **Speaker 1:** The textbook tells us that the protection should be, so
+[00:47:32:550 - 00:47:36:270] **Speaker 1:** that's what, We get there, um, we can go through,
+[00:47:36:310 - 00:47:39:590] **Speaker 1:** we can substitute in the values for A, so it's
+[00:47:39:590 - 00:47:44:149] **Speaker 1:** 1.25 metres long, a 3 metre long element, so we
+[00:47:44:149 - 00:47:47:310] **Speaker 1:** put those values in, work through these are the forcing
+[00:47:47:310 - 00:47:48:169] **Speaker 1:** terms that we get.
+[00:47:49:270 - 00:47:51:379] **Speaker 1:** Again, what you'll see here is 4.
+[00:47:53:790 - 00:47:58:840] **Speaker 1:** Non-zero values, But once we introduce our assembly matrix down
+[00:47:58:840 - 00:48:00:580] **Speaker 1:** here, we actually only have 2.
+[00:48:03:340 - 00:48:04:510] **Speaker 1:** Non-zero values.
+[00:48:05:820 - 00:48:07:260] **Speaker 1:** And what that means is there's actually a little bit
+[00:48:07:260 - 00:48:10:260] **Speaker 1:** of information that's lost from the system that only matters
+[00:48:10:260 - 00:48:11:830] **Speaker 1:** when we have to look at reaction loads.
+[00:48:12:100 - 00:48:13:780] **Speaker 1:** Uh, we'll cover that in a lot more detail tomorrow
+[00:48:13:780 - 00:48:14:739] **Speaker 1:** as to how to deal with that.
+[00:48:15:699 - 00:48:18:219] **Speaker 1:** And then what we get here is the same deflections
+[00:48:18:219 - 00:48:22:860] **Speaker 1:** and 10.09 millimetres is the answer we get from our
+[00:48:22:860 - 00:48:25:500] **Speaker 1:** final element solution, and this is the answer that we
+[00:48:25:500 - 00:48:28:179] **Speaker 1:** would have got from the value from the textbooks.
+[00:48:29:370 - 00:48:29:850] **Speaker 1:** So.
+[00:48:31:760 - 00:48:33:550] **Speaker 1:** The key thing there is.
+[00:48:34:350 - 00:48:34:360] **Speaker 1:** Maybe.
+[00:48:36:550 - 00:48:41:699] **Speaker 1:** This one And.
+[00:48:43:090 - 00:48:44:709] **Speaker 1:** The finite element analysis solution.
+[00:48:49:850 - 00:48:50:610] **Speaker 1:** Matches.
+[00:48:52:969 - 00:48:53:909] **Speaker 1:** What we would expect.
+[00:48:58:560 - 00:49:01:520] **Speaker 1:** Now, you can obviously model much more complex situations that
+[00:49:01:520 - 00:49:04:439] **Speaker 1:** may not be that easy to get, uh, an analytical
+[00:49:04:439 - 00:49:04:659] **Speaker 1:** solution.
+[00:49:05:479 - 00:49:06:939] **Speaker 1:** But all the information's there.
+[00:49:07:659 - 00:49:12:489] **Speaker 1:** And you've got Yeah, this is your Yeah, I give
+[00:49:12:489 - 00:49:14:479] **Speaker 1:** you a little bit of confidence that the the mathematical
+[00:49:14:479 - 00:49:17:120] **Speaker 1:** derivations we did on Monday are actually meaningful.
+[00:49:17:439 - 00:49:20:080] **Speaker 1:** They do actually capture the reaction mechanisms that we think
+[00:49:20:080 - 00:49:22:719] **Speaker 1:** they do, and give you a little bit of confidence
+[00:49:22:719 - 00:49:23:479] **Speaker 1:** in using this.
+[00:49:23:919 - 00:49:26:679] **Speaker 1:** So, um, yeah, thank you all for coming along, and
+[00:49:26:679 - 00:49:28:120] **Speaker 1:** I'll see you again tomorrow morning.
+[00:50:04:280 - 00:50:04:290] **Speaker 0:** Yeah.
+[00:50:10:219 - 00:50:10:229] **Speaker 0:** I.
+[00:50:13:080 - 00:50:13:090] **Speaker 0:** I.
+[00:50:16:489 - 00:50:21:929] **Speaker 0:** I OK Thank.
+[00:50:34:159 - 00:50:34:169] **Speaker 0:** Maybe.
+[00:50:38:070 - 00:50:38:479] **Speaker 0:** You're doing.
+[00:50:39:790 - 00:50:43:629] **Speaker 0:** Yeah, um, it's, it also maybe also yeah.
+[00:50:44:669 - 00:50:45:110] **Speaker 0:** There is.
+[00:50:52:050 - 00:50:52:060] **Speaker 0:** Um.
+[00:51:05:330 - 00:51:07:629] **Speaker 0:** I think it's just You.
+[00:51:13:620 - 00:51:18:149] **Speaker 0:** Yeah, and I was like driving off the road, yeah,
+[00:51:18:159 - 00:51:20:120] **Speaker 0:** I got a solid like 3 hours.
+[00:53:18:790 - 00:53:18:959] **Speaker 0:** I work.
+[00:54:13:770 - 00:54:14:189] **Speaker 0:** I

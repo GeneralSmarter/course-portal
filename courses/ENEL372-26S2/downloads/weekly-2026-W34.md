@@ -1,161 +1,981 @@
 <!-- week-id: 2026-W34 -->
-<!-- generated-at: 2026-08-23T09:34:26.116077+12:00 -->
+<!-- generated-at: 2026-10-20T12:19:32.657906+13:00 -->
 # ENEL372-26S2 weekly summary
 
 ## Coverage
 
-- Study window: 2026-W34, from 2026-08-17T00:00:00+12:00 to 2026-08-23T06:15:15.739855+12:00.
-- Covered verified summaries:
-  - Lecture 16: DC–AC converters, inverter topologies, four-quadrant operation, bipolar SPWM, modulation ratios, and practical switching issues.
-  - Lecture 17: PWM harmonics, synchronous and asynchronous operation, unipolar switching, over-modulation, switching-frequency trade-offs, and a half-bridge worked example.
-  - Lecture 18: power-electronics foundations, converter categories, feedback, semiconductor devices, device-selection trade-offs, and LTspice.
-- Source coverage is complete. No lectures are recorded as missing or incomplete.
+Rebuilt 20 October 2026 from the corrected source-backed lecture notes. Teaching-week numbering omits the mid-semester break; ISO week identifiers are calendar dates.
+
+- Lecture 16: 2026-08-17. This lecture introduces DC–AC converters, or inverters. The main progression is:  - Applications and output-waveform quality of inverters. - Modelling a motor as a series resistance–inductance–source load. - Two-quadrant operation using buck and boost behaviour. - Four-quadrant operation required for AC loads. - Half-bridge and full-bridge inverter topologies. - Bipolar switching and sinusoidal pulse-width modulation (SPWM). - Amplitude and frequency modulation ratios. - Practical issues including free-wheeling diodes, dead time, shoot-through, switching losses, and grid synchronisation.  Important applications include AC motor speed control, photovoltaic systems, uninterruptible power supplies, battery-powered AC supplies, and Class D audio amplifiers.
+
+- Lecture 17: 2026-08-20. This lecture concludes the inverter material for the term. It reviews:  - DC-to-AC conversion using pulse-width modulation (PWM). - Harmonic generation in bipolar switching. - The effect of the frequency modulation ratio and synchronisation. - Unipolar switching in a full-bridge inverter. - Harmonic reduction and filter-size requirements. - Over-modulation as a short-term method of increasing motor torque. - A worked half-bridge inverter example. - Advantages and disadvantages of low and high switching frequencies.  The central design objective is to produce the desired fundamental AC waveform while moving unwanted harmonics to higher frequencies and reducing their amplitude, allowing smaller low-pass filter components.
 
 ## Main concepts
 
-- An inverter converts DC into AC. Applications include AC motor speed control, photovoltaic systems, uninterruptible power supplies, battery-powered AC supplies, and Class D amplifiers.
-- A motor can be modelled as a series resistance–inductance–back-EMF source load. The inductance prevents current from changing instantaneously, requiring free-wheeling or anti-parallel current paths.
-- Buck-like operation transfers energy from the DC source to the motor. Boost-like operation supports regenerative or active-braking energy flow from the motor toward the source or braking path.
-- Four-quadrant operation is required for AC or reactive loads because voltage and current can each change sign.
-- A half bridge produces approximately \(+V_D/2\) or \(-V_D/2\) relative to its midpoint. A full bridge produces \(+V_D\), \(0\), or \(-V_D\) across the load.
-- Bipolar switching changes directly between positive and negative output levels. Unipolar full-bridge switching passes through zero, reducing voltage steps and changing the harmonic distribution.
-- SPWM compares a reference waveform with a high-frequency triangular carrier. The resulting switched waveform is filtered to recover the desired fundamental.
-- \(M_A\) controls fundamental amplitude in the linear region. \(M_F\) determines the relationship between switching frequency and fundamental frequency, affecting harmonic placement and filter requirements.
-- Synchronous PWM uses an integer carrier-to-reference frequency ratio. Non-integer ratios can create subharmonics and low-frequency components.
-- Over-modulation increases the fundamental voltage but produces greater low-order harmonic distortion and is therefore more suitable as a temporary torque-demand measure than as a normal continuous mode.
-- Power electronics aims to convert electrical power efficiently using semiconductor switches, inductors, capacitors, filters, and feedback control.
-- The four basic conversion categories are AC–DC rectification, DC–DC conversion, DC–AC inversion, and AC–AC conversion.
-- Device choice involves trade-offs among voltage capability, current capability, switching speed, conduction loss, gate-drive requirements, and controllability. MOSFETs are generally fastest, IGBTs provide a high-current compromise, and thyristors provide high voltage/current capability at lower switching speeds.
+### Lecture 16
 
-## Equations and worked patterns
+- An inverter converts a DC source into an AC voltage or current waveform.
+- The primary industrial application discussed is speed control of AC motors.
+- A motor can often be represented as a series R–L–source load:
+  - R represents winding or armature resistance.
+  - L represents winding or armature inductance.
+  - The source represents back EMF generated by the rotating motor.
+- A basic DC chopper driving a motor can provide:
+  - Forward driving in quadrant 1.
+  - Active braking of a forward-moving load in quadrant 4.
+- A buck-type operating state transfers energy from the DC source to the motor.
+- A boost-type operating state transfers energy from the motor’s mechanical inertia back toward the source or braking path.
+- Synchronous conversion replaces a free-wheeling diode with a controllable switch during part of the switching cycle, reducing conduction losses.
+- The two switches in a converter leg must never be on simultaneously.
+- Dead time is inserted between turning one switch off and turning the complementary switch on.
+- An AC load with inductive or capacitive behaviour requires four-quadrant operation because voltage and current can each be positive or negative.
+- A half-bridge can produce approximately +V_D/2 and −V_D/2 relative to its midpoint reference.
+- A full bridge can produce +V_D, 0, and −V_D across the load.
+- A simple square or modified-sine switching pattern has substantial harmonic content.
+- SPWM varies the widths of the switching pulses so that the filtered fundamental follows a sinusoidal reference.
+- In bipolar switching, the output switches between the two opposite voltage levels:
+  - Half bridge: +V_D/2 and −V_D/2.
+  - Full bridge: +V_D and −V_D.
+- A low-pass filter removes switching-frequency components and higher harmonics, leaving the desired fundamental waveform.
+- The amplitude modulation ratio controls the fundamental output amplitude while it remains below unity.
+- The frequency modulation ratio compares switching frequency with reference-wave frequency.
+- Higher switching frequency moves harmonics upward, allowing smaller filters, but increases switching losses.
 
-- Instantaneous electrical power:
-  \[
-  p=vi
-  \]
-- Inductor relationship in the motor model:
-  \[
-  v_L=L_A\frac{di}{dt}
-  \]
-- Sinusoidal real output power:
-  \[
-  P_{\text{out}}=V_{\text{out,rms}}I_{\text{out,rms}}\cos\phi
-  \]
-- Half-bridge output levels:
-  \[
-  v_{AO}=+\frac{V_D}{2}
-  \quad\text{or}\quad
-  v_{AO}=-\frac{V_D}{2}
-  \]
-- Full-bridge output levels:
-  \[
-  v_{AB}=+V_D,\quad 0,\quad -V_D
-  \]
-- Amplitude modulation ratio:
-  \[
-  M_A=\frac{V_{\text{control,peak}}}{V_{\text{tri,peak}}}
-  \]
-  Linear modulation is described as \(M_A\leq1\); over-modulation begins when \(M_A>1\).
-- Frequency modulation ratio:
+### Inverter applications and waveforms
+
+Inverters are used to convert DC into AC in power applications. Examples mentioned include:
+
+- AC motor speed control.
+- Grid-connected photovoltaic systems, converting solar-panel DC into AC suitable for connection to the mains.
+- Uninterruptible power supplies, including battery-backed supplies for AC appliances.
+- Mobile or off-grid systems using batteries as the DC source.
+- Class D audio amplifiers.
+
+Class D audio amplifiers use high-frequency switching and are attractive because they can achieve high efficiency with lower cost and lower weight.
+
+Not all inverter outputs have the same waveform quality:
+
+- A photovoltaic inverter intended for connection to the mains generally produces a pure sinusoidal waveform.
+- Low-cost mobile inverters may produce a stepped or “modified sine wave”. The lecturer noted that this naming is a loose description rather than a mathematically precise one.
+
+### Motor as an R–L–source load
+
+The motor model used in the lecture is a series combination of:
+
+- Armature resistance, R_A.
+- Armature inductance, L_A.
+- Back-EMF source, E_A.
+
+The motor rotates at angular speed ω. The back EMF is produced by the motor while it is rotating and acts as a voltage source within the load model.
+
+This model explains why the current cannot change instantaneously. When a switch is opened, the inductance attempts to maintain current in the same direction. A suitable diode path is therefore required to prevent an uncontrolled voltage rise and to allow the stored magnetic energy to flow.
+
+### Driving a DC motor from a DC source
+
+The initial circuit is similar to a buck converter, but the motor load does not use the same output filter capacitor. The motor itself is represented by the R–L–source model.
+
+When switch S1 is on:
+
+- Current flows from the DC source through S1 and the motor’s resistance and inductance.
+- Electrical energy is transferred to the motor.
+- Energy is also stored in the armature inductance.
+
+When S1 is turned off:
+
+- The magnetic field of the inductance collapses.
+- The inductor reverses its voltage polarity as necessary to maintain current.
+- Current flows through the free-wheeling diode.
+- The stored inductive energy continues to be delivered to the motor.
+- As the current decays, the motor eventually coasts if no active braking action is applied.
+
+This is forward driving, identified in the lecture as quadrant 1 operation.
+
+### Active braking and boost behaviour
+
+A second switch, S2, is added to create an alternative current path.
+
+When the motor is already rotating and S2 is turned on:
+
+- The back EMF E_A drives current through the motor inductance and S2.
+- Energy is extracted from the mechanical load.
+- The motor’s stored mechanical momentum is converted into electrical energy.
+- The inductance is energised by this braking current.
+
+When S2 is turned off:
+
+- The inductor again requires a current path.
+- A free-wheeling diode connected to the source provides that path.
+- The inductor’s reversed voltage adds to E_A as required to keep current flowing.
+- The resulting arrangement has the behaviour of a boost converter.
+
+The lecture associates this active braking state with quadrant 4: positive mechanical motion with an opposing electrical torque or power flow.
+
+### Synchronous buck and boost operation
+
+A controllable switch can be placed across a free-wheeling diode. Instead of allowing the diode to conduct for the entire free-wheeling interval, the controllable switch can be turned on.
+
+Advantages include:
+
+- A MOSFET can have a lower on-state voltage drop than a diode’s forward voltage drop.
+- For the same current, conduction losses can be reduced.
+- Converter efficiency improves.
+
+The lecture relates this to synchronous buck operation and synchronous boost operation:
+
+- In synchronous buck operation, S2 is turned on while the free-wheeling diode would otherwise conduct after S1 turns off.
+- In synchronous boost operation, S1 can be turned on while the diode associated with the opposite operating state is conducting.
+
+The two switch duty ratios can be varied to control whether power flows into the load or is taken from the load.
+
+### Dead time and shoot-through
+
+S1 and S2 must not be turned on at the same time. If both switches conduct simultaneously, they create a short circuit across the DC supply. This is shoot-through, producing very large current and potentially damaging the converter.
+
+Control ICs such as the TL494 provide dead time:
+
+- One switch is turned off.
+- A short intentional delay follows.
+- The complementary switch is then allowed to turn on.
+
+Dead time prevents overlap caused by finite switching delays and helps avoid shoot-through.
+
+The lecture also connects the TL494’s two output transistor stages with the possibility of separately driving the two switches in a synchronous converter arrangement.
+
+### Four-quadrant operation
+
+The two-switch motor arrangement provides two of the four possible voltage–current quadrants:
+
+- Quadrant 1: positive voltage and positive current; forward driving.
+- Quadrant 4: positive voltage and negative current; active braking of a forward-moving load.
+
+An AC load requires all four quadrants because its voltage and current reverse polarity during each cycle.
+
+For a typical inductive load:
+
+- Voltage leads current.
+- Equivalently, current lags voltage.
+- During different portions of the cycle, the signs of voltage and current are:
+
+| Quadrant | Voltage | Current | Interpretation |
+|---|---:|---:|---|
+| Q1 | Positive | Positive | Positive power flow to the load |
+| Q2 | Negative | Positive | Negative voltage with positive current |
+| Q3 | Negative | Negative | Both voltage and current negative |
+| Q4 | Positive | Negative | Positive voltage with negative current |
+
+Because reactive loads can temporarily return energy to the converter, the switches and their anti-parallel/free-wheeling diodes must support current in both directions.
+
+### Half-bridge inverter
+
+A half bridge is formed by connecting the load to the switching node and using a split DC supply or split DC-link capacitors.
+
+The capacitors are treated as effectively very large, so the midpoint O remains at a constant reference potential. With a DC-link voltage V_D:
+
+- The upper switch T+ connects the output node to +V_D/2 relative to O.
+- The lower switch T− connects the output node to −V_D/2 relative to O.
+
+The output voltage is therefore:
+
+v_AO = +V_D/2 when T+ is on and T− is off
+
+v_AO = −V_D/2 when T− is on and T+ is off
+
+The switches must be controlled so that T+ and T− are never on together.
+
+The half bridge supports current in both directions through the switches and their free-wheeling diodes, enabling four-quadrant operation.
+
+### Full-bridge inverter
+
+A full bridge duplicates the switching leg and uses four switches and associated diodes. The load is connected between the midpoints of the two legs.
+
+The bridge can apply:
+
+- +V_D across the load when the upper switch of one leg and the lower switch of the other leg are on.
+- −V_D across the load when the opposite diagonal pair is on.
+- 0 V across the load when both upper switches are on or both lower switches are on.
+
+The zero-voltage states work because both load terminals are connected to the same DC-link rail:
+
+- Both upper switches on: both load terminals are connected to +V_D.
+- Both lower switches on: both load terminals are connected to the negative rail.
+
+The two switches in any one bridge leg must never be on simultaneously. Each pair of complementary switches is referred to as a pole in the lecture.
+
+A simple sequence of +V_D, 0, and −V_D produces a stepped waveform resembling a highly modified sine wave. This waveform contains significant harmonics and is improved using SPWM.
+
+### Sinusoidal pulse-width modulation
+
+Pulse-width modulation has already been used for DC–DC converters by changing duty ratio. SPWM extends the same principle to AC output generation.
+
+The PWM comparator compares:
+
+- A low-frequency reference or control signal, usually sinusoidal for an AC power output.
+- A high-frequency triangular carrier or modulation signal, denoted in the transcript as V_tri.
+
+The carrier is generally triangular or sawtooth-like. A triangular carrier is useful because its voltage changes approximately linearly with time, producing a predictable relationship between the reference signal and pulse width.
+
+For a half bridge:
+
+- When V_control > V_tri, T+ is on and T− is off.
+- When V_control < V_tri, T− is on and T+ is off.
+
+As the sinusoidal control signal rises:
+
+- Pulses corresponding to +V_D/2 become wider.
+- Pulses corresponding to −V_D/2 become narrower.
+
+As the control signal falls and becomes negative:
+
+- The negative-voltage pulses become wider.
+- The positive-voltage pulses become narrower.
+
+The immediate inverter output is still a switched waveform. Its average value over switching intervals follows the sinusoidal reference, but it also contains high-frequency components.
+
+A low-pass filter removes components above the desired fundamental frequency. In Fourier-series terms, the filter removes the switching-related harmonics and retains the fundamental component corresponding to the control signal.
+
+### Bipolar switching
+
+The half-bridge output switching between +V_D/2 and −V_D/2 is called bipolar switching.
+
+For a full bridge, switching between +V_D and −V_D is also bipolar switching.
+
+The lecture states that the next lecture will introduce unipolar switching, which has certain advantages over bipolar switching.
+
+### Input current and power factor
+
+Although the inverter has a DC input, the input current is pulsed because the switches produce pulsed output currents.
+
+For an inductive load:
+
+- The load current is phase-shifted relative to the load voltage.
+- Some intervals involve current flowing back into the DC supply.
+- The average DC-side power must balance the average AC-side real power, subject to losses.
+
+The lecture gives the power relationship in terms of RMS quantities and phase angle:
+
+P_out = V_out,rms I_out,rms cos φ
+
+The factor cos φ is the displacement power factor associated with the phase difference between voltage and current.
+
+The detailed input-current waveform depends on which switches and diodes conduct and on the phase relationship between output voltage and current.
+
+### Modulation ratios
+
+The lecture defines two ratios used to analyse inverter operation:
+
+1. Amplitude modulation ratio.
+2. Frequency modulation ratio.
+
+These ratios influence output amplitude, harmonic content, filtering requirements, and switching losses.
+
+### Practical switch and control considerations
+
+For an inductive load:
+
+- Free-wheeling or anti-parallel diodes are required across the switches.
+- The diodes provide current paths when the inductive current cannot immediately stop or reverse.
+- They enable four-quadrant current flow.
+
+At very high switching frequencies, particularly in the megahertz range:
+
+- Switches have finite transition times.
+- A switch may not turn off completely before the complementary switch is commanded on.
+- Shoot-through can occur even when dead-time control is present if the delay is insufficient.
+- Switching losses increase.
+
+The reference and carrier signals are low-power control signals. They may be produced using:
+
+- Self-starting oscillators.
+- Operational-amplifier circuits.
+- Sampled mains waveforms.
+- Phase-locked loops for grid-connected photovoltaic inverters.
+- Low-power audio signals for Class D amplifiers.
+
+A phase-locked loop helps keep a grid-connected inverter synchronised with the mains frequency and phase.
+
+### Lecture 17
+
+- **PWM inverter:** Produces a variable-width rectangular switching waveform whose filtered component approximates the desired AC waveform.
+- **Amplitude modulation ratio, \(M_A\):** Determines the amplitude of the fundamental in the linear modulation region.
+- **Frequency modulation ratio, \(M_F\):** Ratio of switching/carrier frequency to reference frequency:
   \[
   M_F=\frac{f_s}{f_1}
   \]
-- Unipolar full-bridge pole relationship:
-  \[
-  V_{AB}=V_{AN}-V_{BN}
-  \]
-  with the second control signal:
+- **Bipolar switching:** The bridge output switches directly between positive and negative voltage levels. The lecture describes this as switching from \(+V_D/2\) to \(-V_D/2\) in one transition.
+- **Unipolar switching:** A full bridge is controlled as two independent poles. The output transitions through zero, reducing the voltage step and changing the harmonic distribution.
+- **Synchronous PWM:** The carrier and reference frequencies have an integer frequency ratio, so they remain phase-locked and do not drift relative to one another.
+- **Bipolar harmonic selection:** An odd integer \(M_F\) eliminates particular harmonic components, with the lecture stating that only odd harmonics of the relevant ratio remain and that cosine coefficients are zero.
+- **Unipolar harmonic selection:** An even integer \(M_F\) is preferred. Odd multiples of \(M_F\) and their sidebands are absent according to the lecture’s harmonic discussion.
+- **Over-modulation:** Occurs when the control/reference amplitude exceeds the carrier amplitude. The output waveform becomes increasingly square-shaped, increasing the fundamental amplitude but also producing substantial low-order harmonic distortion.
+- **Switching-frequency trade-off:**
+  - Higher \(f_s\): easier filtering, smaller filters, less audible noise, but greater switching losses and more difficult synchronisation.
+  - Lower \(f_s\): lower switching losses and easier synchronisation, but harmonics are closer to the fundamental, filters are larger, and audible noise may occur.
+
+### PWM and harmonic filtering
+
+The inverter compares a slowly varying reference waveform, usually sinusoidal, with a triangular carrier waveform. This generates a PWM signal consisting of rectangular pulses with variable widths.
+
+The desired AC waveform is obtained by low-pass filtering the PWM waveform. The filter must attenuate the switching-frequency harmonics while passing the fundamental. Reducing the required filter size depends primarily on:
+
+1. Moving harmonic energy farther from the fundamental.
+2. Reducing the amplitude of the dominant harmonics.
+3. Reducing the voltage step associated with each switching transition.
+
+### Bipolar switching harmonics
+
+In bipolar switching, the inverter output changes directly between positive and negative voltage levels. The lecture describes the output transition as:
+
+\[
++\frac{V_D}{2}\rightarrow-\frac{V_D}{2}
+\]
+
+The Fourier-series harmonic locations are restricted by the rectangular switching waveform. The lecture states that the relevant harmonic indices satisfy a condition of the form:
+
+\[
+J\pm K \text{ must be odd}
+\]
+
+The harmonic groups occur around multiples of the frequency modulation ratio, with sidebands displaced by multiples of the reference frequency. In general, harmonic components occur around frequencies related to:
+
+\[
+J M_F \pm K
+\]
+
+where \(J\) and \(K\) are harmonic indices. The exact coefficient expression was referenced during the lecture but was not clearly captured in the transcript.
+
+For bipolar switching:
+
+- Choosing \(M_F\) as an odd integer causes the dominant switching harmonics to occur only at appropriate odd harmonic groups.
+- The cosine Fourier coefficients are zero for the waveform symmetry discussed.
+- Increasing \(M_F\) moves the switching harmonics farther from the fundamental.
+- Higher-frequency harmonics are easier to remove with a low-pass filter.
+
+For example, with:
+
+\[
+M_A=0.8,\qquad M_F=15
+\]
+
+the fundamental has normalised amplitude approximately equal to \(0.8\) in the linear region. The first significant switching group occurs around the fifteenth multiple of the reference frequency, with sidebands around it. The group centred around \(2M_F\) is absent in the specific odd-\(M_F\) case discussed because the relevant index is even.
+
+### Synchronisation and non-integer frequency ratios
+
+If the switching frequency is an integer multiple of the reference frequency, the carrier and reference are synchronous. They remain locked in time and do not drift relative to each other.
+
+If \(M_F\) is not an integer:
+
+- The carrier and reference are asynchronous.
+- Subharmonics can be produced.
+- Some components may occur close to the fundamental or near zero frequency.
+- Low-frequency components can cause efficiency problems.
+- Magnetic components may be driven toward saturation if residual flux accumulates cycle by cycle.
+
+The lecture also notes that an even integer \(M_F\) changes the harmonic pattern compared with an odd integer. The odd-integer choice is especially important for the bipolar switching strategy described.
+
+### Selecting a high switching frequency
+
+When the reference frequency changes continuously, as in an audio amplifier, maintaining an integer relationship between carrier and reference is impractical. A different approach is to make the switching frequency much higher than the maximum reference frequency.
+
+The lecture gives an approximate design guideline:
+
+\[
+f_s > 20 f_{\text{max}}
+\]
+
+For an audio application with:
+
+\[
+f_{\text{max}}\approx20\text{ kHz}
+\]
+
+this implies:
+
+\[
+f_s>400\text{ kHz}
+\]
+
+Such a switching frequency makes the unwanted components easier to filter, but it is challenging for high-power operation because switching losses increase significantly.
+
+### Unipolar switching
+
+Unipolar switching is used with a full-bridge inverter, not a half bridge. The two bridge legs, or poles, are controlled independently rather than switching diagonal switch pairs together.
+
+The method uses:
+
+- One triangular carrier waveform.
+- Two reference/control waveforms.
+- The second control waveform is the negative inverse of the first:
   \[
   v_{\text{control,B}}=-v_{\text{control,A}}
   \]
-- Bipolar harmonic-frequency pattern:
+
+The two bridge poles are labelled A and B. Each pole switches between its positive and negative devices based on comparison with the carrier.
+
+For pole A, the lecture gives the following switching logic:
+
+- If \(v_{\text{control,A}}>v_{\text{tri}}\):
+  - \(T_{A+}\) is on.
+  - \(T_{A-}\) is off.
+  - \(V_{AN}=V_D\).
+- If \(v_{\text{control,A}}<v_{\text{tri}}\):
+  - \(T_{A-}\) is on.
+  - \(T_{A+}\) is off.
+  - \(V_{AN}=0\).
+
+For pole B, using the inverted control signal:
+
+- If \(-v_{\text{control,A}}>v_{\text{tri}}\):
+  - \(T_{B+}\) is on.
+  - \(T_{B-}\) is off.
+  - \(V_{BN}=V_D\).
+- If \(-v_{\text{control,A}}<v_{\text{tri}}\):
+  - \(T_{B-}\) is on.
+  - \(T_{B+}\) is off.
+  - \(V_{BN}=0\).
+
+The load voltage is the difference between the pole voltages:
+
+\[
+V_{AB}=V_{AN}-V_{BN}
+\]
+
+Therefore, the possible load-voltage levels are:
+
+\[
++V_D,\quad 0,\quad -V_D
+\]
+
+The zero-voltage state occurs when both bridge poles have the same voltage. The load voltage therefore changes from zero to \(+V_D\), and from zero to \(-V_D\), with variable pulse widths.
+
+### Advantages of unipolar switching
+
+Compared with bipolar switching, unipolar switching provides two important harmonic benefits:
+
+1. The voltage transitions are smaller.
+   - Bipolar switching makes a direct positive-to-negative transition.
+   - Unipolar switching passes through zero.
+   - The lecture describes the individual transitions as having half the amplitude of the bipolar transitions for the same nominal control amplitude.
+
+2. The two phase-separated pole-control signals produce an apparent doubling of the carrier/modulation frequency in the output waveform.
+   - Harmonics are therefore shifted toward even multiples of the switching frequency.
+   - The harmonic content is lower and farther from the fundamental.
+
+For unipolar switching, the lecture states that \(M_F\) should be an even integer to obtain the desired cancellation pattern. Odd multiples of \(M_F\), including their sidebands, have no harmonic components in the pattern shown; harmonic groups occur around even multiples.
+
+The result is:
+
+- Lower harmonic amplitude.
+- Greater separation between the fundamental and switching harmonics.
+- Smaller required filter components.
+- Particular usefulness in higher-power applications.
+
+The lecture suggests that an \(M_F\) greater than approximately 10 may be adequate for unipolar switching, whereas bipolar switching may require an \(M_F\) greater than approximately 21 to achieve comparable harmonic separation. These values are presented as approximate design guidance rather than universal limits.
+
+### Over-modulation
+
+In the linear modulation region:
+
+\[
+0\leq M_A\leq1
+\]
+
+The control waveform remains within the carrier amplitude, and the fundamental amplitude varies approximately linearly with \(M_A\).
+
+Over-modulation begins when the control/reference amplitude exceeds the carrier amplitude:
+
+\[
+M_A>1
+\]
+
+The output waveform develops flat tops and bottoms and becomes increasingly square-wave-like.
+
+Consequences include:
+
+- The fundamental amplitude can exceed the value available under linear modulation.
+- The inverter can apply a larger fundamental voltage to a motor.
+- Increased voltage can allow more current and torque because the motor’s back EMF limits the current less severely.
+- Harmonics increase substantially.
+- Harmonic components move closer to the fundamental and have significant amplitude.
+- A filter designed for linear operation may not attenuate the additional harmonics effectively.
+- The load waveform becomes distorted.
+- Efficiency and thermal performance worsen.
+
+Over-modulation can therefore be used temporarily to handle a transient increase in motor load or torque demand, but it is unsuitable as a normal continuous operating mode unless the thermal and harmonic consequences are acceptable.
+
+### Worked half-bridge example
+
+The example specifies:
+
+- Single-phase half-bridge switch-mode inverter.
+- DC voltage:
   \[
-  f_h=(JM_F\pm K)f_1
+  V_D=600\text{ V}
   \]
-  The exact coefficient expression and detailed harmonic table were not captured, so individual harmonic results should not be reconstructed from these summaries alone.
-- Half-bridge fundamental-voltage pattern:
+- Switching/carrier frequency:
   \[
-  V_{1,\text{peak}}=M_A\frac{V_D}{2}
+  f_s=1450\text{ Hz}
   \]
+- Filtered output frequency:
   \[
-  V_{1,\text{rms}}=\frac{V_{1,\text{peak}}}{\sqrt{2}}
+  f_1=50\text{ Hz}
   \]
-- Worked example from Lecture 17:
-  - \(V_D=600\text{ V}\), \(f_s=1450\text{ Hz}\), \(f_1=50\text{ Hz}\), and \(M_A=0.8\).
-  - The summary gives \(M_F=29\).
-  - The summary gives \(V_{1,\text{peak}}=240\text{ V}\) and \(V_{1,\text{rms}}\approx170\text{ V}\).
-- Harmonic RMS conversion:
+- Amplitude modulation ratio:
   \[
-  V_{h,\text{rms}}=\frac{A_h(V_D/2)}{\sqrt{2}}
+  M_A=0.8
   \]
-  The five harmonic amplitudes and final frequencies cannot be determined because the referenced table is absent.
-- Power-converter balance and efficiency:
-  \[
-  P_{\text{in}}=P_{\text{out}}+P_{\text{loss}}
-  \]
-  \[
-  \eta=\frac{P_{\text{out}}}{P_{\text{in}}}
-  \]
-- Ideal-switch states:
-  - Off: \(i_{\text{switch}}=0\).
-  - On: \(v_{\text{switch}}=0\).
-- Ideal-diode states:
-  - Forward biased: \(v_D=0\).
-  - Reverse biased: \(i_D=0\).
-- N-channel enhancement MOSFET switching condition:
-  \[
-  V_{GS}<V_{TH}\Rightarrow\text{off}
-  \]
-  \[
-  V_{GS}>V_{TH}\Rightarrow\text{on}
-  \]
+
+The frequency modulation ratio is:
+
+\[
+M_F=\frac{f_s}{f_1}
+=\frac{1450}{50}
+=29
+\]
+
+Since \(M_F=29\) is an odd integer, the example corresponds to the bipolar switching case discussed. The lecture states that the odd value is selected to eliminate the relevant even harmonic components and make the cosine coefficients zero.
+
+For a half bridge in the linear modulation region, the peak fundamental output voltage is:
+
+\[
+V_{1,\text{peak}}=M_A\frac{V_D}{2}
+\]
+
+Using the given values:
+
+\[
+V_{1,\text{peak}}=0.8\frac{600}{2}=240\text{ V}
+\]
+
+The RMS fundamental voltage is:
+
+\[
+V_{1,\text{rms}}=\frac{V_{1,\text{peak}}}{\sqrt{2}}
+=\frac{240}{\sqrt{2}}
+\approx170\text{ V}
+\]
+
+For the dominant harmonics, the lecture instructs students to:
+
+1. Identify the five largest normalised harmonic amplitudes from the \(M_A=0.8\) table.
+2. Convert each peak amplitude to RMS using:
+   \[
+   V_{h,\text{rms}}
+   =\frac{A_h(V_D/2)}{\sqrt{2}}
+   \]
+3. Calculate each harmonic frequency using a relationship of the form:
+   \[
+   f_h=(J M_F\pm K)f_1
+   \]
+   The exact values of \(J\) and \(K\) depend on the harmonic under consideration.
+
+One example in the lecture uses a normalised amplitude of \(0.314\):
+
+\[
+V_{h,\text{rms}}
+=\frac{0.314(600/2)}{\sqrt{2}}
+\]
+
+The transcript does not clearly capture the complete harmonic-amplitude table or all five resulting frequencies.
+
+### Switching-frequency trade-offs
+
+Low switching frequency:
+
+- Advantage:
+  - Lower switching losses.
+  - Easier synchronisation when an integer frequency ratio is required.
+- Disadvantages:
+  - Harmonics lie closer to the fundamental.
+  - Larger filter inductors and capacitors may be required.
+  - Switching below approximately 20 kHz can produce audible noise.
+
+High switching frequency:
+
+- Advantages:
+  - Harmonics are farther from the fundamental.
+  - Harmonics are easier to filter.
+  - Smaller filter components can be used.
+  - Audible switching noise is avoided when the frequency is above the audible range.
+- Disadvantages:
+  - Higher switching losses.
+  - More challenging thermal management and high-power operation.
+  - More difficult synchronisation where exact frequency relationships are required.
+
+## Equations and worked patterns
+
+### Lecture 16
+
+### Motor model
+
+The motor is represented as a series R–L–source load:
+
+- R_A: armature resistance.
+- L_A: armature inductance.
+- E_A: back EMF.
+- ω: motor angular speed.
+
+The transcript does not provide a complete motor voltage or current differential equation, but the circuit behaviour follows the usual inductor relation:
+
+v_L = L_A di/dt
+
+Therefore, inductor current cannot change instantaneously.
+
+### Four-quadrant sign combinations
+
+| Quadrant | Voltage | Current |
+|---|---:|---:|
+| Q1 | + | + |
+| Q2 | − | + |
+| Q3 | − | − |
+| Q4 | + | − |
+
+Instantaneous electrical power is:
+
+p = vi
+
+Positive p indicates power delivered to the load; negative p indicates power returned from the load, subject to the chosen voltage and current reference directions.
+
+### Half-bridge output levels
+
+For a split DC link with total voltage V_D:
+
+v_AO = +V_D/2 when T+ is on
+
+v_AO = −V_D/2 when T− is on
+
+The complementary switch must be off in each case.
+
+### Full-bridge output levels
+
+For a full bridge:
+
+v_AB = +V_D for one diagonal switch pair
+
+v_AB = −V_D for the opposite diagonal switch pair
+
+v_AB = 0 when both upper switches or both lower switches are on.
+
+### AC power and power factor
+
+For sinusoidal voltage and current:
+
+P_out = V_out,rms I_out,rms cos φ
+
+where:
+
+- P_out is average real output power.
+- V_out,rms is RMS load voltage.
+- I_out,rms is RMS load current.
+- φ is the phase difference between voltage and current.
+- cos φ is the displacement power factor.
+
+### Amplitude modulation ratio
+
+The lecture defines the amplitude modulation ratio as:
+
+M_A = V_control,peak / V_tri,peak
+
+where:
+
+- V_control,peak is the peak amplitude of the reference/control signal.
+- V_tri,peak is the peak amplitude of the triangular carrier/modulation signal.
+
+For linear modulation, the lecture states that:
+
+M_A < 1
+
+In this region, the fundamental output voltage is directly proportional to the control-signal amplitude. Therefore, doubling the control amplitude approximately doubles the fundamental output amplitude, provided the converter remains in the linear modulation region.
+
+When:
+
+M_A > 1
+
+the inverter enters over-modulation. The output waveform becomes increasingly squared off and harmonic content increases.
+
+The transcript states that when the amplitude modulation ratio is greater than approximately “3.3”, the switching scheme effectively becomes a modified sinusoid. This value is uncertain because the surrounding explanation identifies over-modulation as beginning when M_A exceeds unity, and the transcript may contain an automated-transcription or spoken-number error.
+
+### Frequency modulation ratio
+
+The frequency modulation ratio is:
+
+M_F = f_tri / f_control
+
+where:
+
+- f_tri is the triangular-carrier or switching frequency.
+- f_control is the reference/control-signal frequency.
+
+A higher M_F places switching harmonics at higher frequencies relative to the fundamental, making them easier to remove with a low-pass filter. However, increasing the switching frequency also increases switching losses.
+
+### Inductive phase relationship
+
+For an inductive circuit:
+
+- Voltage leads current.
+- Current lags voltage.
+
+For a capacitive circuit:
+
+- Current leads voltage.
+
+The lecture uses the inductive relationship to explain why an AC motor-like load requires four-quadrant operation.
+
+### Lecture 17
+
+### Frequency modulation ratio
+
+\[
+M_F=\frac{f_s}{f_1}
+\]
+
+where:
+
+- \(f_s\) is the switching or carrier frequency.
+- \(f_1\) is the reference/fundamental output frequency.
+
+### Amplitude modulation ratio
+
+The lecture defines \(M_A\) as the ratio of the reference/control amplitude to the triangular carrier amplitude. In the linear region:
+
+\[
+0\leq M_A\leq1
+\]
+
+### Linear-region half-bridge fundamental
+
+For the half-bridge example:
+
+\[
+V_{1,\text{peak}}=M_A\frac{V_D}{2}
+\]
+
+\[
+V_{1,\text{rms}}=\frac{M_A V_D}{2\sqrt{2}}
+\]
+
+### RMS conversion
+
+For a sinusoidal component with peak amplitude \(V_{\text{peak}}\):
+
+\[
+V_{\text{rms}}=\frac{V_{\text{peak}}}{\sqrt{2}}
+\]
+
+For a normalised harmonic amplitude \(A_h\) referenced to \(V_D/2\):
+
+\[
+V_{h,\text{rms}}
+=\frac{A_h(V_D/2)}{\sqrt{2}}
+\]
+
+### Unipolar bridge output
+
+\[
+V_{AB}=V_{AN}-V_{BN}
+\]
+
+Possible ideal output levels:
+
+\[
+V_{AB}\in\{-V_D,0,+V_D\}
+\]
+
+### Bipolar harmonic condition
+
+The lecture states that the harmonic indices satisfy:
+
+\[
+J\pm K \text{ is odd}
+\]
+
+The corresponding harmonic frequencies are described in the form:
+
+\[
+f_h=(J M_F\pm K)f_1
+\]
+
+The exact notation and coefficient expression should be checked against the course slides or textbook because the transcript does not capture them reliably.
+
+### Unipolar control signals
+
+\[
+v_{\text{control,B}}=-v_{\text{control,A}}
+\]
+
+### Example frequency modulation ratio
+
+\[
+M_F=\frac{1450}{50}=29
+\]
+
+### Example fundamental voltage
+
+\[
+V_{1,\text{peak}}=0.8\frac{600}{2}=240\text{ V}
+\]
+
+\[
+V_{1,\text{rms}}=\frac{240}{\sqrt{2}}\approx170\text{ V}
+\]
+
+### Approximate audio switching-frequency guideline
+
+\[
+f_s>20f_{\text{max}}
+\]
+
+For \(f_{\text{max}}\approx20\text{ kHz}\):
+
+\[
+f_s>400\text{ kHz}
+\]
 
 ## Warnings and deadlines
 
-- No specific assessment deadlines were stated in the supplied summaries.
-- Lecture 18 records the assessment weighting as a 30% group design-and-build project, 35% test, and 35% exam. It also states that the test and exam average must be at least 40% to pass, and that generative AI is not permitted in the test or exam. Confirm these requirements against the official course outline.
-- Lecture 16 contains an internally inconsistent statement about an amplitude-modulation value of approximately “3.3”. The reliable surrounding coverage identifies over-modulation as beginning above \(M_A=1\); do not rely on the “3.3” claim without checking the official slides or recording.
-- The harmonic-index notation, harmonic tables, circuit diagrams, and some switch labels are incomplete or uncertain in the source summaries. Do not invent missing harmonic amplitudes, frequencies, or topology details.
-- Approximate device values such as diode forward voltage, MOSFET threshold voltage, gate-drive voltage, device voltage ratings, and converter losses are teaching estimates rather than universal specifications.
-- Do not treat approximate switching-frequency guidance, such as \(M_F>10\), \(M_F>21\), or \(f_s>20f_{\max}\), as universal design requirements.
+### Lecture 16 — historical source caveats
+
+- This is a native Echo automated transcript, so several terms are uncertain or mistranscribed.
+- “RLS load” is interpreted from context as a series resistance–inductance–source load. The source is the motor’s back EMF.
+- “Buck” and “boost” are sometimes transcribed as “back” and “bust”. The notes use the standard converter terminology.
+- “Free-wheeling diode”, “MOSFET”, “SPWM”, “pulse width modulation”, and related terms have been normalised where the intended meaning is clear.
+- The transcript says the amplitude modulation ratio is the maximum reference voltage divided by the maximum modulation voltage. This is written as M_A = V_control,peak/V_tri,peak.
+- The transcript clearly states that linear modulation requires M_A to remain below unity and that over-modulation begins above unity. Its later reference to a ratio “greater than around 3.3” is internally inconsistent and may be an automated-transcription or lecturer-speaking error. That numerical claim should be checked against the lecture slides or recording.
+- The lecture presents the half-bridge midpoint capacitors as effectively infinitely large, making the midpoint voltage constant. This is an idealised assumption.
+- Exact switch labels and bridge-node notation are difficult to determine from audio alone because the circuit diagrams are not included in the transcript.
+- The transcript’s description of input current includes informal waveform commentary and should be cross-checked against the corresponding lecture diagrams when studying source-side current and power flow.
+- The lecture ends by stating that the next lecture will examine optimisation of the amplitude and frequency modulation ratios, as well as unipolar switching.
+
+### Lecture 17 — historical source caveats
+
+- This source is a native Echo automated transcript. Several technical terms are mistranscribed, including “filter,” “pulse-width modulation,” “carrier,” “cosine coefficients,” “pole,” and some switch labels.
+- The lecture slides, circuit diagrams, harmonic plots, and numerical table are not included in the transcript. Their visual details cannot be reconstructed with certainty.
+- The harmonic-frequency notation involving \(J\), \(K\), and \(M_F\) is only partially captured. The form \((J M_F\pm K)f_1\) reflects the spoken description but should be checked against the official lecture material.
+- The statement that an odd \(M_F\) “eliminates even harmonics” is a spoken summary of the shown harmonic pattern. It should not be interpreted as saying that every even-frequency component is universally absent under all PWM conditions.
+- The transcript alternates between descriptions normalised to \(V_D/2\) and \(V_D\). The half-bridge worked example explicitly uses \(V_D/2\) for the fundamental calculation, while a later harmonic plot is stated to be normalised to \(V_D\).
+- The numerical RMS result of approximately \(170\text{ V}\) is the rounded value of \(240/\sqrt{2}\).
+- The suggested values \(M_F>10\) for unipolar switching and \(M_F>21\) for bipolar switching are approximate design guidance from the lecture, not universal specifications.
+- The instructor states that unipolar switching is for a full bridge and not a half bridge. The exact switch naming and gate-drive dead-time requirements are not discussed in the transcript.
+- The transcript mentions a table of harmonic amplitudes and a “top five” harmonic calculation, but the table itself is absent. The individual five harmonic values and final combined results cannot be determined from this transcript alone.
 
 ## Recall questions
 
-1. What is the difference between bipolar and unipolar switching in a full-bridge inverter?
-2. Why does an inductive motor load require free-wheeling or anti-parallel diode paths?
-3. What voltage and current sign combinations correspond to quadrants 1–4?
-4. How does SPWM use a reference waveform and a triangular carrier to generate an AC output?
-5. What do \(M_A\) and \(M_F\) represent, and how does each affect inverter operation?
-6. Why is an integer \(M_F\) useful for synchronous PWM, and what problems can arise when the carrier and reference are asynchronous?
-7. Why can unipolar switching reduce harmonic content and filter size compared with bipolar switching?
-8. What are the benefits and risks of operating an inverter in over-modulation?
-9. For the Lecture 17 example, why does \(f_s=1450\text{ Hz}\) and \(f_1=50\text{ Hz}\) correspond to \(M_F=29\), and what does the odd integer indicate in the discussed bipolar case?
-10. How do MOSFETs, BJTs, IGBTs, and thyristors differ in control method, switching speed, and typical voltage/current capability?
+1. Lecture 16: What is the function of an inverter, and why is it important in AC motor speed control?
+
+2. Lecture 16: What are the three elements in the series R–L–source model of a motor, and what does each element represent?
+
+3. Lecture 16: Why does a motor’s inductance require a free-wheeling or anti-parallel diode?
+
+4. Lecture 16: Describe the energy flow when S1 is on while driving the motor.
+
+5. Lecture 16: What happens when S1 is turned off, and why does the inductor reverse its voltage polarity?
+
+6. Lecture 16: How does turning on S2 provide active braking of a forward-moving motor?
+
+7. Lecture 16: Why is the braking configuration described as having boost-converter behaviour?
+
+8. Lecture 16: What is synchronous conversion, and why can replacing diode conduction with MOSFET conduction improve efficiency?
+
+9. Lecture 16: What is shoot-through, and why must S1 and S2 never be on simultaneously?
+
+10. Lecture 16: What is dead time, and how does it protect a converter leg?
+
+11. Lecture 16: Identify the voltage and current signs associated with quadrants 1–4.
+
+12. Lecture 16: Why does an inductive AC load require four-quadrant operation?
+
+13. Lecture 16: What voltage levels can a half-bridge inverter apply relative to its midpoint?
+
+14. Lecture 16: How does a full bridge produce +V_D, 0, and −V_D across its load?
+
+15. Lecture 16: Which full-bridge switch combinations produce positive, negative, and zero load voltage?
+
+16. Lecture 16: Why does a simple stepped inverter waveform contain harmonics?
+
+17. Lecture 16: Explain how SPWM uses a sinusoidal reference and a triangular carrier.
+
+18. Lecture 16: What happens to the pulse widths when the sinusoidal control signal increases in amplitude?
+
+19. Lecture 16: Why does a low-pass filter recover the desired sinusoidal fundamental?
+
+20. Lecture 16: What is bipolar switching in a half bridge and in a full bridge?
+
+21. Lecture 16: Define the amplitude modulation ratio M_A.
+
+22. Lecture 16: What is the significance of M_A < 1?
+
+23. Lecture 16: What happens during over-modulation?
+
+24. Lecture 16: Define the frequency modulation ratio M_F.
+
+25. Lecture 16: What are the advantages and disadvantages of increasing the switching frequency?
+
+26. Lecture 16: Why may a grid-connected photovoltaic inverter use a phase-locked loop?
+
+27. Lecture 16: Why can current flow back into the DC source during some intervals of operation?
+
+28. Lecture 16: For an inductive load, how are voltage and current phase-shifted, and how does this affect real power?
+
+29. Lecture 17: Why is a low-pass filter required at the output of a PWM inverter?
+
+30. Lecture 17: Define the amplitude modulation ratio \(M_A\) and frequency modulation ratio \(M_F\).
+
+31. Lecture 17: What is the difference between bipolar and unipolar switching?
+
+32. Lecture 17: What voltage transition occurs in bipolar switching?
+
+33. Lecture 17: What output-voltage levels are available in an ideal unipolar full bridge?
+
+34. Lecture 17: Why can unipolar switching reduce harmonic amplitudes compared with bipolar switching?
+
+35. Lecture 17: Why does unipolar switching produce an apparent doubling of the carrier frequency?
+
+36. Lecture 17: What condition on \(J\pm K\) was given for the bipolar Fourier-series harmonics?
+
+37. Lecture 17: Why is an odd integer \(M_F\) selected for bipolar switching?
+
+38. Lecture 17: Why is an even integer \(M_F\) selected for unipolar switching?
+
+39. Lecture 17: What problems can arise when the carrier and reference are asynchronous?
+
+40. Lecture 17: Explain how low-frequency subharmonics can contribute to magnetic-core saturation.
+
+41. Lecture 17: Why is a high switching frequency useful when the reference frequency varies continuously, such as in an audio amplifier?
+
+42. Lecture 17: For a 20 kHz maximum audio frequency, what approximate minimum switching frequency was suggested?
+
+43. Lecture 17: Explain the main advantages and disadvantages of low switching frequency.
+
+44. Lecture 17: Explain the main advantages and disadvantages of high switching frequency.
+
+45. Lecture 17: What is over-modulation, and what waveform change indicates that it has begun?
+
+46. Lecture 17: Why can over-modulation temporarily increase the torque available from a motor?
+
+47. Lecture 17: Why is over-modulation unsuitable for normal continuous operation?
+
+48. Lecture 17: For the worked example with \(f_s=1450\text{ Hz}\) and \(f_1=50\text{ Hz}\), calculate \(M_F\).
+
+49. Lecture 17: Why does \(M_F=29\) identify the worked example as a bipolar-switching case?
+
+50. Lecture 17: For \(V_D=600\text{ V}\) and \(M_A=0.8\), calculate the peak and RMS fundamental output voltage of the half bridge.
+
+51. Lecture 17: How would the RMS value of a harmonic with normalised amplitude \(A_h\) be calculated?
+
+52. Lecture 17: How are the frequencies of the dominant switching harmonics determined from \(M_F\), \(J\), \(K\), and \(f_1\)?
+
+53. Lecture 17: Why are filter components generally smaller when the dominant harmonics are both higher in frequency and lower in amplitude?
 
 ## Practice priorities
 
-1. Draw and explain half-bridge and full-bridge inverter switching states, including the required dead time and the prohibition on simultaneous complementary-switch conduction.
-2. Practise identifying energy flow during forward motor driving, free-wheeling, active braking, and regenerative operation.
-3. Work through \(M_A\), \(M_F\), fundamental peak voltage, RMS voltage, and harmonic RMS conversions using the supplied half-bridge example.
-4. Compare bipolar and unipolar PWM in terms of voltage-step size, harmonic location, harmonic amplitude, switching frequency, and filter size.
-5. Explain why higher switching frequency improves filtering but increases switching loss, thermal demands, and synchronisation difficulty.
-6. Review the four converter categories and the generic source–filter–switching converter–filter–load–feedback structure.
-7. Build a device-selection comparison for MOSFETs, BJTs, IGBTs, SCRs, GTOs, triacs, and MCTs using voltage, current, speed, conduction loss, and turn-off control.
-8. Practise explaining ideal switch and diode models, MOSFET threshold/on-state behaviour, SCR latching, GTO turn-off, and triac bidirectional conduction.
-9. Revisit LTspice as the stated simulation tool for testing power-electronic designs before physical construction.
+1. Tutor strategy for Lecture 16: attempt the associated course-reader examples, check the method against the notes and record your first error. These are study suggestions, not extra assessment requirements.
+
+2. Tutor strategy for Lecture 17: attempt the associated course-reader examples, check the method against the notes and record your first error. These are study suggestions, not extra assessment requirements.
 
 ## Missing or incomplete
 
-- No lectures are identified as missing or incomplete for this study window.
-- Within otherwise covered lectures, the following source details remain incomplete:
-  - Lecture 16’s exact circuit diagrams and some switch labels.
-  - Lecture 16’s conflicting “3.3” modulation-ratio statement.
-  - Lecture 17’s complete harmonic-amplitude table and the five requested harmonic results.
-  - Lecture 17’s exact Fourier coefficient expression and fully precise harmonic-index notation.
-  - Lecture 18’s detailed diagrams and quantitative comparisons for multilevel inverter structures and device operating ranges.
+None among the actual lecture sessions in this window. Scheduled Lecture 18 (21 August) is explicitly marked “No lecture” in Echo; its previously copied content has been withdrawn. It is excluded from the expected-session count.
 
 ## Source manifest
 
 - Lecture 16 (echo-lecture-16-16): complete; summary `170b3e575b5e978de5d5099a33d67b837bb5a48795f9e2a75ae3785a6da18e09`; transcript `f00c63f9e761d39892b73ce41e9851d55d3ae9217a06dde6dfb0123735506307`; summary path `[local source path redacted]`
 - Lecture 17 (echo-lecture-17-17): complete; summary `6936473d2975c4f25245311f784c0d90465952343838f434c1a5ed8010a89996`; transcript `d6267ad34b91ed38fa5f0ea77720b0dbdb41cd8cba774758ca488171653661b7`; summary path `[local source path redacted]`
-- Lecture 18 (echo-lecture-18-18): complete; summary `d885202fa3c20fe0e8f4b4ec1feb842dd6308419029ede0cfeae8e4b28a8059a`; transcript `b7f49dcda795f436a5e14b54bf227770d18a3d404c9b0e241713d7b2a41e9d8c`; summary path `[local source path redacted]`

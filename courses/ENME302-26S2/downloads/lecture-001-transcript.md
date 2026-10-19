@@ -1,8 +1,7 @@
 # ENME302-26S2 Lecture 1 native Echo transcript
 
 Date: July 13, 2026 12:00pm-12:55pm
-Source: Echo visible Transcripts panel.
-Transcript type: native Echo automated transcript; technical terms may still contain errors.
+Transcript type: native Echo automated transcript.
 
 [00:00:40:750 - 00:00:43:189] **Speaker 0:** Firstly, I just thought it might be helpful to help
 [00:00:43:189 - 00:00:44:139] **Speaker 0:** you pull the troll in the end.
